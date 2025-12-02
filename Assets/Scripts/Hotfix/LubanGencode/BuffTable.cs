@@ -66,7 +66,7 @@ public sealed partial class BuffTable : Luban.BeanBase
     /// </summary>
     public readonly System.Collections.Generic.List<EffectNode> BuffEffect;
     /// <summary>
-    /// 持续时间
+    /// 持续时间（0是瞬发，-1是永久）
     /// </summary>
     public readonly int Time;
     /// <summary>

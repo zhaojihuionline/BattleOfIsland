@@ -1,12 +1,9 @@
 using cfg;
 using DG.Tweening;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography;
 using UnityEngine;
-using static UnityEditor.ShaderKeywordFilter.FilterAttribute;
-using static UnityEngine.EventSystems.EventTrigger;
-using static UnityEngine.GraphicsBuffer;
 
 namespace QFramework.Game
 {
@@ -112,7 +109,7 @@ namespace QFramework.Game
 			FSM.StartState(EntityState.Idle);
 		}
 
-		public void InitCanSkill(List<int> skillsParam)
+		public void InitCanSkill(List<int> skillsParam,List<int> skillEnable = null)
 		{
 
             foreach (var item in skillsParam)
@@ -124,10 +121,12 @@ namespace QFramework.Game
 			skillPacketDict = new Dictionary<int, SkillPacket>();
 
 			//直接根据当前技能列表生成
-			foreach (var skillID in skills)
+			for (int i = 0; i < skills.Count; i++)
+			//foreach (var skillID in skills)
 			{
+				int skillID = skills[i];
 				SkillTable table = CfgMgr.GetSkillTableS(skillID);
-				SkillPacket skillPacket = new SkillPacket(table);
+				SkillPacket skillPacket = new SkillPacket(table, this.GetModel<BattleInModel>(), skillEnable != null ? skillEnable[i] : 0);
 				skillPacketDict.Add(skillID, skillPacket);
 
 				skillPacketDict = skillPacketDict
@@ -141,22 +140,22 @@ namespace QFramework.Game
 					if (table.SkillType == SkillType.NORMAL_ATTACK)
 					{
 						nomalAttackPacket = skillPacket;
-						skillPacket._canRelease = true;
+						skillPacket.CanRelease = true;
 						//普通攻击没有开场冷却
 					}
 					else
 					{
-						skillPacket._canRelease = false;
+						skillPacket.CanRelease = false;
 					}
 
-					this.DelayFrame(Random.Range(0, 5), () =>
+					this.DelayFrame(UnityEngine.Random.Range(0, 5), () =>
 					{
 						//开启冷却时间检测
 						// 单个序列处理所有逻辑
 						ActionKit.Repeat()
 							.Condition(() => enabled)
 							.DelayFrame(5) // 每5帧检测一次
-							.Condition(() => !skillPacket._canRelease) // 条件检测  如果未达到可以释放的冷却时间
+							.Condition(() =>  !skillPacket.CanRelease) // 条件检测  如果未达到可以释放的冷却时间
 							.Callback(() =>
 							{
 								Debug.Log("进入冷却  " + skillPacket._data.Name);
@@ -164,8 +163,8 @@ namespace QFramework.Game
 							.Delay(skillPacket._data.CollTime / 100f) // 延迟冷却时间
 							.Callback(() =>
 							{
-								Debug.Log("检测到冷却结束，可以释放技能  " + skillPacket._data.Name);
-								skillPacket._canRelease = true; // 设置为冷却结束
+								Debug.Log($"检测到冷却结束，可以释放技能  Name:{skillPacket._data.Name} CanRelease:{skillPacket.CanRelease}");
+								skillPacket.CanRelease = true; // 设置为冷却结束
 							})
 							.Start(this);
 					});
@@ -375,7 +374,7 @@ namespace QFramework.Game
 					//非主动技能 可能需要走另外的 被动技能或者光环的逻辑  暂无
 					continue;
 				}
-				if (!packet.Value._canRelease)
+				if (!packet.Value.CanRelease)
 				{
 					//Debug.LogError($"技能 ID:{table.Name} 处于冷却中 不能释放");
 					continue;
@@ -401,7 +400,7 @@ namespace QFramework.Game
 					continue;
 				}
 				//释放技能之前需要先转身
-				packet.Value._canRelease = false;
+				packet.Value.CanRelease = false;
 				if (rotateSpeed > 0 && target != gameObject)
 				{
 					transform.DOLookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z), rotateSpeed).SetEase(Ease.Linear)
@@ -507,7 +506,7 @@ namespace QFramework.Game
 		}
 
 
-
+		[Serializable]
 		public class IdleState : AbstractState<EntityState, EntityController>
 		{
 			private QFramework.IActionController _idleController;
@@ -566,7 +565,8 @@ namespace QFramework.Game
 			}
 		}
 
-		public class MoveToTargetState : AbstractState<EntityState, EntityController>
+        [Serializable]
+        public class MoveToTargetState : AbstractState<EntityState, EntityController>
 		{
 			private QFramework.IActionController _moveController;
 
@@ -616,8 +616,8 @@ namespace QFramework.Game
 				}
 			}
 		}
-
-		public class AttackingState : AbstractState<EntityState, EntityController>
+        [Serializable]
+        public class AttackingState : AbstractState<EntityState, EntityController>
 		{
 			private QFramework.IActionController _attackingFindController;
 			private QFramework.IActionController _attackingReleaseController;
@@ -683,8 +683,8 @@ namespace QFramework.Game
 
 			}
 		}
-
-		public class DieState : AbstractState<EntityState, EntityController>
+        [Serializable]
+        public class DieState : AbstractState<EntityState, EntityController>
 		{
 			public DieState(FSM<EntityState> fsm, EntityController target) : base(fsm, target)
 			{

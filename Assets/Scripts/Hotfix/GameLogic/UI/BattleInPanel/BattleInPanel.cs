@@ -194,8 +194,8 @@ namespace QFramework.UI
                 // 计算法术牌三选一界面弹出逻辑
                 float minRate = BattleManagerView.Instance.battleProcessData[0].MinRate;// MinRate = 0.3f
                 float maxRate = BattleManagerView.Instance.battleProcessData[1].MinRate;// MaxRate = 0.6f
-                bool hitMin = newRate >= minRate && newRate < maxRate && BattleManagerView.Instance.battleProcessData[0].IsPopuped == false;
-                bool hitMax = newRate >= maxRate && newRate <= 1 && BattleManagerView.Instance.battleProcessData[1].IsPopuped == false;
+                bool hitMin = (newRate >= minRate) && (newRate < maxRate) && (BattleManagerView.Instance.battleProcessData[0].IsPopuped == false);
+                bool hitMax = (newRate >= maxRate) && (newRate <= 1) && (BattleManagerView.Instance.battleProcessData[1].IsPopuped == false);
                 if (hitMin)
                 {
                     var battleData = BattleManagerView.Instance.battleProcessData[0];
@@ -218,6 +218,8 @@ namespace QFramework.UI
                     }
                 }
             }
+
+            //
 
             if (hitTarget != null)
 			{

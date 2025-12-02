@@ -30,21 +30,32 @@ namespace QFramework.UI
 		[SerializeField] private float spacingX = 10f;  // 水平间距
 		[SerializeField] private float spacingY = 10f;  // 垂直间距
 		
-		private IBagTabSystem bagTabSystem;
-		private IBagModel bagModel;
-		private List<BagItemView> itemViews = new List<BagItemView>();  // 当前显示的物品视图列表
-		private GridLayoutGroup gridLayoutGroup;  // 缓存的 GridLayoutGroup 组件
+	private IBagTabSystem bagTabSystem;
+	private IBagModel bagModel;
+	private List<BagItemView> itemViews = new List<BagItemView>();  // 当前显示的物品视图列表
+	private GridLayoutGroup gridLayoutGroup;  // 缓存的 GridLayoutGroup 组件
+	private Vector2 lastContentSize;  // 记录上次的 Content 尺寸，用于检测尺寸变化
+	
+	protected override void OnInit(IUIData uiData = null)
+	{
+		mData = uiData as BagPanelData ?? new BagPanelData();
 		
-		protected override void OnInit(IUIData uiData = null)
-		{
-			mData = uiData as BagPanelData ?? new BagPanelData();
-			
 		// 获取系统和模型
 		bagTabSystem = this.GetSystem<IBagTabSystem>();
 		bagModel = this.GetModel<IBagModel>();
 		
 		// 如果 itemContainer 未设置，尝试通过路径查找
 		FindItemContainer();
+		
+		// 初始化 Content 尺寸记录
+		if (itemContainer != null)
+		{
+			RectTransform contentRect = itemContainer as RectTransform;
+			if (contentRect != null)
+			{
+				lastContentSize = contentRect.rect.size;
+			}
+		}
 		
 		// 动态调整 GridLayoutGroup 的 CellSize 以适配屏幕
 		// 延迟一帧执行，确保 Layout 已经计算完成
@@ -317,13 +328,43 @@ namespace QFramework.UI
 		{
 		}
 		
-		protected override void OnHide()
-		{
-		}
+	protected override void OnHide()
+	{
+	}
+	
+	/// <summary>
+	/// 检测 Content 尺寸变化，自动调整布局
+	/// </summary>
+	private void Update()
+	{
+		// 只在面板显示时检测
+		if (!gameObject.activeInHierarchy) return;
 		
-		/// <summary>
-		/// 检查背包是否为空，如果为空则初始化测试数据
-		/// </summary>
+		// 检测 Content 尺寸变化（更精确，因为 Canvas 缩放会导致 Content 尺寸变化）
+		if (itemContainer != null)
+		{
+			RectTransform contentRect = itemContainer as RectTransform;
+			if (contentRect != null)
+			{
+				Vector2 currentContentSize = contentRect.rect.size;
+				// 检查尺寸是否发生变化，且尺寸有效（大于0）
+				if (currentContentSize != lastContentSize && currentContentSize.x > 0 && currentContentSize.y > 0)
+				{
+					lastContentSize = currentContentSize;
+					// 延迟一帧执行，确保 Layout 已经更新
+					UniTask.Void(async () =>
+					{
+						await UniTask.Yield();
+						AdjustGridLayoutCellSize();
+					});
+				}
+			}
+		}
+	}
+	
+	/// <summary>
+	/// 检查背包是否为空，如果为空则初始化测试数据
+	/// </summary>
 		private void CheckAndInitializeBag()
 		{
 			if (bagModel == null)

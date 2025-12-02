@@ -60,7 +60,7 @@ public class EntitySystem : AbstractSystem, IEntitySystem
             paramList.Add(item * 100 + lv);
         }
         res.SetMoveSpeed(hlvtable.Speed / 100f);
-        res.InitCanSkill(paramList);
+        res.InitCanSkill(paramList,hlvtable.SkillEnable);
 
         if (isEnemy)
         {

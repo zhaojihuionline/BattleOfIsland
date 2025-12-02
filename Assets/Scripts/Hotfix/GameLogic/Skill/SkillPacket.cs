@@ -23,14 +23,37 @@ public class SkillPacket
 
     public Effect _effect = null;
 
-    public bool _canRelease = false;
+    int skillEnable = 0;
+    bool _canRelease = false;
+    public bool CanRelease
+    {
+        get
+        {
+            if (battleInModel.DestructionRate.Value * 100 >= skillEnable)//开启
+            {
+                return _canRelease;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        set
+        {
+            _canRelease = value;
+        }
+    }
+
+    BattleInModel battleInModel;
 
     public SkillPacket()
     {
 
     }
-    public SkillPacket(SkillTable _data)
+    public SkillPacket(SkillTable _data, BattleInModel battleInModel, int skillEnable)
     {
+        this.battleInModel = battleInModel;
+        this.skillEnable = skillEnable;
         SetTable(_data);
     }
 

@@ -58,7 +58,7 @@ public interface ICanSkill : IEntity
     /// 
     /// </summary>
     /// <param name="skills">传入技能id列表</param>
-    void InitCanSkill(List<int> skills);
+    void InitCanSkill(List<int> skillsParam, List<int> skillEnable = null);
 }
 
 public interface IHaveHP : IEntity

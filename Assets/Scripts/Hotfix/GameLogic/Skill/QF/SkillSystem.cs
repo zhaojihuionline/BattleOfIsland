@@ -59,7 +59,7 @@ public class SkillSystem : AbstractSystem, ISkillSystem
         }
         GameObject res = Object.Instantiate(skill, point, Quaternion.identity);
         res.GetComponent<QFramework.Game.SkillController>().SetSkillPacket(Packet);
-        Packet._canRelease = false;//进入冷却了
+        Packet.CanRelease = false;//进入冷却了
     }
 
     /// <summary>

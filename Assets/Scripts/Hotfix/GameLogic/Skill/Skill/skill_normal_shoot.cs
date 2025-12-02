@@ -15,7 +15,7 @@ namespace QFramework.Game
         {
             base.OnStart_Cast();
             Model.SetActive(true);
-            packetData._canRelease = false;
+            packetData.CanRelease = false;
 
             if (BPath == null || packetData.target == null) return;
             // 设置事件回调

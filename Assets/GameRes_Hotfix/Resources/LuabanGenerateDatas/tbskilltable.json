@@ -3701,7 +3701,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20004
+    ],
     "_description": "持续5秒，巴顿举起盾牌并触发放大特效，期间减免20%来自建筑的伤害"
   },
   {
@@ -3746,7 +3748,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20005
+    ],
     "_description": "持续5秒，巴顿举起盾牌并触发放大特效，期间减免22%来自建筑的伤害"
   },
   {
@@ -3791,7 +3795,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20006
+    ],
     "_description": "持续5秒，巴顿举起盾牌并触发放大特效，期间减免24%来自建筑的伤害"
   },
   {
@@ -3836,7 +3842,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20007
+    ],
     "_description": "持续5秒，巴顿举起盾牌并触发放大特效，期间减免26%来自建筑的伤害"
   },
   {
@@ -3881,7 +3889,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20008
+    ],
     "_description": "持续5秒，巴顿举起盾牌并触发放大特效，期间减免28%来自建筑的伤害"
   },
   {
@@ -3926,7 +3936,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20009
+    ],
     "_description": "持续5秒，巴顿举起盾牌并触发放大特效，期间减免30%来自建筑的伤害"
   },
   {
@@ -3971,7 +3983,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20010
+    ],
     "_description": "持续5秒，巴顿举起盾牌并触发放大特效，期间减免32%来自建筑的伤害"
   },
   {
@@ -4016,7 +4030,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20011
+    ],
     "_description": "持续5秒，巴顿举起盾牌并触发放大特效，期间减免34%来自建筑的伤害"
   },
   {
@@ -4061,7 +4077,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20012
+    ],
     "_description": "持续5秒，巴顿举起盾牌并触发放大特效，期间减免36%来自建筑的伤害"
   },
   {
@@ -4106,7 +4124,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20013
+    ],
     "_description": "持续5秒，巴顿举起盾牌并触发放大特效，期间减免38%来自建筑的伤害"
   },
   {
@@ -4151,7 +4171,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20014
+    ],
     "_description": "持续5秒，巴顿举起盾牌并触发放大特效，期间减免40%来自建筑的伤害"
   },
   {
@@ -4196,7 +4218,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20015
+    ],
     "_description": "持续5秒，巴顿举起盾牌并触发放大特效，期间减免42%来自建筑的伤害"
   },
   {
@@ -4241,7 +4265,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20016
+    ],
     "_description": "持续5秒，巴顿举起盾牌并触发放大特效，期间减免44%来自建筑的伤害"
   },
   {
@@ -4286,7 +4312,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20017
+    ],
     "_description": "持续5秒，巴顿举起盾牌并触发放大特效，期间减免46%来自建筑的伤害"
   },
   {
@@ -4331,7 +4359,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20018
+    ],
     "_description": "持续5秒，巴顿举起盾牌并触发放大特效，期间减免48%来自建筑的伤害"
   },
   {
@@ -4376,7 +4406,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20019
+    ],
     "_description": "持续5秒，巴顿举起盾牌并触发放大特效，期间减免50%来自建筑的伤害"
   },
   {
@@ -4421,7 +4453,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20020
+    ],
     "_description": "持续5秒，巴顿举起盾牌并触发放大特效，期间减免52%来自建筑的伤害"
   },
   {
@@ -4466,7 +4500,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20021
+    ],
     "_description": "持续5秒，巴顿举起盾牌并触发放大特效，期间减免54%来自建筑的伤害"
   },
   {
@@ -4511,7 +4547,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20022
+    ],
     "_description": "持续5秒，巴顿举起盾牌并触发放大特效，期间减免56%来自建筑的伤害"
   },
   {
@@ -4556,7 +4594,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20023
+    ],
     "_description": "持续5秒，巴顿举起盾牌并触发放大特效，期间减免58%来自建筑的伤害"
   },
   {
@@ -5502,7 +5542,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵骑兵攻击力、移动速度都增加20%"
+    "_description": "友方骑兵攻击力、移动速度都增加20%"
   },
   {
     "_id": 1000702,
@@ -5547,7 +5587,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵骑兵攻击力、移动速度都增加22%"
+    "_description": "友方骑兵攻击力、移动速度都增加22%"
   },
   {
     "_id": 1000703,
@@ -5592,7 +5632,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵骑兵攻击力、移动速度都增加24%"
+    "_description": "友方骑兵攻击力、移动速度都增加24%"
   },
   {
     "_id": 1000704,
@@ -5637,7 +5677,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵骑兵攻击力、移动速度都增加26%"
+    "_description": "友方骑兵攻击力、移动速度都增加26%"
   },
   {
     "_id": 1000705,
@@ -5682,7 +5722,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵骑兵攻击力、移动速度都增加28%"
+    "_description": "友方骑兵攻击力、移动速度都增加28%"
   },
   {
     "_id": 1000706,
@@ -5727,7 +5767,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵骑兵攻击力、移动速度都增加30%"
+    "_description": "友方骑兵攻击力、移动速度都增加30%"
   },
   {
     "_id": 1000707,
@@ -5772,7 +5812,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵骑兵攻击力、移动速度都增加32%"
+    "_description": "友方骑兵攻击力、移动速度都增加32%"
   },
   {
     "_id": 1000708,
@@ -5817,7 +5857,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵骑兵攻击力、移动速度都增加34%"
+    "_description": "友方骑兵攻击力、移动速度都增加34%"
   },
   {
     "_id": 1000709,
@@ -5862,7 +5902,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵骑兵攻击力、移动速度都增加36%"
+    "_description": "友方骑兵攻击力、移动速度都增加36%"
   },
   {
     "_id": 1000710,
@@ -5907,7 +5947,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵骑兵攻击力、移动速度都增加38%"
+    "_description": "友方骑兵攻击力、移动速度都增加38%"
   },
   {
     "_id": 1000711,
@@ -5952,7 +5992,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵骑兵攻击力、移动速度都增加40%"
+    "_description": "友方骑兵攻击力、移动速度都增加40%"
   },
   {
     "_id": 1000712,
@@ -5997,7 +6037,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵骑兵攻击力、移动速度都增加42%"
+    "_description": "友方骑兵攻击力、移动速度都增加42%"
   },
   {
     "_id": 1000713,
@@ -6042,7 +6082,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵骑兵攻击力、移动速度都增加44%"
+    "_description": "友方骑兵攻击力、移动速度都增加44%"
   },
   {
     "_id": 1000714,
@@ -6087,7 +6127,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵骑兵攻击力、移动速度都增加46%"
+    "_description": "友方骑兵攻击力、移动速度都增加46%"
   },
   {
     "_id": 1000715,
@@ -6132,7 +6172,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵骑兵攻击力、移动速度都增加48%"
+    "_description": "友方骑兵攻击力、移动速度都增加48%"
   },
   {
     "_id": 1000716,
@@ -6177,7 +6217,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵骑兵攻击力、移动速度都增加50%"
+    "_description": "友方骑兵攻击力、移动速度都增加50%"
   },
   {
     "_id": 1000717,
@@ -6222,7 +6262,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵骑兵攻击力、移动速度都增加52%"
+    "_description": "友方骑兵攻击力、移动速度都增加52%"
   },
   {
     "_id": 1000718,
@@ -6267,7 +6307,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵骑兵攻击力、移动速度都增加54%"
+    "_description": "友方骑兵攻击力、移动速度都增加54%"
   },
   {
     "_id": 1000719,
@@ -6312,7 +6352,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵骑兵攻击力、移动速度都增加56%"
+    "_description": "友方骑兵攻击力、移动速度都增加56%"
   },
   {
     "_id": 1000720,
@@ -6357,7 +6397,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵骑兵攻击力、移动速度都增加58%"
+    "_description": "友方骑兵攻击力、移动速度都增加58%"
   },
   {
     "_id": 1000801,
@@ -7302,7 +7342,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵弓兵获得20%攻击力"
+    "_description": "友方弓兵获得20%攻击力"
   },
   {
     "_id": 1000902,
@@ -7347,7 +7387,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵弓兵获得22%攻击力"
+    "_description": "友方弓兵获得22%攻击力"
   },
   {
     "_id": 1000903,
@@ -7392,7 +7432,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵弓兵获得24%攻击力"
+    "_description": "友方弓兵获得24%攻击力"
   },
   {
     "_id": 1000904,
@@ -7437,7 +7477,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵弓兵获得26%攻击力"
+    "_description": "友方弓兵获得26%攻击力"
   },
   {
     "_id": 1000905,
@@ -7482,7 +7522,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵弓兵获得28%攻击力"
+    "_description": "友方弓兵获得28%攻击力"
   },
   {
     "_id": 1000906,
@@ -7527,7 +7567,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵弓兵获得30%攻击力"
+    "_description": "友方弓兵获得30%攻击力"
   },
   {
     "_id": 1000907,
@@ -7572,7 +7612,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵弓兵获得32%攻击力"
+    "_description": "友方弓兵获得32%攻击力"
   },
   {
     "_id": 1000908,
@@ -7617,7 +7657,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵弓兵获得34%攻击力"
+    "_description": "友方弓兵获得34%攻击力"
   },
   {
     "_id": 1000909,
@@ -7662,7 +7702,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵弓兵获得36%攻击力"
+    "_description": "友方弓兵获得36%攻击力"
   },
   {
     "_id": 1000910,
@@ -7707,7 +7747,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵弓兵获得38%攻击力"
+    "_description": "友方弓兵获得38%攻击力"
   },
   {
     "_id": 1000911,
@@ -7752,7 +7792,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵弓兵获得40%攻击力"
+    "_description": "友方弓兵获得40%攻击力"
   },
   {
     "_id": 1000912,
@@ -7797,7 +7837,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵弓兵获得42%攻击力"
+    "_description": "友方弓兵获得42%攻击力"
   },
   {
     "_id": 1000913,
@@ -7842,7 +7882,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵弓兵获得44%攻击力"
+    "_description": "友方弓兵获得44%攻击力"
   },
   {
     "_id": 1000914,
@@ -7887,7 +7927,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵弓兵获得46%攻击力"
+    "_description": "友方弓兵获得46%攻击力"
   },
   {
     "_id": 1000915,
@@ -7932,7 +7972,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵弓兵获得48%攻击力"
+    "_description": "友方弓兵获得48%攻击力"
   },
   {
     "_id": 1000916,
@@ -7977,7 +8017,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵弓兵获得50%攻击力"
+    "_description": "友方弓兵获得50%攻击力"
   },
   {
     "_id": 1000917,
@@ -8022,7 +8062,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵弓兵获得52%攻击力"
+    "_description": "友方弓兵获得52%攻击力"
   },
   {
     "_id": 1000918,
@@ -8067,7 +8107,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵弓兵获得54%攻击力"
+    "_description": "友方弓兵获得54%攻击力"
   },
   {
     "_id": 1000919,
@@ -8112,7 +8152,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵弓兵获得56%攻击力"
+    "_description": "友方弓兵获得56%攻击力"
   },
   {
     "_id": 1000920,
@@ -8157,7 +8197,7 @@
       }
     ],
     "_effect": [],
-    "_description": "友方雇佣兵弓兵获得58%攻击力"
+    "_description": "友方弓兵获得58%攻击力"
   },
   {
     "_id": 1001001,
@@ -12781,8 +12821,11 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 30% 体力"
+    "_effect": [
+      20274,
+      30
+    ],
+    "_description": "当巴顿体力首次低于 30% 时，自动回复 22% 体力"
   },
   {
     "_id": 1001502,
@@ -12826,8 +12869,11 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 32% 体力"
+    "_effect": [
+      20275,
+      30
+    ],
+    "_description": "当巴顿体力首次低于 30% 时，自动回复 24% 体力"
   },
   {
     "_id": 1001503,
@@ -12871,8 +12917,11 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 34% 体力"
+    "_effect": [
+      20276,
+      30
+    ],
+    "_description": "当巴顿体力首次低于 30% 时，自动回复 26% 体力"
   },
   {
     "_id": 1001504,
@@ -12916,8 +12965,11 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 36% 体力"
+    "_effect": [
+      20277,
+      30
+    ],
+    "_description": "当巴顿体力首次低于 30% 时，自动回复 28% 体力"
   },
   {
     "_id": 1001505,
@@ -12961,8 +13013,11 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 38% 体力"
+    "_effect": [
+      20278,
+      30
+    ],
+    "_description": "当巴顿体力首次低于 30% 时，自动回复 30% 体力"
   },
   {
     "_id": 1001506,
@@ -13006,8 +13061,11 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 40% 体力"
+    "_effect": [
+      20279,
+      30
+    ],
+    "_description": "当巴顿体力首次低于 30% 时，自动回复 32% 体力"
   },
   {
     "_id": 1001507,
@@ -13051,8 +13109,11 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 42% 体力"
+    "_effect": [
+      20280,
+      30
+    ],
+    "_description": "当巴顿体力首次低于 30% 时，自动回复 34% 体力"
   },
   {
     "_id": 1001508,
@@ -13096,8 +13157,11 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 44% 体力"
+    "_effect": [
+      20281,
+      30
+    ],
+    "_description": "当巴顿体力首次低于 30% 时，自动回复 36% 体力"
   },
   {
     "_id": 1001509,
@@ -13141,8 +13205,11 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 46% 体力"
+    "_effect": [
+      20282,
+      30
+    ],
+    "_description": "当巴顿体力首次低于 30% 时，自动回复 38% 体力"
   },
   {
     "_id": 1001510,
@@ -13186,8 +13253,11 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 48% 体力"
+    "_effect": [
+      20283,
+      30
+    ],
+    "_description": "当巴顿体力首次低于 30% 时，自动回复 40% 体力"
   },
   {
     "_id": 1001511,
@@ -13231,8 +13301,11 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 50% 体力"
+    "_effect": [
+      20284,
+      30
+    ],
+    "_description": "当巴顿体力首次低于 30% 时，自动回复 42% 体力"
   },
   {
     "_id": 1001512,
@@ -13276,8 +13349,11 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 52% 体力"
+    "_effect": [
+      20285,
+      30
+    ],
+    "_description": "当巴顿体力首次低于 30% 时，自动回复 44% 体力"
   },
   {
     "_id": 1001513,
@@ -13321,8 +13397,11 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 54% 体力"
+    "_effect": [
+      20286,
+      30
+    ],
+    "_description": "当巴顿体力首次低于 30% 时，自动回复 46% 体力"
   },
   {
     "_id": 1001514,
@@ -13366,8 +13445,11 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 56% 体力"
+    "_effect": [
+      20287,
+      30
+    ],
+    "_description": "当巴顿体力首次低于 30% 时，自动回复 48% 体力"
   },
   {
     "_id": 1001515,
@@ -13411,8 +13493,11 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 58% 体力"
+    "_effect": [
+      20288,
+      30
+    ],
+    "_description": "当巴顿体力首次低于 30% 时，自动回复 50% 体力"
   },
   {
     "_id": 1001516,
@@ -13456,8 +13541,11 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 60% 体力"
+    "_effect": [
+      20289,
+      30
+    ],
+    "_description": "当巴顿体力首次低于 30% 时，自动回复 52% 体力"
   },
   {
     "_id": 1001517,
@@ -13501,8 +13589,11 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 62% 体力"
+    "_effect": [
+      20290,
+      30
+    ],
+    "_description": "当巴顿体力首次低于 30% 时，自动回复 54% 体力"
   },
   {
     "_id": 1001518,
@@ -13546,8 +13637,11 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 64% 体力"
+    "_effect": [
+      20291,
+      30
+    ],
+    "_description": "当巴顿体力首次低于 30% 时，自动回复 56% 体力"
   },
   {
     "_id": 1001519,
@@ -13591,8 +13685,11 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 66% 体力"
+    "_effect": [
+      20292,
+      30
+    ],
+    "_description": "当巴顿体力首次低于 30% 时，自动回复 58% 体力"
   },
   {
     "_id": 1001520,
@@ -13636,8 +13733,11 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 68% 体力"
+    "_effect": [
+      20293,
+      30
+    ],
+    "_description": "当巴顿体力首次低于 30% 时，自动回复 60% 体力"
   },
   {
     "_id": 1001601,
@@ -13681,8 +13781,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为友方雇佣兵盾兵增加20点防御力"
+    "_effect": [
+      20314
+    ],
+    "_description": "为友方盾兵增加20点防御力"
   },
   {
     "_id": 1001602,
@@ -13726,8 +13828,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为友方雇佣兵盾兵增加22点防御力"
+    "_effect": [
+      20315
+    ],
+    "_description": "为友方盾兵增加22点防御力"
   },
   {
     "_id": 1001603,
@@ -13771,8 +13875,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为友方雇佣兵盾兵增加24点防御力"
+    "_effect": [
+      20316
+    ],
+    "_description": "为友方盾兵增加24点防御力"
   },
   {
     "_id": 1001604,
@@ -13816,8 +13922,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为友方雇佣兵盾兵增加26点防御力"
+    "_effect": [
+      20317
+    ],
+    "_description": "为友方盾兵增加26点防御力"
   },
   {
     "_id": 1001605,
@@ -13861,8 +13969,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为友方雇佣兵盾兵增加28点防御力"
+    "_effect": [
+      20318
+    ],
+    "_description": "为友方盾兵增加28点防御力"
   },
   {
     "_id": 1001606,
@@ -13906,8 +14016,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为友方雇佣兵盾兵增加30点防御力"
+    "_effect": [
+      20319
+    ],
+    "_description": "为友方盾兵增加30点防御力"
   },
   {
     "_id": 1001607,
@@ -13951,8 +14063,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为友方雇佣兵盾兵增加32点防御力"
+    "_effect": [
+      20320
+    ],
+    "_description": "为友方盾兵增加32点防御力"
   },
   {
     "_id": 1001608,
@@ -13996,8 +14110,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为友方雇佣兵盾兵增加34点防御力"
+    "_effect": [
+      20321
+    ],
+    "_description": "为友方盾兵增加34点防御力"
   },
   {
     "_id": 1001609,
@@ -14041,8 +14157,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为友方雇佣兵盾兵增加36点防御力"
+    "_effect": [
+      20322
+    ],
+    "_description": "为友方盾兵增加36点防御力"
   },
   {
     "_id": 1001610,
@@ -14086,8 +14204,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为友方雇佣兵盾兵增加38点防御力"
+    "_effect": [
+      20323
+    ],
+    "_description": "为友方盾兵增加38点防御力"
   },
   {
     "_id": 1001611,
@@ -14131,8 +14251,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为友方雇佣兵盾兵增加40点防御力"
+    "_effect": [
+      20324
+    ],
+    "_description": "为友方盾兵增加40点防御力"
   },
   {
     "_id": 1001612,
@@ -14176,8 +14298,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为友方雇佣兵盾兵增加42点防御力"
+    "_effect": [
+      20325
+    ],
+    "_description": "为友方盾兵增加42点防御力"
   },
   {
     "_id": 1001613,
@@ -14221,8 +14345,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为友方雇佣兵盾兵增加44点防御力"
+    "_effect": [
+      20326
+    ],
+    "_description": "为友方盾兵增加44点防御力"
   },
   {
     "_id": 1001614,
@@ -14266,8 +14392,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为友方雇佣兵盾兵增加46点防御力"
+    "_effect": [
+      20327
+    ],
+    "_description": "为友方盾兵增加46点防御力"
   },
   {
     "_id": 1001615,
@@ -14311,8 +14439,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为友方雇佣兵盾兵增加48点防御力"
+    "_effect": [
+      20328
+    ],
+    "_description": "为友方盾兵增加48点防御力"
   },
   {
     "_id": 1001616,
@@ -14356,8 +14486,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为友方雇佣兵盾兵增加50点防御力"
+    "_effect": [
+      20329
+    ],
+    "_description": "为友方盾兵增加50点防御力"
   },
   {
     "_id": 1001617,
@@ -14401,8 +14533,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为友方雇佣兵盾兵增加52点防御力"
+    "_effect": [
+      20330
+    ],
+    "_description": "为友方盾兵增加52点防御力"
   },
   {
     "_id": 1001618,
@@ -14446,8 +14580,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为友方雇佣兵盾兵增加54点防御力"
+    "_effect": [
+      20331
+    ],
+    "_description": "为友方盾兵增加54点防御力"
   },
   {
     "_id": 1001619,
@@ -14491,8 +14627,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为友方雇佣兵盾兵增加56点防御力"
+    "_effect": [
+      20332
+    ],
+    "_description": "为友方盾兵增加56点防御力"
   },
   {
     "_id": 1001620,
@@ -14536,8 +14674,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为友方雇佣兵盾兵增加58点防御力"
+    "_effect": [
+      20333
+    ],
+    "_description": "为友方盾兵增加58点防御力"
   },
   {
     "_id": 1001701,
@@ -14582,7 +14722,7 @@
       }
     ],
     "_effect": [],
-    "_description": "为雇佣兵小兵盾兵提升10% 攻击力"
+    "_description": "为小兵盾兵提升10% 攻击力"
   },
   {
     "_id": 1001702,
@@ -14627,7 +14767,7 @@
       }
     ],
     "_effect": [],
-    "_description": "为雇佣兵小兵盾兵提升12% 攻击力"
+    "_description": "为小兵盾兵提升12% 攻击力"
   },
   {
     "_id": 1001703,
@@ -14672,7 +14812,7 @@
       }
     ],
     "_effect": [],
-    "_description": "为雇佣兵小兵盾兵提升14% 攻击力"
+    "_description": "为小兵盾兵提升14% 攻击力"
   },
   {
     "_id": 1001704,
@@ -14717,7 +14857,7 @@
       }
     ],
     "_effect": [],
-    "_description": "为雇佣兵小兵盾兵提升16% 攻击力"
+    "_description": "为小兵盾兵提升16% 攻击力"
   },
   {
     "_id": 1001705,
@@ -14762,7 +14902,7 @@
       }
     ],
     "_effect": [],
-    "_description": "为雇佣兵小兵盾兵提升18% 攻击力"
+    "_description": "为小兵盾兵提升18% 攻击力"
   },
   {
     "_id": 1001706,
@@ -14807,7 +14947,7 @@
       }
     ],
     "_effect": [],
-    "_description": "为雇佣兵小兵盾兵提升20% 攻击力"
+    "_description": "为小兵盾兵提升20% 攻击力"
   },
   {
     "_id": 1001707,
@@ -14852,7 +14992,7 @@
       }
     ],
     "_effect": [],
-    "_description": "为雇佣兵小兵盾兵提升22% 攻击力"
+    "_description": "为小兵盾兵提升22% 攻击力"
   },
   {
     "_id": 1001708,
@@ -14897,7 +15037,7 @@
       }
     ],
     "_effect": [],
-    "_description": "为雇佣兵小兵盾兵提升24% 攻击力"
+    "_description": "为小兵盾兵提升24% 攻击力"
   },
   {
     "_id": 1001709,
@@ -14942,7 +15082,7 @@
       }
     ],
     "_effect": [],
-    "_description": "为雇佣兵小兵盾兵提升26% 攻击力"
+    "_description": "为小兵盾兵提升26% 攻击力"
   },
   {
     "_id": 1001710,
@@ -14987,7 +15127,7 @@
       }
     ],
     "_effect": [],
-    "_description": "为雇佣兵小兵盾兵提升28% 攻击力"
+    "_description": "为小兵盾兵提升28% 攻击力"
   },
   {
     "_id": 1001711,
@@ -15032,7 +15172,7 @@
       }
     ],
     "_effect": [],
-    "_description": "为雇佣兵小兵盾兵提升30% 攻击力"
+    "_description": "为小兵盾兵提升30% 攻击力"
   },
   {
     "_id": 1001712,
@@ -15077,7 +15217,7 @@
       }
     ],
     "_effect": [],
-    "_description": "为雇佣兵小兵盾兵提升32% 攻击力"
+    "_description": "为小兵盾兵提升32% 攻击力"
   },
   {
     "_id": 1001713,
@@ -15122,7 +15262,7 @@
       }
     ],
     "_effect": [],
-    "_description": "为雇佣兵小兵盾兵提升34% 攻击力"
+    "_description": "为小兵盾兵提升34% 攻击力"
   },
   {
     "_id": 1001714,
@@ -15167,7 +15307,7 @@
       }
     ],
     "_effect": [],
-    "_description": "为雇佣兵小兵盾兵提升36% 攻击力"
+    "_description": "为小兵盾兵提升36% 攻击力"
   },
   {
     "_id": 1001715,
@@ -15212,7 +15352,7 @@
       }
     ],
     "_effect": [],
-    "_description": "为雇佣兵小兵盾兵提升38% 攻击力"
+    "_description": "为小兵盾兵提升38% 攻击力"
   },
   {
     "_id": 1001716,
@@ -15257,7 +15397,7 @@
       }
     ],
     "_effect": [],
-    "_description": "为雇佣兵小兵盾兵提升40% 攻击力"
+    "_description": "为小兵盾兵提升40% 攻击力"
   },
   {
     "_id": 1001717,
@@ -15302,7 +15442,7 @@
       }
     ],
     "_effect": [],
-    "_description": "为雇佣兵小兵盾兵提升42% 攻击力"
+    "_description": "为小兵盾兵提升42% 攻击力"
   },
   {
     "_id": 1001718,
@@ -15347,7 +15487,7 @@
       }
     ],
     "_effect": [],
-    "_description": "为雇佣兵小兵盾兵提升44% 攻击力"
+    "_description": "为小兵盾兵提升44% 攻击力"
   },
   {
     "_id": 1001719,
@@ -15392,7 +15532,7 @@
       }
     ],
     "_effect": [],
-    "_description": "为雇佣兵小兵盾兵提升46% 攻击力"
+    "_description": "为小兵盾兵提升46% 攻击力"
   },
   {
     "_id": 1001720,
@@ -15437,7 +15577,7 @@
       }
     ],
     "_effect": [],
-    "_description": "为雇佣兵小兵盾兵提升48% 攻击力"
+    "_description": "为小兵盾兵提升48% 攻击力"
   },
   {
     "_id": 1001801,
@@ -16382,7 +16522,7 @@
       }
     ],
     "_effect": [],
-    "_description": "demo英雄（弓箭手）的普通攻击"
+    "_description": "demo英雄（弓箭手艾菲尔）的普通攻击"
   },
   {
     "_id": 9000201,
@@ -16561,7 +16701,52 @@
       }
     ],
     "_effect": [],
-    "_description": "demo英雄（骑士）的普通攻击"
+    "_description": "demo英雄（骑士罗兰）的普通攻击"
+  },
+  {
+    "_id": 9000601,
+    "_lv": 1,
+    "_skill": 90006,
+    "_name": "普通攻击demohero",
+    "_skill_type": 1,
+    "_hurt_type": 0,
+    "_icon": "skill_icon_9000601",
+    "_prefab": "skill_90006",
+    "_cast_ranage": 200,
+    "_tag_mask": [
+      "Tower",
+      "Hero"
+    ],
+    "_damage_range": 0,
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
+    "_coll_time": 220,
+    "_release_time": [
+      {
+        "_animator": "attack",
+        "_time": 0
+      },
+      {
+        "_animator": "attack",
+        "_time": 25
+      },
+      {
+        "_animator": "attack",
+        "_time": 0
+      },
+      {
+        "_animator": "attack",
+        "_time": 0
+      }
+    ],
+    "_effect": [],
+    "_description": "demo英雄（盾兵巴顿）的普通攻击"
   },
   {
     "_id": 20000101,
@@ -17893,7 +18078,9 @@
     "_icon": "spell_icon_20000301",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
     "_preference": "",
     "_lock_method": 0,
@@ -17913,15 +18100,41 @@
     "_icon": "spell_icon_20000302",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
+    "_preference": "TestTargetingPreference",
     "_lock_method": 0,
-    "_pass_type": [],
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20125
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速10%"
   },
   {
     "_id": 20000303,
@@ -17933,15 +18146,41 @@
     "_icon": "spell_icon_20000303",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
+    "_preference": "TestTargetingPreference",
     "_lock_method": 0,
-    "_pass_type": [],
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20126
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速12%"
   },
   {
     "_id": 20000304,
@@ -17953,15 +18192,41 @@
     "_icon": "spell_icon_20000304",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
+    "_preference": "TestTargetingPreference",
     "_lock_method": 0,
-    "_pass_type": [],
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20127
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速14%"
   },
   {
     "_id": 20000305,
@@ -17973,15 +18238,41 @@
     "_icon": "spell_icon_20000305",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
+    "_preference": "TestTargetingPreference",
     "_lock_method": 0,
-    "_pass_type": [],
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20128
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速16%"
   },
   {
     "_id": 20000306,
@@ -17993,15 +18284,41 @@
     "_icon": "spell_icon_20000306",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
+    "_preference": "TestTargetingPreference",
     "_lock_method": 0,
-    "_pass_type": [],
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20129
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速18%"
   },
   {
     "_id": 20000307,
@@ -18013,15 +18330,41 @@
     "_icon": "spell_icon_20000307",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
+    "_preference": "TestTargetingPreference",
     "_lock_method": 0,
-    "_pass_type": [],
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20130
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速20%"
   },
   {
     "_id": 20000308,
@@ -18033,15 +18376,41 @@
     "_icon": "spell_icon_20000308",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
+    "_preference": "TestTargetingPreference",
     "_lock_method": 0,
-    "_pass_type": [],
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20131
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速22%"
   },
   {
     "_id": 20000309,
@@ -18053,15 +18422,41 @@
     "_icon": "spell_icon_20000309",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
+    "_preference": "TestTargetingPreference",
     "_lock_method": 0,
-    "_pass_type": [],
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20132
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速24%"
   },
   {
     "_id": 20000310,
@@ -18073,15 +18468,41 @@
     "_icon": "spell_icon_20000310",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
+    "_preference": "TestTargetingPreference",
     "_lock_method": 0,
-    "_pass_type": [],
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20133
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速26%"
   },
   {
     "_id": 20000311,
@@ -18093,15 +18514,41 @@
     "_icon": "spell_icon_20000311",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
+    "_preference": "TestTargetingPreference",
     "_lock_method": 0,
-    "_pass_type": [],
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20134
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速28%"
   },
   {
     "_id": 20000312,
@@ -18113,15 +18560,41 @@
     "_icon": "spell_icon_20000312",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
+    "_preference": "TestTargetingPreference",
     "_lock_method": 0,
-    "_pass_type": [],
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20135
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速30%"
   },
   {
     "_id": 20000313,
@@ -18133,15 +18606,41 @@
     "_icon": "spell_icon_20000313",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
+    "_preference": "TestTargetingPreference",
     "_lock_method": 0,
-    "_pass_type": [],
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20136
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速32%"
   },
   {
     "_id": 20000314,
@@ -18153,15 +18652,41 @@
     "_icon": "spell_icon_20000314",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
+    "_preference": "TestTargetingPreference",
     "_lock_method": 0,
-    "_pass_type": [],
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20137
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速34%"
   },
   {
     "_id": 20000315,
@@ -18173,15 +18698,41 @@
     "_icon": "spell_icon_20000315",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
+    "_preference": "TestTargetingPreference",
     "_lock_method": 0,
-    "_pass_type": [],
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20138
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速36%"
   },
   {
     "_id": 20000316,
@@ -18193,15 +18744,41 @@
     "_icon": "spell_icon_20000316",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
+    "_preference": "TestTargetingPreference",
     "_lock_method": 0,
-    "_pass_type": [],
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20139
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速38%"
   },
   {
     "_id": 20000317,
@@ -18213,15 +18790,41 @@
     "_icon": "spell_icon_20000317",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
+    "_preference": "TestTargetingPreference",
     "_lock_method": 0,
-    "_pass_type": [],
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20140
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速40%"
   },
   {
     "_id": 20000318,
@@ -18233,15 +18836,41 @@
     "_icon": "spell_icon_20000318",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
+    "_preference": "TestTargetingPreference",
     "_lock_method": 0,
-    "_pass_type": [],
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20141
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速42%"
   },
   {
     "_id": 20000319,
@@ -18253,15 +18882,41 @@
     "_icon": "spell_icon_20000319",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
+    "_preference": "TestTargetingPreference",
     "_lock_method": 0,
-    "_pass_type": [],
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20142
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速44%"
   },
   {
     "_id": 20000320,
@@ -18273,15 +18928,41 @@
     "_icon": "spell_icon_20000320",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
+    "_preference": "TestTargetingPreference",
     "_lock_method": 0,
-    "_pass_type": [],
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20143
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速46%"
   },
   {
     "_id": 20000401,
@@ -18295,13 +18976,37 @@
     "_cast_ranage": 0,
     "_tag_mask": [],
     "_damage_range": 0,
-    "_preference": "",
+    "_preference": "TestTargetingPreference",
     "_lock_method": 0,
-    "_pass_type": [],
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20144
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速48%"
   },
   {
     "_id": 20000402,
