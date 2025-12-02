@@ -19,20 +19,19 @@ namespace QFramework.UI
             {
                 case Enum_ItemQuality.None:
                 case Enum_ItemQuality.NLevel:  // 普通(白色) -> 灰色
-                    return "ui_box_grey";
+                    return "ui_common_box_bo_grey";
                 case Enum_ItemQuality.RLevel:  // 良好(绿色)
-                    return "ui_box_green";
+                    return "ui_common_box_bo_green";
                 case Enum_ItemQuality.SRLevel:  // 稀有(蓝色)
-                    return "ui_box_blue";
+                    return "ui_common_box_bg_blue";
                 case Enum_ItemQuality.SSRLevel:  // 史诗(紫色)
-                    return "ui_box_purple";
+                    return "ui_common_box_bo_purple";
                 case Enum_ItemQuality.SSSRLevel:  // 传说(橙色)
-                    // 注意：文件名中有空格，尝试两种可能的路径
-                    return "ui_box_orange color";  // 原始文件名
+                    return "ui_common_box_bo_orange";
                 case Enum_ItemQuality.URLevel:  // 神话(红色)
-                    return "ui_box_red";
+                    return "ui_common_box_bo_red";
                 default:
-                    return "ui_box_grey";  // 默认灰色
+                    return "ui_common_box_bo_grey";  // 默认灰色
             }
         }
         
@@ -116,29 +115,13 @@ namespace QFramework.UI
                         
                         // 对于有空格的文件名，尝试多个可能的路径
                         string[] tryPaths = null;
-                        if (qualityPath == "ui_box_orange color")
-                        {
-                            // 尝试多种可能的路径格式
-                            tryPaths = new string[] 
-                            { 
-                                "ui_box_orange color",  // 原始文件名（带空格）
-                                "ui_box_orange_color",   // 下划线替代空格
-                                "ui_box_orange",         // 简化名称
-                                "ui_box_orange_small"    // 小尺寸版本
-                            };
-                        }
-                        else
-                        {
-                            tryPaths = new string[] { qualityPath };
-                        }
+                        tryPaths = new string[] { qualityPath };
                         
                         itemData.QualitySprite = TryLoadSprite(loader, tryPaths);
                         
                         if (itemData.QualitySprite == null)
                         {
                             Debug.LogError($"BagItemConverter: 品质背景加载失败，尝试的路径={string.Join(", ", tryPaths)}, ItemId={serverItem.ItemId}, Quality={itemConfig.Quality}");
-                            // 如果所有路径都失败，尝试加载默认的灰色背景
-                            itemData.QualitySprite = TryLoadSprite(loader, "ui_box_grey");
                         }
                         else
                         {
