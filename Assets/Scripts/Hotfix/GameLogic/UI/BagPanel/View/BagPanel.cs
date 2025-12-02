@@ -65,39 +65,6 @@ namespace QFramework.UI
 			// 如果已经设置，直接返回
 			if (itemContainer != null && scrollRect != null) return;
 			
-			// 根据结构：middle → TabPages → TabPage_Common → Scroll View → Content
-			var middle = transform.Find("middle");
-			if (middle != null)
-			{
-				var tabPages = middle.Find("TabPages");
-				if (tabPages != null)
-				{
-					var tabPageCommon = tabPages.Find("TabPage_Common");
-					if (tabPageCommon != null)
-					{
-						var scrollView = tabPageCommon.Find("Scroll View");
-						if (scrollView != null)
-						{
-							// 获取 ScrollRect 组件
-							if (scrollRect == null)
-							{
-								scrollRect = scrollView.GetComponent<ScrollRect>();
-							}
-							
-							// 查找 Content 节点
-							var viewport = scrollView.Find("Viewport");
-							if (viewport != null)
-							{
-								if (itemContainer == null)
-								{
-									itemContainer = viewport.Find("Content");
-								}
-							}
-						}
-					}
-				}
-			}
-			
 			if (itemContainer == null)
 			{
 				Debug.LogWarning("BagPanel: ItemContainer未设置，且无法通过路径查找！请检查预制体结构或手动设置。");
