@@ -26,26 +26,38 @@ namespace QFramework.UI
 		[SerializeField] private Transform itemContainer;  // Content 节点，用于放置物品
 		[SerializeField] private ScrollRect scrollRect;  // ScrollRect 组件，用于重置滚动位置
 		[SerializeField] private GameObject bagItemPrefab;  // BagItem 预制体（在 Inspector 中拖放）
+		[SerializeField] private int columnsCount = 6;  // 列数
+		[SerializeField] private float spacingX = 10f;  // 水平间距
+		[SerializeField] private float spacingY = 10f;  // 垂直间距
 		
 		private IBagTabSystem bagTabSystem;
 		private IBagModel bagModel;
 		private List<BagItemView> itemViews = new List<BagItemView>();  // 当前显示的物品视图列表
+		private GridLayoutGroup gridLayoutGroup;  // 缓存的 GridLayoutGroup 组件
 		
 		protected override void OnInit(IUIData uiData = null)
 		{
 			mData = uiData as BagPanelData ?? new BagPanelData();
 			
-			// 获取系统和模型
-			bagTabSystem = this.GetSystem<IBagTabSystem>();
-			bagModel = this.GetModel<IBagModel>();
-			
-			// 如果 itemContainer 未设置，尝试通过路径查找
-			FindItemContainer();
-			
-			// 初始化Tab
-			InitTabs();
-			
-			// 监听Tab切换事件
+		// 获取系统和模型
+		bagTabSystem = this.GetSystem<IBagTabSystem>();
+		bagModel = this.GetModel<IBagModel>();
+		
+		// 如果 itemContainer 未设置，尝试通过路径查找
+		FindItemContainer();
+		
+		// 动态调整 GridLayoutGroup 的 CellSize 以适配屏幕
+		// 延迟一帧执行，确保 Layout 已经计算完成
+		UniTask.Void(async () =>
+		{
+			await UniTask.Yield();
+			AdjustGridLayoutCellSize();
+		});
+		
+		// 初始化Tab
+		InitTabs();
+		
+		// 监听Tab切换事件
 			this.RegisterEvent<BagTabChangedEvent>(OnTabChanged)
 				.UnRegisterWhenGameObjectDestroyed(gameObject);
 			
@@ -69,6 +81,68 @@ namespace QFramework.UI
 			{
 				Debug.LogWarning("BagPanel: ItemContainer未设置，且无法通过路径查找！请检查预制体结构或手动设置。");
 			}
+		}
+		
+		/// <summary>
+		/// 动态调整 GridLayoutGroup 的 CellSize 以适配屏幕宽度
+		/// </summary>
+		private void AdjustGridLayoutCellSize()
+		{
+			if (itemContainer == null)
+			{
+				FindItemContainer();
+			}
+			
+			if (itemContainer == null)
+			{
+				Debug.LogWarning("BagPanel: ItemContainer 未设置，无法调整 GridLayout！");
+				return;
+			}
+			
+			// 获取或缓存 GridLayoutGroup 组件
+			if (gridLayoutGroup == null)
+			{
+				gridLayoutGroup = itemContainer.GetComponent<GridLayoutGroup>();
+			}
+			
+			if (gridLayoutGroup == null)
+			{
+				Debug.LogWarning("BagPanel: Content 节点缺少 GridLayoutGroup 组件！");
+				return;
+			}
+			
+			// 强制重建布局，确保获取到正确的宽度
+			LayoutRebuilder.ForceRebuildLayoutImmediate(itemContainer as RectTransform);
+			
+			// 获取 Content 的实际宽度（考虑 padding）
+			RectTransform contentRect = itemContainer as RectTransform;
+			float availableWidth = contentRect.rect.width - gridLayoutGroup.padding.left - gridLayoutGroup.padding.right;
+			
+			// 计算每列的宽度：可用宽度 / 列数 - 间距
+			// 总间距 = (列数 - 1) * spacingX
+			float totalSpacing = (columnsCount - 1) * spacingX;
+			float cellWidth = (availableWidth - totalSpacing) / columnsCount;
+			
+			// 确保 cellWidth 不为负数或过小
+			if (cellWidth <= 0)
+			{
+				Debug.LogWarning($"BagPanel: 计算出的 CellWidth ({cellWidth}) 无效，使用默认值 160");
+				cellWidth = 160f;
+			}
+			
+			// 保持宽高比（正方形），或者可以设置为固定高度
+			float cellHeight = cellWidth;  // 如果希望是正方形
+			
+			// 更新 GridLayoutGroup 设置
+			gridLayoutGroup.cellSize = new Vector2(cellWidth, cellHeight);
+			gridLayoutGroup.spacing = new Vector2(spacingX, spacingY);
+			gridLayoutGroup.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
+			gridLayoutGroup.constraintCount = columnsCount;
+			
+			// 再次强制重建布局，应用新的 CellSize
+			LayoutRebuilder.ForceRebuildLayoutImmediate(contentRect);
+			
+			Debug.Log($"BagPanel: 调整 GridLayout CellSize 为 {cellWidth:F2}x{cellHeight:F2}，适配 {columnsCount} 列，可用宽度: {availableWidth:F2}");
 		}
 		
 		/// <summary>
@@ -198,22 +272,29 @@ namespace QFramework.UI
 				scrollRect.verticalNormalizedPosition = 1f;
 			}
 			
-			Debug.Log($"BagPanel: 刷新Tab {tabIndex} 的物品列表，数量: {items.Count}");
-		}
-		
-		protected override void OnOpen(IUIData uiData = null)
+		Debug.Log($"BagPanel: 刷新Tab {tabIndex} 的物品列表，数量: {items.Count}");
+	}
+	
+	protected override void OnOpen(IUIData uiData = null)
+	{
+		// 重新调整布局（防止屏幕尺寸变化或窗口大小改变）
+		UniTask.Void(async () =>
 		{
-			// 确保显示当前Tab
-			int currentIndex = bagTabSystem.CurrentTabIndex;
-			if (currentIndex >= 0 && currentIndex < tabConfigs.Count)
-			{
-				OnTabChanged(new BagTabChangedEvent 
-				{ 
-					OldIndex = -1, 
-					NewIndex = currentIndex 
-				});
-			}
+			await UniTask.Yield();
+			AdjustGridLayoutCellSize();
+		});
+		
+		// 确保显示当前Tab
+		int currentIndex = bagTabSystem.CurrentTabIndex;
+		if (currentIndex >= 0 && currentIndex < tabConfigs.Count)
+		{
+			OnTabChanged(new BagTabChangedEvent 
+			{ 
+				OldIndex = -1, 
+				NewIndex = currentIndex 
+			});
 		}
+	}
 		
 		protected override void OnClose()
 		{
