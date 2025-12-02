@@ -1,0 +1,40 @@
+{
+    "name": "Hotfix",
+    "rootNamespace": "",
+    "references": [
+        "AOT",
+        "QFramework.CoreKit",
+        "QFramework",
+        "UnityEngine.UI",
+        "ResKit",
+        "UIKit",
+        "Unity.InputSystem",
+        "UniRx",
+        "DOTween.Modules",
+        "DOTweenPro.Scripts",
+        "endel.nativewebsocket",
+        "UniTask",
+        "Unity.TextMeshPro",
+        "AstarPathfindingProject",
+        "PackageTools",
+        "DrawingEditor",
+        "AstarPathfindingProjectEditor",
+        "Drawing",
+        "Luban.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "Select...",
+            "expression": "",
+            "define": ""
+        }
+    ],
+    "noEngineReferences": false
+}

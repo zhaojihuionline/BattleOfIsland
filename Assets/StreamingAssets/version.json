@@ -1,0 +1,172 @@
+{
+  "FileList": [
+    {
+      "file": "art_building_mat.ab",
+      "manifest": {
+        "md5": "14332e231bb519c70e460b2791f04b64",
+        "size": 213790
+      }
+    },
+    {
+      "file": "art_building_model.ab",
+      "manifest": {
+        "md5": "23f6abffb8e7cef107f563d05604d080",
+        "size": 184923
+      }
+    },
+    {
+      "file": "art_building_prefab.ab",
+      "manifest": {
+        "md5": "076d9c6c8f1b763e1be828187bd2037b",
+        "size": 3623
+      }
+    },
+    {
+      "file": "art_efx_materials.ab",
+      "manifest": {
+        "md5": "2ad1d01fe33b879ff807c7c44895e379",
+        "size": 41025
+      }
+    },
+    {
+      "file": "art_efx_textures.ab",
+      "manifest": {
+        "md5": "506ced29badf58889cc67a887c2af773",
+        "size": 3369
+      }
+    },
+    {
+      "file": "art_materials.ab",
+      "manifest": {
+        "md5": "788aa3f907ce45e5bfa208a6368ae96d",
+        "size": 36931
+      }
+    },
+    {
+      "file": "art_sprites.ab",
+      "manifest": {
+        "md5": "09176f83df550140e38e876f9f391122",
+        "size": 4387447
+      }
+    },
+    {
+      "file": "asset_bundle_config.bin",
+      "manifest": {
+        "md5": "137faa1fcec60e51dc297d193120cf58",
+        "size": 15593
+      }
+    },
+    {
+      "file": "atlas.ab",
+      "manifest": {
+        "md5": "855add1ff9975bc49a989f511cf16ed1",
+        "size": 1943
+      }
+    },
+    {
+      "file": "atlas_common.ab",
+      "manifest": {
+        "md5": "fe2792fd0d8814e2d887786beb43a72f",
+        "size": 5186
+      }
+    },
+    {
+      "file": "atlas_sprite.ab",
+      "manifest": {
+        "md5": "1fe01e7db55686d0b48c3183dcc76f19",
+        "size": 427545
+      }
+    },
+    {
+      "file": "atlas_sprite_loginpanel_shutiao.ab",
+      "manifest": {
+        "md5": "b067d256bbc9b20866c86832a29eff02",
+        "size": 820156
+      }
+    },
+    {
+      "file": "atlas_sprite_loginpanel_videos.ab",
+      "manifest": {
+        "md5": "3459f56b491081e168ac9de002755799",
+        "size": 23474425
+      }
+    },
+    {
+      "file": "audio.ab",
+      "manifest": {
+        "md5": "45ebafe106acb4b5b23d77edbc7ee598",
+        "size": 9976
+      }
+    },
+    {
+      "file": "configs.ab",
+      "manifest": {
+        "md5": "2bbe1eca3a1b27d69d7098afd36fef48",
+        "size": 4377
+      }
+    },
+    {
+      "file": "Hotfix.dll",
+      "manifest": {
+        "md5": "97bd1fc0a21d5d9ece89f00c012332fd",
+        "size": 456192
+      }
+    },
+    {
+      "file": "prefabs.ab",
+      "manifest": {
+        "md5": "37853eb37d15435a7ae9e5e05989d5ae",
+        "size": 8037
+      }
+    },
+    {
+      "file": "prefabs_buildprefab_buildmodel.ab",
+      "manifest": {
+        "md5": "12f2f3d108065b9fa72a94c2b69e2725",
+        "size": 64297
+      }
+    },
+    {
+      "file": "prefabs_uipanel.ab",
+      "manifest": {
+        "md5": "566505dff00c1cf411b6fd2ca927cc48",
+        "size": 7911652
+      }
+    },
+    {
+      "file": "prefabs_uipanel_item.ab",
+      "manifest": {
+        "md5": "dc0b7c9d5e520930818030f1736dfc48",
+        "size": 9315
+      }
+    },
+    {
+      "file": "prefabs_uiprefab.ab",
+      "manifest": {
+        "md5": "9216cadc305552f6fe591a3663d65149",
+        "size": 7628
+      }
+    },
+    {
+      "file": "scenes.ab",
+      "manifest": {
+        "md5": "8d2d0ae58dfbdb388f2be7eba4c35099",
+        "size": 390697
+      }
+    },
+    {
+      "file": "StandaloneWindows64",
+      "manifest": {
+        "md5": "a044133f57a5d72759dbd52b990431a9",
+        "size": 2287
+      }
+    },
+    {
+      "file": "version.json",
+      "manifest": {
+        "md5": "1d161d2b2ba488f0baee97772e77cea4",
+        "size": 3793
+      }
+    }
+  ]
+}

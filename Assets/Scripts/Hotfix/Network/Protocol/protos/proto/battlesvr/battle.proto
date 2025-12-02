@@ -1,0 +1,264 @@
+syntax = "proto3";
+
+package battlesvr;
+
+option go_package = "pitaya-game/protos/pb/golang/battlesvr;battlesvrpb";
+option csharp_namespace = "PitayaGame.BattleSvr";
+
+import "common/types/types.proto";
+
+// ============================================================================
+// 战斗服务协议定义（COC 风格异步攻防玩法）
+// 微服务名称：battlesvr
+// 职责：
+// 1. 发起进攻（携带进攻编组）
+// 2. 记录战斗过程（部署时间轴）
+// 3. 战斗结算（摧毁率、星级、奖杯、资源奖励）
+// 4. 生成回放数据（供观看）
+// 5. 战斗结果通知（更新玩家数据）
+// ============================================================================
+
+// ========== 发起进攻 ==========
+
+// 发起进攻请求
+message StartAttackRequest {
+  int64 match_id = 1;              // 匹配ID（从 MatchmakingSvr 获取）
+  int64 army_id = 2;                // 进攻方使用的军队编组ID
+}
+
+// 发起进攻响应
+message StartAttackResponse {
+  types.CommonResp resp = 1;
+  int64 battle_id = 2;             // 战斗ID
+  BattleInitData init_data = 3;     // 战斗初始化数据
+}
+
+// 战斗初始化数据（客户端用于初始化战场）
+message BattleInitData {
+  // 防御方基地信息
+  DefenderBaseData defender_base = 1;
+  
+  // 进攻方军队信息
+  AttackerArmyData attacker_army = 2;
+  
+  // 战斗环境配置
+  int32 battle_duration = 3;        // 战斗时长（秒）
+  int64 battle_start_time = 4;      // 战斗开始时间（Unix秒）
+}
+
+// 防御方基地数据
+message DefenderBaseData {
+  string defender_id = 1;           // 防御者ID
+  string defender_username = 2;     // 防御者用户名
+  int64 defender_trophy = 3;        // 防御者奖杯数
+  int32 town_hall_level = 4;        // 大本营等级
+  bytes layout_data = 5;            // 基地布局数据（JSON或压缩格式）
+  
+  // 可掠夺的资源
+  int64 available_gold = 6;         // 可掠夺金币
+  int64 available_elixir = 7;       // 可掠夺圣水
+  int64 available_dark_elixir = 8;  // 可掠夺黑油
+}
+
+// 进攻方军队数据
+message AttackerArmyData {
+  string attacker_id = 1;           // 进攻者ID
+  string attacker_username = 2;     // 进攻者用户名
+  int64 attacker_trophy = 3;        // 进攻者奖杯数
+  int64 army_id = 4;                // 军队编组ID
+  string army_name = 5;             // 军队编组名称
+  bytes army_data = 6;              // 军队详细数据（包含英雄、佣兵、法术，JSON或压缩格式）
+}
+
+// ========== 记录战斗过程（客户端上报） ==========
+
+// 记录战斗动作请求（客户端定时批量上报）
+message RecordBattleActionsRequest {
+  int64 battle_id = 1;
+  repeated BattleAction actions = 2;  // 动作列表
+}
+
+// 记录战斗动作响应
+message RecordBattleActionsResponse {
+  types.CommonResp resp = 1;
+  int32 recorded_count = 2;         // 成功记录的动作数量
+}
+
+// 战斗动作（部署单位、使用法术）
+message BattleAction {
+  int32 action_type = 1;            // 动作类型：1=部署英雄，2=部署佣兵，3=使用法术
+  int32 unit_id = 2;                // 单位ID（英雄ID、佣兵配置ID、法术配置ID）
+  types.Vector2 position = 3;       // 部署位置
+  int64 timestamp_ms = 4;           // 动作时间戳（战斗开始后的毫秒数）
+  string extra_data = 5;            // 扩展数据（JSON格式）
+                                    // 示例：{"damage_dealt": 1500, "target_id": "building_001", "skill_used": true, "hero_id": 1001}
+                                    // 服务端会校验：
+                                    // - damage_dealt: 伤害值不能超过配置表上限的2倍（考虑暴击）
+                                    // - target_id: 目标建筑必须存在于防御方基地布局中
+                                    // - skill_used: 如果为true，则对应英雄必须已部署
+                                    // - 部署间隔: 连续动作间隔不能低于50ms（防脚本）
+}
+
+// ========== 战斗结算 ==========
+
+// 提交战斗结果请求（客户端战斗结束后上报）
+message SubmitBattleResultRequest {
+  int64 battle_id = 1;
+  BattleResultData result_data = 2;
+}
+
+// 提交战斗结果响应
+message SubmitBattleResultResponse {
+  types.CommonResp resp = 1;
+  BattleRewards rewards = 2;        // 战斗奖励
+  TrophyChange trophy_change = 3;   // 奖杯变化
+}
+
+// 战斗结果数据（客户端计算）
+message BattleResultData {
+  int32 destruction_percentage = 1; // 摧毁百分比（0-100）
+  int32 stars = 2;                  // 获得星级（0-3）
+  int32 battle_duration_seconds = 3;// 实际战斗时长（秒）
+  
+  // 摧毁统计
+  int32 destroyed_buildings = 4;    // 摧毁的建筑数量
+  int32 total_buildings = 5;        // 总建筑数量
+  bool town_hall_destroyed = 6;     // 是否摧毁大本营
+  
+  // 资源掠夺
+  int64 looted_gold = 7;            // 掠夺的金币
+  int64 looted_elixir = 8;          // 掠夺的圣水
+  int64 looted_dark_elixir = 9;     // 掠夺的黑油
+}
+
+// 战斗奖励
+message BattleRewards {
+  // 资源奖励
+  int64 gold = 1;                   // 金币
+  int64 elixir = 2;                 // 圣水
+  int64 dark_elixir = 3;            // 黑油
+  
+  // 经验奖励
+  int64 exp = 4;                    // 经验值
+  
+  // 额外奖励（宝箱、道具等）
+  repeated ItemReward bonus_items = 5;
+}
+
+// 物品奖励
+message ItemReward {
+  int32 item_config_id = 1;         // 物品配置表ID
+  int32 count = 2;                  // 数量
+}
+
+// 奖杯变化
+message TrophyChange {
+  int64 attacker_old_trophy = 1;    // 进攻方原奖杯数
+  int64 attacker_new_trophy = 2;    // 进攻方新奖杯数
+  int32 attacker_change = 3;        // 进攻方变化（正/负）
+  
+  int64 defender_old_trophy = 4;    // 防御方原奖杯数
+  int64 defender_new_trophy = 5;    // 防御方新奖杯数
+  int32 defender_change = 6;        // 防御方变化（正/负）
+}
+
+// ========== 获取战斗回放 ==========
+
+// 获取战斗回放请求
+message GetBattleReplayRequest {
+  int64 battle_id = 1;
+}
+
+// 获取战斗回放响应
+message GetBattleReplayResponse {
+  types.CommonResp resp = 1;
+  BattleReplayData replay_data = 2;
+}
+
+// 战斗回放数据
+message BattleReplayData {
+  int64 battle_id = 1;
+  BattleInitData init_data = 2;     // 战斗初始化数据
+  repeated BattleAction actions = 3;// 战斗动作时间轴
+  BattleResultData result_data = 4; // 战斗结果
+  int64 battle_time = 5;            // 战斗发生时间（Unix秒）
+}
+
+// ========== 获取战斗记录列表 ==========
+
+// 获取我的进攻记录请求
+message GetMyAttackRecordsRequest {
+  int32 page = 1;                   // 页码（从1开始）
+  int32 page_size = 2;              // 每页数量
+}
+
+// 获取我的进攻记录响应
+message GetMyAttackRecordsResponse {
+  types.CommonResp resp = 1;
+  repeated BattleRecordBrief records = 2;
+  int32 total_count = 3;            // 总记录数
+}
+
+// 获取我的防守记录请求
+message GetMyDefenseRecordsRequest {
+  int32 page = 1;                   // 页码（从1开始）
+  int32 page_size = 2;              // 每页数量
+}
+
+// 获取我的防守记录响应
+message GetMyDefenseRecordsResponse {
+  types.CommonResp resp = 1;
+  repeated BattleRecordBrief records = 2;
+  int32 total_count = 3;            // 总记录数
+}
+
+// 战斗记录简要信息
+message BattleRecordBrief {
+  int64 battle_id = 1;
+  string opponent_id = 2;           // 对手ID
+  string opponent_username = 3;     // 对手用户名
+  int64 opponent_trophy = 4;        // 对手奖杯数
+  
+  // 战斗结果
+  int32 stars = 5;                  // 星级
+  int32 destruction_percentage = 6; // 摧毁百分比
+  int32 trophy_change = 7;          // 奖杯变化（正/负）
+  
+  // 资源变化
+  int64 resource_change_gold = 8;   // 金币变化
+  int64 resource_change_elixir = 9; // 圣水变化
+  
+  int64 battle_time = 10;           // 战斗时间（Unix秒）
+  bool is_attack = 11;              // true=进攻记录，false=防守记录
+}
+
+// ========== 战斗数据查询（供其他服务调用） ==========
+
+// 获取战斗详情请求（供 GameSvr 等服务调用）
+message GetBattleDetailRequest {
+  int64 battle_id = 1;
+}
+
+// 获取战斗详情响应
+message GetBattleDetailResponse {
+  types.CommonResp resp = 1;
+  BattleDetail battle_detail = 2;
+}
+
+// 战斗详情（完整数据）
+message BattleDetail {
+  int64 battle_id = 1;
+  string attacker_id = 2;           // 进攻者ID
+  string defender_id = 3;           // 防御者ID
+  
+  BattleInitData init_data = 4;     // 初始化数据
+  repeated BattleAction actions = 5;// 动作时间轴
+  BattleResultData result_data = 6; // 结果数据
+  BattleRewards rewards = 7;        // 奖励数据
+  TrophyChange trophy_change = 8;   // 奖杯变化
+  
+  int32 status = 9;                 // 战斗状态：1=进行中，2=已完成，3=已放弃
+  int64 created_at = 10;            // 创建时间
+  int64 finished_at = 11;           // 结束时间
+}
+

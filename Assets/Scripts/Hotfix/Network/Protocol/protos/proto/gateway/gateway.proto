@@ -1,0 +1,108 @@
+syntax = "proto3";
+
+package gateway;
+
+option go_package = "pitaya-game/protos/pb/golang/gateway;gatewaypb";
+option csharp_namespace = "PitayaGame.Gateway";
+
+// ============================================================================
+// 网关服务协议定义
+// 微服务名称：gateway
+// 包括：连接管理、心跳、推送
+// ============================================================================
+
+// ========== 握手 ==========
+
+// 握手请求
+message HandshakeRequest {
+  string client_version = 1;  // 客户端版本
+  string platform = 2;        // 平台：ios/android/pc/web
+  string device_id = 3;       // 设备ID
+}
+
+// 握手响应
+message HandshakeResponse {
+  int32 code = 1;
+  string message = 2;
+  int64 server_time = 3;      // 服务器时间（Unix时间戳）
+  int32 heartbeat_interval = 4; // 心跳间隔（秒）
+}
+
+// ========== 心跳 ==========
+
+// 心跳请求
+message HeartbeatRequest {
+  int64 client_time = 1;      // 客户端时间
+}
+
+// 心跳响应
+message HeartbeatResponse {
+  int64 server_time = 1;      // 服务器时间
+}
+
+// ========== 踢出 ==========
+
+// 踢出通知（服务器主动推送）
+message KickNotify {
+  int32 reason = 1;           // 踢出原因代码
+  string message = 2;         // 踢出原因描述
+}
+
+// 踢出原因
+enum KickReason {
+  KICK_UNKNOWN = 0;
+  KICK_DUPLICATE_LOGIN = 1;   // 重复登录
+  KICK_BANNED = 2;            // 账号被封禁
+  KICK_TIMEOUT = 3;           // 超时未活动
+  KICK_SERVER_SHUTDOWN = 4;   // 服务器关闭
+  KICK_FORCE = 5;             // 强制踢出
+}
+
+// ========== 推送 ==========
+
+// 通用推送消息
+message PushNotify {
+  string route = 1;           // 路由（消息类型）
+  bytes data = 2;             // 消息数据（protobuf序列化后的字节）
+}
+
+// ========== 路由 ==========
+
+// 路由请求
+message RouteRequest {
+  string route = 1;           // 路由路径，如：loginsvr.login
+  bytes data = 2;             // 请求数据（protobuf序列化后的字节）
+}
+
+// 路由响应
+message RouteResponse {
+  int32 code = 1;
+  string message = 2;
+  bytes data = 3;             // 响应数据（protobuf序列化后的字节）
+}
+
+// ========== Session绑定 ==========
+
+// 绑定Session请求
+message BindSessionRequest {
+  string user_id = 1;
+  string token = 2;
+}
+
+// 绑定Session响应
+message BindSessionResponse {
+  int32 code = 1;
+  string message = 2;
+}
+
+// 解绑Session请求
+message UnbindSessionRequest {
+  string user_id = 1;
+}
+
+// 解绑Session响应
+message UnbindSessionResponse {
+  int32 code = 1;
+  string message = 2;
+}
+

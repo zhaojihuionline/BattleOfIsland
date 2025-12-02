@@ -1,0 +1,688 @@
+{
+  "_tables": {
+    "buffconfigtest": {
+      "$type": "Table`1[[buffconfigtest, ExcelTool]], ExcelTool",
+      "_rows": {
+        "10001": {
+          "ID": 10001,
+          "Name": "疾驰",
+          "Type": 1,
+          "Kind": 1,
+          "Icon": 10001,
+          "Des": "3秒内移动速度提升500。",
+          "Effect": [
+            1500
+          ],
+          "Time": 3000,
+          "Overlay": 0
+        },
+        "10002": {
+          "ID": 10002,
+          "Name": "昂扬",
+          "Type": 1,
+          "Kind": 2,
+          "Icon": 10002,
+          "Des": "4秒内攻击速度提升50%。",
+          "Effect": [
+            2,
+            50
+          ],
+          "Time": 4000,
+          "Overlay": 0
+        },
+        "20001": {
+          "ID": 20001,
+          "Name": "中毒",
+          "Type": 2,
+          "Kind": 3,
+          "Icon": 20001,
+          "Des": "每秒损失1%的生命值,，持续3秒。",
+          "Effect": [
+            3,
+            1
+          ],
+          "Time": 3000,
+          "Overlay": 0
+        },
+        "20002": {
+          "ID": 20002,
+          "Name": "虚弱",
+          "Type": 2,
+          "Kind": 4,
+          "Icon": 20002,
+          "Des": "攻击降低20%，持续5秒。",
+          "Effect": [
+            4,
+            20
+          ],
+          "Time": 5000,
+          "Overlay": 0
+        }
+      },
+      "RowCount": 4
+    },
+    "cfg_all": {
+      "$type": "Table`1[[cfg_all, ExcelTool]], ExcelTool",
+      "_rows": {
+        "0": {
+          "_id": 0,
+          "_name": "测试",
+          "_cfg": [
+            44.0,
+            23.0,
+            2.0
+          ],
+          "_cfg_id": [
+            1,
+            1
+          ],
+          "_cfg_t": 1.15,
+          "_cfg_s": [
+            "99",
+            "attak",
+            "ss"
+          ]
+        },
+        "1": {
+          "_id": 1,
+          "_name": "和平破坏者",
+          "_cfg": [
+            88.0,
+            69.0,
+            45.0
+          ],
+          "_cfg_id": [
+            468,
+            23
+          ],
+          "_cfg_t": 1.0,
+          "_cfg_s": [
+            "65",
+            "dasd",
+            "aaa"
+          ]
+        },
+        "1000": {
+          "_id": 1000,
+          "_name": "和平破坏者",
+          "_cfg": [
+            88.0,
+            69.0,
+            45.0
+          ],
+          "_cfg_id": [
+            12,
+            65,
+            468,
+            23
+          ],
+          "_cfg_t": 5.66,
+          "_cfg_s": [
+            "65",
+            "dasd",
+            "aaa"
+          ]
+        },
+        "10001": {
+          "_id": 10001,
+          "_name": "霍姆斯特",
+          "_cfg": [
+            65.0,
+            97.0,
+            4.3,
+            33.0
+          ],
+          "_cfg_id": [
+            666,
+            55,
+            88
+          ],
+          "_cfg_t": 636.0,
+          "_cfg_s": [
+            "6.5",
+            "kj",
+            "66"
+          ]
+        }
+      },
+      "RowCount": 4
+    },
+    "cfg_all_test": {
+      "$type": "Table`1[[cfg_all_test, ExcelTool]], ExcelTool",
+      "_rows": {
+        "1": {
+          "_id": 1,
+          "_name": 1,
+          "_cfg": 1,
+          "_cfg_id": 1
+        },
+        "222": {
+          "_id": 222,
+          "_name": 0,
+          "_cfg": 0,
+          "_cfg_id": 1
+        },
+        "333": {
+          "_id": 333,
+          "_name": 0,
+          "_cfg": 0,
+          "_cfg_id": 2
+        }
+      },
+      "RowCount": 3
+    },
+    "cfg_buff": {
+      "$type": "Table`1[[cfg_buff, ExcelTool]], ExcelTool",
+      "_rows": {
+        "唯一ID": {
+          "id": 0,
+          "_name": "name",
+          "_info": 1,
+          "_text": "备注说明",
+          "_type": 0,
+          "_overlay": 0,
+          "_count": 0,
+          "_time": 0,
+          "_interval": 0,
+          "_opportunity": 0,
+          "_need": 0,
+          "_number": 0,
+          "_par1": "属性类型",
+          "_par2": 0,
+          "_par3": 0,
+          "_par4": 0
+        },
+        "1": {
+          "id": 1,
+          "_name": "力量增强",
+          "_info": 0,
+          "_text": "力量+5",
+          "_type": 0,
+          "_overlay": 1,
+          "_count": 3,
+          "_time": -1,
+          "_interval": 0,
+          "_opportunity": 1,
+          "_need": 1,
+          "_number": 3,
+          "_par1": "力量",
+          "_par2": 5,
+          "_par3": 0,
+          "_par4": 0
+        },
+        "999": {
+          "id": 999,
+          "_name": "测试弹射+2",
+          "_info": 0,
+          "_text": "弹射+{0}",
+          "_type": 0,
+          "_overlay": 1,
+          "_count": -1,
+          "_time": -1,
+          "_interval": 0,
+          "_opportunity": 1,
+          "_need": 1,
+          "_number": -1,
+          "_par1": "_catapult_count",
+          "_par2": 2,
+          "_par3": 0,
+          "_par4": 0
+        },
+        "1000": {
+          "id": 1000,
+          "_name": "测试裂变+2",
+          "_info": 0,
+          "_text": "裂变+{0}",
+          "_type": 0,
+          "_overlay": 1,
+          "_count": -1,
+          "_time": -1,
+          "_interval": 0,
+          "_opportunity": 1,
+          "_need": 1,
+          "_number": -1,
+          "_par1": "_fission_count",
+          "_par2": 2,
+          "_par3": 0,
+          "_par4": 0
+        },
+        "1001": {
+          "id": 1001,
+          "_name": "测试溅射+2",
+          "_info": 0,
+          "_text": "溅射+{0}",
+          "_type": 0,
+          "_overlay": 1,
+          "_count": -1,
+          "_time": -1,
+          "_interval": 0,
+          "_opportunity": 1,
+          "_need": 1,
+          "_number": -1,
+          "_par1": "_split_count",
+          "_par2": 2,
+          "_par3": 0,
+          "_par4": 0
+        },
+        "1002": {
+          "id": 1002,
+          "_name": "测试穿透+2",
+          "_info": 0,
+          "_text": "穿透+{0}",
+          "_type": 0,
+          "_overlay": 1,
+          "_count": -1,
+          "_time": -1,
+          "_interval": 0,
+          "_opportunity": 1,
+          "_need": 1,
+          "_number": -1,
+          "_par1": "_across_count",
+          "_par2": 2,
+          "_par3": 0,
+          "_par4": 0
+        }
+      },
+      "RowCount": 6
+    },
+    "cfg_builder": {
+      "$type": "Table`1[[cfg_builder, ExcelTool]], ExcelTool",
+      "_rows": {
+        "1": {
+          "_id": 1,
+          "_name": "1格测试",
+          "_cfg_scale": [
+            1,
+            1
+          ]
+        },
+        "2": {
+          "_id": 2,
+          "_name": "2*2测试",
+          "_cfg_scale": [
+            2,
+            2
+          ]
+        },
+        "3": {
+          "_id": 3,
+          "_name": "3*3测试",
+          "_cfg_scale": [
+            3,
+            3
+          ]
+        },
+        "4": {
+          "_id": 4,
+          "_name": "4*4测试",
+          "_cfg_scale": [
+            4,
+            4
+          ]
+        }
+      },
+      "RowCount": 4
+    },
+    "cfg_skill": {
+      "$type": "Table`1[[cfg_skill, ExcelTool]], ExcelTool",
+      "_rows": {
+        "0": {
+          "_id": 0,
+          "_name": "测试",
+          "_prefab": "skill_0",
+          "_effect": "skill_effect_0",
+          "_animationClip": "skill_clip_0",
+          "_htimeList": [
+            0.1,
+            0.5,
+            2.0
+          ]
+        }
+      },
+      "RowCount": 1
+    }
+  },
+  "Tables": {
+    "buffconfigtest": {
+      "$type": "Table`1[[buffconfigtest, ExcelTool]], ExcelTool",
+      "_rows": {
+        "10001": {
+          "ID": 10001,
+          "Name": "疾驰",
+          "Type": 1,
+          "Kind": 1,
+          "Icon": 10001,
+          "Des": "3秒内移动速度提升500。",
+          "Effect": [
+            1500
+          ],
+          "Time": 3000,
+          "Overlay": 0
+        },
+        "10002": {
+          "ID": 10002,
+          "Name": "昂扬",
+          "Type": 1,
+          "Kind": 2,
+          "Icon": 10002,
+          "Des": "4秒内攻击速度提升50%。",
+          "Effect": [
+            2,
+            50
+          ],
+          "Time": 4000,
+          "Overlay": 0
+        },
+        "20001": {
+          "ID": 20001,
+          "Name": "中毒",
+          "Type": 2,
+          "Kind": 3,
+          "Icon": 20001,
+          "Des": "每秒损失1%的生命值,，持续3秒。",
+          "Effect": [
+            3,
+            1
+          ],
+          "Time": 3000,
+          "Overlay": 0
+        },
+        "20002": {
+          "ID": 20002,
+          "Name": "虚弱",
+          "Type": 2,
+          "Kind": 4,
+          "Icon": 20002,
+          "Des": "攻击降低20%，持续5秒。",
+          "Effect": [
+            4,
+            20
+          ],
+          "Time": 5000,
+          "Overlay": 0
+        }
+      },
+      "RowCount": 4
+    },
+    "cfg_all": {
+      "$type": "Table`1[[cfg_all, ExcelTool]], ExcelTool",
+      "_rows": {
+        "0": {
+          "_id": 0,
+          "_name": "测试",
+          "_cfg": [
+            44.0,
+            23.0,
+            2.0
+          ],
+          "_cfg_id": [
+            1,
+            1
+          ],
+          "_cfg_t": 1.15,
+          "_cfg_s": [
+            "99",
+            "attak",
+            "ss"
+          ]
+        },
+        "1": {
+          "_id": 1,
+          "_name": "和平破坏者",
+          "_cfg": [
+            88.0,
+            69.0,
+            45.0
+          ],
+          "_cfg_id": [
+            468,
+            23
+          ],
+          "_cfg_t": 1.0,
+          "_cfg_s": [
+            "65",
+            "dasd",
+            "aaa"
+          ]
+        },
+        "1000": {
+          "_id": 1000,
+          "_name": "和平破坏者",
+          "_cfg": [
+            88.0,
+            69.0,
+            45.0
+          ],
+          "_cfg_id": [
+            12,
+            65,
+            468,
+            23
+          ],
+          "_cfg_t": 5.66,
+          "_cfg_s": [
+            "65",
+            "dasd",
+            "aaa"
+          ]
+        },
+        "10001": {
+          "_id": 10001,
+          "_name": "霍姆斯特",
+          "_cfg": [
+            65.0,
+            97.0,
+            4.3,
+            33.0
+          ],
+          "_cfg_id": [
+            666,
+            55,
+            88
+          ],
+          "_cfg_t": 636.0,
+          "_cfg_s": [
+            "6.5",
+            "kj",
+            "66"
+          ]
+        }
+      },
+      "RowCount": 4
+    },
+    "cfg_all_test": {
+      "$type": "Table`1[[cfg_all_test, ExcelTool]], ExcelTool",
+      "_rows": {
+        "1": {
+          "_id": 1,
+          "_name": 1,
+          "_cfg": 1,
+          "_cfg_id": 1
+        },
+        "222": {
+          "_id": 222,
+          "_name": 0,
+          "_cfg": 0,
+          "_cfg_id": 1
+        },
+        "333": {
+          "_id": 333,
+          "_name": 0,
+          "_cfg": 0,
+          "_cfg_id": 2
+        }
+      },
+      "RowCount": 3
+    },
+    "cfg_buff": {
+      "$type": "Table`1[[cfg_buff, ExcelTool]], ExcelTool",
+      "_rows": {
+        "唯一ID": {
+          "id": 0,
+          "_name": "name",
+          "_info": 1,
+          "_text": "备注说明",
+          "_type": 0,
+          "_overlay": 0,
+          "_count": 0,
+          "_time": 0,
+          "_interval": 0,
+          "_opportunity": 0,
+          "_need": 0,
+          "_number": 0,
+          "_par1": "属性类型",
+          "_par2": 0,
+          "_par3": 0,
+          "_par4": 0
+        },
+        "1": {
+          "id": 1,
+          "_name": "力量增强",
+          "_info": 0,
+          "_text": "力量+5",
+          "_type": 0,
+          "_overlay": 1,
+          "_count": 3,
+          "_time": -1,
+          "_interval": 0,
+          "_opportunity": 1,
+          "_need": 1,
+          "_number": 3,
+          "_par1": "力量",
+          "_par2": 5,
+          "_par3": 0,
+          "_par4": 0
+        },
+        "999": {
+          "id": 999,
+          "_name": "测试弹射+2",
+          "_info": 0,
+          "_text": "弹射+{0}",
+          "_type": 0,
+          "_overlay": 1,
+          "_count": -1,
+          "_time": -1,
+          "_interval": 0,
+          "_opportunity": 1,
+          "_need": 1,
+          "_number": -1,
+          "_par1": "_catapult_count",
+          "_par2": 2,
+          "_par3": 0,
+          "_par4": 0
+        },
+        "1000": {
+          "id": 1000,
+          "_name": "测试裂变+2",
+          "_info": 0,
+          "_text": "裂变+{0}",
+          "_type": 0,
+          "_overlay": 1,
+          "_count": -1,
+          "_time": -1,
+          "_interval": 0,
+          "_opportunity": 1,
+          "_need": 1,
+          "_number": -1,
+          "_par1": "_fission_count",
+          "_par2": 2,
+          "_par3": 0,
+          "_par4": 0
+        },
+        "1001": {
+          "id": 1001,
+          "_name": "测试溅射+2",
+          "_info": 0,
+          "_text": "溅射+{0}",
+          "_type": 0,
+          "_overlay": 1,
+          "_count": -1,
+          "_time": -1,
+          "_interval": 0,
+          "_opportunity": 1,
+          "_need": 1,
+          "_number": -1,
+          "_par1": "_split_count",
+          "_par2": 2,
+          "_par3": 0,
+          "_par4": 0
+        },
+        "1002": {
+          "id": 1002,
+          "_name": "测试穿透+2",
+          "_info": 0,
+          "_text": "穿透+{0}",
+          "_type": 0,
+          "_overlay": 1,
+          "_count": -1,
+          "_time": -1,
+          "_interval": 0,
+          "_opportunity": 1,
+          "_need": 1,
+          "_number": -1,
+          "_par1": "_across_count",
+          "_par2": 2,
+          "_par3": 0,
+          "_par4": 0
+        }
+      },
+      "RowCount": 6
+    },
+    "cfg_builder": {
+      "$type": "Table`1[[cfg_builder, ExcelTool]], ExcelTool",
+      "_rows": {
+        "1": {
+          "_id": 1,
+          "_name": "1格测试",
+          "_cfg_scale": [
+            1,
+            1
+          ]
+        },
+        "2": {
+          "_id": 2,
+          "_name": "2*2测试",
+          "_cfg_scale": [
+            2,
+            2
+          ]
+        },
+        "3": {
+          "_id": 3,
+          "_name": "3*3测试",
+          "_cfg_scale": [
+            3,
+            3
+          ]
+        },
+        "4": {
+          "_id": 4,
+          "_name": "4*4测试",
+          "_cfg_scale": [
+            4,
+            4
+          ]
+        }
+      },
+      "RowCount": 4
+    },
+    "cfg_skill": {
+      "$type": "Table`1[[cfg_skill, ExcelTool]], ExcelTool",
+      "_rows": {
+        "0": {
+          "_id": 0,
+          "_name": "测试",
+          "_prefab": "skill_0",
+          "_effect": "skill_effect_0",
+          "_animationClip": "skill_clip_0",
+          "_htimeList": [
+            0.1,
+            0.5,
+            2.0
+          ]
+        }
+      },
+      "RowCount": 1
+    }
+  }
+}

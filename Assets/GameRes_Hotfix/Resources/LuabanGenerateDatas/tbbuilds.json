@@ -1,0 +1,326 @@
+[
+  {
+    "ID": 11001,
+    "name": "生命之树",
+    "buildingType": 1,
+    "maxLevel": 30,
+    "floorArea": 2500,
+    "maxNumber": 1,
+    "Description": "由精灵带来的世界树嫩枝长大而成的参天大树，其发出的点点星光似乎在回应遥远的世界之树。"
+  },
+  {
+    "ID": 12001,
+    "name": "采矿场",
+    "buildingType": 4,
+    "maxLevel": 30,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "冶炼厂描述（待详细)"
+  },
+  {
+    "ID": 12002,
+    "name": "伐木场",
+    "buildingType": 4,
+    "maxLevel": 30,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "伐木场描述（待详细)"
+  },
+  {
+    "ID": 12003,
+    "name": "屠宰场",
+    "buildingType": 4,
+    "maxLevel": 30,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "屠宰场描述（待详细)"
+  },
+  {
+    "ID": 13001,
+    "name": "储矿场",
+    "buildingType": 2,
+    "maxLevel": 30,
+    "floorArea": 400,
+    "maxNumber": 1000,
+    "Description": "储矿场描述（待详细)"
+  },
+  {
+    "ID": 13002,
+    "name": "储木场",
+    "buildingType": 2,
+    "maxLevel": 30,
+    "floorArea": 400,
+    "maxNumber": 1000,
+    "Description": "储木场描述（待详细)"
+  },
+  {
+    "ID": 13003,
+    "name": "储肉房",
+    "buildingType": 2,
+    "maxLevel": 30,
+    "floorArea": 400,
+    "maxNumber": 1000,
+    "Description": "储肉房描述（待详细)"
+  },
+  {
+    "ID": 14001,
+    "name": "弓箭塔1",
+    "buildingType": 3,
+    "maxLevel": 30,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "弓箭塔1描述（待详细)"
+  },
+  {
+    "ID": 14002,
+    "name": "减速塔2",
+    "buildingType": 3,
+    "maxLevel": 30,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "减速塔2描述（待详细)"
+  },
+  {
+    "ID": 14003,
+    "name": "防御塔3",
+    "buildingType": 3,
+    "maxLevel": 30,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "防御塔3描述（待详细)"
+  },
+  {
+    "ID": 14004,
+    "name": "防御塔4",
+    "buildingType": 3,
+    "maxLevel": 30,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "防御塔4描述（待详细)"
+  },
+  {
+    "ID": 14005,
+    "name": "防御塔5",
+    "buildingType": 3,
+    "maxLevel": 30,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "防御塔5描述（待详细)"
+  },
+  {
+    "ID": 14006,
+    "name": "防御塔6",
+    "buildingType": 3,
+    "maxLevel": 30,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "防御塔6描述（待详细)"
+  },
+  {
+    "ID": 14007,
+    "name": "城墙",
+    "buildingType": 3,
+    "maxLevel": 30,
+    "floorArea": 100,
+    "maxNumber": 1000,
+    "Description": "城墙描述（待详细)"
+  },
+  {
+    "ID": 15001,
+    "name": "英雄传送门",
+    "buildingType": 6,
+    "maxLevel": 30,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "盾兵营描述（待详细)"
+  },
+  {
+    "ID": 15002,
+    "name": "弓兵营",
+    "buildingType": 6,
+    "maxLevel": 30,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "弓兵营描述（待详细)"
+  },
+  {
+    "ID": 15003,
+    "name": "骑兵营",
+    "buildingType": 6,
+    "maxLevel": 30,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "骑兵营描述（待详细)"
+  },
+  {
+    "ID": 16001,
+    "name": "陷阱1",
+    "buildingType": 5,
+    "maxLevel": 10,
+    "floorArea": 100,
+    "maxNumber": 1000,
+    "Description": "陷阱1描述（待详细)"
+  },
+  {
+    "ID": 16002,
+    "name": "陷阱2",
+    "buildingType": 5,
+    "maxLevel": 10,
+    "floorArea": 100,
+    "maxNumber": 1000,
+    "Description": "陷阱2描述（待详细)"
+  },
+  {
+    "ID": 16003,
+    "name": "陷阱3",
+    "buildingType": 5,
+    "maxLevel": 10,
+    "floorArea": 100,
+    "maxNumber": 1000,
+    "Description": "陷阱3描述（待详细)"
+  },
+  {
+    "ID": 16004,
+    "name": "陷阱4",
+    "buildingType": 5,
+    "maxLevel": 10,
+    "floorArea": 100,
+    "maxNumber": 1000,
+    "Description": "陷阱4描述（待详细)"
+  },
+  {
+    "ID": 16005,
+    "name": "陷阱5",
+    "buildingType": 5,
+    "maxLevel": 10,
+    "floorArea": 100,
+    "maxNumber": 1000,
+    "Description": "陷阱5描述（待详细)"
+  },
+  {
+    "ID": 17001,
+    "name": "科技馆",
+    "buildingType": 6,
+    "maxLevel": 30,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "科技馆描述（待详细)"
+  },
+  {
+    "ID": 17002,
+    "name": "大使馆",
+    "buildingType": 6,
+    "maxLevel": 30,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "大使馆描述（待详细)"
+  },
+  {
+    "ID": 17003,
+    "name": "酒馆",
+    "buildingType": 6,
+    "maxLevel": 30,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "酒馆描述（待详细)"
+  },
+  {
+    "ID": 17004,
+    "name": "魔法小屋",
+    "buildingType": 6,
+    "maxLevel": 30,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "魔法祭坛描述（待详细)"
+  },
+  {
+    "ID": 18001,
+    "name": "装饰品1",
+    "buildingType": 7,
+    "maxLevel": 1,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "装饰品1描述（待详细)"
+  },
+  {
+    "ID": 18002,
+    "name": "装饰品2",
+    "buildingType": 7,
+    "maxLevel": 1,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "装饰品2描述（待详细)"
+  },
+  {
+    "ID": 18003,
+    "name": "装饰品3",
+    "buildingType": 7,
+    "maxLevel": 1,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "装饰品3描述（待详细)"
+  },
+  {
+    "ID": 18004,
+    "name": "装饰品4",
+    "buildingType": 7,
+    "maxLevel": 1,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "装饰品4描述（待详细)"
+  },
+  {
+    "ID": 18005,
+    "name": "装饰品5",
+    "buildingType": 7,
+    "maxLevel": 1,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "装饰品5描述（待详细)"
+  },
+  {
+    "ID": 18006,
+    "name": "装饰品6",
+    "buildingType": 7,
+    "maxLevel": 1,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "装饰品6描述（待详细)"
+  },
+  {
+    "ID": 18007,
+    "name": "装饰品7",
+    "buildingType": 7,
+    "maxLevel": 1,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "装饰品7描述（待详细)"
+  },
+  {
+    "ID": 18008,
+    "name": "装饰品8",
+    "buildingType": 7,
+    "maxLevel": 1,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "装饰品8描述（待详细)"
+  },
+  {
+    "ID": 18009,
+    "name": "装饰品9",
+    "buildingType": 7,
+    "maxLevel": 1,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "装饰品9描述（待详细)"
+  },
+  {
+    "ID": 18010,
+    "name": "装饰品10",
+    "buildingType": 7,
+    "maxLevel": 1,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "装饰品10描述（待详细)"
+  }
+]

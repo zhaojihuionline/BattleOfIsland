@@ -1,0 +1,82 @@
+syntax = "proto3";
+
+package gamesvr;
+
+option go_package = "pitaya-game/protos/pb/golang/gamesvr;gamesvrpb";
+option csharp_namespace = "PitayaGame.GameSvr";
+
+import "common/types/types.proto";
+
+// ============================================================================
+// 法术服务协议定义
+// 微服务名称：gamesvr
+// 包括：法术管理、解锁、升级
+// ============================================================================
+
+// ========== 数据结构 ==========
+
+// 法术数据
+message SpellData {
+  int64 spell_id = 1;               // 法术ID
+  string spell_name = 2;            // 法术名称
+  int32 spell_config_id = 3;        // 法术ID（配置表）
+  string spell_type = 4;            // 法术类型（RandomSpell/FullScreenSpell/TargetSpell）
+  int32 level = 5;                  // 等级
+  string description = 6;           // 描述
+  int32 cooldown = 7;               // 冷却时间（秒）
+  string effect = 8;                // 效果描述（JSON格式）
+  int64 created_at = 9;             // 创建时间
+  int64 updated_at = 10;            // 更新时间
+} 
+
+// ========== 获取法术信息 ==========
+
+// 获取法术信息请求
+message GetSpellInfoRequest {
+  int64 spell_id = 1;
+}
+
+// 获取法术信息响应
+message GetSpellInfoResponse {
+  types.CommonResp resp = 1;
+  SpellData spell_data = 2;
+}
+
+// ========== 获取我的已解锁法术 ==========
+
+// 获取我的已解锁法术请求
+message GetMySpellsRequest {
+  // 无需参数，从 Session 获取 user_id
+}
+
+// 获取我的已解锁法术响应
+message GetMySpellsResponse {
+  types.CommonResp resp = 1;
+  repeated SpellData spells = 2;
+}
+
+// ========== 解锁法术 ==========
+
+// 解锁法术请求
+message UnlockSpellRequest {
+  int32 spell_config_id = 1;  // 法术ID，user_id 从 Session 获取
+}
+
+// 解锁法术响应
+message UnlockSpellResponse {
+  types.CommonResp resp = 1;
+  int64 spell_id = 2;  // 新解锁的法术ID
+}
+
+// ========== 升级法术 ==========
+
+// 升级法术请求
+message UpgradeSpellRequest {
+  int64 spell_id = 1;
+}
+
+// 升级法术响应
+message UpgradeSpellResponse {
+  types.CommonResp resp = 1;
+  int32 new_level = 2;
+}

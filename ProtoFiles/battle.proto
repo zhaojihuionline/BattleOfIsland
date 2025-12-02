@@ -1,0 +1,169 @@
+syntax = "proto3";
+
+package battlesvr;
+
+option go_package = "pitaya-game/common/pb/golang/battlesvr;battlesvrpb";
+option csharp_namespace = "PitayaGame.BattleSvr";
+
+import "common/types.proto";
+import "common/enums.proto";
+import "gamesvr/game.proto";
+
+// ============================================================================
+// 战斗服务协议定义
+// 微服务名称：battlesvr
+// 包括：战斗房间管理、战斗逻辑、状态同步
+// ============================================================================
+
+// ========== 加入战斗 ==========
+
+// 加入战斗请求
+message JoinBattleRequest {
+  string user_id = 1;
+  string match_id = 2;
+}
+
+// 加入战斗响应
+message JoinBattleResponse {
+  int32 code = 1;
+  string message = 2;
+  string battle_id = 3;
+  repeated PlayerInBattle players = 4;  // 战斗中的所有玩家
+}
+
+// 战斗中的玩家
+message PlayerInBattle {
+  string user_id = 1;
+  string username = 2;
+  int64 level = 3;
+  int32 team = 4;                      // 队伍编号（1或2）
+  gamesvr.CharacterStats stats = 5;   // 角色属性
+}
+
+// ========== 战斗操作 ==========
+
+// 战斗操作类型
+enum ActionType {
+  ACTION_UNKNOWN = 0;
+  ACTION_MOVE = 1;           // 移动
+  ACTION_ATTACK = 2;         // 普通攻击
+  ACTION_SKILL = 3;          // 技能
+  ACTION_DEFEND = 4;         // 防御
+  ACTION_ITEM = 5;           // 使用道具
+}
+
+// 战斗操作
+message BattleAction {
+  string user_id = 1;
+  ActionType action_type = 2;
+  string target_id = 3;      // 目标玩家ID（如果有）
+  float pos_x = 4;           // 位置X坐标
+  float pos_y = 5;           // 位置Y坐标
+  int32 skill_id = 6;        // 技能ID（如果是技能）
+  int64 timestamp = 7;       // 时间戳（毫秒）
+}
+
+// 战斗操作请求
+message BattleActionRequest {
+  string battle_id = 1;
+  BattleAction action = 2;
+}
+
+// 战斗操作响应
+message BattleActionResponse {
+  int32 code = 1;
+  string message = 2;
+  bool success = 3;          // 操作是否成功
+}
+
+// ========== 战斗状态同步 ==========
+
+// 战斗状态广播
+message BattleStateNotify {
+  string battle_id = 1;
+  repeated PlayerState player_states = 2;
+  int64 timestamp = 3;       // 时间戳（毫秒）
+}
+
+// 玩家状态
+message PlayerState {
+  string user_id = 1;
+  float pos_x = 2;           // 位置X坐标
+  float pos_y = 3;           // 位置Y坐标
+  int64 current_hp = 4;      // 当前生命值
+  int64 current_mp = 5;      // 当前魔法值
+  proto.common.PlayerBattleState state = 6;  // 玩家状态
+}
+
+// ========== 战斗结束 ==========
+
+// 战斗结束通知
+message BattleEndNotify {
+  string battle_id = 1;
+  int32 winner_team = 2;     // 获胜队伍（1或2，0为平局）
+  repeated BattleReward rewards = 3;
+  repeated BattlePlayerResult results = 4;
+}
+
+// 战斗奖励
+message BattleReward {
+  string user_id = 1;
+  int64 exp = 2;             // 经验值
+  int64 coin = 3;            // 金币
+  repeated string items = 4; // 获得的物品ID列表
+}
+
+// 战斗玩家结果
+message BattlePlayerResult {
+  string user_id = 1;
+  int32 team = 2;
+  bool is_winner = 3;
+  int64 damage_dealt = 4;    // 造成的伤害
+  int64 damage_taken = 5;    // 受到的伤害
+  int32 kills = 6;           // 击杀数
+  int32 deaths = 7;          // 死亡数
+}
+
+// ========== 离开战斗 ==========
+
+// 离开战斗请求
+message LeaveBattleRequest {
+  string user_id = 1;
+  string battle_id = 2;
+}
+
+// 离开战斗响应
+message LeaveBattleResponse {
+  int32 code = 1;
+  string message = 2;
+}
+
+// 玩家离开战斗通知
+message PlayerLeftNotify {
+  string battle_id = 1;
+  string user_id = 2;
+}
+
+// ========== 战斗信息查询 ==========
+
+// 获取战斗信息请求
+message GetBattleInfoRequest {
+  string battle_id = 1;
+}
+
+// 获取战斗信息响应
+message GetBattleInfoResponse {
+  int32 code = 1;
+  string message = 2;
+  BattleInfo battle_info = 3;
+}
+
+// 战斗信息
+message BattleInfo {
+  string battle_id = 1;
+  int32 status = 2;          // 战斗状态（0:未知, 1:等待中, 2:加载中, 3:进行中, 4:已结束）
+  repeated PlayerInBattle players = 3;
+  int64 start_time = 4;      // 开始时间（Unix时间戳）
+  int64 duration = 5;        // 持续时间（秒）
+}
+

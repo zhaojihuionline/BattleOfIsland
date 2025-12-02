@@ -1,0 +1,82 @@
+syntax = "proto3";
+
+package proto.common;
+
+option go_package = "pitaya-game/common/pb/golang/common;commonpb";
+option csharp_namespace = "PitayaGame.Common";
+
+// ============================================================================
+// 通用枚举定义
+// ============================================================================
+
+// 性别
+enum Gender {
+  GENDER_UNKNOWN = 0;
+  GENDER_MALE = 1;
+  GENDER_FEMALE = 2;
+}
+
+// 物品品质
+enum ItemQuality {
+  QUALITY_COMMON = 0;     // 普通
+  QUALITY_UNCOMMON = 1;   // 优秀
+  QUALITY_RARE = 2;       // 稀有
+  QUALITY_EPIC = 3;       // 史诗
+  QUALITY_LEGENDARY = 4;  // 传说
+}
+
+// 物品类型
+enum ItemType {
+  ITEM_TYPE_UNKNOWN = 0;
+  ITEM_TYPE_CONSUMABLE = 1;  // 消耗品
+  ITEM_TYPE_EQUIPMENT = 2;   // 装备
+  ITEM_TYPE_MATERIAL = 3;    // 材料
+  ITEM_TYPE_QUEST = 4;       // 任务物品
+}
+
+// 装备部位
+enum EquipSlot {
+  EQUIP_SLOT_NONE = 0;
+  EQUIP_SLOT_WEAPON = 1;     // 武器
+  EQUIP_SLOT_HELMET = 2;     // 头盔
+  EQUIP_SLOT_ARMOR = 3;      // 护甲
+  EQUIP_SLOT_GLOVES = 4;     // 手套
+  EQUIP_SLOT_BOOTS = 5;      // 鞋子
+  EQUIP_SLOT_ACCESSORY = 6;  // 饰品
+}
+
+// 游戏模式
+enum GameMode {
+  GAME_MODE_UNKNOWN = 0;
+  GAME_MODE_PVP_1V1 = 1;     // 1v1对战
+  GAME_MODE_PVP_3V3 = 2;     // 3v3对战
+  GAME_MODE_PVE = 3;         // PVE
+  GAME_MODE_RANKED = 4;      // 排位赛
+}
+
+// 战斗状态
+enum BattleState {
+  BATTLE_STATE_UNKNOWN = 0;
+  BATTLE_STATE_WAITING = 1;   // 等待中
+  BATTLE_STATE_LOADING = 2;   // 加载中
+  BATTLE_STATE_RUNNING = 3;   // 进行中
+  BATTLE_STATE_ENDED = 4;     // 已结束
+}
+
+// 玩家在战斗中的状态
+enum PlayerBattleState {
+  PLAYER_STATE_IDLE = 0;      // 空闲
+  PLAYER_STATE_MOVING = 1;    // 移动中
+  PLAYER_STATE_ATTACKING = 2; // 攻击中
+  PLAYER_STATE_CASTING = 3;   // 施法中
+  PLAYER_STATE_STUNNED = 4;   // 眩晕
+  PLAYER_STATE_DEAD = 5;      // 死亡
+}
+
+// 货币类型
+enum CurrencyType {
+  CURRENCY_COIN = 0;      // 金币
+  CURRENCY_DIAMOND = 1;   // 钻石
+  CURRENCY_ENERGY = 2;    // 体力
+}
+

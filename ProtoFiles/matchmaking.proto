@@ -1,0 +1,91 @@
+syntax = "proto3";
+
+package matchmakingsvr;
+
+option go_package = "pitaya-game/common/pb/golang/matchmakingsvr;matchmakingsvrpb";
+option csharp_namespace = "PitayaGame.MatchmakingSvr";
+
+import "common/types.proto";
+import "common/enums.proto";
+
+// ============================================================================
+// 匹配服务协议定义
+// 微服务名称：matchmakingsvr
+// 包括：玩家匹配、匹配队列管理、房间创建
+// ============================================================================
+
+// ========== 匹配 ==========
+
+// 匹配请求
+message MatchRequest {
+  string user_id = 1;
+  proto.common.GameMode game_mode = 2;  // 游戏模式
+  int64 rank = 3;            // 玩家排名/段位
+}
+
+// 匹配响应
+message MatchResponse {
+  int32 code = 1;
+  string message = 2;
+  string match_id = 3;       // 匹配ID
+  int32 queue_position = 4;  // 队列位置
+}
+
+// 取消匹配请求
+message CancelMatchRequest {
+  string user_id = 1;
+}
+
+// 取消匹配响应
+message CancelMatchResponse {
+  int32 code = 1;
+  string message = 2;
+}
+
+// 匹配成功通知
+message MatchFoundNotify {
+  string match_id = 1;
+  string battle_server = 2;  // 战斗服务器地址
+  repeated PlayerMatchInfo players = 3;  // 匹配的玩家列表
+}
+
+// 匹配玩家信息
+message PlayerMatchInfo {
+  string user_id = 1;
+  string username = 2;
+  int64 level = 3;
+  int64 rank = 4;
+  int32 team = 5;            // 队伍编号（1或2）
+}
+
+// ========== 匹配状态查询 ==========
+
+// 获取匹配状态请求
+message GetMatchStatusRequest {
+  string user_id = 1;
+}
+
+// 获取匹配状态响应
+message GetMatchStatusResponse {
+  int32 code = 1;
+  string message = 2;
+  int32 status = 3;              // 匹配状态（0:空闲, 1:队列中, 2:已匹配, 3:已取消）
+  int32 queue_position = 4;        // 队列位置
+  int64 wait_time = 5;             // 已等待时间（秒）
+}
+
+// ========== 队列管理 ==========
+
+// 获取队列信息请求
+message GetQueueInfoRequest {
+  proto.common.GameMode game_mode = 1;
+}
+
+// 获取队列信息响应
+message GetQueueInfoResponse {
+  int32 code = 1;
+  string message = 2;
+  int32 queue_size = 3;      // 当前队列人数
+  int64 avg_wait_time = 4;   // 平均等待时间（秒）
+}
+

@@ -1,0 +1,125 @@
+syntax = "proto3";
+
+package configsvr;
+
+option go_package = "pitaya-game/protos/pb/golang/configsvr;configsvrpb";
+option csharp_namespace = "PitayaGame.ConfigSvr";
+
+import "common/types/types.proto";
+
+// ============================================================================
+// 配置服务协议定义
+// 微服务名称：configsvr
+// 包括：游戏配置管理、配置热更新
+// ============================================================================
+
+// ========== 获取配置 ==========
+
+// 获取配置请求
+message GetConfigRequest {
+  string config_key = 1;     // 配置键
+  string version = 2;        // 版本号（可选，用于缓存）
+}
+
+// 获取配置响应
+message GetConfigResponse {
+  types.CommonResp resp = 1;
+  string config_data = 2;    // 配置数据（JSON格式）
+  string version = 3;        // 当前版本号
+}
+
+// 获取所有配置请求
+message GetAllConfigsRequest {
+  string version = 1;        // 版本号（可选，用于缓存）
+}
+
+// 获取所有配置响应
+message GetAllConfigsResponse {
+  types.CommonResp resp = 1;
+  map<string, string> configs = 2;  // 配置键值对（值为JSON）
+  string version = 3;        // 当前版本号
+}
+
+// ========== 配置管理 ==========
+
+// 更新配置请求
+message UpdateConfigRequest {
+  string config_key = 1;
+  string config_data = 2;    // 配置数据（JSON格式）
+  string operator_id = 3;    // 操作人ID
+}
+
+// 更新配置响应
+message UpdateConfigResponse {
+  types.CommonResp resp = 1;
+  string new_version = 2;    // 新版本号
+}
+
+// 删除配置请求
+message DeleteConfigRequest {
+  string config_key = 1;
+  string operator_id = 2;    // 操作人ID
+}
+
+// 删除配置响应
+message DeleteConfigResponse {
+  types.CommonResp resp = 1;
+}
+
+// ========== 配置版本管理 ==========
+
+// 获取配置版本请求
+message GetConfigVersionRequest {
+  string config_key = 1;     // 为空则获取全局版本
+}
+
+// 获取配置版本响应
+message GetConfigVersionResponse {
+  types.CommonResp resp = 1;
+  string version = 2;
+  int64 update_time = 3;     // 更新时间（Unix时间戳）
+}
+
+// 配置更新通知（推送给客户端）
+message ConfigUpdateNotify {
+  string config_key = 1;
+  string new_version = 2;
+  bool force_update = 3;     // 是否强制更新
+}
+
+// ========== 配置预设 ==========
+
+// 配置类型
+enum ConfigType {
+  CONFIG_UNKNOWN = 0;
+  CONFIG_GAME = 1;           // 游戏玩法配置
+  CONFIG_ITEM = 2;           // 物品配置
+  CONFIG_SKILL = 3;          // 技能配置
+  CONFIG_CHARACTER = 4;      // 角色配置
+  CONFIG_LEVEL = 5;          // 关卡配置
+  CONFIG_SYSTEM = 6;         // 系统配置
+}
+
+// 获取配置列表请求
+message GetConfigListRequest {
+  ConfigType config_type = 1;
+  int32 page = 2;            // 页码（从1开始）
+  int32 page_size = 3;       // 每页数量
+}
+
+// 获取配置列表响应
+message GetConfigListResponse {
+  types.CommonResp resp = 1;
+  repeated ConfigItem items = 2;
+  int32 total = 3;           // 总数
+}
+
+// 配置项
+message ConfigItem {
+  string config_key = 1;
+  ConfigType config_type = 2;
+  string description = 3;
+  string version = 4;
+  int64 update_time = 5;
+}
+

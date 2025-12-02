@@ -1,0 +1,94 @@
+syntax = "proto3";
+
+package loginsvr;
+
+option go_package = "pitaya-game/protos/pb/golang/loginsvr;loginsvrpb";
+option csharp_namespace = "PitayaGame.LoginSvr";
+
+import "common/types/types.proto";
+
+// ============================================================================
+// 登录服务协议定义
+// 微服务名称：loginsvr
+// 包括：登录、登出、Token管理
+// ============================================================================
+//
+// 注意：注册功能由 AuthSvr (HTTP API) 提供
+// 客户端应该先调用 AuthSvr 的 /auth/register 接口创建全局账号
+// 然后调用 AuthSvr 的 /auth/login 接口获取 JWT Token
+// 最后调用 LoginSvr 的 Login 接口（自动创建或加载游戏角色）
+// ============================================================================
+
+// ========== 登录 ==========
+
+// 登录请求
+// 注意：登录前需要先通过 AuthSvr 获取 JWT Token
+// 流程：AuthSvr.Login() → 获取 JWT Token → LoginSvr.Login(token)
+message LoginRequest {
+  string token = 1;          // JWT Token（从 AuthSvr 获取）
+  string device_id = 2;      // 设备ID（可选）
+  string platform = 3;       // 平台：ios/android/pc（可选）
+}
+
+// 登录响应
+message LoginResponse {
+  types.CommonResp resp = 1;
+  string token = 2;          // 登录token
+  string user_id = 3;
+  int64 server_time = 5;     // 服务器时间戳（秒）
+}
+
+// ========== 登出 ==========
+
+// 登出请求
+message LogoutRequest {
+  string user_id = 1;
+}
+
+// 登出响应
+message LogoutResponse {
+  types.CommonResp resp = 1;
+}
+
+// ========== Token验证 ==========
+
+// Token验证请求
+message VerifyTokenRequest {
+  string token = 1;
+}
+
+// Token验证响应
+message VerifyTokenResponse {
+  types.CommonResp resp = 1;
+  string user_id = 2;
+  bool valid = 3;            // token是否有效
+  int64 expire_time = 4;     // 过期时间戳（秒）
+}
+
+// ========== Token刷新 ==========
+
+// Token刷新请求
+message RefreshTokenRequest {
+  string token = 1;          // 旧token
+}
+
+// Token刷新响应
+message RefreshTokenResponse {
+  types.CommonResp resp = 1;
+  string new_token = 2;      // 新token
+  int64 expire_time = 3;     // 过期时间戳（秒）
+}
+
+// ========== 玩家离线事件 ==========
+
+// 玩家离线事件请求（由 Gateway 调用，不需要响应）
+message PlayerOfflineRequest {
+  string user_id = 1;          // 用户ID
+  string username = 2;         // 用户名（可选）
+  int64 login_time = 3;        // 登录时间戳（秒）
+  int64 offline_time = 4;      // 离线时间戳（秒）
+  int64 online_duration = 5;   // 在线时长（秒）
+  string server_id = 6;        // 服务器ID
+  string gateway_id = 7;       // Gateway服务器ID
+}
+ 

@@ -1,0 +1,87 @@
+[
+  {
+    "RewardId": 100001,
+    "RewardName": "木材小包",
+    "RewardType": 1,
+    "RewardParam": 0,
+    "RewardDetail": [
+      {
+        "_id": 2100003,
+        "_num": 1002,
+        "_weight": 100
+      }
+    ]
+  },
+  {
+    "RewardId": 100002,
+    "RewardName": "肉小包",
+    "RewardType": 1,
+    "RewardParam": 0,
+    "RewardDetail": [
+      {
+        "_id": 2100003,
+        "_num": 1002,
+        "_weight": 100
+      }
+    ]
+  },
+  {
+    "RewardId": 100003,
+    "RewardName": "矿物小包",
+    "RewardType": 1,
+    "RewardParam": 0,
+    "RewardDetail": [
+      {
+        "_id": 2100003,
+        "_num": 1002,
+        "_weight": 100
+      }
+    ]
+  },
+  {
+    "RewardId": 100004,
+    "RewardName": "随机资源宝箱",
+    "RewardType": 2,
+    "RewardParam": 1,
+    "RewardDetail": [
+      {
+        "_id": 4100001,
+        "_num": 1,
+        "_weight": 100
+      },
+      {
+        "_id": 4100002,
+        "_num": 1,
+        "_weight": 100
+      },
+      {
+        "_id": 4100003,
+        "_num": 1,
+        "_weight": 100
+      }
+    ]
+  },
+  {
+    "RewardId": 100005,
+    "RewardName": "资源自选宝箱",
+    "RewardType": 3,
+    "RewardParam": 1,
+    "RewardDetail": [
+      {
+        "_id": 4100001,
+        "_num": 1,
+        "_weight": 100
+      },
+      {
+        "_id": 4100002,
+        "_num": 1,
+        "_weight": 100
+      },
+      {
+        "_id": 4100003,
+        "_num": 1,
+        "_weight": 100
+      }
+    ]
+  }
+]

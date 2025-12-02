@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using QFramework;
+
+/// <summary>
+/// 
+/// </summary>
+public interface I#SCRIPTNAME# : ISystem
+{
+  
+}
+    #ROOTNAMESPACEBEGIN#
+/// <summary>
+/// 
+/// </summary>
+public class #SCRIPTNAME# : AbstractSystem,I#SCRIPTNAME#
+{
+    protected override void OnInit()
+    {
+        #NOTRIM#
+        throw new System.NotImplementedException();
+    }
+}
+#ROOTNAMESPACEEND#

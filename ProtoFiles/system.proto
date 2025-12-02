@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package game.protocol;
+
+message SystemNotify {
+    string title = 1;
+    string content = 2;
+    int32 priority = 3;
+    int64 expire_time = 4;
+    NotifyType type = 5;
+    
+    enum NotifyType {
+        INFO = 0;
+        WARNING = 1;
+        ERROR = 2;
+        MAINTENANCE = 3;
+        UPDATE = 4;
+    }
+}
+
+message MaintenanceInfo {
+    bool in_maintenance = 1;
+    int64 start_time = 2;
+    int64 end_time = 3;
+    string message = 4;
+    string url = 5;
+}
+
+message ServerInfo {
+    string server_id = 1;
+    string server_name = 2;
+    int32 status = 3;
+    int32 player_count = 4;
+    int64 start_time = 5;
+    string version = 6;
+}

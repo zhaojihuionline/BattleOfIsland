@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package matchmakingsvr;
+
+option go_package = "pitaya-game/protos/pb/golang/matchmakingsvr;matchmakingsvrpb";
+option csharp_namespace = "PitayaGame.MatchMakingSvr";
+
+import "common/types/types.proto";
+
+// 手动选人匹配（COC风格）：先拉候选，再选择对手创建匹配
+// 对齐 gamesvr 风格：resp 放首位、snake_case 命名、复杂字段独立 message
+
+// 获取下一个匹配候选
+message GetNextCandidateRequest {
+  repeated string exclude_defender_ids = 1; // 排除的防御者ID列表
+}
+
+message GetNextCandidateResponse {
+  types.CommonResp resp = 1;
+  CandidateData candidate = 2;
+  int64 match_id = 3;  // 匹配ID（创建占用记录时生成，用于战斗服务识别客户端选择的匹配，且必须是该攻击者自己刷出来的）
+}
+
+// 候选对手（服务端已排除受保护目标）
+message CandidateData {
+  string defender_id = 1;
+  string defender_username = 2;   // 可选：未接入用户服务前可回传ID
+  int64 defender_trophy = 3;
+  int32 defender_base_power = 4;
+  BaseSnapshotView base_snapshot = 5;     // 基地布局快照
+  int64 snapshot_update_time = 6;         // Unix秒（BaseSnapshot.updated_at）
+}
+
+// 基地快照视图（从 BaseSnapshot 透传，默认 bytes 承载 JSON/压缩串）
+message BaseSnapshotView {
+  bytes layout_data = 1;     // BaseSnapshot.base_data（JSON或压缩）
+  int32 layout_version = 2;  // 与客户端约定的布局版本
+}
+
+// 取消匹配（玩家放弃所有通过 GetNextCandidate 锁定的匹配，删除所有 pending 匹配记录）
+message CancelMatchRequest {
+}
+
+message CancelMatchResponse {
+  types.CommonResp resp = 1;
+}
+

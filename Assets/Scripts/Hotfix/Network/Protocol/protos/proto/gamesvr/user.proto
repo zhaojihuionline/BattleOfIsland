@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package gamesvr;
+
+option go_package = "pitaya-game/protos/pb/golang/gamesvr;gamesvrpb";
+option csharp_namespace = "PitayaGame.GameSvr";
+
+import "common/types/types.proto";
+import "common/enums/enums.proto";
+
+// ============================================================================
+// 用户信息服务协议定义
+// 微服务名称：gamesvr
+// 包括：用户基础信息、等级管理、角色属性、背包系统
+// ============================================================================
+
+// ========== 用户信息 ==========
+
+// 用户基础信息
+message UserBasicInfo {
+  string user_id = 1;
+  string username = 2;
+  int32 level = 3;
+  int64 exp = 4;
+  int64 create_time = 5;  // 创建时间戳（秒）
+  int64 coin = 6;         // 金币
+  int64 diamond = 7;      // 钻石
+  int64 wood = 8;         // 木材
+  int64 stone = 9;        // 石头
+  int64 meat = 10;        // 肉
+  int32 vip_level = 11;   // VIP等级
+}
+
+// 获取用户信息请求
+message GetUserInfoRequest {
+}
+
+// 获取用户信息响应
+message GetUserInfoResponse {
+  types.CommonResp resp = 1;
+  UserBasicInfo user_info = 2;
+}

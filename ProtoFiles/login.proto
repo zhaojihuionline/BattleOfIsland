@@ -1,0 +1,97 @@
+syntax = "proto3";
+
+package loginsvr;
+
+option go_package = "pitaya-game/common/pb/golang/loginsvr;loginsvrpb";
+option csharp_namespace = "PitayaGame.LoginSvr";
+
+import "common/types.proto";
+
+// ============================================================================
+// 登录服务协议定义
+// 微服务名称：loginsvr
+// 包括：注册、登录、登出、Token管理
+// ============================================================================
+
+// ========== 注册 ==========
+
+// 注册请求
+message RegisterRequest {
+  string username = 1;       // 用户名（3-20字符）
+  string password = 2;       // 密码（需客户端加密）
+  string email = 3;          // 邮箱（可选）
+  string device_id = 4;      // 设备ID
+}
+
+// 注册响应
+message RegisterResponse {
+  int32 code = 1;
+  string message = 2;
+  string user_id = 3;        // 新创建的用户ID
+  string token = 4;          // 注册成功后的登录token
+}
+
+// ========== 登录 ==========
+
+// 登录请求
+message LoginRequest {
+  string username = 1;       // 用户名
+  string password = 2;       // 密码（需客户端加密）
+  string device_id = 3;      // 设备ID
+  string platform = 4;       // 平台：ios/android/pc
+}
+
+// 登录响应
+message LoginResponse {
+  int32 code = 1;
+  string message = 2;
+  string token = 3;          // 登录token
+  string user_id = 4;
+  proto.common.UserBasicInfo user_info = 5;  // 用户基础信息
+  int64 server_time = 6;     // 服务器时间戳（秒）
+}
+
+// ========== 登出 ==========
+
+// 登出请求
+message LogoutRequest {
+  string user_id = 1;
+}
+
+// 登出响应
+message LogoutResponse {
+  int32 code = 1;
+  string message = 2;
+}
+
+// ========== Token验证 ==========
+
+// Token验证请求
+message VerifyTokenRequest {
+  string token = 1;
+}
+
+// Token验证响应
+message VerifyTokenResponse {
+  int32 code = 1;
+  string message = 2;
+  string user_id = 3;
+  bool valid = 4;            // token是否有效
+  int64 expire_time = 5;     // 过期时间戳（秒）
+}
+
+// ========== Token刷新 ==========
+
+// Token刷新请求
+message RefreshTokenRequest {
+  string token = 1;          // 旧token
+}
+
+// Token刷新响应
+message RefreshTokenResponse {
+  int32 code = 1;
+  string message = 2;
+  string new_token = 3;      // 新token
+  int64 expire_time = 4;     // 过期时间戳（秒）
+}
+

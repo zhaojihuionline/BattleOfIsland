@@ -1,0 +1,154 @@
+syntax = "proto3";
+
+package gamesvr;
+
+option go_package = "pitaya-game/common/pb/golang/gamesvr;gamesvrpb";
+option csharp_namespace = "PitayaGame.GameSvr";
+
+import "common/types.proto";
+import "common/enums.proto";
+
+// ============================================================================
+// 游戏服务协议定义
+// 微服务名称：gamesvr
+// 包括：用户信息、角色管理、背包系统
+// ============================================================================
+
+// ========== 用户信息 ==========
+
+// 获取用户信息请求
+message GetUserInfoRequest {
+  string user_id = 1;
+}
+
+// 获取用户信息响应
+message GetUserInfoResponse {
+  int32 code = 1;
+  string message = 2;
+  proto.common.UserBasicInfo user_info = 3;
+}
+
+// ========== 角色管理 ==========
+
+// 升级请求
+message LevelUpRequest {
+  string user_id = 1;
+}
+
+// 升级响应
+message LevelUpResponse {
+  int32 code = 1;
+  string message = 2;
+  int64 new_level = 3;
+  int64 new_exp = 4;
+}
+
+// 角色属性
+message CharacterStats {
+  int64 hp = 1;              // 生命值
+  int64 mp = 2;              // 魔法值
+  int64 attack = 3;          // 攻击力
+  int64 defense = 4;         // 防御力
+  int64 speed = 5;           // 速度
+  int64 critical = 6;        // 暴击率（百分比）
+}
+
+// 更新角色属性请求
+message UpdateStatsRequest {
+  string user_id = 1;
+  CharacterStats stats = 2;
+}
+
+// 更新角色属性响应
+message UpdateStatsResponse {
+  int32 code = 1;
+  string message = 2;
+}
+
+// 获取角色信息请求
+message GetCharacterRequest {
+  string user_id = 1;
+}
+
+// 获取角色信息响应
+message GetCharacterResponse {
+  int32 code = 1;
+  string message = 2;
+  CharacterInfo character = 3;
+}
+
+// 角色信息
+message CharacterInfo {
+  string user_id = 1;
+  string character_name = 2;
+  int64 level = 3;
+  int64 exp = 4;
+  CharacterStats stats = 5;
+  int64 created_at = 6;
+  int64 updated_at = 7;
+}
+
+// ========== 背包系统 ==========
+
+// 物品信息
+message ItemInfo {
+  string item_id = 1;        // 物品ID
+  string item_name = 2;      // 物品名称
+  proto.common.ItemType item_type = 3;    // 物品类型
+  proto.common.ItemQuality quality = 4;   // 物品品质
+  int32 quantity = 5;        // 数量
+  int64 obtained_at = 6;     // 获得时间
+}
+
+// 获取背包请求
+message GetInventoryRequest {
+  string user_id = 1;
+}
+
+// 获取背包响应
+message GetInventoryResponse {
+  int32 code = 1;
+  string message = 2;
+  repeated ItemInfo items = 3;
+  int32 capacity = 4;        // 背包容量
+}
+
+// 添加物品请求
+message AddItemRequest {
+  string user_id = 1;
+  string item_id = 2;
+  int32 quantity = 3;
+}
+
+// 添加物品响应
+message AddItemResponse {
+  int32 code = 1;
+  string message = 2;
+}
+
+// 移除物品请求
+message RemoveItemRequest {
+  string user_id = 1;
+  string item_id = 2;
+  int32 quantity = 3;
+}
+
+// 移除物品响应
+message RemoveItemResponse {
+  int32 code = 1;
+  string message = 2;
+}
+
+// 使用物品请求
+message UseItemRequest {
+  string user_id = 1;
+  string item_id = 2;
+  int32 quantity = 3;
+}
+
+// 使用物品响应
+message UseItemResponse {
+  int32 code = 1;
+  string message = 2;
+}
+

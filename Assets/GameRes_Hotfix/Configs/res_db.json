@@ -1,0 +1,716 @@
+{
+  "ResMapList": [
+    {
+      "res": "Common",
+      "path": "Atlas/Common.spriteatlas"
+    },
+    {
+      "res": "Sprite",
+      "path": "Atlas/Sprite.spriteatlas"
+    },
+    {
+      "res": "UI_Main3",
+      "path": "Audio/UI_Main3.prefab"
+    },
+    {
+      "res": "asset_map",
+      "path": "Configs/asset_map.json"
+    },
+    {
+      "res": "FrameworkConfig",
+      "path": "Configs/FrameworkConfig.asset"
+    },
+    {
+      "res": "res_db",
+      "path": "Configs/res_db.json"
+    },
+    {
+      "res": "UI_Main",
+      "path": "Prefabs/UI_Main.prefab"
+    },
+    {
+      "res": "Builder",
+      "path": "Scenes/Builder.unity"
+    },
+    {
+      "res": "Game",
+      "path": "Scenes/Game.unity"
+    },
+    {
+      "res": "MainScene",
+      "path": "Scenes/MainScene.unity"
+    },
+    {
+      "res": "TestBattleInPanel",
+      "path": "Scenes/TestBattleInPanel.unity"
+    },
+    {
+      "res": "Chinese16159",
+      "path": "Art/FontsConfig/Chinese16159.txt"
+    },
+    {
+      "res": "commonChinese",
+      "path": "Art/FontsConfig/commonChinese.txt"
+    },
+    {
+      "res": "UI_GrayScaleImage",
+      "path": "Art/Materials/UI_GrayScaleImage.mat"
+    },
+    {
+      "res": "地面",
+      "path": "Art/Materials/地面.mat"
+    },
+    {
+      "res": "测试材质 不可放置",
+      "path": "Art/Materials/测试材质 不可放置.mat"
+    },
+    {
+      "res": "测试材质 半透明",
+      "path": "Art/Materials/测试材质 半透明.mat"
+    },
+    {
+      "res": "测试材质 原始",
+      "path": "Art/Materials/测试材质 原始.mat"
+    },
+    {
+      "res": "测试材质 可放置",
+      "path": "Art/Materials/测试材质 可放置.mat"
+    },
+    {
+      "res": "UIGray",
+      "path": "Art/Shaders/UIGray.shader"
+    },
+    {
+      "res": "bg",
+      "path": "Art/Sprites/bg.png"
+    },
+    {
+      "res": "Grid",
+      "path": "Art/Sprites/Grid.png"
+    },
+    {
+      "res": "biaoti1",
+      "path": "Atlas/Common/biaoti1.png"
+    },
+    {
+      "res": "ACAWRFV",
+      "path": "Atlas/Sprite/ACAWRFV.jpg"
+    },
+    {
+      "res": "button_ready_off",
+      "path": "Atlas/Sprite/button_ready_off.png"
+    },
+    {
+      "res": "Exp_line",
+      "path": "Atlas/Sprite/Exp_line.png"
+    },
+    {
+      "res": "Ground",
+      "path": "Atlas/Sprite/Ground.jpg"
+    },
+    {
+      "res": "Hp_frame",
+      "path": "Atlas/Sprite/Hp_frame.png"
+    },
+    {
+      "res": "Hp_line",
+      "path": "Atlas/Sprite/Hp_line.png"
+    },
+    {
+      "res": "Mini_background",
+      "path": "Atlas/Sprite/Mini_background.png"
+    },
+    {
+      "res": "M_line",
+      "path": "Atlas/Sprite/M_line.png"
+    },
+    {
+      "res": "Tips_bk_2",
+      "path": "Atlas/Sprite/Tips_bk_2.png"
+    },
+    {
+      "res": "BattleInPanel",
+      "path": "Prefabs/UIPanel/BattleInPanel.prefab"
+    },
+    {
+      "res": "BattleReportPanel",
+      "path": "Prefabs/UIPanel/BattleReportPanel.prefab"
+    },
+    {
+      "res": "BuilderPanel",
+      "path": "Prefabs/UIPanel/BuilderPanel.prefab"
+    },
+    {
+      "res": "LoginPanel",
+      "path": "Prefabs/UIPanel/LoginPanel.prefab"
+    },
+    {
+      "res": "LoginPanelold",
+      "path": "Prefabs/UIPanel/LoginPanelold.prefab"
+    },
+    {
+      "res": "heroCardItem",
+      "path": "Prefabs/UIPrefab/heroCardItem.prefab"
+    },
+    {
+      "res": "magicCardItem",
+      "path": "Prefabs/UIPrefab/magicCardItem.prefab"
+    },
+    {
+      "res": "soldierCardItem",
+      "path": "Prefabs/UIPrefab/soldierCardItem.prefab"
+    },
+    {
+      "res": "tbbuff",
+      "path": "Resources/LuabanGenerateDatas/tbbuff.json"
+    },
+    {
+      "res": "tbbuilds",
+      "path": "Resources/LuabanGenerateDatas/tbbuilds.json"
+    },
+    {
+      "res": "tbbuildslevel",
+      "path": "Resources/LuabanGenerateDatas/tbbuildslevel.json"
+    },
+    {
+      "res": "tbdrop",
+      "path": "Resources/LuabanGenerateDatas/tbdrop.json"
+    },
+    {
+      "res": "tbhero",
+      "path": "Resources/LuabanGenerateDatas/tbhero.json"
+    },
+    {
+      "res": "tbherolevel",
+      "path": "Resources/LuabanGenerateDatas/tbherolevel.json"
+    },
+    {
+      "res": "tbitem",
+      "path": "Resources/LuabanGenerateDatas/tbitem.json"
+    },
+    {
+      "res": "tbskilltable",
+      "path": "Resources/LuabanGenerateDatas/tbskilltable.json"
+    },
+    {
+      "res": "DM_Buildings",
+      "path": "Art/Building/Mat/DM_Buildings.mat"
+    },
+    {
+      "res": "DM_Buildings_pr",
+      "path": "Art/Building/Mat/DM_Buildings_pr.mat"
+    },
+    {
+      "res": "DM_Buildings_texture",
+      "path": "Art/Building/Mat/DM_Buildings_texture.tga"
+    },
+    {
+      "res": "DM_ChengQiang",
+      "path": "Art/Building/Model/DM_ChengQiang.fbx"
+    },
+    {
+      "res": "DM_ChengQiangJiao",
+      "path": "Art/Building/Model/DM_ChengQiangJiao.fbx"
+    },
+    {
+      "res": "DM_GuoLuFang",
+      "path": "Art/Building/Model/DM_GuoLuFang.fbx"
+    },
+    {
+      "res": "DM_JianTai",
+      "path": "Art/Building/Model/DM_JianTai.fbx"
+    },
+    {
+      "res": "DM_MingFang",
+      "path": "Art/Building/Model/DM_MingFang.fbx"
+    },
+    {
+      "res": "DM_YiShiTing",
+      "path": "Art/Building/Model/DM_YiShiTing.fbx"
+    },
+    {
+      "res": "B_ChengQiang",
+      "path": "Art/Building/Prefab/B_ChengQiang.prefab"
+    },
+    {
+      "res": "B_ChengQiangJiao",
+      "path": "Art/Building/Prefab/B_ChengQiangJiao.prefab"
+    },
+    {
+      "res": "B_GuoLuFang",
+      "path": "Art/Building/Prefab/B_GuoLuFang.prefab"
+    },
+    {
+      "res": "B_JianTai",
+      "path": "Art/Building/Prefab/B_JianTai.prefab"
+    },
+    {
+      "res": "B_MingFang",
+      "path": "Art/Building/Prefab/B_MingFang.prefab"
+    },
+    {
+      "res": "B_YiShiTing",
+      "path": "Art/Building/Prefab/B_YiShiTing.prefab"
+    },
+    {
+      "res": "FangZhiGlow",
+      "path": "Art/EFX/Materials/FangZhiGlow.mat"
+    },
+    {
+      "res": "FangZhiGlow_G",
+      "path": "Art/EFX/Materials/FangZhiGlow_G.mat"
+    },
+    {
+      "res": "ui_btn_grey_001",
+      "path": "Art/Sprites/BattleInAssets/ui_btn_grey_001.png"
+    },
+    {
+      "res": "ui_btn_shuaxin",
+      "path": "Art/Sprites/BattleInAssets/ui_btn_shuaxin.png"
+    },
+    {
+      "res": "ui_icon_ks_002",
+      "path": "Art/Sprites/BattleInAssets/ui_icon_ks_002.png"
+    },
+    {
+      "res": "ui_icon_mc_001",
+      "path": "Art/Sprites/BattleInAssets/ui_icon_mc_001.png"
+    },
+    {
+      "res": "ui_icon_r_003",
+      "path": "Art/Sprites/BattleInAssets/ui_icon_r_003.png"
+    },
+    {
+      "res": "ui_zd+linshi_jineng01",
+      "path": "Art/Sprites/BattleInAssets/ui_zd+linshi_jineng01.png"
+    },
+    {
+      "res": "ui_zd+linshi_jineng02",
+      "path": "Art/Sprites/BattleInAssets/ui_zd+linshi_jineng02.png"
+    },
+    {
+      "res": "ui_zd+linshi_jineng03",
+      "path": "Art/Sprites/BattleInAssets/ui_zd+linshi_jineng03.png"
+    },
+    {
+      "res": "ui_zd_avatar",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_avatar.png"
+    },
+    {
+      "res": "ui_zd_bg_001",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_bg_001.png"
+    },
+    {
+      "res": "ui_zd_bg_003",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_bg_003.png"
+    },
+    {
+      "res": "ui_zd_bg_grey_001",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_bg_grey_001.png"
+    },
+    {
+      "res": "ui_zd_bg_orange_01",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_bg_orange_01.png"
+    },
+    {
+      "res": "ui_zd_bg_purple_001",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_bg_purple_001.png"
+    },
+    {
+      "res": "ui_zd_but_001",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_but_001.png"
+    },
+    {
+      "res": "ui_zd_cards_bg_blue",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_cards_bg_blue.png"
+    },
+    {
+      "res": "ui_zd_cards_bg_orange color",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_cards_bg_orange color.png"
+    },
+    {
+      "res": "ui_zd_cards_bg_small",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_cards_bg_small.png"
+    },
+    {
+      "res": "ui_zd_card_bg_purple",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_card_bg_purple.png"
+    },
+    {
+      "res": "ui_zd_card_blue_01",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_card_blue_01.png"
+    },
+    {
+      "res": "ui_zd_card_blue_big",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_card_blue_big.png"
+    },
+    {
+      "res": "ui_zd_card_blue_small_001",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_card_blue_small_001.png"
+    },
+    {
+      "res": "ui_zd_card_jnl_001",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_card_jnl_001.png"
+    },
+    {
+      "res": "ui_zd_card_jnl_bg_002",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_card_jnl_bg_002.png"
+    },
+    {
+      "res": "ui_zd_card_orange color_big",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_card_orange color_big.png"
+    },
+    {
+      "res": "ui_zd_card_orange_02 ",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_card_orange_02 .png"
+    },
+    {
+      "res": "ui_zd_card_purple_02  ",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_card_purple_02  .png"
+    },
+    {
+      "res": "ui_zd_card_purple_big",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_card_purple_big.png"
+    },
+    {
+      "res": "ui_zd_icon_001",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_icon_001.png"
+    },
+    {
+      "res": "ui_zd_jdt_002",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_jdt_002.png"
+    },
+    {
+      "res": "ui_zd_jindutiao_purple_001",
+      "path": "Art/Sprites/BattleInAssets/ui_zd_jindutiao_purple_001.png"
+    },
+    {
+      "res": "小兵",
+      "path": "Art/Sprites/BattleInAssets/小兵.png"
+    },
+    {
+      "res": "战斗",
+      "path": "Art/Sprites/BattleInAssets/战斗.png"
+    },
+    {
+      "res": "战斗界面1024-恢复的",
+      "path": "Art/Sprites/BattleInAssets/战斗界面1024-恢复的.jpg"
+    },
+    {
+      "res": "战斗界面_三选一界面",
+      "path": "Art/Sprites/BattleInAssets/战斗界面_三选一界面.png"
+    },
+    {
+      "res": "技能图临时",
+      "path": "Art/Sprites/BattleInAssets/技能图临时.png"
+    },
+    {
+      "res": "角色01",
+      "path": "Art/Sprites/BattleInAssets/角色01.png"
+    },
+    {
+      "res": "角色灰色",
+      "path": "Art/Sprites/BattleInAssets/角色灰色.png"
+    },
+    {
+      "res": "icon_kp_005",
+      "path": "Art/Sprites/BattleReportAssets/icon_kp_005.png"
+    },
+    {
+      "res": "icon_qh_006",
+      "path": "Art/Sprites/BattleReportAssets/icon_qh_006.png"
+    },
+    {
+      "res": "icon_yx_004",
+      "path": "Art/Sprites/BattleReportAssets/icon_yx_004.png"
+    },
+    {
+      "res": "ui_bg",
+      "path": "Art/Sprites/BattleReportAssets/ui_bg.png"
+    },
+    {
+      "res": "ui_btn_blue_001",
+      "path": "Art/Sprites/BattleReportAssets/ui_btn_blue_001.png"
+    },
+    {
+      "res": "ui_btn_blue_002",
+      "path": "Art/Sprites/BattleReportAssets/ui_btn_blue_002.png"
+    },
+    {
+      "res": "ui_btn_grey_small_001(1)",
+      "path": "Art/Sprites/BattleReportAssets/ui_btn_grey_small_001(1).png"
+    },
+    {
+      "res": "ui_btn_grey_small_001",
+      "path": "Art/Sprites/BattleReportAssets/ui_btn_grey_small_001.png"
+    },
+    {
+      "res": "ui_btn_yellow_001",
+      "path": "Art/Sprites/BattleReportAssets/ui_btn_yellow_001.png"
+    },
+    {
+      "res": "ui_btn_yellow_002 ",
+      "path": "Art/Sprites/BattleReportAssets/ui_btn_yellow_002 .png"
+    },
+    {
+      "res": "ui_icon_001",
+      "path": "Art/Sprites/BattleReportAssets/ui_icon_001.png"
+    },
+    {
+      "res": "ui_icon_002",
+      "path": "Art/Sprites/BattleReportAssets/ui_icon_002.png"
+    },
+    {
+      "res": "ui_icon_003",
+      "path": "Art/Sprites/BattleReportAssets/ui_icon_003.png"
+    },
+    {
+      "res": "ui_icon_big_001",
+      "path": "Art/Sprites/BattleReportAssets/ui_icon_big_001.png"
+    },
+    {
+      "res": "ui_icon_mc_zy_big_01",
+      "path": "Art/Sprites/BattleReportAssets/ui_icon_mc_zy_big_01.png"
+    },
+    {
+      "res": "ui_icon_r_zy_big_001",
+      "path": "Art/Sprites/BattleReportAssets/ui_icon_r_zy_big_001.png"
+    },
+    {
+      "res": "ui_icon_sc_zy_ui_icon_sc_zy_big_001",
+      "path": "Art/Sprites/BattleReportAssets/ui_icon_sc_zy_ui_icon_sc_zy_big_001.png"
+    },
+    {
+      "res": "ui_icon_small_002",
+      "path": "Art/Sprites/BattleReportAssets/ui_icon_small_002.png"
+    },
+    {
+      "res": "ui_js_bg_001",
+      "path": "Art/Sprites/BattleReportAssets/ui_js_bg_001.png"
+    },
+    {
+      "res": "ui_js_bg_002",
+      "path": "Art/Sprites/BattleReportAssets/ui_js_bg_002.png"
+    },
+    {
+      "res": "ui_js_box_blue_01",
+      "path": "Art/Sprites/BattleReportAssets/ui_js_box_blue_01.png"
+    },
+    {
+      "res": "ui_js_box_grey_01",
+      "path": "Art/Sprites/BattleReportAssets/ui_js_box_grey_01.png"
+    },
+    {
+      "res": "ui_js_title_001",
+      "path": "Art/Sprites/BattleReportAssets/ui_js_title_001.png"
+    },
+    {
+      "res": "ui_js_title_002",
+      "path": "Art/Sprites/BattleReportAssets/ui_js_title_002.png"
+    },
+    {
+      "res": "失败结算界面03",
+      "path": "Art/Sprites/BattleReportAssets/失败结算界面03.png"
+    },
+    {
+      "res": "胜利结算界面01 拷贝 2",
+      "path": "Art/Sprites/BattleReportAssets/胜利结算界面01 拷贝 2.png"
+    },
+    {
+      "res": "胜利结算界面2",
+      "path": "Art/Sprites/BattleReportAssets/胜利结算界面2.png"
+    },
+    {
+      "res": "hero1",
+      "path": "Prefabs/BuildPrefab/BuildModel/hero1.prefab"
+    },
+    {
+      "res": "soilder",
+      "path": "Prefabs/BuildPrefab/BuildModel/soilder.prefab"
+    },
+    {
+      "res": "BuilderDownItem",
+      "path": "Prefabs/UIPanel/Item/BuilderDownItem.prefab"
+    },
+    {
+      "res": "logo",
+      "path": "Atlas/Sprite/LoginPanel/images/logo.png"
+    },
+    {
+      "res": "ui_bg_fangjianxuanze_bg",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_bg_fangjianxuanze_bg.png"
+    },
+    {
+      "res": "ui_btn_blue_big_001",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_btn_blue_big_001.png"
+    },
+    {
+      "res": "ui_btn_green",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_btn_green.png"
+    },
+    {
+      "res": "ui_gouxuan_02",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_gouxuan_02.png"
+    },
+    {
+      "res": "ui_icon_chongzhi",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_icon_chongzhi.png"
+    },
+    {
+      "res": "ui_icon_fbk_01",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_icon_fbk_01.png"
+    },
+    {
+      "res": "ui_icon_gog_03",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_icon_gog_03.png"
+    },
+    {
+      "res": "ui_icon_green",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_icon_green.png"
+    },
+    {
+      "res": "ui_icon_kefu",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_icon_kefu.png"
+    },
+    {
+      "res": "ui_icon_mima",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_icon_mima.png"
+    },
+    {
+      "res": "ui_icon_pg_02",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_icon_pg_02.png"
+    },
+    {
+      "res": "ui_icon_switch",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_icon_switch.png"
+    },
+    {
+      "res": "ui_icon_tishi_",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_icon_tishi_.png"
+    },
+    {
+      "res": "ui_icon_xuanze_01",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_icon_xuanze_01.png"
+    },
+    {
+      "res": "ui_icon_xuanze_02",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_icon_xuanze_02.png"
+    },
+    {
+      "res": "ui_icon_yk_04",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_icon_yk_04.png"
+    },
+    {
+      "res": "ui_icon_zhanghao",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_icon_zhanghao.png"
+    },
+    {
+      "res": "ui_iocn_xianshi_01",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_iocn_xianshi_01.png"
+    },
+    {
+      "res": "ui_iocn_yincang_02",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_iocn_yincang_02.png"
+    },
+    {
+      "res": "ui_log in_bg_big",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_log in_bg_big.png"
+    },
+    {
+      "res": "ui_log in_enter",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_log in_enter.png"
+    },
+    {
+      "res": "ui_log in_jindutiao_01",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_log in_jindutiao_01.png"
+    },
+    {
+      "res": "ui_log in_jindutiao_02",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_log in_jindutiao_02.png"
+    },
+    {
+      "res": "ui_log-in_enter",
+      "path": "Atlas/Sprite/LoginPanel/images/ui_log-in_enter.png"
+    },
+    {
+      "res": "矩形 9",
+      "path": "Atlas/Sprite/LoginPanel/images/矩形 9.png"
+    },
+    {
+      "res": "cedfabab52384583b89fd007b3c5d573",
+      "path": "Atlas/Sprite/LoginPanel/shutiao/cedfabab52384583b89fd007b3c5d573.png"
+    },
+    {
+      "res": "gou",
+      "path": "Atlas/Sprite/LoginPanel/shutiao/gou.png"
+    },
+    {
+      "res": "gou_di",
+      "path": "Atlas/Sprite/LoginPanel/shutiao/gou_di.png"
+    },
+    {
+      "res": "jindu",
+      "path": "Atlas/Sprite/LoginPanel/shutiao/jindu.png"
+    },
+    {
+      "res": "jindu_di",
+      "path": "Atlas/Sprite/LoginPanel/shutiao/jindu_di.png"
+    },
+    {
+      "res": "jingruyouxi_di",
+      "path": "Atlas/Sprite/LoginPanel/shutiao/jingruyouxi_di.png"
+    },
+    {
+      "res": "logTest",
+      "path": "Atlas/Sprite/LoginPanel/shutiao/logTest.png"
+    },
+    {
+      "res": "shuru_di",
+      "path": "Atlas/Sprite/LoginPanel/shutiao/shuru_di.png"
+    },
+    {
+      "res": "shutiao",
+      "path": "Atlas/Sprite/LoginPanel/shutiao/shutiao.png"
+    },
+    {
+      "res": "aigei_com",
+      "path": "Atlas/Sprite/LoginPanel/Videos/aigei_com.mp4"
+    },
+    {
+      "res": "DengLu_movie01",
+      "path": "Atlas/Sprite/LoginPanel/Videos/DengLu_movie01.mp4"
+    },
+    {
+      "res": "DengLu_movie02",
+      "path": "Atlas/Sprite/LoginPanel/Videos/DengLu_movie02.mp4"
+    },
+    {
+      "res": "New Material",
+      "path": "Atlas/Sprite/LoginPanel/Videos/New Material.mat"
+    },
+    {
+      "res": "New Render Texture",
+      "path": "Atlas/Sprite/LoginPanel/Videos/New Render Texture.renderTexture"
+    },
+    {
+      "res": "打开游戏加载界面",
+      "path": "Atlas/Sprite/LoginPanel/原图/打开游戏加载界面.png"
+    },
+    {
+      "res": "登录完成选服进入游戏界面",
+      "path": "Atlas/Sprite/LoginPanel/原图/登录完成选服进入游戏界面.png"
+    },
+    {
+      "res": "登录界面",
+      "path": "Atlas/Sprite/LoginPanel/原图/登录界面.png"
+    },
+    {
+      "res": "进入游戏加载界面",
+      "path": "Atlas/Sprite/LoginPanel/原图/进入游戏加载界面.png"
+    },
+    {
+      "res": "TestBattleReportPanel",
+      "path": "Prefabs/UIPanel/Scenes/TestUIPanels/TestBattleReportPanel.unity"
+    }
+  ]
+}

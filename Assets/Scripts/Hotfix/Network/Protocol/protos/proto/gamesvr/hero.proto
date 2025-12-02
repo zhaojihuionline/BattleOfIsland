@@ -1,0 +1,87 @@
+syntax = "proto3";
+
+package gamesvr;
+
+option go_package = "pitaya-game/protos/pb/golang/gamesvr;gamesvrpb";
+option csharp_namespace = "PitayaGame.GameSvr";
+
+import "common/types/types.proto";
+
+// ============================================================================
+// 英雄服务协议定义
+// 微服务名称：gamesvr
+// 包括：英雄管理、招募、升级、装备
+// ============================================================================
+
+// ========== 数据结构 ==========
+
+// 技能数据
+message SkillData {
+  int32 skill_id = 1;  // 技能ID
+  int32 level = 2;     // 技能等级
+}
+
+// 英雄数据
+message HeroData {
+  int64 hero_id = 1;               // 英雄ID
+  string hero_name = 2;             // 英雄名称
+  int32 hero_config_id = 3;         // 英雄ID（配置表）
+  int32 level = 4;                  // 等级
+  repeated SkillData skills = 14;   // 技能列表（技能ID和等级）
+  int64 created_at = 15;            // 创建时间
+  int64 updated_at = 16;            // 更新时间
+}
+
+// ========== 获取英雄信息 ==========
+
+// 获取英雄信息请求
+message GetHeroInfoRequest {
+  int64 hero_id = 1;
+}
+
+// 获取英雄信息响应
+message GetHeroInfoResponse {
+  types.CommonResp resp = 1;
+  HeroData hero_data = 2;
+}
+
+// ========== 获取我的所有英雄 ==========
+
+// 获取我的所有英雄请求
+message GetMyHeroesRequest {
+  // 无需参数，从 Session 获取 user_id
+}
+
+// 获取我的所有英雄响应
+message GetMyHeroesResponse {
+  types.CommonResp resp = 1;
+  repeated HeroData heroes = 2;
+}
+
+// ========== 招募英雄 ==========
+
+// 招募英雄请求
+message RecruitHeroRequest {
+  int32 hero_config_id = 1;  // 英雄配置表ID，user_id 从 Session 获取
+  string hero_name = 2;
+}
+
+// 招募英雄响应
+message RecruitHeroResponse {
+  types.CommonResp resp = 1;
+  int64 hero_id = 2;  // 新招募的英雄ID
+}
+
+// ========== 升级英雄 ==========
+
+// 升级英雄请求
+message UpgradeHeroRequest {
+  int64 hero_id = 1;
+}
+
+// 升级英雄响应
+message UpgradeHeroResponse {
+  types.CommonResp resp = 1;
+  int32 new_level = 2;
+}
+

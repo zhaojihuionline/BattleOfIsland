@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HalfAvatar Mask
+  m_Mask: 01000000010000000100000000000000000000000100000001000000010000000100000001000000010000000000000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: BONE_BASE
+    m_Weight: 1
+  - m_Path: BONE_BASE/Bone_platform
+    m_Weight: 1
+  - m_Path: BONE_BASE/Bone_platform/Bone_arm
+    m_Weight: 1
+  - m_Path: BONE_BASE/Bone_platform/Bone_arm/Bone_rock
+    m_Weight: 1
+  - m_Path: BONE_BASE/Bone_platform/Bone_front
+    m_Weight: 1
+  - m_Path: BONE_BASE/Bone_platform/Bone_side_L
+    m_Weight: 1
+  - m_Path: BONE_BASE/Bone_platform/Bone_side_R
+    m_Weight: 1
+  - m_Path: BONE_BASE/Bone_wheel
+    m_Weight: 1
+  - m_Path: BONE_BASE/Bone_wheel 1
+    m_Weight: 1
+  - m_Path: BONE_BASE/Bone_wheel001
+    m_Weight: 1
+  - m_Path: BONE_BASE/Bone_wheel002
+    m_Weight: 1
+  - m_Path: Catapult_lvl1
+    m_Weight: 1
+  - m_Path: Catapult_lvl2
+    m_Weight: 1
+  - m_Path: Catapult_lvl3
+    m_Weight: 1
+  - m_Path: projectile_lvl1
+    m_Weight: 1
+  - m_Path: projectile_lvl2
+    m_Weight: 1
+  - m_Path: projectile_lvl3
+    m_Weight: 1

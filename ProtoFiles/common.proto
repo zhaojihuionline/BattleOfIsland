@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package game.protocol;
+
+message HeartbeatRequest {
+    int64 client_time = 1;
+    string token = 2;
+}
+
+message HeartbeatResponse {
+    int64 client_time = 1;
+    int64 server_time = 2;
+    string status = 3;
+}
+
+message ErrorResponse {
+    int32 code = 1;
+    string message = 2;
+    string detail = 3;
+    string route = 4;
+    
+    enum ErrorCode {
+        UNKNOWN_ERROR = 0;
+        AUTH_FAILED = 1;
+        INVALID_PARAMS = 2;
+        SERVER_ERROR = 3;
+        MAINTENANCE = 4;
+        RATE_LIMIT = 5;
+    }
+}
+
+message EmptyMessage {}
+
+message ServerTimeResponse {
+    int64 server_time = 1;
+    int64 client_time = 2;
+}
+
+message PingRequest {
+    int64 send_time = 1;
+    string payload = 2;
+}
+
+message PingResponse {
+    int64 send_time = 1;
+    int64 receive_time = 2;
+    int64 server_time = 3;
+    string payload = 4;
+}

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package game.protocol;
+
+message RequestPacket {
+    uint32 id = 1;
+    string route = 2;
+    bytes data = 3;
+}
+
+message ResponsePacket {
+    uint32 id = 1;
+    string route = 2;
+    bytes data = 3;
+    string error = 4;
+}
+
+message PushPacket {
+    string route = 1;
+    bytes data = 2;
+}

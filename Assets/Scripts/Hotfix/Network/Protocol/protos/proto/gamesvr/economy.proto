@@ -1,0 +1,113 @@
+syntax = "proto3";
+
+package gamesvr;
+
+option go_package = "pitaya-game/protos/pb/golang/gamesvr;gamesvrpb";
+option csharp_namespace = "PitayaGame.GameSvr";
+
+import "common/types/types.proto";
+
+// ============================================================================
+// 经济系统（货币、资源、奖励）协议定义
+// ============================================================================
+
+// 货币信息
+message CurrencyInfo {
+  int64 coin = 1;      // 金币
+  int64 diamond = 2;   // 钻石
+  int64 energy = 3;    // 体力/能量
+}
+
+// 具体资源数量（通过物品ID区分）
+message ResourceAmount {
+  int32 item_id = 1;  // Item表中的唯一ID
+  int64 amount = 2;
+}
+
+// 资源信息
+message ResourceInfo {
+  repeated ResourceAmount resources = 1;
+}
+
+// 货币变更（直接使用货币 ItemID，ItemType = 1）
+message CurrencyChange {
+  int32 item_id = 1;  // 货币 ItemID（ItemType = 1，对应 Coin/钻石/体力等货币物品）
+  int64 delta = 2;
+}
+
+// 资源变更
+message ResourceChange {
+  int32 item_id = 1;  // Item表中的唯一ID
+  int64 delta = 2;
+}
+
+// 物品奖励
+message ItemReward {
+  int64 bag_id = 1;
+  int32 item_id = 2;
+  int64 amount = 3;
+}
+
+// 通用奖励项
+message RewardItem {
+  oneof reward_detail {
+    CurrencyChange currency = 1;
+    ItemReward item = 2;
+    ResourceChange resource = 3;  // 资源奖励
+  }
+}
+
+// 奖励生效后快照
+message RewardDelta {
+  RewardItem reward = 1;
+  int64 before = 2;
+  int64 after = 3;
+}
+
+// 获取经济信息请求
+message GetEconomyInfoRequest {}
+
+// 获取经济信息响应
+message GetEconomyInfoResponse {
+  types.CommonResp resp = 1;
+  CurrencyInfo currency = 2;
+  ResourceInfo resources = 3;
+}
+
+// 同步货币请求
+message SyncCurrencyRequest {
+  repeated CurrencyChange changes = 1;
+  string reason = 2;
+}
+
+// 同步货币响应
+message SyncCurrencyResponse {
+  types.CommonResp resp = 1;
+  CurrencyInfo currency = 2;
+}
+
+// 同步资源请求
+message SyncResourceRequest {
+  repeated ResourceChange changes = 1;
+  string reason = 2;
+}
+
+// 同步资源响应
+message SyncResourceResponse {
+  types.CommonResp resp = 1;
+  ResourceInfo resources = 2;
+}
+
+// 发放奖励请求
+message GrantRewardRequest {
+  repeated RewardItem rewards = 1;
+  string source = 2;        // 奖励来源（如任务、GM）
+  string reference_id = 3;  // 业务ID
+}
+
+// 发放奖励响应
+message GrantRewardResponse {
+  types.CommonResp resp = 1;
+  repeated RewardDelta applied_rewards = 2;
+}
+

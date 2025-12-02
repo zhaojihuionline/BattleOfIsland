@@ -1,0 +1,206 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Trail_01
+  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _BLEND_PARTICLEADD
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseTexture:
+        m_Texture: {fileID: 2800000, guid: e78f16be075467d48b48a68ebf77339e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DissovleTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortionTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _InnerTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: cee1b5277f2ff094d9fea530b28252bb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 1
+    - _AlphaClip: 0
+    - _AphlaClipThreshold: 0.1
+    - _BasePannerOnce: 0
+    - _BaseRotato: 0
+    - _Blend: 0
+    - _BumpScale: 1
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DecalSize: 1
+    - _DepthFadeDistance: 0.2
+    - _DissBasicValues: 5
+    - _DissColorOverLifeA: 0
+    - _DissForParticle: 0
+    - _DissovleBrightEdge_Intensity: 0
+    - _DissovleBrightEdge_Width: 0.1
+    - _DissovleIntensity: 0
+    - _DissovleRotato: 0
+    - _Distortion: 0
+    - _DitherAlphaValue: 1
+    - _DstBlend: 1
+    - _EdgeMax: 1
+    - _EdgeMin: -1
+    - _EdgeScale: 0.03
+    - _EnvironmentReflections: 1
+    - _FrenelBRF: 0.04
+    - _FresnelIntensity: 1
+    - _FresnelPower: 5
+    - _GlossMapScale: 0
+    - _Glossiness: 0
+    - _GlossyReflections: 0
+    - _IWantStopTime: 0
+    - _InnerColorIntensity: 1
+    - _InvFade: 1
+    - _IsDecal: 0
+    - _IsEnemy: 0
+    - _IsHardDecalY: 0
+    - _LaserCutOn: 0
+    - _LaserCutValue: 1
+    - _MaskRotato: 0
+    - _Metallic: 0
+    - _MoveCarLineOn: 0
+    - _MoveCarLineValue: 0
+    - _MuMaskOrAddMask: 0
+    - _NoiseForParticle: 0
+    - _NoiseRotato: 0
+    - _NoiseSacle: 0.02
+    - _NoiseUV1OR2: 0
+    - _OcclusionStrength: 1
+    - _OverrideInnerColor: 0
+    - _PannerForParticle: 0
+    - _Power: 1
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _RgbToAlpha: 0
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 5
+    - _StencilComp: 9
+    - _StencilPass: 0
+    - _Surface: 0
+    - _TexColorIntensity: 1
+    - _TonemappingAdapt: 0
+    - _USEOnePanner: 0
+    - _UesDistortion: 0
+    - _UseBaseRotateAngle: 0
+    - _UseBaseRotato: 0
+    - _UseDepthEdge: 0
+    - _UseDepthFade: 0
+    - _UseDissolveRotateAngle: 0
+    - _UseDissovle: 0
+    - _UseDissovleEdge: 0
+    - _UseDissovleRotato: 0
+    - _UseFresnel: 0
+    - _UseInnerTexture: 0
+    - _UseMask: 0
+    - _UseMaskDither: 0
+    - _UseMaskLaser: 0
+    - _UseMaskNoise: 0
+    - _UseMaskRotateAngle: 0
+    - _UseMaskRotato: 0
+    - _UseMuBase: 0
+    - _UseNoise: 0
+    - _UseNoiseRotateAngle: 0
+    - _UseNosieRotato: 0
+    - _WorkflowMode: 1
+    - _ZWrite: 1
+    - _Ztest: 4
+    m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseUV_Panner: {r: 1, g: 1, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DissovleBrightEdge_Color: {r: 1, g: 1, b: 1, a: 0}
+    - _DissovleUV_Panner: {r: 1, g: 1, b: 0, a: 0}
+    - _EdgeColor: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FresnelColor: {r: 1, g: 1, b: 1, a: 0}
+    - _HittedPos: {r: 0, g: 0, b: 0, a: 0}
+    - _HittedPosOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _InitialPos: {r: 0, g: 0, b: 0, a: 0}
+    - _MsakUV_Panner: {r: 1, g: 1, b: 0, a: 0}
+    - _NoiseUV_Panner: {r: 1, g: 1, b: 0, a: 0}
+    - _NormalDir: {r: 1, g: 0, b: 0, a: 0}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _TexColor: {r: 1, g: 1, b: 1, a: 0}
+    - _TexColorBuffer: {r: 1, g: 1, b: 1, a: 0}
+    - _TintColor: {r: 0.754717, g: 0.754717, b: 0.754717, a: 0.5}
+  m_BuildTextureStacks: []
+--- !u!114 &8976642722235907411
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1

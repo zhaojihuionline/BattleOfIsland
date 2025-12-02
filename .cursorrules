@@ -1,0 +1,180 @@
+# Unity URP 项目 - Cursor 自动上下文规则
+
+## 项目概述
+这是一个基于 Unity URP (Universal Render Pipeline) 的游戏项目，使用 QFramework 框架进行架构设计，支持 HybridCLR 热更新。
+
+## 技术栈
+- **引擎**: Unity (URP)
+- **语言**: C# (.NET Framework)
+- **框架**: QFramework (命令模式、MVC 架构)
+- **热更新**: HybridCLR
+- **异步库**: UniTask, UniRx
+- **配置工具**: Luban
+- **路径寻找**: A* Pathfinding Project
+- **动画**: DOTween
+
+## 项目结构
+```
+Assets/
+├── Scripts/
+│   ├── AOT/              # AOT 程序集（不可热更新）
+│   └── Hotfix/           # 热更新程序集
+│       ├── GameLogic/    # 游戏逻辑
+│       │   ├── Battle/   # 战斗系统
+│       │   ├── Entity/   # 实体系统
+│       │   ├── Commands/ # 命令类
+│       │   ├── Skill/    # 技能系统
+│       │   └── UI/       # UI 相关
+│       ├── Network/      # 网络模块
+│       ├── LubanGencode/ # 配置代码生成
+│       └── Tool/         # 工具类
+├── QFramework/           # QFramework 框架代码
+└── Plugins/              # 第三方插件
+```
+
+## 编码规范
+
+### C# 编码风格
+- 使用 PascalCase 命名类、方法、属性
+- 使用 camelCase 命名私有字段和局部变量
+- 私有字段可以使用 `_` 前缀或 `this.` 前缀
+- 使用 XML 注释 (`/// <summary>`) 为公共 API 添加文档
+- 遵循 Unity C# 编码约定
+
+### QFramework 架构模式
+- **Command**: 继承 `AbstractCommand` 或 `AbstractCommand<T>`，实现 `OnExecute()` 方法
+- **Model**: 继承 `AbstractModel`，用于数据管理
+- **View**: 继承 `MonoBehaviour` 或 `UIComponent`，用于视图展示
+- **System**: 继承 `AbstractSystem`，用于系统逻辑
+
+## QFramework 架构使用规范（必须遵守）
+
+QFramework 系统设计架构分为四层及其规则：
+
+### 表现层：ViewController 层（IController 接口）
+负责接收输入和状态变化时的表现，一般情况下，MonoBehaviour 均为表现层。
+
+**权限**：
+- ✅ 可以获取 System
+- ✅ 可以获取 Model
+- ✅ 可以发送 Command
+- ✅ 可以监听 Event
+
+### 系统层：System 层（ISystem 接口）
+帮助 IController 承担一部分逻辑，在多个表现层共享的逻辑，比如计时系统、商城系统、成就系统等。
+
+**权限**：
+- ✅ 可以获取 System
+- ✅ 可以获取 Model
+
+### 数据层：Model 层（IModel 接口）
+负责数据的定义、数据的增删查改方法的提供。
+
+**权限**：
+- ✅ 可以获取 Utility
+- ✅ 可以发送 Event
+
+### 工具层：Utility 层（IUtility 接口）
+负责提供基础设施，比如存储方法、序列化方法、网络连接方法、蓝牙方法、SDK、框架继承等。啥都干不了，可以集成第三方库，或者封装 API。
+
+### Command（核心概念）
+**权限**：
+- ✅ 可以获取 System
+- ✅ 可以获取 Model
+- ✅ 可以发送 Event
+- ✅ 可以发送 Command
+
+### 层级规则（必须严格遵守）
+
+1. **状态变更规则**：
+   - ❌ IController 更改 ISystem、IModel 的状态**必须用 Command**
+   - ✅ ISystem、IModel 状态发生变更后通知 IController**必须用事件或 BindableProperty**
+
+2. **数据查询规则**：
+   - ✅ IController 可以获取 ISystem、IModel 对象来进行**数据查询**
+
+3. **Command 规则**：
+   - ❌ ICommand **不能有状态**
+
+4. **层级访问规则**：
+   - ✅ 上层可以直接获取下层
+   - ❌ 下层**不能获取上层对象**
+
+5. **通信规则**：
+   - ✅ 下层向上层通信**用事件**
+   - ✅ 上层向下层通信**用方法调用**（只是做查询，状态变更用 Command）
+   - ⚠️ IController 的交互逻辑为特别情况，**只能用 Command**
+
+### 命名空间
+- `QFramework.Game`: 游戏逻辑相关
+- `QFramework.UI`: UI 相关
+- `cfg`: 配置数据相关（Luban 生成）
+
+### Unity 特定规范
+- MonoBehaviour 脚本使用 PascalCase 命名
+- 公共字段在 Inspector 中显示时使用 PascalCase
+- 使用 `[SerializeField]` 标记需要序列化的私有字段
+- 避免在 Update() 中进行耗时操作，使用协程或 UniTask
+- GameObject 销毁使用 `GameObject.Destroy()` 而不是 `Destroy()`
+
+### 代码组织
+- 每个类一个文件
+- 相关功能放在同一文件夹下
+- Command 类放在 `Commands/` 目录
+- 使用 partial 类分离 Designer 代码（如 `EntityController.Designer.cs`）
+- 背包 UI 模块集中在 `Assets/Scripts/Hotfix/GameLogic/UI/BagPanel/`，并按 `Commands/、Model/、Data/、System/、View/、Utility/` 分层；原先散落在 `GameLogic/Commands/LocalCommands.cs` 与 `Network/Command/ServerCommand.cs` 的背包逻辑已迁移到这些子目录（例如 `Commands/SwitchBagTabCommand.cs`、`Commands/GetBagItemsCommand.cs`、`Model/BagModel.cs`），避免跨模块耦合
+
+## 常用模式
+
+### Command 模式示例
+```csharp
+public class MyCommand : AbstractCommand
+{
+    public int param;
+    
+    public MyCommand(int _param)
+    {
+        this.param = _param;
+    }
+    
+    protected override void OnExecute()
+    {
+        // 执行逻辑
+    }
+}
+```
+
+### 访问 Model
+```csharp
+var model = this.GetModel<MyModel>();
+```
+
+### 访问 View
+```csharp
+var view = MyView.Instance;
+```
+
+### 发送命令
+```csharp
+this.SendCommand(new MyCommand(123));
+```
+
+## 注意事项
+- Hotfix 程序集中的代码可以热更新，AOT 程序集中的代码不能
+- 避免在热更新代码中直接引用 AOT 代码，使用接口或抽象类
+- 使用 UniTask 替代协程进行异步操作
+- 网络通信使用项目中的 Network 模块
+- 配置数据通过 Luban 生成的 cfg 命名空间访问
+- 实体系统使用 `EntityController` 和 `IEntity` 接口
+
+## 代码生成建议
+- 生成 Command 类时遵循 QFramework 的 AbstractCommand 模式
+- 生成 MonoBehaviour 脚本时包含适当的生命周期方法
+- 使用中文注释说明功能（项目代码中有中文注释）
+- 保持与现有代码风格一致
+
+## 调试和测试
+- 使用项目中的 `Log.cs` 进行日志输出
+- 使用 `FPSDisplay.cs` 显示性能信息
+- 测试场景放在 `Assets/Demo/` 或 `Assets/Hotfix/BuffSystemKit/Scenes/`
+

@@ -1,0 +1,105 @@
+# Unity 生成的文件
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Unity 自动生成的项目文件
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity3D 生成的 meta 文件
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Unity3D 生成的文件
+sysinfo.txt
+
+# Builds
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Crashlytics 生成的文件
+crashlytics-build.properties
+
+# Visual Studio 缓存目录
+.vs/
+.vscode/
+.idea/
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Visual Studio 配置文件
+.vsconfig
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Desktop.ini
+$RECYCLE.BIN/
+
+# 编译输出
+obj/
+bin/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# 临时文件
+*.tmp
+*.temp
+*.cache
+*.swp
+*.swo
+*~
+
+# HybridCLR 生成的文件
+HybridCLRData/
+HybridCLRData/LocalIl2CppData-*/
+HybridCLRData/AssembliesPostIl2CppStrip/
+HybridCLRData/StrippedAOTDllsTempProj/
+
+# 热更新输出
+HotfixOutput/
+
+# 其他
+*.orig
+*.bak
+*.backup
+

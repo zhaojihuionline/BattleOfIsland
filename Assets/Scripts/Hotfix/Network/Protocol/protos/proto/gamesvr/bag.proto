@@ -1,0 +1,88 @@
+syntax = "proto3";
+
+package gamesvr;
+
+option go_package = "pitaya-game/protos/pb/golang/gamesvr;gamesvrpb";
+option csharp_namespace = "PitayaGame.GameSvr";
+
+import "common/types/types.proto";
+import "common/enums/enums.proto";
+import "gamesvr/economy.proto";
+
+// ============================================================================
+// 背包与物品系统协议定义
+// ============================================================================
+
+// 背包物品信息
+message BagItem {
+  int64 bag_id = 1;
+  int32 item_id = 2;
+  int32 count = 3;
+  int32 position = 4;
+  string bind_status = 5;
+  int64 expire_time = 6;
+  bool locked = 7;
+  int64 created_at = 8;
+  int64 updated_at = 9;
+}
+
+// 背包容量信息
+message BagCapacityInfo {
+  int32 capacity = 1;
+  int32 used = 2;
+}
+
+// 获取背包列表请求
+message GetBagItemsRequest {
+  int32 page = 1;
+  int32 page_size = 2;
+  enums.ItemType item_type = 3;
+}
+
+// 获取背包列表响应
+message GetBagItemsResponse {
+  types.CommonResp resp = 1;
+  repeated BagItem items = 2;
+  BagCapacityInfo capacity = 3;
+  types.PageResp page = 4;
+}
+
+// 使用道具请求
+message UseBagItemRequest {
+  int64 bag_id = 1;
+  int32 count = 2;
+  string client_sequence = 3;
+  repeated int32 selected_reward_ids = 4; // 自选奖励ID列表（用于 Choice 和 Choice2 类型）
+}
+
+// 使用道具响应
+message UseBagItemResponse {
+  types.CommonResp resp = 1;
+  repeated RewardDelta rewards = 2;
+}
+
+// 丢弃物品请求
+message DiscardBagItemRequest {
+  int64 bag_id = 1;
+  int32 count = 2;
+}
+
+// 丢弃物品响应
+message DiscardBagItemResponse {
+  types.CommonResp resp = 1;
+  BagItem item = 2;
+}
+
+// 添加物品到背包请求（支持货币、资源、背包物品）
+message AddBagItemsRequest {
+  repeated RewardItem items = 1;  // 要添加的物品列表（货币、资源、背包物品）
+  string reason = 2;               // 添加原因（如任务奖励、GM 发放等）
+  string reference_id = 3;         // 业务ID（可选，用于追踪来源）
+}
+
+// 添加物品到背包响应
+message AddBagItemsResponse {
+  types.CommonResp resp = 1;
+  repeated RewardDelta applied_items = 2;  // 已添加的物品变更详情
+}
+

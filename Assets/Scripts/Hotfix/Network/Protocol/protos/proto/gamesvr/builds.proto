@@ -1,0 +1,113 @@
+syntax = "proto3";
+
+package gamesvr;
+
+option go_package = "pitaya-game/protos/pb/golang/gamesvr;gamesvrpb";
+option csharp_namespace = "PitayaGame.GameSvr";
+
+import "common/types/types.proto";
+
+// ============================================================================
+// 建筑服务协议定义
+// 微服务名称：gamesvr
+// 包括：建筑管理、建造、升级、移动、摧毁
+// ============================================================================
+
+// ========== 数据结构 ==========
+
+// 建筑数据
+message BuildingData {
+  int64 build_id = 1;               // 建筑ID（实例ID）
+  int32 build_config_id = 2;        // 建筑配置表ID（对应Builds表的ID）
+  int32 level = 3;                  // 当前等级
+  types.Vector2 position = 4;       // 建筑坐标位置
+  int32 building_type = 5;          // 建筑类型（枚举）
+  string build_name = 6;            // 建筑名称
+  int64 upgrade_end_time = 7;       // 升级完成时间（0表示未升级）
+  int64 created_at = 8;             // 创建时间
+  int64 updated_at = 9;             // 更新时间
+}
+
+// ========== 获取建筑信息 ==========
+
+// 获取建筑信息请求
+message GetBuildingInfoRequest {
+  int64 build_id = 1;
+}
+
+// 获取建筑信息响应
+message GetBuildingInfoResponse {
+  types.CommonResp resp = 1;
+  BuildingData building_data = 2;
+}
+
+// ========== 获取我的所有建筑 ==========
+
+// 获取我的所有建筑请求
+message GetMyBuildingsRequest {
+  // 无需参数，从 Session 获取 user_id
+  int32 building_type = 1;  // 可选：按建筑类型筛选（0表示全部）
+}
+
+// 获取我的所有建筑响应
+message GetMyBuildingsResponse {
+  types.CommonResp resp = 1;
+  repeated BuildingData buildings = 2;
+}
+
+// ========== 建筑建造 ==========
+
+// 建筑建造请求
+message ConstructBuildingRequest {
+  int32 build_config_id = 1;  // 建筑配置表ID，user_id 从 Session 获取
+  types.Vector2 position = 2;  // 建筑位置坐标
+}
+
+// 建筑建造响应
+message ConstructBuildingResponse {
+  types.CommonResp resp = 1;
+  int64 build_id = 2;          // 新建造的建筑ID
+  BuildingData building_data = 3;  // 完整建筑数据
+}
+
+// ========== 建筑升级 ==========
+
+// 建筑升级请求
+message UpgradeBuildingRequest {
+  int64 build_id = 1;
+  bool instant_upgrade = 2;    // 是否立即完成（消耗道具或钻石）
+}
+
+// 建筑升级响应
+message UpgradeBuildingResponse {
+  types.CommonResp resp = 1;
+  int32 new_level = 2;         // 新等级
+  int64 upgrade_end_time = 3;  // 升级完成时间（0表示已完成）
+}
+
+// ========== 建筑移动 ==========
+
+// 建筑移动请求
+message MoveBuildingRequest {
+  int64 build_id = 1;
+  types.Vector2 new_position = 2;  // 新坐标位置
+}
+
+// 建筑移动响应
+message MoveBuildingResponse {
+  types.CommonResp resp = 1;
+}
+
+// ========== 摧毁建筑 ==========
+
+// 摧毁建筑请求
+message DestroyBuildingRequest {
+  int64 build_id = 1;
+}
+
+// 摧毁建筑响应
+message DestroyBuildingResponse {
+  types.CommonResp resp = 1;
+  repeated types.ItemReward rewards = 2;  // 返还的资源（如有）
+}
+

@@ -1,0 +1,1082 @@
+[
+  {
+    "Id": 1000101,
+    "Hero": 10001,
+    "Name": "盾兵1级",
+    "Level": 1,
+    "Attack": 15,
+    "Defense": 3,
+    "Health": 50,
+    "Penetrat": 2,
+    "AttackRange": 50,
+    "AttackSpeed": 1,
+    "Speed": 150,
+    "Cost": 30,
+    "Mod": "mercenary_model_1000101",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 1000102,
+    "Hero": 10001,
+    "Name": "盾兵2级",
+    "Level": 2,
+    "Attack": 16,
+    "Defense": 4,
+    "Health": 55,
+    "Penetrat": 3,
+    "AttackRange": 50,
+    "AttackSpeed": 1,
+    "Speed": 150,
+    "Cost": 30,
+    "Mod": "mercenary_model_1000102",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 1000103,
+    "Hero": 10001,
+    "Name": "盾兵3级",
+    "Level": 3,
+    "Attack": 17,
+    "Defense": 5,
+    "Health": 60,
+    "Penetrat": 4,
+    "AttackRange": 50,
+    "AttackSpeed": 1,
+    "Speed": 150,
+    "Cost": 33,
+    "Mod": "mercenary_model_1000103",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 1000104,
+    "Hero": 10001,
+    "Name": "盾兵4级",
+    "Level": 4,
+    "Attack": 18,
+    "Defense": 6,
+    "Health": 65,
+    "Penetrat": 5,
+    "AttackRange": 50,
+    "AttackSpeed": 1.1,
+    "Speed": 150,
+    "Cost": 33,
+    "Mod": "mercenary_model_1000104",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 1000105,
+    "Hero": 10001,
+    "Name": "盾兵5级",
+    "Level": 5,
+    "Attack": 19,
+    "Defense": 7,
+    "Health": 70,
+    "Penetrat": 6,
+    "AttackRange": 50,
+    "AttackSpeed": 1.1,
+    "Speed": 150,
+    "Cost": 36,
+    "Mod": "mercenary_model_1000105",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 1000106,
+    "Hero": 10001,
+    "Name": "盾兵6级",
+    "Level": 6,
+    "Attack": 20,
+    "Defense": 8,
+    "Health": 75,
+    "Penetrat": 7,
+    "AttackRange": 50,
+    "AttackSpeed": 1.1,
+    "Speed": 150,
+    "Cost": 36,
+    "Mod": "mercenary_model_1000106",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 1000107,
+    "Hero": 10001,
+    "Name": "盾兵7级",
+    "Level": 7,
+    "Attack": 21,
+    "Defense": 9,
+    "Health": 80,
+    "Penetrat": 8,
+    "AttackRange": 50,
+    "AttackSpeed": 1.2,
+    "Speed": 150,
+    "Cost": 39,
+    "Mod": "mercenary_model_1000107",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 1000108,
+    "Hero": 10001,
+    "Name": "盾兵8级",
+    "Level": 8,
+    "Attack": 22,
+    "Defense": 10,
+    "Health": 85,
+    "Penetrat": 9,
+    "AttackRange": 50,
+    "AttackSpeed": 1.2,
+    "Speed": 150,
+    "Cost": 39,
+    "Mod": "mercenary_model_1000108",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 1000109,
+    "Hero": 10001,
+    "Name": "盾兵9级",
+    "Level": 9,
+    "Attack": 23,
+    "Defense": 11,
+    "Health": 90,
+    "Penetrat": 10,
+    "AttackRange": 50,
+    "AttackSpeed": 1.2,
+    "Speed": 150,
+    "Cost": 42,
+    "Mod": "mercenary_model_1000109",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 1000110,
+    "Hero": 10001,
+    "Name": "盾兵10级",
+    "Level": 10,
+    "Attack": 24,
+    "Defense": 12,
+    "Health": 95,
+    "Penetrat": 11,
+    "AttackRange": 50,
+    "AttackSpeed": 1.2,
+    "Speed": 150,
+    "Cost": 42,
+    "Mod": "mercenary_model_1000110",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 1000111,
+    "Hero": 10001,
+    "Name": "盾兵11级",
+    "Level": 11,
+    "Attack": 25,
+    "Defense": 13,
+    "Health": 100,
+    "Penetrat": 12,
+    "AttackRange": 50,
+    "AttackSpeed": 1.2,
+    "Speed": 150,
+    "Cost": 45,
+    "Mod": "mercenary_model_1000111",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 1000112,
+    "Hero": 10001,
+    "Name": "盾兵12级",
+    "Level": 12,
+    "Attack": 26,
+    "Defense": 14,
+    "Health": 105,
+    "Penetrat": 13,
+    "AttackRange": 50,
+    "AttackSpeed": 1.2,
+    "Speed": 150,
+    "Cost": 45,
+    "Mod": "mercenary_model_1000112",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 1000113,
+    "Hero": 10001,
+    "Name": "盾兵13级",
+    "Level": 13,
+    "Attack": 27,
+    "Defense": 15,
+    "Health": 110,
+    "Penetrat": 14,
+    "AttackRange": 50,
+    "AttackSpeed": 1.2,
+    "Speed": 150,
+    "Cost": 47,
+    "Mod": "mercenary_model_1000113",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 1000114,
+    "Hero": 10001,
+    "Name": "盾兵14级",
+    "Level": 14,
+    "Attack": 28,
+    "Defense": 16,
+    "Health": 115,
+    "Penetrat": 15,
+    "AttackRange": 50,
+    "AttackSpeed": 1.2,
+    "Speed": 150,
+    "Cost": 47,
+    "Mod": "mercenary_model_1000114",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 1000115,
+    "Hero": 10001,
+    "Name": "盾兵15级",
+    "Level": 15,
+    "Attack": 29,
+    "Defense": 17,
+    "Health": 120,
+    "Penetrat": 16,
+    "AttackRange": 50,
+    "AttackSpeed": 1.2,
+    "Speed": 150,
+    "Cost": 49,
+    "Mod": "mercenary_model_1000115",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 1000116,
+    "Hero": 10001,
+    "Name": "盾兵16级",
+    "Level": 16,
+    "Attack": 30,
+    "Defense": 18,
+    "Health": 125,
+    "Penetrat": 17,
+    "AttackRange": 50,
+    "AttackSpeed": 1.2,
+    "Speed": 150,
+    "Cost": 49,
+    "Mod": "mercenary_model_1000116",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 1000117,
+    "Hero": 10001,
+    "Name": "盾兵17级",
+    "Level": 17,
+    "Attack": 31,
+    "Defense": 19,
+    "Health": 130,
+    "Penetrat": 18,
+    "AttackRange": 50,
+    "AttackSpeed": 1.2,
+    "Speed": 150,
+    "Cost": 51,
+    "Mod": "mercenary_model_1000117",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 1000118,
+    "Hero": 10001,
+    "Name": "盾兵18级",
+    "Level": 18,
+    "Attack": 32,
+    "Defense": 20,
+    "Health": 135,
+    "Penetrat": 19,
+    "AttackRange": 50,
+    "AttackSpeed": 1.2,
+    "Speed": 150,
+    "Cost": 51,
+    "Mod": "mercenary_model_1000118",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 1000119,
+    "Hero": 10001,
+    "Name": "盾兵19级",
+    "Level": 19,
+    "Attack": 33,
+    "Defense": 21,
+    "Health": 140,
+    "Penetrat": 20,
+    "AttackRange": 50,
+    "AttackSpeed": 1.2,
+    "Speed": 150,
+    "Cost": 53,
+    "Mod": "mercenary_model_1000119",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 1000120,
+    "Hero": 10001,
+    "Name": "盾兵20级",
+    "Level": 20,
+    "Attack": 34,
+    "Defense": 22,
+    "Health": 145,
+    "Penetrat": 21,
+    "AttackRange": 50,
+    "AttackSpeed": 1.2,
+    "Speed": 150,
+    "Cost": 53,
+    "Mod": "mercenary_model_1000120",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 2000101,
+    "Hero": 20001,
+    "Name": "弓兵1级",
+    "Level": 1,
+    "Attack": 10,
+    "Defense": 1,
+    "Health": 25,
+    "Penetrat": 4,
+    "AttackRange": 300,
+    "AttackSpeed": 1,
+    "Speed": 150,
+    "Cost": 28,
+    "Mod": "mercenary_model_2000101",
+    "Skill": [
+      90001
+    ]
+  },
+  {
+    "Id": 2000102,
+    "Hero": 20001,
+    "Name": "弓兵2级",
+    "Level": 2,
+    "Attack": 11,
+    "Defense": 2,
+    "Health": 28,
+    "Penetrat": 5,
+    "AttackRange": 300,
+    "AttackSpeed": 1,
+    "Speed": 150,
+    "Cost": 28,
+    "Mod": "mercenary_model_2000102",
+    "Skill": [
+      90001
+    ]
+  },
+  {
+    "Id": 2000103,
+    "Hero": 20001,
+    "Name": "弓兵3级",
+    "Level": 3,
+    "Attack": 12,
+    "Defense": 3,
+    "Health": 31,
+    "Penetrat": 6,
+    "AttackRange": 300,
+    "AttackSpeed": 1,
+    "Speed": 150,
+    "Cost": 31,
+    "Mod": "mercenary_model_2000103",
+    "Skill": [
+      90001
+    ]
+  },
+  {
+    "Id": 2000104,
+    "Hero": 20001,
+    "Name": "弓兵4级",
+    "Level": 4,
+    "Attack": 13,
+    "Defense": 4,
+    "Health": 34,
+    "Penetrat": 7,
+    "AttackRange": 300,
+    "AttackSpeed": 1.1,
+    "Speed": 150,
+    "Cost": 31,
+    "Mod": "mercenary_model_2000104",
+    "Skill": [
+      90001
+    ]
+  },
+  {
+    "Id": 2000105,
+    "Hero": 20001,
+    "Name": "弓兵5级",
+    "Level": 5,
+    "Attack": 14,
+    "Defense": 5,
+    "Health": 37,
+    "Penetrat": 8,
+    "AttackRange": 300,
+    "AttackSpeed": 1.1,
+    "Speed": 150,
+    "Cost": 34,
+    "Mod": "mercenary_model_2000105",
+    "Skill": [
+      90001
+    ]
+  },
+  {
+    "Id": 2000106,
+    "Hero": 20001,
+    "Name": "弓兵6级",
+    "Level": 6,
+    "Attack": 15,
+    "Defense": 6,
+    "Health": 40,
+    "Penetrat": 9,
+    "AttackRange": 300,
+    "AttackSpeed": 1.1,
+    "Speed": 150,
+    "Cost": 34,
+    "Mod": "mercenary_model_2000106",
+    "Skill": [
+      90001
+    ]
+  },
+  {
+    "Id": 2000107,
+    "Hero": 20001,
+    "Name": "弓兵7级",
+    "Level": 7,
+    "Attack": 16,
+    "Defense": 7,
+    "Health": 43,
+    "Penetrat": 10,
+    "AttackRange": 300,
+    "AttackSpeed": 1.3,
+    "Speed": 150,
+    "Cost": 37,
+    "Mod": "mercenary_model_2000107",
+    "Skill": [
+      90001
+    ]
+  },
+  {
+    "Id": 2000108,
+    "Hero": 20001,
+    "Name": "弓兵8级",
+    "Level": 8,
+    "Attack": 17,
+    "Defense": 8,
+    "Health": 46,
+    "Penetrat": 11,
+    "AttackRange": 300,
+    "AttackSpeed": 1.3,
+    "Speed": 150,
+    "Cost": 37,
+    "Mod": "mercenary_model_2000108",
+    "Skill": [
+      90001
+    ]
+  },
+  {
+    "Id": 2000109,
+    "Hero": 20001,
+    "Name": "弓兵9级",
+    "Level": 9,
+    "Attack": 18,
+    "Defense": 9,
+    "Health": 49,
+    "Penetrat": 12,
+    "AttackRange": 300,
+    "AttackSpeed": 1.3,
+    "Speed": 150,
+    "Cost": 40,
+    "Mod": "mercenary_model_2000109",
+    "Skill": [
+      90001
+    ]
+  },
+  {
+    "Id": 2000110,
+    "Hero": 20001,
+    "Name": "弓兵10级",
+    "Level": 10,
+    "Attack": 19,
+    "Defense": 10,
+    "Health": 52,
+    "Penetrat": 13,
+    "AttackRange": 300,
+    "AttackSpeed": 1.3,
+    "Speed": 150,
+    "Cost": 40,
+    "Mod": "mercenary_model_2000110",
+    "Skill": [
+      90001
+    ]
+  },
+  {
+    "Id": 2000111,
+    "Hero": 20001,
+    "Name": "弓兵11级",
+    "Level": 11,
+    "Attack": 20,
+    "Defense": 11,
+    "Health": 55,
+    "Penetrat": 14,
+    "AttackRange": 300,
+    "AttackSpeed": 1.3,
+    "Speed": 150,
+    "Cost": 42,
+    "Mod": "mercenary_model_2000111",
+    "Skill": [
+      90001
+    ]
+  },
+  {
+    "Id": 2000112,
+    "Hero": 20001,
+    "Name": "弓兵12级",
+    "Level": 12,
+    "Attack": 21,
+    "Defense": 12,
+    "Health": 58,
+    "Penetrat": 15,
+    "AttackRange": 300,
+    "AttackSpeed": 1.3,
+    "Speed": 150,
+    "Cost": 42,
+    "Mod": "mercenary_model_2000112",
+    "Skill": [
+      90001
+    ]
+  },
+  {
+    "Id": 2000113,
+    "Hero": 20001,
+    "Name": "弓兵13级",
+    "Level": 13,
+    "Attack": 22,
+    "Defense": 13,
+    "Health": 61,
+    "Penetrat": 16,
+    "AttackRange": 300,
+    "AttackSpeed": 1.3,
+    "Speed": 150,
+    "Cost": 44,
+    "Mod": "mercenary_model_2000113",
+    "Skill": [
+      90001
+    ]
+  },
+  {
+    "Id": 2000114,
+    "Hero": 20001,
+    "Name": "弓兵14级",
+    "Level": 14,
+    "Attack": 23,
+    "Defense": 14,
+    "Health": 64,
+    "Penetrat": 17,
+    "AttackRange": 300,
+    "AttackSpeed": 1.3,
+    "Speed": 150,
+    "Cost": 44,
+    "Mod": "mercenary_model_2000114",
+    "Skill": [
+      90001
+    ]
+  },
+  {
+    "Id": 2000115,
+    "Hero": 20001,
+    "Name": "弓兵15级",
+    "Level": 15,
+    "Attack": 24,
+    "Defense": 15,
+    "Health": 67,
+    "Penetrat": 18,
+    "AttackRange": 300,
+    "AttackSpeed": 1.3,
+    "Speed": 150,
+    "Cost": 46,
+    "Mod": "mercenary_model_2000115",
+    "Skill": [
+      90001
+    ]
+  },
+  {
+    "Id": 2000116,
+    "Hero": 20001,
+    "Name": "弓兵16级",
+    "Level": 16,
+    "Attack": 25,
+    "Defense": 16,
+    "Health": 70,
+    "Penetrat": 19,
+    "AttackRange": 300,
+    "AttackSpeed": 1.3,
+    "Speed": 150,
+    "Cost": 46,
+    "Mod": "mercenary_model_2000116",
+    "Skill": [
+      90001
+    ]
+  },
+  {
+    "Id": 2000117,
+    "Hero": 20001,
+    "Name": "弓兵17级",
+    "Level": 17,
+    "Attack": 26,
+    "Defense": 17,
+    "Health": 73,
+    "Penetrat": 20,
+    "AttackRange": 310,
+    "AttackSpeed": 1.3,
+    "Speed": 150,
+    "Cost": 46,
+    "Mod": "mercenary_model_2000117",
+    "Skill": [
+      90001
+    ]
+  },
+  {
+    "Id": 2000118,
+    "Hero": 20001,
+    "Name": "弓兵18级",
+    "Level": 18,
+    "Attack": 27,
+    "Defense": 18,
+    "Health": 76,
+    "Penetrat": 21,
+    "AttackRange": 320,
+    "AttackSpeed": 1.3,
+    "Speed": 150,
+    "Cost": 48,
+    "Mod": "mercenary_model_2000118",
+    "Skill": [
+      90001
+    ]
+  },
+  {
+    "Id": 2000119,
+    "Hero": 20001,
+    "Name": "弓兵19级",
+    "Level": 19,
+    "Attack": 28,
+    "Defense": 19,
+    "Health": 79,
+    "Penetrat": 22,
+    "AttackRange": 330,
+    "AttackSpeed": 1.3,
+    "Speed": 150,
+    "Cost": 48,
+    "Mod": "mercenary_model_2000119",
+    "Skill": [
+      90001
+    ]
+  },
+  {
+    "Id": 2000120,
+    "Hero": 20001,
+    "Name": "弓兵20级",
+    "Level": 20,
+    "Attack": 29,
+    "Defense": 20,
+    "Health": 82,
+    "Penetrat": 23,
+    "AttackRange": 340,
+    "AttackSpeed": 1.3,
+    "Speed": 150,
+    "Cost": 48,
+    "Mod": "mercenary_model_2000120",
+    "Skill": [
+      90001
+    ]
+  },
+  {
+    "Id": 3000101,
+    "Hero": 30001,
+    "Name": "骑兵1级",
+    "Level": 1,
+    "Attack": 20,
+    "Defense": 2,
+    "Health": 75,
+    "Penetrat": 1,
+    "AttackRange": 50,
+    "AttackSpeed": 0.8,
+    "Speed": 200,
+    "Cost": 50,
+    "Mod": "mercenary_model_3000101",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 3000102,
+    "Hero": 30001,
+    "Name": "骑兵2级",
+    "Level": 2,
+    "Attack": 21,
+    "Defense": 3,
+    "Health": 80,
+    "Penetrat": 2,
+    "AttackRange": 50,
+    "AttackSpeed": 0.8,
+    "Speed": 200,
+    "Cost": 50,
+    "Mod": "mercenary_model_3000102",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 3000103,
+    "Hero": 30001,
+    "Name": "骑兵3级",
+    "Level": 3,
+    "Attack": 22,
+    "Defense": 4,
+    "Health": 85,
+    "Penetrat": 3,
+    "AttackRange": 50,
+    "AttackSpeed": 0.8,
+    "Speed": 200,
+    "Cost": 54,
+    "Mod": "mercenary_model_3000103",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 3000104,
+    "Hero": 30001,
+    "Name": "骑兵4级",
+    "Level": 4,
+    "Attack": 23,
+    "Defense": 5,
+    "Health": 90,
+    "Penetrat": 4,
+    "AttackRange": 50,
+    "AttackSpeed": 0.8,
+    "Speed": 200,
+    "Cost": 54,
+    "Mod": "mercenary_model_3000104",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 3000105,
+    "Hero": 30001,
+    "Name": "骑兵5级",
+    "Level": 5,
+    "Attack": 24,
+    "Defense": 6,
+    "Health": 95,
+    "Penetrat": 5,
+    "AttackRange": 50,
+    "AttackSpeed": 0.8,
+    "Speed": 200,
+    "Cost": 58,
+    "Mod": "mercenary_model_3000105",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 3000106,
+    "Hero": 30001,
+    "Name": "骑兵6级",
+    "Level": 6,
+    "Attack": 25,
+    "Defense": 7,
+    "Health": 100,
+    "Penetrat": 6,
+    "AttackRange": 50,
+    "AttackSpeed": 0.8,
+    "Speed": 200,
+    "Cost": 58,
+    "Mod": "mercenary_model_3000106",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 3000107,
+    "Hero": 30001,
+    "Name": "骑兵7级",
+    "Level": 7,
+    "Attack": 26,
+    "Defense": 8,
+    "Health": 105,
+    "Penetrat": 7,
+    "AttackRange": 50,
+    "AttackSpeed": 0.8,
+    "Speed": 200,
+    "Cost": 62,
+    "Mod": "mercenary_model_3000107",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 3000108,
+    "Hero": 30001,
+    "Name": "骑兵8级",
+    "Level": 8,
+    "Attack": 27,
+    "Defense": 9,
+    "Health": 110,
+    "Penetrat": 8,
+    "AttackRange": 50,
+    "AttackSpeed": 0.8,
+    "Speed": 200,
+    "Cost": 62,
+    "Mod": "mercenary_model_3000108",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 3000109,
+    "Hero": 30001,
+    "Name": "骑兵9级",
+    "Level": 9,
+    "Attack": 28,
+    "Defense": 10,
+    "Health": 115,
+    "Penetrat": 9,
+    "AttackRange": 50,
+    "AttackSpeed": 0.8,
+    "Speed": 200,
+    "Cost": 65,
+    "Mod": "mercenary_model_3000109",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 3000110,
+    "Hero": 30001,
+    "Name": "骑兵10级",
+    "Level": 10,
+    "Attack": 29,
+    "Defense": 11,
+    "Health": 120,
+    "Penetrat": 10,
+    "AttackRange": 50,
+    "AttackSpeed": 0.8,
+    "Speed": 200,
+    "Cost": 65,
+    "Mod": "mercenary_model_3000110",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 3000111,
+    "Hero": 30001,
+    "Name": "骑兵11级",
+    "Level": 11,
+    "Attack": 30,
+    "Defense": 12,
+    "Health": 125,
+    "Penetrat": 11,
+    "AttackRange": 50,
+    "AttackSpeed": 0.8,
+    "Speed": 200,
+    "Cost": 68,
+    "Mod": "mercenary_model_3000111",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 3000112,
+    "Hero": 30001,
+    "Name": "骑兵12级",
+    "Level": 12,
+    "Attack": 31,
+    "Defense": 13,
+    "Health": 130,
+    "Penetrat": 12,
+    "AttackRange": 50,
+    "AttackSpeed": 0.8,
+    "Speed": 200,
+    "Cost": 68,
+    "Mod": "mercenary_model_3000112",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 3000113,
+    "Hero": 30001,
+    "Name": "骑兵13级",
+    "Level": 13,
+    "Attack": 32,
+    "Defense": 14,
+    "Health": 135,
+    "Penetrat": 13,
+    "AttackRange": 50,
+    "AttackSpeed": 0.8,
+    "Speed": 200,
+    "Cost": 70,
+    "Mod": "mercenary_model_3000113",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 3000114,
+    "Hero": 30001,
+    "Name": "骑兵14级",
+    "Level": 14,
+    "Attack": 33,
+    "Defense": 15,
+    "Health": 140,
+    "Penetrat": 14,
+    "AttackRange": 50,
+    "AttackSpeed": 0.8,
+    "Speed": 200,
+    "Cost": 70,
+    "Mod": "mercenary_model_3000114",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 3000115,
+    "Hero": 30001,
+    "Name": "骑兵15级",
+    "Level": 15,
+    "Attack": 34,
+    "Defense": 16,
+    "Health": 145,
+    "Penetrat": 15,
+    "AttackRange": 50,
+    "AttackSpeed": 0.8,
+    "Speed": 200,
+    "Cost": 72,
+    "Mod": "mercenary_model_3000115",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 3000116,
+    "Hero": 30001,
+    "Name": "骑兵16级",
+    "Level": 16,
+    "Attack": 35,
+    "Defense": 17,
+    "Health": 150,
+    "Penetrat": 16,
+    "AttackRange": 50,
+    "AttackSpeed": 0.9,
+    "Speed": 200,
+    "Cost": 72,
+    "Mod": "mercenary_model_3000116",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 3000117,
+    "Hero": 30001,
+    "Name": "骑兵17级",
+    "Level": 17,
+    "Attack": 37,
+    "Defense": 18,
+    "Health": 155,
+    "Penetrat": 17,
+    "AttackRange": 50,
+    "AttackSpeed": 1,
+    "Speed": 200,
+    "Cost": 74,
+    "Mod": "mercenary_model_3000117",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 3000118,
+    "Hero": 30001,
+    "Name": "骑兵18级",
+    "Level": 18,
+    "Attack": 39,
+    "Defense": 19,
+    "Health": 160,
+    "Penetrat": 18,
+    "AttackRange": 50,
+    "AttackSpeed": 1.1,
+    "Speed": 200,
+    "Cost": 74,
+    "Mod": "mercenary_model_3000118",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 3000119,
+    "Hero": 30001,
+    "Name": "骑兵19级",
+    "Level": 19,
+    "Attack": 41,
+    "Defense": 20,
+    "Health": 165,
+    "Penetrat": 19,
+    "AttackRange": 50,
+    "AttackSpeed": 1.2,
+    "Speed": 200,
+    "Cost": 76,
+    "Mod": "mercenary_model_3000119",
+    "Skill": [
+      90003
+    ]
+  },
+  {
+    "Id": 3000120,
+    "Hero": 30001,
+    "Name": "骑兵20级",
+    "Level": 20,
+    "Attack": 43,
+    "Defense": 21,
+    "Health": 170,
+    "Penetrat": 20,
+    "AttackRange": 50,
+    "AttackSpeed": 1.3,
+    "Speed": 200,
+    "Cost": 76,
+    "Mod": "mercenary_model_3000120",
+    "Skill": [
+      90003
+    ]
+  }
+]

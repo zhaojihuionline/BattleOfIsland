@@ -1,0 +1,148 @@
+syntax = "proto3";
+
+package errors;
+
+import "google/protobuf/descriptor.proto";
+
+option go_package = "pitaya-game/protos/pb/golang/common/errors;errorspb";
+option csharp_namespace = "PitayaGame.Errors";
+
+// 自定义选项：为错误码添加描述信息
+extend google.protobuf.EnumValueOptions {
+  string error_message = 50001;  // 错误描述（中文）
+  string error_message_en = 50002;  // 错误描述（英文）
+}
+
+// ============================================================================
+// 错误码定义
+// 采用分段设计，按功能模块划分，每个模块预留100个错误码：
+// 0          - 成功
+// 1000-1999  - 通用错误
+// 2000-2999  - 认证相关
+// 3000-3999  - 用户相关
+// 4000-4999  - 游戏单位相关
+//   4000-4099  - 角色通用错误
+//   4100-4199  - 英雄错误
+//   4200-4299  - 士兵错误
+//   4300-4399  - 佣兵错误
+//   4400-4999  - 预留（游戏单位相关扩展）
+// 5000-5999  - 游戏功能相关
+//   5000-5099  - 建筑错误
+//   5100-5199  - 军队错误
+//   5200-5299  - 法术错误
+//   5300-5999  - 预留（游戏功能相关扩展）
+// 6000-6999  - 背包相关
+// 7000-7999  - 匹配相关
+// 8000-8999  - 战斗相关
+// 9000-9999  - 系统相关（包含配置错误）
+// ============================================================================
+
+enum ErrorCode {
+  // 成功
+  SUCCESS = 0 [
+    (error_message) = "操作成功",
+    (error_message_en) = "Success"
+  ];
+  
+  // 通用错误 (1000-1999)
+  ERR_UNKNOWN = 1000 [(error_message) = "未知错误", (error_message_en) = "Unknown error"];
+  ERR_INVALID_PARAM = 1001 [(error_message) = "参数错误", (error_message_en) = "Invalid parameter"];
+  ERR_NETWORK = 1002 [(error_message) = "网络错误", (error_message_en) = "Network error"];
+  ERR_TIMEOUT = 1003 [(error_message) = "请求超时", (error_message_en) = "Request timeout"];
+  ERR_NOT_FOUND = 1004 [(error_message) = "资源不存在", (error_message_en) = "Resource not found"];
+  ERR_ALREADY_EXISTS = 1005 [(error_message) = "资源已存在", (error_message_en) = "Resource already exists"];
+  ERR_PERMISSION_DENIED = 1006 [(error_message) = "权限不足", (error_message_en) = "Permission denied"];
+  ERR_RATE_LIMIT = 1007 [(error_message) = "请求过于频繁", (error_message_en) = "Rate limit exceeded"];
+  
+  // 认证错误 (2000-2999)
+  ERR_AUTH_INVALID_TOKEN = 2000 [(error_message) = "Token无效", (error_message_en) = "Invalid token"];
+  ERR_AUTH_TOKEN_EXPIRED = 2001 [(error_message) = "Token已过期", (error_message_en) = "Token expired"];
+  ERR_AUTH_INVALID_CREDENTIAL = 2002 [(error_message) = "凭证无效", (error_message_en) = "Invalid credential"];
+  ERR_AUTH_USER_NOT_FOUND = 2003 [(error_message) = "用户不存在", (error_message_en) = "User not found"];
+  ERR_AUTH_USER_EXISTS = 2004 [(error_message) = "用户已存在", (error_message_en) = "User already exists"];
+  ERR_AUTH_PASSWORD_WRONG = 2005 [(error_message) = "密码错误", (error_message_en) = "Wrong password"];
+  ERR_AUTH_SESSION_EXPIRED = 2006 [(error_message) = "会话已过期", (error_message_en) = "Session expired"];
+  ERR_AUTH_SESSION_NOT_FOUND = 2007 [(error_message) = "会话不存在，请先登录", (error_message_en) = "Session not found, please login first"];
+  
+  // 用户错误 (3000-3999)
+  ERR_USER_NOT_FOUND = 3000 [(error_message) = "用户不存在", (error_message_en) = "User not found"];
+  ERR_USER_BANNED = 3001 [(error_message) = "用户已被封禁", (error_message_en) = "User banned"];
+  ERR_USER_INSUFFICIENT_RESOURCE = 3002 [(error_message) = "资源不足", (error_message_en) = "Insufficient resource"];
+  ERR_USER_LEVEL_NOT_ENOUGH = 3003 [(error_message) = "等级不足", (error_message_en) = "Level not enough"];
+  ERR_USER_INSUFFICIENT_EXP = 3004 [(error_message) = "经验不足", (error_message_en) = "Insufficient experience"];
+  ERR_USER_INSUFFICIENT_COINS = 3005 [(error_message) = "金币不足", (error_message_en) = "Insufficient coins"];
+  
+  // 游戏单位错误 (4000-4999)
+  // 角色通用错误 (4000-4099)
+  ERR_CHARACTER_NOT_FOUND = 4000 [(error_message) = "角色不存在", (error_message_en) = "Character not found"];
+  ERR_CHARACTER_LEVEL_MAX = 4001 [(error_message) = "已达最大等级", (error_message_en) = "Max level reached"];
+  ERR_CHARACTER_INSUFFICIENT_EXP = 4002 [(error_message) = "经验不足", (error_message_en) = "Insufficient experience"];
+  
+  // 英雄错误 (4100-4199)
+  ERR_HERO_NOT_FOUND = 4100 [(error_message) = "英雄不存在", (error_message_en) = "Hero not found"];
+  ERR_HERO_ALREADY_DEPLOYED = 4101 [(error_message) = "英雄已上阵", (error_message_en) = "Hero already deployed"];
+  ERR_HERO_NOT_DEPLOYED = 4102 [(error_message) = "英雄未上阵", (error_message_en) = "Hero not deployed"];
+  ERR_HERO_MAX_LEVEL = 4103 [(error_message) = "英雄已达最大等级", (error_message_en) = "Hero max level reached"];
+  
+  // 士兵错误 (4200-4299)
+  ERR_SOLDIER_NOT_FOUND = 4200 [(error_message) = "士兵不存在", (error_message_en) = "Soldier not found"];
+  ERR_SOLDIER_ALREADY_DEPLOYED = 4201 [(error_message) = "士兵已上阵", (error_message_en) = "Soldier already deployed"];
+  ERR_SOLDIER_NOT_DEPLOYED = 4202 [(error_message) = "士兵未上阵", (error_message_en) = "Soldier not deployed"];
+  ERR_SOLDIER_MAX_LEVEL = 4203 [(error_message) = "士兵已达最大等级", (error_message_en) = "Soldier max level reached"];
+  
+  // 佣兵错误 (4300-4399)
+  ERR_MERCENARY_NOT_FOUND = 4300 [(error_message) = "佣兵不存在", (error_message_en) = "Mercenary not found"];
+  ERR_MERCENARY_ALREADY_DEPLOYED = 4301 [(error_message) = "佣兵已上阵", (error_message_en) = "Mercenary already deployed"];
+  ERR_MERCENARY_NOT_DEPLOYED = 4302 [(error_message) = "佣兵未上阵", (error_message_en) = "Mercenary not deployed"];
+  ERR_MERCENARY_MAX_LEVEL = 4303 [(error_message) = "佣兵已达最大等级", (error_message_en) = "Mercenary max level reached"];
+  
+  // 游戏功能错误 (5000-5999)
+  // 建筑错误 (5000-5099)
+  ERR_BUILDING_NOT_FOUND = 5000 [(error_message) = "建筑不存在", (error_message_en) = "Building not found"];
+  ERR_BUILDING_MAX_COUNT = 5001 [(error_message) = "建筑数量已达上限", (error_message_en) = "Building count limit reached"];
+  ERR_BUILDING_TYPE_MAX_COUNT = 5002 [(error_message) = "该类型建筑数量已达上限", (error_message_en) = "Building type count limit reached"];
+  ERR_BUILDING_MAX_LEVEL = 5003 [(error_message) = "建筑已达最大等级", (error_message_en) = "Building max level reached"];
+  ERR_BUILDING_UPGRADING = 5004 [(error_message) = "建筑正在升级中", (error_message_en) = "Building is upgrading"];
+  ERR_BUILDING_POSITION_OCCUPIED = 5005 [(error_message) = "位置已被占用", (error_message_en) = "Position already occupied"];
+  ERR_BUILDING_CONFIG_NOT_FOUND = 5006 [(error_message) = "建筑配置不存在", (error_message_en) = "Building config not found"];
+  ERR_BUILDING_LEVEL_CONFIG_NOT_FOUND = 5007 [(error_message) = "建筑等级配置不存在", (error_message_en) = "Building level config not found"];
+  
+  // 军队错误 (5100-5199)
+  ERR_ARMY_NOT_FOUND = 5100 [(error_message) = "军队不存在", (error_message_en) = "Army not found"];
+  ERR_ARMY_FULL = 5101 [(error_message) = "军队已满", (error_message_en) = "Army full"];
+  ERR_ARMY_LIMIT_REACHED = 5102 [(error_message) = "军队数量已达上限", (error_message_en) = "Army limit reached"];
+  
+  // 法术错误 (5200-5299)
+  ERR_SPELL_NOT_FOUND = 5200 [(error_message) = "法术不存在", (error_message_en) = "Spell not found"];
+  ERR_SPELL_ALREADY_DEPLOYED = 5201 [(error_message) = "法术已部署", (error_message_en) = "Spell already deployed"];
+  ERR_SPELL_NOT_DEPLOYED = 5202 [(error_message) = "法术未部署", (error_message_en) = "Spell not deployed"];
+  ERR_SPELL_MAX_LEVEL = 5203 [(error_message) = "法术已达最大等级", (error_message_en) = "Spell max level reached"];
+  ERR_SPELL_ALREADY_UNLOCKED = 5204 [(error_message) = "法术已解锁", (error_message_en) = "Spell already unlocked"];
+  
+  // 背包错误 (6000-6999)
+  ERR_INVENTORY_FULL = 6000 [(error_message) = "背包已满", (error_message_en) = "Inventory full"];
+  ERR_INVENTORY_ITEM_NOT_FOUND = 6001 [(error_message) = "物品不存在", (error_message_en) = "Item not found"];
+  ERR_INVENTORY_INSUFFICIENT_QUANTITY = 6002 [(error_message) = "物品数量不足", (error_message_en) = "Insufficient quantity"];
+  
+  // 匹配错误 (7000-7999)
+  ERR_MATCH_ALREADY_IN_QUEUE = 7000 [(error_message) = "已在匹配队列中", (error_message_en) = "Already in queue"];
+  ERR_MATCH_NOT_IN_QUEUE = 7001 [(error_message) = "不在匹配队列中", (error_message_en) = "Not in queue"];
+  ERR_MATCH_TIMEOUT = 7002 [(error_message) = "匹配超时", (error_message_en) = "Match timeout"];
+  ERR_MATCH_CANCELLED = 7003 [(error_message) = "匹配已取消", (error_message_en) = "Match cancelled"];
+  
+  // 战斗错误 (8000-8999)
+  ERR_BATTLE_NOT_FOUND = 8000 [(error_message) = "战斗不存在", (error_message_en) = "Battle not found"];
+  ERR_BATTLE_ALREADY_STARTED = 8001 [(error_message) = "战斗已开始", (error_message_en) = "Battle already started"];
+  ERR_BATTLE_NOT_STARTED = 8002 [(error_message) = "战斗未开始", (error_message_en) = "Battle not started"];
+  ERR_BATTLE_ENDED = 8003 [(error_message) = "战斗已结束", (error_message_en) = "Battle ended"];
+  ERR_BATTLE_INVALID_ACTION = 8004 [(error_message) = "无效的战斗操作", (error_message_en) = "Invalid battle action"];
+  
+  // 系统错误 (9000-9999)
+  ERR_SYSTEM_MAINTENANCE = 9000 [(error_message) = "系统维护中", (error_message_en) = "System maintenance"];
+  ERR_SYSTEM_OVERLOAD = 9001 [(error_message) = "系统繁忙", (error_message_en) = "System overload"];
+  ERR_CONFIG_NOT_FOUND = 9002 [(error_message) = "配置不存在", (error_message_en) = "Config not found"];
+  ERR_CONFIG_INVALID_VERSION = 9003 [(error_message) = "配置版本无效", (error_message_en) = "Invalid config version"];
+  ERR_SYSTEM_INTERNAL = 9999 [(error_message) = "系统错误", (error_message_en) = "Internal error"];
+}
+
+

@@ -1,0 +1,98 @@
+syntax = "proto3";
+
+package game.protocol;
+
+message LoginRequest {
+    string username = 1;
+    string password = 2;
+    string device_id = 3;
+    string version = 4;
+    string platform = 5;
+    string channel = 6;
+}
+
+message LoginResponse {
+    bool success = 1;
+    string error_message = 2;
+    string user_id = 3;
+    string token = 4;
+    int64 login_time = 5;
+    PlayerInfo player_info = 6;
+    int64 server_time = 7;
+}
+
+message LoginNotify {
+    string message = 1;
+    int64 timestamp = 2;
+    string user_id = 3;
+    LoginType login_type = 4;
+    
+    enum LoginType {
+        NORMAL = 0;
+        RECONNECT = 1;
+        GUEST = 2;
+    }
+}
+
+message LogoutRequest {
+    string user_id = 1;
+    string token = 2;
+    LogoutReason reason = 3;
+    
+    enum LogoutReason {
+        USER_ACTION = 0;
+        TIMEOUT = 1;
+        KICKED = 2;
+        MAINTENANCE = 3;
+    }
+}
+
+message LogoutResponse {
+    bool success = 1;
+    string message = 2;
+    int64 logout_time = 3;
+}
+
+message LogoutNotify {
+    string user_id = 1;
+    string message = 2;
+    LogoutReason reason = 3;
+    int64 timestamp = 4;
+    
+    enum LogoutReason {
+        USER_ACTION = 0;
+        TIMEOUT = 1;
+        KICKED = 2;
+        MAINTENANCE = 3;
+    }
+}
+
+message PlayerInfo {
+    string user_id = 1;
+    string nickname = 2;
+    int32 level = 3;
+    int64 exp = 4;
+    int64 gold = 5;
+    int64 diamond = 6;
+    string avatar = 7;
+    int64 create_time = 8;
+    int64 last_login_time = 9;
+    repeated ItemInfo items = 10;
+    int32 vip_level = 11;
+    string title = 12;
+}
+
+message ItemInfo {
+    string item_id = 1;
+    int32 count = 2;
+    string name = 3;
+    string icon = 4;
+    ItemType type = 5;
+    
+    enum ItemType {
+        CURRENCY = 0;
+        EQUIPMENT = 1;
+        CONSUMABLE = 2;
+        MATERIAL = 3;
+    }
+}

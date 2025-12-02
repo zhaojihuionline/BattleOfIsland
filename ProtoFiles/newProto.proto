@@ -1,0 +1,25 @@
+// example.proto
+syntax = "proto3";
+
+message LoginRequest {
+  string username = 1;
+  string password = 2;
+}
+
+message LoginResponse {
+  int32 code = 1;
+  string message = 2;
+  UserInfo user = 3;
+}
+
+message UserInfo {
+  string user_id = 1;
+  string nickname = 2;
+  int32 level = 3;
+}
+
+message ServerPush {
+  string push_type = 1;
+  string content = 2;
+  int64 timestamp = 3;
+}

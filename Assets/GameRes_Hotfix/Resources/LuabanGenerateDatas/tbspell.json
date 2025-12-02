@@ -1,0 +1,182 @@
+[
+  {
+    "_id": 200001,
+    "_spell_quality": 1,
+    "_name": "腐朽之森",
+    "_spell_type": 1,
+    "_hurt_type": 0,
+    "_icon": "spell_icon_200001",
+    "_prefab": "spell_200001",
+    "_description": "持续3秒，标记敌方所有箭塔，减少防御力10%"
+  },
+  {
+    "_id": 200002,
+    "_spell_quality": 1,
+    "_name": "先祖教诲",
+    "_spell_type": 1,
+    "_hurt_type": 0,
+    "_icon": "spell_icon_200002",
+    "_prefab": "spell_200002",
+    "_description": "场上战斗力最高的英雄获得10%攻击力和10%血量"
+  },
+  {
+    "_id": 200003,
+    "_spell_quality": 1,
+    "_name": "迷你蘑菇",
+    "_spell_type": 1,
+    "_hurt_type": 0,
+    "_icon": "spell_icon_200003",
+    "_prefab": "spell_200003",
+    "_description": "持续3秒，场上战斗力最高的英雄体型变为50%，攻速增加10%"
+  },
+  {
+    "_id": 200004,
+    "_spell_quality": 1,
+    "_name": "醺酒",
+    "_spell_type": 1,
+    "_hurt_type": 0,
+    "_icon": "spell_icon_200004",
+    "_prefab": "spell_200004",
+    "_description": "持续3秒，所有友方单位移速降低20%，攻击力增加20%"
+  },
+  {
+    "_id": 200005,
+    "_spell_quality": 1,
+    "_name": "复苏术",
+    "_spell_type": 1,
+    "_hurt_type": 0,
+    "_icon": "spell_icon_200005",
+    "_prefab": "spell_200005",
+    "_description": "让血量最低（数值）的英雄立刻恢复30%"
+  },
+  {
+    "_id": 200006,
+    "_spell_quality": 1,
+    "_name": "招募令",
+    "_spell_type": 1,
+    "_hurt_type": 0,
+    "_icon": "spell_icon_200006",
+    "_prefab": "spell_200006",
+    "_description": "立刻获得10点cost"
+  },
+  {
+    "_id": 200007,
+    "_spell_quality": 2,
+    "_name": "流沙阵",
+    "_spell_type": 3,
+    "_hurt_type": 0,
+    "_icon": "spell_icon_200007",
+    "_prefab": "spell_200007",
+    "_description": "以敌方战斗力最高的英雄为中心释放流沙阵，持续 5 秒。所有经过流沙阵的敌方单位，移速降低 20%，同时每秒受到 20 点伤害。"
+  },
+  {
+    "_id": 200008,
+    "_spell_quality": 2,
+    "_name": "双刃剑",
+    "_spell_type": 1,
+    "_hurt_type": 0,
+    "_icon": "spell_icon_200008",
+    "_prefab": "spell_200008",
+    "_description": "持续3秒，友方战斗力最高的英雄战斗力增加100%，防御力降低48%"
+  },
+  {
+    "_id": 200009,
+    "_spell_quality": 2,
+    "_name": "神之契约",
+    "_spell_type": 1,
+    "_hurt_type": 0,
+    "_icon": "spell_icon_200009",
+    "_prefab": "spell_200009",
+    "_description": "消耗50%COST，根据消耗值，增加英雄的攻击穿透（消耗值x50%）"
+  },
+  {
+    "_id": 200010,
+    "_spell_quality": 2,
+    "_name": "蜂群突击",
+    "_spell_type": 1,
+    "_hurt_type": 0,
+    "_icon": "spell_icon_200010",
+    "_prefab": "spell_200010",
+    "_description": ""
+  },
+  {
+    "_id": 200011,
+    "_spell_quality": 2,
+    "_name": "巫术",
+    "_spell_type": 3,
+    "_hurt_type": 0,
+    "_icon": "spell_icon_200011",
+    "_prefab": "spell_200011",
+    "_description": ""
+  },
+  {
+    "_id": 200012,
+    "_spell_quality": 2,
+    "_name": "生生不息",
+    "_spell_type": 1,
+    "_hurt_type": 0,
+    "_icon": "spell_icon_200012",
+    "_prefab": "spell_200012",
+    "_description": "当每个友方死亡时，获得5点cost"
+  },
+  {
+    "_id": 200013,
+    "_spell_quality": 3,
+    "_name": "超能激素",
+    "_spell_type": 1,
+    "_hurt_type": 0,
+    "_icon": "spell_icon_200013",
+    "_prefab": "spell_200013",
+    "_description": ""
+  },
+  {
+    "_id": 200014,
+    "_spell_quality": 3,
+    "_name": "亡者复仇",
+    "_spell_type": 2,
+    "_hurt_type": 0,
+    "_icon": "spell_icon_200014",
+    "_prefab": "spell_200014",
+    "_description": ""
+  },
+  {
+    "_id": 200015,
+    "_spell_quality": 3,
+    "_name": "巨型蘑菇",
+    "_spell_type": 1,
+    "_hurt_type": 0,
+    "_icon": "spell_icon_200015",
+    "_prefab": "spell_200015",
+    "_description": "持续 5 秒内，友方战斗力最高的英雄将获得强效增益：血量提升30%，普通攻击范围扩大，体型膨胀至 200%，攻击力增加20%"
+  },
+  {
+    "_id": 200016,
+    "_spell_quality": 3,
+    "_name": "暴风雪",
+    "_spell_type": 4,
+    "_hurt_type": 0,
+    "_icon": "spell_icon_200016",
+    "_prefab": "spell_200016",
+    "_description": "冰冻所有建筑橙持续2s"
+  },
+  {
+    "_id": 200017,
+    "_spell_quality": 3,
+    "_name": "龙卷风",
+    "_spell_type": 3,
+    "_hurt_type": 0,
+    "_icon": "spell_icon_200017",
+    "_prefab": "spell_200017",
+    "_description": "5秒内，龙卷风经过友方加速20%，对敌方每秒造成100点伤害"
+  },
+  {
+    "_id": 200018,
+    "_spell_quality": 3,
+    "_name": "雷霆之力",
+    "_spell_type": 2,
+    "_hurt_type": 0,
+    "_icon": "spell_icon_200018",
+    "_prefab": "spell_200018",
+    "_description": "持续5次，雷霆之力随机对敌方建筑造成120伤害"
+  }
+]
