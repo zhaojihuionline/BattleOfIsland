@@ -15,7 +15,7 @@ MonoBehaviour:
   CurrentTask:
     ShowLog: 0
     Status: 1
-    GameObject: {fileID: 4401125276206301078, guid: f050aae72189a644d892b3a03e45c336, type: 3}
+    GameObject: {fileID: 0}
     From: 0
     NameToFullName: []
     BindInfos: []

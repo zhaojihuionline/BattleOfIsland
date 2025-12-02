@@ -1,4 +1,4 @@
-// Generate Id:2e359ff4-6e69-4d7d-aceb-054f45cdcbf8
+// Generate Id:d904c46a-e8e5-4fae-95b2-0cafed6c36a4
 using UnityEngine;
 
 namespace QFramework.Game

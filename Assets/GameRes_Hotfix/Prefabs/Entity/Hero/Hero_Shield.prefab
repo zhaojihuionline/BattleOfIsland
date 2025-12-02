@@ -613,10 +613,7 @@ MonoBehaviour:
   readonlyMoveSpeed: 10
   MoveSpeed: 10
   rotateSpeed: 300
-  targetList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  targetList: []
   Defense_PercentReductionValue: 0
   aiPath: {fileID: 7547876622641203314}
   aiDestination: {fileID: 5120373962209428905}

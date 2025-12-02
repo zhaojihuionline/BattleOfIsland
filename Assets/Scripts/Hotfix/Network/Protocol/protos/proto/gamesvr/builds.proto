@@ -26,6 +26,7 @@ message BuildingData {
   int64 upgrade_end_time = 7;       // 升级完成时间（0表示未升级）
   int64 created_at = 8;             // 创建时间
   int64 updated_at = 9;             // 更新时间
+  types.Quaternion rotation = 10;   // 建筑旋转
 }
 
 // ========== 获取建筑信息 ==========
@@ -61,6 +62,7 @@ message GetMyBuildingsResponse {
 message ConstructBuildingRequest {
   int32 build_config_id = 1;  // 建筑配置表ID，user_id 从 Session 获取
   types.Vector2 position = 2;  // 建筑位置坐标
+  types.Quaternion rotation = 3;  // 建筑旋转（可选，默认无旋转）
 }
 
 // 建筑建造响应
@@ -91,6 +93,7 @@ message UpgradeBuildingResponse {
 message MoveBuildingRequest {
   int64 build_id = 1;
   types.Vector2 new_position = 2;  // 新坐标位置
+  types.Quaternion rotation = 3;  // 建筑旋转（可选，不传则保持原旋转）
 }
 
 // 建筑移动响应

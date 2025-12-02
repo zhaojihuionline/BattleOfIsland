@@ -19,7 +19,12 @@ public class GameEntry
         //YEngine.Init();
         // 步骤 3: 决定并加载游戏的第一个场景
         //Debug.Log("GameEntry YEngine  正在加载启动场景: MainScene...");
-        //YEngine.LoadScene("MainScene"); // 您可以在这里改成 "LoginScene" 或任何您想要的启动场景
+        
+        
+        // YEngine.LoadScene("MainScene"); // 您可以在这里改成 "LoginScene" 或任何您想要的启动场景
+        
+        
+        
         Debug.Log("GameEntry ResLoader  正在加载启动场景: MainScene...");
         ResKit.Init();
         ResLoader loder = ResLoader.Allocate();

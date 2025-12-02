@@ -21,6 +21,7 @@ namespace QFramework.UI
 		public BattleInModel battleModel { get; private set; }
         public Image destructionRateSlider;
 		public TMP_Text timerLabel;
+        public TMP_Text costLabel;
         public bool TestUploadBuildingDataTestMode;
 
 
@@ -107,6 +108,11 @@ namespace QFramework.UI
                 var armid = armyBriefInfos[Player.DefaultArmyID].ArmyId;
                 var armydetail = await this.SendCommand(new GetArmyDetailCommand(armid));// 军队详情
 
+                foreach (var h in armydetail.DeployedHeroes)
+                {
+                    Debug.Log(h.HeroName);
+                }
+
                 if (newAccount || armydetail.DeployedHeroes.Count <= 0)// 如果是新账户或者当前的军队中没有招募任何英雄
                 {
                     var newElfvdId = await GameRemoteAPI.RecruitHero(1101, "巴顿");// 招募巴顿英雄
@@ -130,11 +136,11 @@ namespace QFramework.UI
                     battleProcessManager.InitEvent(playerSelf);
                     searchBattle.gameObject.SetActive(true);
                     searchBattle.GetComponent<CanvasGroup>().alpha = 1.0f;
-
-                    BattleManagerView.Instance.battleInPanel = GameObject.Find("UIRoot/Common").transform.Find("BattleInPanel").GetComponent<BattleInPanel>();
+                    costLabel.text = playerSelf.playerData.TotalCostMercenaryPoints.ToString();
+                    //BattleManagerView.Instance.battleInPanel = GameObject.Find("UIRoot/Common").transform.Find("BattleInPanel").GetComponent<BattleInPanel>();
                     ActorInfoViewContainersearch.PlayerInfoContainer.Init(playerSelf);
 
-                    SearchNewOpponent(false);
+                    // SearchNewOpponent(false);
                 }
                 else
                 {
@@ -146,18 +152,18 @@ namespace QFramework.UI
 		/// <summary>
 		/// 随机从一组敌人数据中取一个
 		/// </summary>
-		public int SearchNewOpponent(bool isFirst = true)
+		public int SearchNewOpponent(Player player)
 		{
 			//var playerOppData = PlayerManager.Instance.GetRemotePlayerData(5);
             Player playerOpponent = PlayerManager.Instance.players[0];// 后面直接赋值为playerOppData，现在暂时用第一个测试
             
-            ActorInfoViewContainersearch.OpponentInfoContainer.Init(playerOpponent);
-			if (isFirst)
-			{
-                // 这里根据获取到的对手数据，摆放对手的建筑物
-                MapManager.instance.RebuildBuildingsUseLocalData(false,14001);// 这里用一个默认建筑物测试
+            ActorInfoViewContainersearch.OpponentInfoContainer.Init(player);
+			//if (isFirst)
+			//{
+   //             // 这里根据获取到的对手数据，摆放对手的建筑物
+   //             MapManager.instance.RebuildBuildingsUseLocalData(false,14001);// 这里用一个默认建筑物测试
 
-            }
+   //         }
 			return 0;
 		}
 

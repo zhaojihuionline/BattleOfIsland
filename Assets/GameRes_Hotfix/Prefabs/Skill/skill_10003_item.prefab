@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Namespace: QFramework.Game
   ScriptName: skill_1000301_item
-  ScriptsFolder: Assets/Scripts/Hotfix/GameLogic/Skill/Skill
+  ScriptsFolder: Assets\Scripts\Hotfix\GameLogic\Skill\Skill
   GeneratePrefab: 0
   PrefabFolder: Assets/GameRes_Hotfix/Prefabs/ViewController
   ArchitectureFullTypeName: GameApp
@@ -120,7 +120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2074265620910850479, guid: 8ed47159063dfd24fb5e5da5c2f24e5e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2418453450629297225, guid: 8ed47159063dfd24fb5e5da5c2f24e5e, type: 3}
       propertyPath: m_Layer

@@ -111,11 +111,6 @@ namespace QFramework.Game
 
 		public void InitCanSkill(List<int> skillsParam,List<int> skillEnable = null)
 		{
-
-            foreach (var item in skillsParam)
-            {
-				Debug.Log(item);
-            }
             skills = skillsParam;
 			isRelease = false;
 			skillPacketDict = new Dictionary<int, SkillPacket>();
@@ -146,6 +141,7 @@ namespace QFramework.Game
 					else
 					{
 						skillPacket.CanRelease = false;
+						
 					}
 
 					this.DelayFrame(UnityEngine.Random.Range(0, 5), () =>
@@ -297,7 +293,7 @@ namespace QFramework.Game
 				//Debug.Log($"currentHP:{currentHP} HPMAX:{HPMAX}percent:{percent}");
 				bloodController.UpdateBlood(percent);
 			}
-			Debug.Log(gameObject.name + "   收到伤害  " + damage + "   当前血量   " + currentHP);
+			//Debug.Log(gameObject.name + "   收到伤害  " + damage + "   当前血量   " + currentHP);
 		}
 
 		#region 处理buff相关逻辑
@@ -317,16 +313,20 @@ namespace QFramework.Game
 		{
 			if (aiDestination != null)
 			{
+				Debug.Log($"{transform.name}准备移动");
 				//通过A* 开始向目标移动 如果目标消失  进入待机状态 重新索敌
 				aiDestination.target = target;
 				aiPath.isStopped = false;
 				Debug.Log("当前角色正在移动...");
 
 				// 移动时添加一个被动技能buff：3秒内减免 n% 所有伤害
-				if (transform.CompareTag("Hero") && transform.name.Contains("Hero_Shield"))
+				if (transform.CompareTag("Hero"))
 				{
-					buffRunner.GiveBuff(transform, 20024);
-					buffRunner.ExecuteBuff(20024);
+					if (transform.name.Contains("Hero_Shield"))
+					{
+                        buffRunner.GiveBuff(transform, 20024);
+                        buffRunner.ExecuteBuff(20024);
+					}
 				}
 			}
 		}
@@ -522,28 +522,39 @@ namespace QFramework.Game
 			protected override void OnEnter()
 			{
 				mTarget.OnIdleEnter();
-
+				Debug.Log("我的名字是1：" + mTarget.transform.name);
                 // 启动周期性检测（每5帧）
                 _idleController = ActionKit.Repeat()
 					.Condition(() => !mTarget.isRelease && mFSM.CurrentStateId == EntityState.Idle)
 					.DelayFrame(5)
 					.Callback(() =>
 					{
-						mTarget.SendCommand<CleanInvalidTargetsCommand>(new CleanInvalidTargetsCommand(mTarget.targetList));
+						if (mTarget.transform.name.Contains("Hero"))
+						{
+							Debug.Log("我的名字是2：" + mTarget.transform.name);
+						}
+                        mTarget.SendCommand<CleanInvalidTargetsCommand>(new CleanInvalidTargetsCommand(mTarget.targetList));
 						if (mTarget.targetList.Count > 0)
 						{
 							try
 							{
 								if (mTarget.nomalAttackPacket != null)// 临时加的防止空引用，如果普攻包为空，说明初始化没做好
                                 {
+                                    Debug.Log("我的名字是3：" + mTarget.transform.name);
                                     var target = mTarget.SendCommand(new FindTargetCommand(mTarget.targetList, mTarget.nomalAttackPacket._data.TagMask, 99999, mTarget.nomalAttackPacket._data.Preference, mTarget.gameObject));
                                     if (target == null)
                                     {
-                                        Debug.LogWarning($"{mTarget.name}IdleState中找不到目标");
+                                        Debug.Log($"{mTarget.name}IdleState中找不到目标");
                                         return;
                                     }
+                                    
+                                    Debug.Log($"{mTarget.name}: 准备移动到: " + target.name);
                                     mTarget.Move(target.transform);
                                     mFSM.ChangeState(EntityState.MoveToTarget);
+								}
+								else
+								{
+									Debug.LogWarning($"{mTarget.name}的普攻包为空，无法进行索敌");
                                 }
                             }
 							catch (System.Exception e)
@@ -602,6 +613,10 @@ namespace QFramework.Game
 							Debug.Log("aaaaaaaaaaaaaaaaaaaaa");
 							// 找到目标，进入攻击状态
 							mFSM.ChangeState(EntityState.Attacking);
+						}
+						else
+						{
+							Debug.Log($"{mTarget.transform.name}没找到目标啊");
 						}
 					})
 					.Start(mTarget);

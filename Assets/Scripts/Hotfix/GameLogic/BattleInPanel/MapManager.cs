@@ -88,10 +88,10 @@ public class MapManager : MonoBehaviour
             //BattleManagerView.Instance.battleInPanel.SetAllEntitys(newBuildings);
             //objectsToPlace.Add(newBuildings);
             Vector3 p = GetNonOverlappingPosition();
-            BattleManagerView.Instance.BuildBuildingsEntity(bids[i], 1, p, true);
+            GameObject newBuild = BattleManagerView.Instance.BuildBuildingsEntity(bids[i], 1, p, Vector3.zero, true);
             if (isUpload)
             {
-                await GameRemoteAPI.ConstructBuilding(bids[i], p.x, p.z);
+                await GameRemoteAPI.ConstructBuilding(bids[i], p.x, p.z, newBuild.transform.eulerAngles);
             }
         }
         TotalPlacedObjects = bids.Length;
@@ -102,7 +102,7 @@ public class MapManager : MonoBehaviour
         for (int i = 0; i < layoutData.buildings.Length; i++)
         {
             BuildingData buildingData = layoutData.buildings[i];
-            //Debug.Log(buildingData.config_id);
+            //Debug.Log(buildingData.quaternion.ToString());
             //if (buildingData.config_id != 11001)
             //{
             //    //var newBuildings = Instantiate(Resources.Load<GameObject>("runtime/Buildings/" + buildingData.config_id));
@@ -110,7 +110,7 @@ public class MapManager : MonoBehaviour
             //    //newBuildings.transform.position = new Vector3(buildingData.x, 0, buildingData.z);
             //    //BattleManagerView.Instance.battleInPanel.SetAllEntitys(newBuildings);
             //    //objectsToPlace.Add(newBuildings);
-                BattleManagerView.Instance.BuildBuildingsEntity(buildingData.config_id, buildingData.level, new Vector3(buildingData.x, 0, buildingData.z), true);
+                BattleManagerView.Instance.BuildBuildingsEntity(buildingData.config_id, buildingData.level, new Vector3(buildingData.x, 0, buildingData.z),new Vector3(buildingData.rotation_x, buildingData.rotation_y, buildingData.rotation_z), true);
             //}
         }
         TotalPlacedObjects = layoutData.buildings.Length;
@@ -167,7 +167,7 @@ public class MapManager : MonoBehaviour
         {
             var tasks = new List<UniTask>();
 
-            foreach (var obj in objectsToPlace)
+            foreach (var obj in objectsToPlace)// 68
             {
                 if (obj.gameObject.activeInHierarchy)
                 {
@@ -188,7 +188,8 @@ public class MapManager : MonoBehaviour
                     {
                         if (NetworkManager.Instance.IsConnected)
                         {
-                            tasks.Add(GameRemoteAPI.ConstructBuilding(_targetBid, obj.transform.position.x, obj.transform.position.z));
+                            Debug.Log("上传时候的旋转:" + obj.transform.localRotation);
+                            tasks.Add(GameRemoteAPI.ConstructBuilding(_targetBid, obj.transform.position.x, obj.transform.position.z, obj.transform.eulerAngles));
                         }
                         else
                         {

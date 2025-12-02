@@ -25,48 +25,50 @@ namespace PitayaGame.GameSvr {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChRnYW1lc3ZyL2J1aWxkcy5wcm90bxIHZ2FtZXN2choYY29tbW9uL3R5cGVz",
-            "L3R5cGVzLnByb3RvItcBCgxCdWlsZGluZ0RhdGESEAoIYnVpbGRfaWQYASAB",
+            "L3R5cGVzLnByb3RvIvwBCgxCdWlsZGluZ0RhdGESEAoIYnVpbGRfaWQYASAB",
             "KAMSFwoPYnVpbGRfY29uZmlnX2lkGAIgASgFEg0KBWxldmVsGAMgASgFEiAK",
             "CHBvc2l0aW9uGAQgASgLMg4udHlwZXMuVmVjdG9yMhIVCg1idWlsZGluZ190",
             "eXBlGAUgASgFEhIKCmJ1aWxkX25hbWUYBiABKAkSGAoQdXBncmFkZV9lbmRf",
             "dGltZRgHIAEoAxISCgpjcmVhdGVkX2F0GAggASgDEhIKCnVwZGF0ZWRfYXQY",
-            "CSABKAMiKgoWR2V0QnVpbGRpbmdJbmZvUmVxdWVzdBIQCghidWlsZF9pZBgB",
-            "IAEoAyJoChdHZXRCdWlsZGluZ0luZm9SZXNwb25zZRIfCgRyZXNwGAEgASgL",
-            "MhEudHlwZXMuQ29tbW9uUmVzcBIsCg1idWlsZGluZ19kYXRhGAIgASgLMhUu",
-            "Z2FtZXN2ci5CdWlsZGluZ0RhdGEiLgoVR2V0TXlCdWlsZGluZ3NSZXF1ZXN0",
-            "EhUKDWJ1aWxkaW5nX3R5cGUYASABKAUiYwoWR2V0TXlCdWlsZGluZ3NSZXNw",
-            "b25zZRIfCgRyZXNwGAEgASgLMhEudHlwZXMuQ29tbW9uUmVzcBIoCglidWls",
-            "ZGluZ3MYAiADKAsyFS5nYW1lc3ZyLkJ1aWxkaW5nRGF0YSJVChhDb25zdHJ1",
-            "Y3RCdWlsZGluZ1JlcXVlc3QSFwoPYnVpbGRfY29uZmlnX2lkGAEgASgFEiAK",
-            "CHBvc2l0aW9uGAIgASgLMg4udHlwZXMuVmVjdG9yMiJ8ChlDb25zdHJ1Y3RC",
-            "dWlsZGluZ1Jlc3BvbnNlEh8KBHJlc3AYASABKAsyES50eXBlcy5Db21tb25S",
-            "ZXNwEhAKCGJ1aWxkX2lkGAIgASgDEiwKDWJ1aWxkaW5nX2RhdGEYAyABKAsy",
-            "FS5nYW1lc3ZyLkJ1aWxkaW5nRGF0YSJDChZVcGdyYWRlQnVpbGRpbmdSZXF1",
-            "ZXN0EhAKCGJ1aWxkX2lkGAEgASgDEhcKD2luc3RhbnRfdXBncmFkZRgCIAEo",
-            "CCJnChdVcGdyYWRlQnVpbGRpbmdSZXNwb25zZRIfCgRyZXNwGAEgASgLMhEu",
-            "dHlwZXMuQ29tbW9uUmVzcBIRCgluZXdfbGV2ZWwYAiABKAUSGAoQdXBncmFk",
-            "ZV9lbmRfdGltZRgDIAEoAyJNChNNb3ZlQnVpbGRpbmdSZXF1ZXN0EhAKCGJ1",
-            "aWxkX2lkGAEgASgDEiQKDG5ld19wb3NpdGlvbhgCIAEoCzIOLnR5cGVzLlZl",
-            "Y3RvcjIiNwoUTW92ZUJ1aWxkaW5nUmVzcG9uc2USHwoEcmVzcBgBIAEoCzIR",
-            "LnR5cGVzLkNvbW1vblJlc3AiKgoWRGVzdHJveUJ1aWxkaW5nUmVxdWVzdBIQ",
-            "CghidWlsZF9pZBgBIAEoAyJeChdEZXN0cm95QnVpbGRpbmdSZXNwb25zZRIf",
-            "CgRyZXNwGAEgASgLMhEudHlwZXMuQ29tbW9uUmVzcBIiCgdyZXdhcmRzGAIg",
-            "AygLMhEudHlwZXMuSXRlbVJld2FyZEJFWi5waXRheWEtZ2FtZS9wcm90b3Mv",
-            "cGIvZ29sYW5nL2dhbWVzdnI7Z2FtZXN2cnBiqgISUGl0YXlhR2FtZS5HYW1l",
-            "U3ZyYgZwcm90bzM="));
+            "CSABKAMSIwoIcm90YXRpb24YCiABKAsyES50eXBlcy5RdWF0ZXJuaW9uIioK",
+            "FkdldEJ1aWxkaW5nSW5mb1JlcXVlc3QSEAoIYnVpbGRfaWQYASABKAMiaAoX",
+            "R2V0QnVpbGRpbmdJbmZvUmVzcG9uc2USHwoEcmVzcBgBIAEoCzIRLnR5cGVz",
+            "LkNvbW1vblJlc3ASLAoNYnVpbGRpbmdfZGF0YRgCIAEoCzIVLmdhbWVzdnIu",
+            "QnVpbGRpbmdEYXRhIi4KFUdldE15QnVpbGRpbmdzUmVxdWVzdBIVCg1idWls",
+            "ZGluZ190eXBlGAEgASgFImMKFkdldE15QnVpbGRpbmdzUmVzcG9uc2USHwoE",
+            "cmVzcBgBIAEoCzIRLnR5cGVzLkNvbW1vblJlc3ASKAoJYnVpbGRpbmdzGAIg",
+            "AygLMhUuZ2FtZXN2ci5CdWlsZGluZ0RhdGEiegoYQ29uc3RydWN0QnVpbGRp",
+            "bmdSZXF1ZXN0EhcKD2J1aWxkX2NvbmZpZ19pZBgBIAEoBRIgCghwb3NpdGlv",
+            "bhgCIAEoCzIOLnR5cGVzLlZlY3RvcjISIwoIcm90YXRpb24YAyABKAsyES50",
+            "eXBlcy5RdWF0ZXJuaW9uInwKGUNvbnN0cnVjdEJ1aWxkaW5nUmVzcG9uc2US",
+            "HwoEcmVzcBgBIAEoCzIRLnR5cGVzLkNvbW1vblJlc3ASEAoIYnVpbGRfaWQY",
+            "AiABKAMSLAoNYnVpbGRpbmdfZGF0YRgDIAEoCzIVLmdhbWVzdnIuQnVpbGRp",
+            "bmdEYXRhIkMKFlVwZ3JhZGVCdWlsZGluZ1JlcXVlc3QSEAoIYnVpbGRfaWQY",
+            "ASABKAMSFwoPaW5zdGFudF91cGdyYWRlGAIgASgIImcKF1VwZ3JhZGVCdWls",
+            "ZGluZ1Jlc3BvbnNlEh8KBHJlc3AYASABKAsyES50eXBlcy5Db21tb25SZXNw",
+            "EhEKCW5ld19sZXZlbBgCIAEoBRIYChB1cGdyYWRlX2VuZF90aW1lGAMgASgD",
+            "InIKE01vdmVCdWlsZGluZ1JlcXVlc3QSEAoIYnVpbGRfaWQYASABKAMSJAoM",
+            "bmV3X3Bvc2l0aW9uGAIgASgLMg4udHlwZXMuVmVjdG9yMhIjCghyb3RhdGlv",
+            "bhgDIAEoCzIRLnR5cGVzLlF1YXRlcm5pb24iNwoUTW92ZUJ1aWxkaW5nUmVz",
+            "cG9uc2USHwoEcmVzcBgBIAEoCzIRLnR5cGVzLkNvbW1vblJlc3AiKgoWRGVz",
+            "dHJveUJ1aWxkaW5nUmVxdWVzdBIQCghidWlsZF9pZBgBIAEoAyJeChdEZXN0",
+            "cm95QnVpbGRpbmdSZXNwb25zZRIfCgRyZXNwGAEgASgLMhEudHlwZXMuQ29t",
+            "bW9uUmVzcBIiCgdyZXdhcmRzGAIgAygLMhEudHlwZXMuSXRlbVJld2FyZEJF",
+            "Wi5waXRheWEtZ2FtZS9wcm90b3MvcGIvZ29sYW5nL2dhbWVzdnI7Z2FtZXN2",
+            "cnBiqgISUGl0YXlhR2FtZS5HYW1lU3ZyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::PitayaGame.Types.TypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::PitayaGame.GameSvr.BuildingData), global::PitayaGame.GameSvr.BuildingData.Parser, new[]{ "BuildId", "BuildConfigId", "Level", "Position", "BuildingType", "BuildName", "UpgradeEndTime", "CreatedAt", "UpdatedAt" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PitayaGame.GameSvr.BuildingData), global::PitayaGame.GameSvr.BuildingData.Parser, new[]{ "BuildId", "BuildConfigId", "Level", "Position", "BuildingType", "BuildName", "UpgradeEndTime", "CreatedAt", "UpdatedAt", "Rotation" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PitayaGame.GameSvr.GetBuildingInfoRequest), global::PitayaGame.GameSvr.GetBuildingInfoRequest.Parser, new[]{ "BuildId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PitayaGame.GameSvr.GetBuildingInfoResponse), global::PitayaGame.GameSvr.GetBuildingInfoResponse.Parser, new[]{ "Resp", "BuildingData" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PitayaGame.GameSvr.GetMyBuildingsRequest), global::PitayaGame.GameSvr.GetMyBuildingsRequest.Parser, new[]{ "BuildingType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PitayaGame.GameSvr.GetMyBuildingsResponse), global::PitayaGame.GameSvr.GetMyBuildingsResponse.Parser, new[]{ "Resp", "Buildings" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PitayaGame.GameSvr.ConstructBuildingRequest), global::PitayaGame.GameSvr.ConstructBuildingRequest.Parser, new[]{ "BuildConfigId", "Position" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PitayaGame.GameSvr.ConstructBuildingRequest), global::PitayaGame.GameSvr.ConstructBuildingRequest.Parser, new[]{ "BuildConfigId", "Position", "Rotation" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PitayaGame.GameSvr.ConstructBuildingResponse), global::PitayaGame.GameSvr.ConstructBuildingResponse.Parser, new[]{ "Resp", "BuildId", "BuildingData" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PitayaGame.GameSvr.UpgradeBuildingRequest), global::PitayaGame.GameSvr.UpgradeBuildingRequest.Parser, new[]{ "BuildId", "InstantUpgrade" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PitayaGame.GameSvr.UpgradeBuildingResponse), global::PitayaGame.GameSvr.UpgradeBuildingResponse.Parser, new[]{ "Resp", "NewLevel", "UpgradeEndTime" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::PitayaGame.GameSvr.MoveBuildingRequest), global::PitayaGame.GameSvr.MoveBuildingRequest.Parser, new[]{ "BuildId", "NewPosition" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::PitayaGame.GameSvr.MoveBuildingRequest), global::PitayaGame.GameSvr.MoveBuildingRequest.Parser, new[]{ "BuildId", "NewPosition", "Rotation" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PitayaGame.GameSvr.MoveBuildingResponse), global::PitayaGame.GameSvr.MoveBuildingResponse.Parser, new[]{ "Resp" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PitayaGame.GameSvr.DestroyBuildingRequest), global::PitayaGame.GameSvr.DestroyBuildingRequest.Parser, new[]{ "BuildId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::PitayaGame.GameSvr.DestroyBuildingResponse), global::PitayaGame.GameSvr.DestroyBuildingResponse.Parser, new[]{ "Resp", "Rewards" }, null, null, null, null)
@@ -123,6 +125,7 @@ namespace PitayaGame.GameSvr {
       upgradeEndTime_ = other.upgradeEndTime_;
       createdAt_ = other.createdAt_;
       updatedAt_ = other.updatedAt_;
+      rotation_ = other.rotation_ != null ? other.rotation_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -267,6 +270,21 @@ namespace PitayaGame.GameSvr {
       }
     }
 
+    /// <summary>Field number for the "rotation" field.</summary>
+    public const int RotationFieldNumber = 10;
+    private global::PitayaGame.Types.Quaternion rotation_;
+    /// <summary>
+    /// 建筑旋转
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PitayaGame.Types.Quaternion Rotation {
+      get { return rotation_; }
+      set {
+        rotation_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -291,6 +309,7 @@ namespace PitayaGame.GameSvr {
       if (UpgradeEndTime != other.UpgradeEndTime) return false;
       if (CreatedAt != other.CreatedAt) return false;
       if (UpdatedAt != other.UpdatedAt) return false;
+      if (!object.Equals(Rotation, other.Rotation)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -307,6 +326,7 @@ namespace PitayaGame.GameSvr {
       if (UpgradeEndTime != 0L) hash ^= UpgradeEndTime.GetHashCode();
       if (CreatedAt != 0L) hash ^= CreatedAt.GetHashCode();
       if (UpdatedAt != 0L) hash ^= UpdatedAt.GetHashCode();
+      if (rotation_ != null) hash ^= Rotation.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -361,6 +381,10 @@ namespace PitayaGame.GameSvr {
         output.WriteRawTag(72);
         output.WriteInt64(UpdatedAt);
       }
+      if (rotation_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(Rotation);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -407,6 +431,10 @@ namespace PitayaGame.GameSvr {
         output.WriteRawTag(72);
         output.WriteInt64(UpdatedAt);
       }
+      if (rotation_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(Rotation);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -443,6 +471,9 @@ namespace PitayaGame.GameSvr {
       }
       if (UpdatedAt != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(UpdatedAt);
+      }
+      if (rotation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Rotation);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -485,6 +516,12 @@ namespace PitayaGame.GameSvr {
       }
       if (other.UpdatedAt != 0L) {
         UpdatedAt = other.UpdatedAt;
+      }
+      if (other.rotation_ != null) {
+        if (rotation_ == null) {
+          Rotation = new global::PitayaGame.Types.Quaternion();
+        }
+        Rotation.MergeFrom(other.Rotation);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -544,6 +581,13 @@ namespace PitayaGame.GameSvr {
             UpdatedAt = input.ReadInt64();
             break;
           }
+          case 82: {
+            if (rotation_ == null) {
+              Rotation = new global::PitayaGame.Types.Quaternion();
+            }
+            input.ReadMessage(Rotation);
+            break;
+          }
         }
       }
     #endif
@@ -600,6 +644,13 @@ namespace PitayaGame.GameSvr {
           }
           case 72: {
             UpdatedAt = input.ReadInt64();
+            break;
+          }
+          case 82: {
+            if (rotation_ == null) {
+              Rotation = new global::PitayaGame.Types.Quaternion();
+            }
+            input.ReadMessage(Rotation);
             break;
           }
         }
@@ -1546,6 +1597,7 @@ namespace PitayaGame.GameSvr {
     public ConstructBuildingRequest(ConstructBuildingRequest other) : this() {
       buildConfigId_ = other.buildConfigId_;
       position_ = other.position_ != null ? other.position_.Clone() : null;
+      rotation_ = other.rotation_ != null ? other.rotation_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1585,6 +1637,21 @@ namespace PitayaGame.GameSvr {
       }
     }
 
+    /// <summary>Field number for the "rotation" field.</summary>
+    public const int RotationFieldNumber = 3;
+    private global::PitayaGame.Types.Quaternion rotation_;
+    /// <summary>
+    /// 建筑旋转（可选，默认无旋转）
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PitayaGame.Types.Quaternion Rotation {
+      get { return rotation_; }
+      set {
+        rotation_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1602,6 +1669,7 @@ namespace PitayaGame.GameSvr {
       }
       if (BuildConfigId != other.BuildConfigId) return false;
       if (!object.Equals(Position, other.Position)) return false;
+      if (!object.Equals(Rotation, other.Rotation)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1611,6 +1679,7 @@ namespace PitayaGame.GameSvr {
       int hash = 1;
       if (BuildConfigId != 0) hash ^= BuildConfigId.GetHashCode();
       if (position_ != null) hash ^= Position.GetHashCode();
+      if (rotation_ != null) hash ^= Rotation.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1637,6 +1706,10 @@ namespace PitayaGame.GameSvr {
         output.WriteRawTag(18);
         output.WriteMessage(Position);
       }
+      if (rotation_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Rotation);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1655,6 +1728,10 @@ namespace PitayaGame.GameSvr {
         output.WriteRawTag(18);
         output.WriteMessage(Position);
       }
+      if (rotation_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Rotation);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1670,6 +1747,9 @@ namespace PitayaGame.GameSvr {
       }
       if (position_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Position);
+      }
+      if (rotation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Rotation);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1691,6 +1771,12 @@ namespace PitayaGame.GameSvr {
           Position = new global::PitayaGame.Types.Vector2();
         }
         Position.MergeFrom(other.Position);
+      }
+      if (other.rotation_ != null) {
+        if (rotation_ == null) {
+          Rotation = new global::PitayaGame.Types.Quaternion();
+        }
+        Rotation.MergeFrom(other.Rotation);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1722,6 +1808,13 @@ namespace PitayaGame.GameSvr {
             input.ReadMessage(Position);
             break;
           }
+          case 26: {
+            if (rotation_ == null) {
+              Rotation = new global::PitayaGame.Types.Quaternion();
+            }
+            input.ReadMessage(Rotation);
+            break;
+          }
         }
       }
     #endif
@@ -1750,6 +1843,13 @@ namespace PitayaGame.GameSvr {
               Position = new global::PitayaGame.Types.Vector2();
             }
             input.ReadMessage(Position);
+            break;
+          }
+          case 26: {
+            if (rotation_ == null) {
+              Rotation = new global::PitayaGame.Types.Quaternion();
+            }
+            input.ReadMessage(Rotation);
             break;
           }
         }
@@ -2629,6 +2729,7 @@ namespace PitayaGame.GameSvr {
     public MoveBuildingRequest(MoveBuildingRequest other) : this() {
       buildId_ = other.buildId_;
       newPosition_ = other.newPosition_ != null ? other.newPosition_.Clone() : null;
+      rotation_ = other.rotation_ != null ? other.rotation_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2665,6 +2766,21 @@ namespace PitayaGame.GameSvr {
       }
     }
 
+    /// <summary>Field number for the "rotation" field.</summary>
+    public const int RotationFieldNumber = 3;
+    private global::PitayaGame.Types.Quaternion rotation_;
+    /// <summary>
+    /// 建筑旋转（可选，不传则保持原旋转）
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::PitayaGame.Types.Quaternion Rotation {
+      get { return rotation_; }
+      set {
+        rotation_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -2682,6 +2798,7 @@ namespace PitayaGame.GameSvr {
       }
       if (BuildId != other.BuildId) return false;
       if (!object.Equals(NewPosition, other.NewPosition)) return false;
+      if (!object.Equals(Rotation, other.Rotation)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2691,6 +2808,7 @@ namespace PitayaGame.GameSvr {
       int hash = 1;
       if (BuildId != 0L) hash ^= BuildId.GetHashCode();
       if (newPosition_ != null) hash ^= NewPosition.GetHashCode();
+      if (rotation_ != null) hash ^= Rotation.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2717,6 +2835,10 @@ namespace PitayaGame.GameSvr {
         output.WriteRawTag(18);
         output.WriteMessage(NewPosition);
       }
+      if (rotation_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Rotation);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2735,6 +2857,10 @@ namespace PitayaGame.GameSvr {
         output.WriteRawTag(18);
         output.WriteMessage(NewPosition);
       }
+      if (rotation_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Rotation);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2750,6 +2876,9 @@ namespace PitayaGame.GameSvr {
       }
       if (newPosition_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(NewPosition);
+      }
+      if (rotation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Rotation);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2771,6 +2900,12 @@ namespace PitayaGame.GameSvr {
           NewPosition = new global::PitayaGame.Types.Vector2();
         }
         NewPosition.MergeFrom(other.NewPosition);
+      }
+      if (other.rotation_ != null) {
+        if (rotation_ == null) {
+          Rotation = new global::PitayaGame.Types.Quaternion();
+        }
+        Rotation.MergeFrom(other.Rotation);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2802,6 +2937,13 @@ namespace PitayaGame.GameSvr {
             input.ReadMessage(NewPosition);
             break;
           }
+          case 26: {
+            if (rotation_ == null) {
+              Rotation = new global::PitayaGame.Types.Quaternion();
+            }
+            input.ReadMessage(Rotation);
+            break;
+          }
         }
       }
     #endif
@@ -2830,6 +2972,13 @@ namespace PitayaGame.GameSvr {
               NewPosition = new global::PitayaGame.Types.Vector2();
             }
             input.ReadMessage(NewPosition);
+            break;
+          }
+          case 26: {
+            if (rotation_ == null) {
+              Rotation = new global::PitayaGame.Types.Quaternion();
+            }
+            input.ReadMessage(Rotation);
             break;
           }
         }

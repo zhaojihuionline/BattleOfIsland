@@ -56,7 +56,10 @@ public class PlayerData
 {
     public string PlayerID;
     public string PlayerName;
-    public int TotalCostMercenaryPoints;// 总佣兵点数
+    /// <summary>
+    /// 总佣兵点数(暂时)
+    /// </summary>
+    public int TotalCostMercenaryPoints;
     /// <summary>
     /// 资源数据
     /// </summary>
@@ -186,4 +189,13 @@ public class Player
     {
         await GameRemoteAPI.DeployHero(armid, newRecruitHeroId);// 部署英雄测试
     }
+}
+
+
+public class PlayerOpponentData
+{
+    public string playerName;
+    public int WoodCount;	
+    public int StoneCount;
+    public int MeatCount;
 }

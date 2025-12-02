@@ -2,6 +2,7 @@ using cfg;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using UnityEngine;
 public enum MagicType
 {
@@ -267,4 +268,8 @@ public class BuildingData
     public int config_id;
     public int building_type;
     public int upgrade_end_time;
+    public float rotation_w;
+    public float rotation_x;
+    public float rotation_y;
+    public float rotation_z;
 }

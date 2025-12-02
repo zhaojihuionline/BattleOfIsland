@@ -1,3 +1,4 @@
+using cfg;
 using Cysharp.Threading.Tasks;
 using Google.Protobuf.Collections;
 using PitayaClient.Network.Manager;
@@ -5,6 +6,7 @@ using PitayaGame.GameSvr;
 using PitayaGame.MatchmakingSvr;
 using PitayaGame.MatchMakingSvr;
 using QFramework;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -345,7 +347,7 @@ public static class GameRemoteAPI {
     /// <param name="posX">建造的新x位置</param>
     /// <param name="posY">建造的新y(z)位置</param>
     /// <returns></returns>
-    public static async UniTask<ConstructBuildingResponse> ConstructBuilding(int buildConfigId, float posX, float posY)
+    public static async UniTask<ConstructBuildingResponse> ConstructBuilding(int buildConfigId, float posX, float posY,Vector3 _quaternion)
     {
         try
         {
@@ -356,6 +358,13 @@ public static class GameRemoteAPI {
                 {
                     X = posX,
                     Z = posY
+                },
+                Rotation = new PitayaGame.Types.Quaternion
+                {
+                    X = _quaternion.x,
+                    Y = _quaternion.y,
+                    Z = _quaternion.z,
+                    W = 0
                 }
             };
             var res = await NetworkManager.Instance.RequestAsync<ConstructBuildingResponse>(
@@ -365,6 +374,8 @@ public static class GameRemoteAPI {
             );
             if (res != null)
             {
+                Debug.Log("建造异常了,Code：" + res.Resp.Code);
+                Debug.Log("建造异常了,Message：" + res.Resp.Message);
                 Debug.Log("建筑建造成功，建筑ID: " + res.BuildId);
                 return res;
             }
@@ -472,11 +483,12 @@ public static class GameRemoteAPI {
             return null;
         }
     }
+    static List<string> CandidateStr = new List<string>();
     // 匹配请求
     public static async UniTask<PitayaGame.MatchMakingSvr.GetNextCandidateResponse> MatchRequest()
     {
         var matchReq = new GetNextCandidateRequest();
-        //matchReq.ExcludeDefenderIds.AddRange(new string[] { });
+        matchReq.ExcludeDefenderIds.Add(CandidateStr);
         var res_match = await NetworkManager.Instance.RequestAsync<GetNextCandidateResponse>(
             "matchmakingsvr.match_coc.getnextcandidate",
             matchReq,
@@ -484,7 +496,10 @@ public static class GameRemoteAPI {
         );
         if (res_match != null && res_match.Candidate != null)
         {
-            //res_match.Candidate.DefenderId
+            if (!CandidateStr.Contains(res_match.Candidate.DefenderId))
+            {
+                CandidateStr.Add(res_match.Candidate.DefenderId);
+            }
             Debug.Log("匹配请求成功，匹配ID: " + res_match.Resp);
             return res_match;
         }

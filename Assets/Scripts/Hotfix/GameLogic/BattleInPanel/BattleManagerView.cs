@@ -40,6 +40,8 @@ namespace QFramework.UI
 
             battleProcessData.Add(new BattleDestructionRateConfig() { MinRate = 0.3f, IsPopuped = false });
             battleProcessData.Add(new BattleDestructionRateConfig() { MinRate = 0.6f, IsPopuped = false });
+
+            battleInPanel = GameObject.Find("UIRoot/Common").transform.Find("BattleInPanel").GetComponent<BattleInPanel>();
         }
         private void Update()
         {
@@ -133,13 +135,14 @@ namespace QFramework.UI
             return 10001;
         }
 
-        public void BuildBuildingsEntity(int id, int lv, Vector3 spawnPoint, bool isEnemy = false)
+        public GameObject BuildBuildingsEntity(int id, int lv, Vector3 spawnPoint, Vector3 _qua, bool isEnemy = false)
         {
             var _system = this.GetSystem<EntitySystem>();
             var bmodel = this.GetModel<BattleInModel>();
             bmodel.TotalEntityCount.Value++;
             GameObject newBuildings = _system.CreatEntityBuilding(id, lv, spawnPoint, isEnemy);
-            //bmodel.opponent_allEntitys.Add(newBuildings);
+            newBuildings.transform.eulerAngles = _qua;
+            return newBuildings;
         }
 
         public void RemoveAllOpponent_allEntitys()
@@ -155,5 +158,4 @@ namespace QFramework.UI
         //    this.GetSystem<GlobalBuffRunnerSystem>().buffRunners.Clear();
         //}
     }
-
 }

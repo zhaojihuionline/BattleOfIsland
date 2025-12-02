@@ -25,6 +25,14 @@ namespace QFramework.UI
             MeatCountLabel.text = player.playerData.resourceData[2].Quantity.ToString();
         }
 
+        public void Init(PlayerOpponentData opponentData)
+        {
+            playerName.text = opponentData.playerName;
+            WoodCountLabel.text = opponentData.WoodCount.ToString();
+            StoneCountLabel.text = opponentData.StoneCount.ToString();
+            MeatCountLabel.text = opponentData.MeatCount.ToString();
+        }
+
 
         protected override void OnBeforeDestroy()
 		{

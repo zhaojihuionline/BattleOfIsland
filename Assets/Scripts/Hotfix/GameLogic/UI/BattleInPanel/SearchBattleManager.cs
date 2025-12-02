@@ -1,5 +1,6 @@
 using DG.Tweening;
 using Newtonsoft.Json;
+using PitayaGame.GameSvr;
 using QFramework;
 using QFramework.UI;
 using System.Collections;
@@ -75,13 +76,24 @@ public class SearchBattleManager : MonoBehaviour
         }
 
         string jsonStr = res.Candidate.BaseSnapshot.LayoutData.ToStringUtf8();
+        Debug.Log($"匹配到的对手建筑布局:{jsonStr}");
         try
         {
-            Debug.Log(jsonStr);
+            
             // 使用 JsonConvert.DeserializeObject 解析 JSON 数据
             if (PlayerManager.Instance != null && PlayerManager.Instance.GetLocalPlayer() != null && PlayerManager.Instance.GetLocalPlayer().playerData != null) {     
                 PlayerManager.Instance.GetLocalPlayer().playerData.TotalCostMercenaryPoints = 100;// 将默认的佣兵点数设置为100，以便测试
             }
+            if (BattleManagerView.Instance.battleInPanel != null)
+            {
+                var newPdata = new PlayerOpponentData();
+                newPdata.playerName = res.Candidate.DefenderUsername;
+                newPdata.WoodCount = 111;
+                newPdata.MeatCount = 111;
+                newPdata.StoneCount = 111;
+                BattleManagerView.Instance.battleInPanel.ActorInfoViewContainersearch.OpponentInfoContainer.Init(newPdata);
+            }
+
             BuildingLayoutData layoutData = JsonConvert.DeserializeObject<BuildingLayoutData>(jsonStr);
             if (layoutData != null && layoutData.buildings != null)
             {

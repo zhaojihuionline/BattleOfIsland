@@ -1,5 +1,6 @@
 using DG.Tweening;
 using QFramework;
+using QFramework.UI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -41,7 +42,8 @@ public class MercenaryCardItem : BaseCardItem
         //amount += v;
         amountLabel.text = "X1";
         PlayerManager.Instance.GetLocalPlayer().playerData.TotalCostMercenaryPoints -= Cost;
-        Debug.Log($"»¹Ê£{PlayerManager.Instance.GetLocalPlayer().playerData.TotalCostMercenaryPoints}¹ÍÓ¶µãÊý");
+        int _cost = PlayerManager.Instance.GetLocalPlayer().playerData.TotalCostMercenaryPoints;
+        BattleManagerView.Instance.battleInPanel.costLabel.text = $"{(_cost <= 0 ? 0 : _cost)}/100";
         if (PlayerManager.Instance.GetLocalPlayer().playerData.TotalCostMercenaryPoints <= 0)
         {
             mask.SetActive(true);
