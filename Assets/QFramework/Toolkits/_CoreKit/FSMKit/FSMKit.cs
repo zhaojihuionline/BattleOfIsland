@@ -21,8 +21,8 @@ namespace QFramework
         void OnGUI();
         void Exit();
     }
-    
-    
+
+    [Serializable]
     public class CustomState : IState
     {
         private Func<bool> mOnCondition;
@@ -288,9 +288,10 @@ namespace QFramework.Example
 }
 ")]
 #endif
+    [Serializable]
     public class FSM<T>
     {
-        protected Dictionary<T, IState> mStates = new Dictionary<T, IState>();
+        [SerializeField]protected Dictionary<T, IState> mStates = new Dictionary<T, IState>();
 
         public void AddState(T id, IState state)
         {
@@ -310,8 +311,8 @@ namespace QFramework.Example
             return state;
         }
 
-        private IState mCurrentState;
-        private T mCurrentStateId;
+        [SerializeField] private IState mCurrentState;
+        [SerializeField] private T mCurrentStateId;
 
         public IState CurrentState => mCurrentState;
         public T CurrentStateId => mCurrentStateId;
@@ -384,7 +385,8 @@ namespace QFramework.Example
             mStates.Clear();
         }
     }
-    
+
+    [SerializeField]
     public abstract class AbstractState<TStateId,TTarget> : IState
     {
         protected FSM<TStateId> mFSM;

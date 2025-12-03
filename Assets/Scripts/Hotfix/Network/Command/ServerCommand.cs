@@ -483,7 +483,7 @@ public static class GameRemoteAPI {
             return null;
         }
     }
-    static List<string> CandidateStr = new List<string>();
+    public static List<string> CandidateStr = new List<string>();
     // 匹配请求
     public static async UniTask<PitayaGame.MatchMakingSvr.GetNextCandidateResponse> MatchRequest()
     {

@@ -136,7 +136,8 @@ public class SkillSystem : AbstractSystem, ISkillSystem
         {
             if (obj == null) continue;
 
-            float distance = Vector3.Distance(obj.transform.position, center);
+            //float distance = Vector3.Distance(obj.transform.position, center);
+            float distance = Vector2.Distance(new Vector2(obj.transform.position.x, obj.transform.position.z), new Vector2(center.x, center.z));
             if (distance <= maxDistance)
             {
                 foundObjects.Add(obj);

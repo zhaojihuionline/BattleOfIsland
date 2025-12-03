@@ -43,7 +43,7 @@ public class MercenaryCardItem : BaseCardItem
         amountLabel.text = "X1";
         PlayerManager.Instance.GetLocalPlayer().playerData.TotalCostMercenaryPoints -= Cost;
         int _cost = PlayerManager.Instance.GetLocalPlayer().playerData.TotalCostMercenaryPoints;
-        BattleManagerView.Instance.battleInPanel.costLabel.text = $"{(_cost <= 0 ? 0 : _cost)}/100";
+        BattleManagerView.Instance.battleInPanel.costLabel.text = $"{(_cost <= 0 ? 0 : _cost)}/300";
         if (PlayerManager.Instance.GetLocalPlayer().playerData.TotalCostMercenaryPoints <= 0)
         {
             mask.SetActive(true);

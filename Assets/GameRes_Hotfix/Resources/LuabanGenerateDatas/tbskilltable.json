@@ -5515,7 +5515,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -5560,7 +5560,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -5605,7 +5605,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -5650,7 +5650,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -5695,7 +5695,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -5740,7 +5740,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -5785,7 +5785,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -5830,7 +5830,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -5875,7 +5875,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -5920,7 +5920,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -5965,7 +5965,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6010,7 +6010,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6055,7 +6055,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6100,7 +6100,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6145,7 +6145,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6190,7 +6190,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6235,7 +6235,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6280,7 +6280,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6325,7 +6325,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6370,7 +6370,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6415,7 +6415,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6460,7 +6460,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6505,7 +6505,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6550,7 +6550,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6595,7 +6595,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6640,7 +6640,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6685,7 +6685,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6730,7 +6730,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6775,7 +6775,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6820,7 +6820,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6865,7 +6865,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6910,7 +6910,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -6955,7 +6955,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7000,7 +7000,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7045,7 +7045,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7090,7 +7090,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7135,7 +7135,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7180,7 +7180,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7225,7 +7225,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7270,7 +7270,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7315,7 +7315,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7360,7 +7360,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7405,7 +7405,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7450,7 +7450,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7495,7 +7495,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7540,7 +7540,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7585,7 +7585,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7630,7 +7630,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7675,7 +7675,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7720,7 +7720,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7765,7 +7765,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7810,7 +7810,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7855,7 +7855,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7900,7 +7900,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7945,7 +7945,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -7990,7 +7990,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8035,7 +8035,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8080,7 +8080,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8125,7 +8125,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8170,7 +8170,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8215,7 +8215,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8260,7 +8260,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8305,7 +8305,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8350,7 +8350,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8395,7 +8395,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8440,7 +8440,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8485,7 +8485,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8530,7 +8530,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8575,7 +8575,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8620,7 +8620,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8665,7 +8665,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8710,7 +8710,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8755,7 +8755,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8800,7 +8800,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8845,7 +8845,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8890,7 +8890,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8935,7 +8935,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -8980,7 +8980,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9025,7 +9025,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9070,7 +9070,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9115,7 +9115,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9162,7 +9162,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9209,7 +9209,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9256,7 +9256,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9303,7 +9303,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9350,7 +9350,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9397,7 +9397,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9444,7 +9444,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9491,7 +9491,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9538,7 +9538,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9585,7 +9585,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9632,7 +9632,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9679,7 +9679,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9726,7 +9726,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9773,7 +9773,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9820,7 +9820,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9867,7 +9867,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9914,7 +9914,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -9961,7 +9961,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10008,7 +10008,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10055,7 +10055,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10100,7 +10100,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10145,7 +10145,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10190,7 +10190,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10235,7 +10235,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10280,7 +10280,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10325,7 +10325,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10370,7 +10370,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10415,7 +10415,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10460,7 +10460,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10505,7 +10505,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10550,7 +10550,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10595,7 +10595,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10640,7 +10640,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10685,7 +10685,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10730,7 +10730,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10775,7 +10775,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10820,7 +10820,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10865,7 +10865,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10910,7 +10910,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -10955,7 +10955,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11000,7 +11000,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11045,7 +11045,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11090,7 +11090,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11135,7 +11135,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11180,7 +11180,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11225,7 +11225,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11270,7 +11270,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11315,7 +11315,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11360,7 +11360,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11405,7 +11405,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11450,7 +11450,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11495,7 +11495,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11540,7 +11540,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11585,7 +11585,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11630,7 +11630,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11675,7 +11675,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11720,7 +11720,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11765,7 +11765,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11810,7 +11810,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11855,7 +11855,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11902,7 +11902,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11949,7 +11949,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -11996,7 +11996,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12043,7 +12043,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12090,7 +12090,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12137,7 +12137,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12184,7 +12184,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12231,7 +12231,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12278,7 +12278,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12325,7 +12325,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12372,7 +12372,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12419,7 +12419,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12466,7 +12466,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12513,7 +12513,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12560,7 +12560,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12607,7 +12607,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12654,7 +12654,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12701,7 +12701,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12748,7 +12748,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12795,7 +12795,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12843,7 +12843,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12891,7 +12891,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12939,7 +12939,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -12987,7 +12987,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13035,7 +13035,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13083,7 +13083,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13131,7 +13131,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13179,7 +13179,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13227,7 +13227,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13275,7 +13275,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13323,7 +13323,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13371,7 +13371,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13419,7 +13419,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13467,7 +13467,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13515,7 +13515,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13563,7 +13563,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13611,7 +13611,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13659,7 +13659,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13707,7 +13707,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13755,7 +13755,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13802,7 +13802,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13849,7 +13849,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13896,7 +13896,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13943,7 +13943,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -13990,7 +13990,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14037,7 +14037,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14084,7 +14084,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14131,7 +14131,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14178,7 +14178,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14225,7 +14225,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14272,7 +14272,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14319,7 +14319,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14366,7 +14366,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14413,7 +14413,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14460,7 +14460,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14507,7 +14507,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14554,7 +14554,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14601,7 +14601,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14648,7 +14648,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14695,7 +14695,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14740,7 +14740,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14785,7 +14785,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14830,7 +14830,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14875,7 +14875,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14920,7 +14920,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -14965,7 +14965,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15010,7 +15010,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15055,7 +15055,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15100,7 +15100,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15145,7 +15145,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15190,7 +15190,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15235,7 +15235,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15280,7 +15280,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15325,7 +15325,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15370,7 +15370,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15415,7 +15415,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15460,7 +15460,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15505,7 +15505,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15550,7 +15550,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15595,7 +15595,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15640,7 +15640,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15685,7 +15685,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15730,7 +15730,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15775,7 +15775,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15820,7 +15820,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15865,7 +15865,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15910,7 +15910,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -15955,7 +15955,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -16000,7 +16000,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -16045,7 +16045,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -16090,7 +16090,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -16135,7 +16135,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -16180,7 +16180,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -16225,7 +16225,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -16270,7 +16270,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -16315,7 +16315,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -16360,7 +16360,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -16405,7 +16405,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -16450,7 +16450,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         1,
@@ -16749,6 +16749,51 @@
     "_description": "demo英雄（盾兵巴顿）的普通攻击"
   },
   {
+    "_id": 9000701,
+    "_lv": 1,
+    "_skill": 90007,
+    "_name": "普通攻击demohero",
+    "_skill_type": 1,
+    "_hurt_type": 1,
+    "_icon": "skill_icon_9000701",
+    "_prefab": "skill_90007",
+    "_cast_ranage": 500,
+    "_tag_mask": [
+      "Tower",
+      "Hero"
+    ],
+    "_damage_range": 0,
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
+    "_coll_time": 300,
+    "_release_time": [
+      {
+        "_animator": "attack",
+        "_time": 0
+      },
+      {
+        "_animator": "attack",
+        "_time": 20
+      },
+      {
+        "_animator": "attack",
+        "_time": 0
+      },
+      {
+        "_animator": "attack",
+        "_time": 0
+      }
+    ],
+    "_effect": [],
+    "_description": "demo英雄（疯狂发明家）的普通攻击"
+  },
+  {
     "_id": 20000101,
     "_lv": 1,
     "_skill": 200001,
@@ -16763,7 +16808,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -16809,7 +16854,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -16855,7 +16900,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -16901,7 +16946,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -16947,7 +16992,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -16993,7 +17038,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -17039,7 +17084,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -17085,7 +17130,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -17131,7 +17176,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -17177,7 +17222,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -17223,7 +17268,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -17269,7 +17314,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -17315,7 +17360,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -17361,7 +17406,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -17407,7 +17452,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -17453,7 +17498,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -17499,7 +17544,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -17545,7 +17590,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -17591,7 +17636,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -17637,7 +17682,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -18082,30 +18127,8 @@
       "Hero"
     ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
-    "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
-  },
-  {
-    "_id": 20000302,
-    "_lv": 2,
-    "_skill": 200003,
-    "_name": "迷你蘑菇",
-    "_skill_type": 5,
-    "_hurt_type": 0,
-    "_icon": "spell_icon_20000302",
-    "_prefab": "spell_200003",
-    "_cast_ranage": 0,
-    "_tag_mask": [
-      "Hero"
-    ],
-    "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -18137,13 +18160,13 @@
     "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速10%"
   },
   {
-    "_id": 20000303,
-    "_lv": 3,
+    "_id": 20000302,
+    "_lv": 2,
     "_skill": 200003,
     "_name": "迷你蘑菇",
     "_skill_type": 5,
     "_hurt_type": 0,
-    "_icon": "spell_icon_20000303",
+    "_icon": "spell_icon_20000302",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
     "_tag_mask": [
@@ -18151,7 +18174,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -18183,13 +18206,13 @@
     "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速12%"
   },
   {
-    "_id": 20000304,
-    "_lv": 4,
+    "_id": 20000303,
+    "_lv": 3,
     "_skill": 200003,
     "_name": "迷你蘑菇",
     "_skill_type": 5,
     "_hurt_type": 0,
-    "_icon": "spell_icon_20000304",
+    "_icon": "spell_icon_20000303",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
     "_tag_mask": [
@@ -18197,7 +18220,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -18229,13 +18252,13 @@
     "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速14%"
   },
   {
-    "_id": 20000305,
-    "_lv": 5,
+    "_id": 20000304,
+    "_lv": 4,
     "_skill": 200003,
     "_name": "迷你蘑菇",
     "_skill_type": 5,
     "_hurt_type": 0,
-    "_icon": "spell_icon_20000305",
+    "_icon": "spell_icon_20000304",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
     "_tag_mask": [
@@ -18243,7 +18266,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -18275,13 +18298,13 @@
     "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速16%"
   },
   {
-    "_id": 20000306,
-    "_lv": 6,
+    "_id": 20000305,
+    "_lv": 5,
     "_skill": 200003,
     "_name": "迷你蘑菇",
     "_skill_type": 5,
     "_hurt_type": 0,
-    "_icon": "spell_icon_20000306",
+    "_icon": "spell_icon_20000305",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
     "_tag_mask": [
@@ -18289,7 +18312,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -18321,13 +18344,13 @@
     "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速18%"
   },
   {
-    "_id": 20000307,
-    "_lv": 7,
+    "_id": 20000306,
+    "_lv": 6,
     "_skill": 200003,
     "_name": "迷你蘑菇",
     "_skill_type": 5,
     "_hurt_type": 0,
-    "_icon": "spell_icon_20000307",
+    "_icon": "spell_icon_20000306",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
     "_tag_mask": [
@@ -18335,7 +18358,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -18367,13 +18390,13 @@
     "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速20%"
   },
   {
-    "_id": 20000308,
-    "_lv": 8,
+    "_id": 20000307,
+    "_lv": 7,
     "_skill": 200003,
     "_name": "迷你蘑菇",
     "_skill_type": 5,
     "_hurt_type": 0,
-    "_icon": "spell_icon_20000308",
+    "_icon": "spell_icon_20000307",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
     "_tag_mask": [
@@ -18381,7 +18404,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -18413,13 +18436,13 @@
     "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速22%"
   },
   {
-    "_id": 20000309,
-    "_lv": 9,
+    "_id": 20000308,
+    "_lv": 8,
     "_skill": 200003,
     "_name": "迷你蘑菇",
     "_skill_type": 5,
     "_hurt_type": 0,
-    "_icon": "spell_icon_20000309",
+    "_icon": "spell_icon_20000308",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
     "_tag_mask": [
@@ -18427,7 +18450,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -18459,13 +18482,13 @@
     "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速24%"
   },
   {
-    "_id": 20000310,
-    "_lv": 10,
+    "_id": 20000309,
+    "_lv": 9,
     "_skill": 200003,
     "_name": "迷你蘑菇",
     "_skill_type": 5,
     "_hurt_type": 0,
-    "_icon": "spell_icon_20000310",
+    "_icon": "spell_icon_20000309",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
     "_tag_mask": [
@@ -18473,7 +18496,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -18505,13 +18528,13 @@
     "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速26%"
   },
   {
-    "_id": 20000311,
-    "_lv": 11,
+    "_id": 20000310,
+    "_lv": 10,
     "_skill": 200003,
     "_name": "迷你蘑菇",
     "_skill_type": 5,
     "_hurt_type": 0,
-    "_icon": "spell_icon_20000311",
+    "_icon": "spell_icon_20000310",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
     "_tag_mask": [
@@ -18519,7 +18542,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -18551,13 +18574,13 @@
     "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速28%"
   },
   {
-    "_id": 20000312,
-    "_lv": 12,
+    "_id": 20000311,
+    "_lv": 11,
     "_skill": 200003,
     "_name": "迷你蘑菇",
     "_skill_type": 5,
     "_hurt_type": 0,
-    "_icon": "spell_icon_20000312",
+    "_icon": "spell_icon_20000311",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
     "_tag_mask": [
@@ -18565,7 +18588,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -18597,13 +18620,13 @@
     "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速30%"
   },
   {
-    "_id": 20000313,
-    "_lv": 13,
+    "_id": 20000312,
+    "_lv": 12,
     "_skill": 200003,
     "_name": "迷你蘑菇",
     "_skill_type": 5,
     "_hurt_type": 0,
-    "_icon": "spell_icon_20000313",
+    "_icon": "spell_icon_20000312",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
     "_tag_mask": [
@@ -18611,7 +18634,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -18643,13 +18666,13 @@
     "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速32%"
   },
   {
-    "_id": 20000314,
-    "_lv": 14,
+    "_id": 20000313,
+    "_lv": 13,
     "_skill": 200003,
     "_name": "迷你蘑菇",
     "_skill_type": 5,
     "_hurt_type": 0,
-    "_icon": "spell_icon_20000314",
+    "_icon": "spell_icon_20000313",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
     "_tag_mask": [
@@ -18657,7 +18680,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -18689,13 +18712,13 @@
     "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速34%"
   },
   {
-    "_id": 20000315,
-    "_lv": 15,
+    "_id": 20000314,
+    "_lv": 14,
     "_skill": 200003,
     "_name": "迷你蘑菇",
     "_skill_type": 5,
     "_hurt_type": 0,
-    "_icon": "spell_icon_20000315",
+    "_icon": "spell_icon_20000314",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
     "_tag_mask": [
@@ -18703,7 +18726,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -18735,13 +18758,13 @@
     "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速36%"
   },
   {
-    "_id": 20000316,
-    "_lv": 16,
+    "_id": 20000315,
+    "_lv": 15,
     "_skill": 200003,
     "_name": "迷你蘑菇",
     "_skill_type": 5,
     "_hurt_type": 0,
-    "_icon": "spell_icon_20000316",
+    "_icon": "spell_icon_20000315",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
     "_tag_mask": [
@@ -18749,7 +18772,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -18781,13 +18804,13 @@
     "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速38%"
   },
   {
-    "_id": 20000317,
-    "_lv": 17,
+    "_id": 20000316,
+    "_lv": 16,
     "_skill": 200003,
     "_name": "迷你蘑菇",
     "_skill_type": 5,
     "_hurt_type": 0,
-    "_icon": "spell_icon_20000317",
+    "_icon": "spell_icon_20000316",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
     "_tag_mask": [
@@ -18795,7 +18818,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -18827,13 +18850,13 @@
     "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速40%"
   },
   {
-    "_id": 20000318,
-    "_lv": 18,
+    "_id": 20000317,
+    "_lv": 17,
     "_skill": 200003,
     "_name": "迷你蘑菇",
     "_skill_type": 5,
     "_hurt_type": 0,
-    "_icon": "spell_icon_20000318",
+    "_icon": "spell_icon_20000317",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
     "_tag_mask": [
@@ -18841,7 +18864,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -18873,13 +18896,13 @@
     "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速42%"
   },
   {
-    "_id": 20000319,
-    "_lv": 19,
+    "_id": 20000318,
+    "_lv": 18,
     "_skill": 200003,
     "_name": "迷你蘑菇",
     "_skill_type": 5,
     "_hurt_type": 0,
-    "_icon": "spell_icon_20000319",
+    "_icon": "spell_icon_20000318",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
     "_tag_mask": [
@@ -18887,7 +18910,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -18919,13 +18942,13 @@
     "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速44%"
   },
   {
-    "_id": 20000320,
-    "_lv": 20,
+    "_id": 20000319,
+    "_lv": 19,
     "_skill": 200003,
     "_name": "迷你蘑菇",
     "_skill_type": 5,
     "_hurt_type": 0,
-    "_icon": "spell_icon_20000320",
+    "_icon": "spell_icon_20000319",
     "_prefab": "spell_200003",
     "_cast_ranage": 0,
     "_tag_mask": [
@@ -18933,7 +18956,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -18965,19 +18988,21 @@
     "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速46%"
   },
   {
-    "_id": 20000401,
-    "_lv": 1,
-    "_skill": 200004,
-    "_name": "醺酒",
+    "_id": 20000320,
+    "_lv": 20,
+    "_skill": 200003,
+    "_name": "迷你蘑菇",
     "_skill_type": 5,
     "_hurt_type": 0,
-    "_icon": "spell_icon_20000401",
-    "_prefab": "spell_200004",
+    "_icon": "spell_icon_20000320",
+    "_prefab": "spell_200003",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -19007,6 +19032,26 @@
       20144
     ],
     "_description": "持续3秒，友方战斗力最高的英雄体型变为50%，获得攻速48%"
+  },
+  {
+    "_id": 20000401,
+    "_lv": 1,
+    "_skill": 200004,
+    "_name": "醺酒",
+    "_skill_type": 5,
+    "_hurt_type": 0,
+    "_icon": "spell_icon_20000401",
+    "_prefab": "spell_200004",
+    "_cast_ranage": 0,
+    "_tag_mask": [],
+    "_damage_range": 0,
+    "_preference": "",
+    "_lock_method": 0,
+    "_pass_type": [],
+    "_coll_time": 0,
+    "_release_time": [],
+    "_effect": [],
+    "_description": ""
   },
   {
     "_id": 20000402,
@@ -23843,7 +23888,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -23889,7 +23934,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -23935,7 +23980,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -23981,7 +24026,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -24027,7 +24072,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -24073,7 +24118,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -24119,7 +24164,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -24165,7 +24210,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -24211,7 +24256,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -24257,7 +24302,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -24303,7 +24348,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -24349,7 +24394,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -24395,7 +24440,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -24441,7 +24486,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -24487,7 +24532,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -24533,7 +24578,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -24579,7 +24624,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -24625,7 +24670,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -24671,7 +24716,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -24717,7 +24762,7 @@
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -25163,7 +25208,7 @@
     ],
     "_damage_range": 0,
     "_preference": "RandomTargetStrategy",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -25211,7 +25256,7 @@
     ],
     "_damage_range": 0,
     "_preference": "RandomTargetStrategy",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -25259,7 +25304,7 @@
     ],
     "_damage_range": 0,
     "_preference": "RandomTargetStrategy",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -25307,7 +25352,7 @@
     ],
     "_damage_range": 0,
     "_preference": "RandomTargetStrategy",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -25355,7 +25400,7 @@
     ],
     "_damage_range": 0,
     "_preference": "RandomTargetStrategy",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -25403,7 +25448,7 @@
     ],
     "_damage_range": 0,
     "_preference": "RandomTargetStrategy",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -25451,7 +25496,7 @@
     ],
     "_damage_range": 0,
     "_preference": "RandomTargetStrategy",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -25499,7 +25544,7 @@
     ],
     "_damage_range": 0,
     "_preference": "RandomTargetStrategy",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -25547,7 +25592,7 @@
     ],
     "_damage_range": 0,
     "_preference": "RandomTargetStrategy",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -25595,7 +25640,7 @@
     ],
     "_damage_range": 0,
     "_preference": "RandomTargetStrategy",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -25643,7 +25688,7 @@
     ],
     "_damage_range": 0,
     "_preference": "RandomTargetStrategy",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -25691,7 +25736,7 @@
     ],
     "_damage_range": 0,
     "_preference": "RandomTargetStrategy",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -25739,7 +25784,7 @@
     ],
     "_damage_range": 0,
     "_preference": "RandomTargetStrategy",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -25787,7 +25832,7 @@
     ],
     "_damage_range": 0,
     "_preference": "RandomTargetStrategy",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -25835,7 +25880,7 @@
     ],
     "_damage_range": 0,
     "_preference": "RandomTargetStrategy",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -25883,7 +25928,7 @@
     ],
     "_damage_range": 0,
     "_preference": "RandomTargetStrategy",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -25931,7 +25976,7 @@
     ],
     "_damage_range": 0,
     "_preference": "RandomTargetStrategy",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -25979,7 +26024,7 @@
     ],
     "_damage_range": 0,
     "_preference": "RandomTargetStrategy",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -26027,7 +26072,7 @@
     ],
     "_damage_range": 0,
     "_preference": "RandomTargetStrategy",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,
@@ -26075,7 +26120,7 @@
     ],
     "_damage_range": 0,
     "_preference": "RandomTargetStrategy",
-    "_lock_method": 0,
+    "_lock_method": 1,
     "_pass_type": [
       [
         2,

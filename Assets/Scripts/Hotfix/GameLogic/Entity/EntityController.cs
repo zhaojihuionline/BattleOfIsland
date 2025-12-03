@@ -187,7 +187,7 @@ namespace QFramework.Game
 				float percent = (float)currentHP / HPMAX;
 
 				bloodController.Init(percent);
-				//bloodController.gameObject.SetActive(false);
+				bloodController.gameObject.SetActive(false);// 初始时是否显示血条
             }
         }
 
@@ -522,46 +522,53 @@ namespace QFramework.Game
 			protected override void OnEnter()
 			{
 				mTarget.OnIdleEnter();
-				Debug.Log("我的名字是1：" + mTarget.transform.name);
                 // 启动周期性检测（每5帧）
                 _idleController = ActionKit.Repeat()
 					.Condition(() => !mTarget.isRelease && mFSM.CurrentStateId == EntityState.Idle)
 					.DelayFrame(5)
 					.Callback(() =>
 					{
-						if (mTarget.transform.name.Contains("Hero"))
-						{
-							Debug.Log("我的名字是2：" + mTarget.transform.name);
-						}
                         mTarget.SendCommand<CleanInvalidTargetsCommand>(new CleanInvalidTargetsCommand(mTarget.targetList));
 						if (mTarget.targetList.Count > 0)
 						{
-							try
-							{
-								if (mTarget.nomalAttackPacket != null)// 临时加的防止空引用，如果普攻包为空，说明初始化没做好
+                            if (mTarget.nomalAttackPacket != null)// 临时加的防止空引用，如果普攻包为空，说明初始化没做好
+                            {
+                                var target = mTarget.SendCommand(new FindTargetCommand(mTarget.targetList, mTarget.nomalAttackPacket._data.TagMask, 99999, mTarget.nomalAttackPacket._data.Preference, mTarget.gameObject));
+                                if (target == null)
                                 {
-                                    Debug.Log("我的名字是3：" + mTarget.transform.name);
-                                    var target = mTarget.SendCommand(new FindTargetCommand(mTarget.targetList, mTarget.nomalAttackPacket._data.TagMask, 99999, mTarget.nomalAttackPacket._data.Preference, mTarget.gameObject));
-                                    if (target == null)
-                                    {
-                                        Debug.Log($"{mTarget.name}IdleState中找不到目标");
-                                        return;
-                                    }
-                                    
-                                    Debug.Log($"{mTarget.name}: 准备移动到: " + target.name);
-                                    mTarget.Move(target.transform);
-                                    mFSM.ChangeState(EntityState.MoveToTarget);
-								}
-								else
-								{
-									Debug.LogWarning($"{mTarget.name}的普攻包为空，无法进行索敌");
+                                    Debug.Log($"{mTarget.name}IdleState中找不到目标");
+                                    return;
                                 }
+
+                                Debug.Log($"{mTarget.name}: 准备移动到: " + target.name);
+                                mTarget.Move(target.transform);
+                                mFSM.ChangeState(EntityState.MoveToTarget);
                             }
-							catch (System.Exception e)
-							{
-								Debug.Log($"mTarget.name{mTarget.name}错误原因: {e.Message} 当前名字：{mTarget.gameObject.name}");
-                            }
-						}
+                            //try
+                            //{
+                            //	if (mTarget.nomalAttackPacket != null)// 临时加的防止空引用，如果普攻包为空，说明初始化没做好
+                            //                         {
+                            //                             var target = mTarget.SendCommand(new FindTargetCommand(mTarget.targetList, mTarget.nomalAttackPacket._data.TagMask, 99999, mTarget.nomalAttackPacket._data.Preference, mTarget.gameObject));
+                            //                             if (target == null)
+                            //                             {
+                            //                                 Debug.Log($"{mTarget.name}IdleState中找不到目标");
+                            //                                 return;
+                            //                             }
+
+                            //                             Debug.Log($"{mTarget.name}: 准备移动到: " + target.name);
+                            //                             mTarget.Move(target.transform);
+                            //                             mFSM.ChangeState(EntityState.MoveToTarget);
+                            //	}
+                            //	else
+                            //	{
+                            //		Debug.LogWarning($"{mTarget.name}的普攻包为空，无法进行索敌");
+                            //	}
+                            //}
+                            //catch (System.Exception e)
+                            //{
+                            //	Debug.Log($"mTarget.name{mTarget.name}错误原因: {e.Message} 当前名字：{mTarget.gameObject.name}");
+                            //                     }
+                        }
 					})
 					.Start(mTarget);
 			}
@@ -614,10 +621,10 @@ namespace QFramework.Game
 							// 找到目标，进入攻击状态
 							mFSM.ChangeState(EntityState.Attacking);
 						}
-						else
-						{
-							Debug.Log($"{mTarget.transform.name}没找到目标啊");
-						}
+						//else
+						//{
+						//	Debug.Log($"{mTarget.transform.name}没找到目标啊");
+						//}
 					})
 					.Start(mTarget);
 			}

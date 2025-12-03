@@ -45,7 +45,6 @@ namespace QFramework.Game
 			if (packet.target != null)
 			{
 				packet.target.GetComponent<IRoleEntity>().BeHurt(100);
-
 			}
 		}
 

@@ -145,7 +145,7 @@ public class Player
             playerData.armyDatas = new List<ArmyData>() {
                 new ArmyData(armyID: 1, armyName: playerData.PlayerName + "RedArmy", heroDatas: null),
             };
-            playerData.TotalCostMercenaryPoints = 100;// 默认100点佣兵点数
+            playerData.TotalCostMercenaryPoints = 300;// 默认300点佣兵点数
         }
         else
         {
@@ -164,7 +164,7 @@ public class Player
                     heroDatas: heroDatas
                     ),
             };
-            playerData.TotalCostMercenaryPoints = 100;// 默认100点佣兵点数
+            playerData.TotalCostMercenaryPoints = 300;// 默认300点佣兵点数
         }
     }
 

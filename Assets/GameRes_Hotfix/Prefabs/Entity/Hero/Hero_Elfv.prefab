@@ -661,7 +661,7 @@ MonoBehaviour:
     maximumPeriod: 2
     visualizeSensitivity: 0
   maxAcceleration: -2.5
-  rotationSpeed: 360
+  rotationSpeed: 800
   slowdownDistance: 0
   pickNextWaypointDist: 2
   alwaysDrawGizmos: 0

@@ -1156,6 +1156,7 @@ GameObject:
   - component: {fileID: 8046744623704743482}
   - component: {fileID: 3525860443235142822}
   - component: {fileID: 6847514326029877611}
+  - component: {fileID: 1296897104097501993}
   m_Layer: 0
   m_Name: mercenary_model_1000101
   m_TagString: Untagged
@@ -1205,6 +1206,10 @@ MonoBehaviour:
   rotateSpeed: 60
   targetList: []
   Defense_PercentReductionValue: 0
+  FSM:
+    mCurrentStateId: 0
+    FrameCountOfCurrentState: 1
+    SecondsOfCurrentState: 0
   aiPath: {fileID: 3525860443235142822}
   aiDestination: {fileID: 6847514326029877611}
   bloodController: {fileID: 4173272742155715222}
@@ -1301,8 +1306,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1073741824
-  radius: 0.5
-  height: 2
+  radius: 0.15
+  height: 0.01
   simulateMovement: 1
   maxSpeed: 1
   gravity: {x: NaN, y: NaN, z: NaN}
@@ -1312,7 +1317,7 @@ MonoBehaviour:
   endReachedDistance: 0.2
   whenCloseToDestination: 0
   rvoDensityBehavior:
-    enabled: 1
+    enabled: 0
     densityThreshold: 0.5
     returnAfterBeingPushedAway: 0
     progressAverage: 0
@@ -1328,7 +1333,7 @@ MonoBehaviour:
     maximumPeriod: 2
     visualizeSensitivity: 0
   maxAcceleration: -2.5
-  rotationSpeed: 360
+  rotationSpeed: 800
   slowdownDistance: 0.6
   pickNextWaypointDist: 2
   alwaysDrawGizmos: 0
@@ -1350,6 +1355,33 @@ MonoBehaviour:
   version: 1073741824
   target: {fileID: 0}
   useRotation: 0
+--- !u!114 &1296897104097501993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048547433200169309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 560112f876f5746c780eca0d404e7139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1073741824
+  radiusBackingField: 0.5
+  heightBackingField: 2
+  centerBackingField: 1
+  locked: 0
+  lockWhenNotMoving: 0
+  agentTimeHorizon: 0.5
+  obstacleTimeHorizon: 0.5
+  maxNeighbours: 10
+  layer: 1
+  collidesWith: -1
+  wallAvoidForce: 1
+  wallAvoidFalloff: 1
+  priority: 0.5
+  debug: 0
 --- !u!1 &1085075755484884931
 GameObject:
   m_ObjectHideFlags: 0
@@ -4811,7 +4843,6 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3711a2cbe1d89b84e89cd72e4fad4bcc, type: 2}
   - {fileID: 2100000, guid: dccf8e44ede71db42b49378af93c5fb7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -6249,7 +6280,6 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3711a2cbe1d89b84e89cd72e4fad4bcc, type: 2}
   - {fileID: 2100000, guid: dccf8e44ede71db42b49378af93c5fb7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -6359,7 +6389,6 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3711a2cbe1d89b84e89cd72e4fad4bcc, type: 2}
   - {fileID: 2100000, guid: dccf8e44ede71db42b49378af93c5fb7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -7542,7 +7571,6 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3711a2cbe1d89b84e89cd72e4fad4bcc, type: 2}
   - {fileID: 2100000, guid: dccf8e44ede71db42b49378af93c5fb7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0

@@ -63,6 +63,7 @@ public class SearchBattleManager : MonoBehaviour
         if (res.Candidate == null)
         {
             Debug.Log("没有匹配到对手");
+            GameRemoteAPI.CandidateStr.Clear();
             //if (BattleManagerView.Instance.battleInPanel.battleModel.player_allEntitys.Count <= 0)
             //{
             //    MapManager.instance.RebuildBuildingsUseLocalData(14001);
@@ -72,7 +73,7 @@ public class SearchBattleManager : MonoBehaviour
 
             //await Task.Delay(1000);
             //btn_seachNextOne.interactable = true;
-            return;
+            //return;
         }
 
         string jsonStr = res.Candidate.BaseSnapshot.LayoutData.ToStringUtf8();
@@ -82,7 +83,7 @@ public class SearchBattleManager : MonoBehaviour
             
             // 使用 JsonConvert.DeserializeObject 解析 JSON 数据
             if (PlayerManager.Instance != null && PlayerManager.Instance.GetLocalPlayer() != null && PlayerManager.Instance.GetLocalPlayer().playerData != null) {     
-                PlayerManager.Instance.GetLocalPlayer().playerData.TotalCostMercenaryPoints = 100;// 将默认的佣兵点数设置为100，以便测试
+                PlayerManager.Instance.GetLocalPlayer().playerData.TotalCostMercenaryPoints = 300;// 将默认的佣兵点数设置为100，以便测试
             }
             if (BattleManagerView.Instance.battleInPanel != null)
             {
@@ -107,6 +108,7 @@ public class SearchBattleManager : MonoBehaviour
         catch (JsonException ex)
         {
             Debug.LogError($"JSON 解析失败: {ex.Message}");
+            btn_seachNextOne.interactable = false;
         }
         //await Task.Delay(25000);
         //btn_seachNextOne.interactable = true;

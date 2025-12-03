@@ -4249,6 +4249,7 @@ GameObject:
   - component: {fileID: 3427534175999493956}
   - component: {fileID: 4627986842615811300}
   - component: {fileID: 4943717422997733181}
+  - component: {fileID: 1553710245076950913}
   m_Layer: 0
   m_Name: mercenary_model_3000101
   m_TagString: Untagged
@@ -4298,6 +4299,10 @@ MonoBehaviour:
   rotateSpeed: 60
   targetList: []
   Defense_PercentReductionValue: 0
+  FSM:
+    mCurrentStateId: 0
+    FrameCountOfCurrentState: 1
+    SecondsOfCurrentState: 0
   aiPath: {fileID: 4627986842615811300}
   aiDestination: {fileID: 4943717422997733181}
   bloodController: {fileID: 7217077659542497685}
@@ -4394,8 +4399,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1073741824
-  radius: 0.5
-  height: 2
+  radius: 0.2
+  height: 0.01
   simulateMovement: 1
   maxSpeed: 1
   gravity: {x: NaN, y: NaN, z: NaN}
@@ -4421,7 +4426,7 @@ MonoBehaviour:
     maximumPeriod: 2
     visualizeSensitivity: 0
   maxAcceleration: -2.5
-  rotationSpeed: 360
+  rotationSpeed: 800
   slowdownDistance: 0.6
   pickNextWaypointDist: 2
   alwaysDrawGizmos: 0
@@ -4443,6 +4448,33 @@ MonoBehaviour:
   version: 1073741824
   target: {fileID: 0}
   useRotation: 0
+--- !u!114 &1553710245076950913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7599986454353615680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 560112f876f5746c780eca0d404e7139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1073741824
+  radiusBackingField: 0.5
+  heightBackingField: 2
+  centerBackingField: 1
+  locked: 0
+  lockWhenNotMoving: 0
+  agentTimeHorizon: 0.5
+  obstacleTimeHorizon: 0.5
+  maxNeighbours: 10
+  layer: 1
+  collidesWith: -1
+  wallAvoidForce: 1
+  wallAvoidFalloff: 1
+  priority: 0.5
+  debug: 0
 --- !u!1 &7627091382178776108
 GameObject:
   m_ObjectHideFlags: 0

@@ -149,24 +149,6 @@ namespace QFramework.UI
             }
         }
 
-		/// <summary>
-		/// 随机从一组敌人数据中取一个
-		/// </summary>
-		public int SearchNewOpponent(Player player)
-		{
-			//var playerOppData = PlayerManager.Instance.GetRemotePlayerData(5);
-            Player playerOpponent = PlayerManager.Instance.players[0];// 后面直接赋值为playerOppData，现在暂时用第一个测试
-            
-            ActorInfoViewContainersearch.OpponentInfoContainer.Init(player);
-			//if (isFirst)
-			//{
-   //             // 这里根据获取到的对手数据，摆放对手的建筑物
-   //             MapManager.instance.RebuildBuildingsUseLocalData(false,14001);// 这里用一个默认建筑物测试
-
-   //         }
-			return 0;
-		}
-
         /// <summary>
         /// 更新摧毁率进度条和抓手位置
         /// </summary>
