@@ -1786,7 +1786,7 @@
         "_type": 16,
         "_param": [
           2,
-          1
+          100
         ]
       }
     ],
@@ -14315,6 +14315,786 @@
     "Buff_effect": [
       {
         "_type": 21,
+        "_param": [
+          100,
+          58
+        ]
+      }
+    ],
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20334,
+    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20022",
+    "Des": "为友方弓兵增加20%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          20
+        ]
+      }
+    ],
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20335,
+    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20022",
+    "Des": "为友方弓兵增加22%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          22
+        ]
+      }
+    ],
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20336,
+    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20022",
+    "Des": "为友方弓兵增加24%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          24
+        ]
+      }
+    ],
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20337,
+    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20022",
+    "Des": "为友方弓兵增加26%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          26
+        ]
+      }
+    ],
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20338,
+    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20022",
+    "Des": "为友方弓兵增加28%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          28
+        ]
+      }
+    ],
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20339,
+    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20022",
+    "Des": "为友方弓兵增加30%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          30
+        ]
+      }
+    ],
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20340,
+    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20022",
+    "Des": "为友方弓兵增加32%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          32
+        ]
+      }
+    ],
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20341,
+    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20022",
+    "Des": "为友方弓兵增加34%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          34
+        ]
+      }
+    ],
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20342,
+    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20022",
+    "Des": "为友方弓兵增加36%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          36
+        ]
+      }
+    ],
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20343,
+    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20022",
+    "Des": "为友方弓兵增加38%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          38
+        ]
+      }
+    ],
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20344,
+    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20022",
+    "Des": "为友方弓兵增加40%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          40
+        ]
+      }
+    ],
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20345,
+    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20022",
+    "Des": "为友方弓兵增加42%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          42
+        ]
+      }
+    ],
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20346,
+    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20022",
+    "Des": "为友方弓兵增加44%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          44
+        ]
+      }
+    ],
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20347,
+    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20022",
+    "Des": "为友方弓兵增加46%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          46
+        ]
+      }
+    ],
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20348,
+    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20022",
+    "Des": "为友方弓兵增加48%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          48
+        ]
+      }
+    ],
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20349,
+    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20022",
+    "Des": "为友方弓兵增加50%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          50
+        ]
+      }
+    ],
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20350,
+    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20022",
+    "Des": "为友方弓兵增加52%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          52
+        ]
+      }
+    ],
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20351,
+    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20022",
+    "Des": "为友方弓兵增加54%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          54
+        ]
+      }
+    ],
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20352,
+    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20022",
+    "Des": "为友方弓兵增加56%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          56
+        ]
+      }
+    ],
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20353,
+    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20022",
+    "Des": "为友方弓兵增加58%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
         "_param": [
           100,
           58

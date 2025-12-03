@@ -1,7 +1,7 @@
 [
   {
     "ID": 11001,
-    "name": "生命之树",
+    "name": "生命之树（大本营）",
     "buildingType": 1,
     "maxLevel": 30,
     "floorArea": 2500,
@@ -28,7 +28,7 @@
   },
   {
     "ID": 12003,
-    "name": "屠宰场",
+    "name": "狩猎场",
     "buildingType": 4,
     "maxLevel": 30,
     "floorArea": 900,
@@ -37,7 +37,7 @@
   },
   {
     "ID": 13001,
-    "name": "储矿场",
+    "name": "矿仓",
     "buildingType": 2,
     "maxLevel": 30,
     "floorArea": 400,
@@ -46,7 +46,7 @@
   },
   {
     "ID": 13002,
-    "name": "储木场",
+    "name": "木材库",
     "buildingType": 2,
     "maxLevel": 30,
     "floorArea": 400,
@@ -55,7 +55,7 @@
   },
   {
     "ID": 13003,
-    "name": "储肉房",
+    "name": "储肉库",
     "buildingType": 2,
     "maxLevel": 30,
     "floorArea": 400,
@@ -153,8 +153,17 @@
     "Description": "骑兵营描述（待详细)"
   },
   {
+    "ID": 15004,
+    "name": "盾兵营",
+    "buildingType": 6,
+    "maxLevel": 30,
+    "floorArea": 900,
+    "maxNumber": 1000,
+    "Description": "盾兵营描述（待详细)"
+  },
+  {
     "ID": 16001,
-    "name": "陷阱1",
+    "name": "陷阱1苹果炸弹160",
     "buildingType": 5,
     "maxLevel": 10,
     "floorArea": 100,

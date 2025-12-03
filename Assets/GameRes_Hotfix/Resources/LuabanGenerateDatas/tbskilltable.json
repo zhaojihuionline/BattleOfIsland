@@ -933,7 +933,7 @@
       "Build",
       "Hero"
     ],
-    "_damage_range": 100,
+    "_damage_range": 500,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -961,8 +961,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": ""
+    "_effect": [
+      100
+    ],
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成100伤害"
   },
   {
     "_id": 1000202,
@@ -978,7 +980,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 100,
+    "_damage_range": 500,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1006,8 +1008,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": ""
+    "_effect": [
+      120
+    ],
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成120伤害"
   },
   {
     "_id": 1000203,
@@ -1023,7 +1027,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 100,
+    "_damage_range": 500,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1051,8 +1055,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": ""
+    "_effect": [
+      140
+    ],
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成140伤害"
   },
   {
     "_id": 1000204,
@@ -1068,7 +1074,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 100,
+    "_damage_range": 500,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1096,8 +1102,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": ""
+    "_effect": [
+      160
+    ],
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成160伤害"
   },
   {
     "_id": 1000205,
@@ -1113,7 +1121,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 100,
+    "_damage_range": 500,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1141,8 +1149,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": ""
+    "_effect": [
+      180
+    ],
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成180伤害"
   },
   {
     "_id": 1000206,
@@ -1158,7 +1168,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 100,
+    "_damage_range": 500,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1186,8 +1196,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": ""
+    "_effect": [
+      200
+    ],
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成200伤害"
   },
   {
     "_id": 1000207,
@@ -1203,7 +1215,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 100,
+    "_damage_range": 500,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1231,8 +1243,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": ""
+    "_effect": [
+      220
+    ],
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成220伤害"
   },
   {
     "_id": 1000208,
@@ -1248,7 +1262,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 100,
+    "_damage_range": 500,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1276,8 +1290,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": ""
+    "_effect": [
+      240
+    ],
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成240伤害"
   },
   {
     "_id": 1000209,
@@ -1293,7 +1309,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 100,
+    "_damage_range": 500,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1321,8 +1337,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": ""
+    "_effect": [
+      260
+    ],
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成260伤害"
   },
   {
     "_id": 1000210,
@@ -1338,7 +1356,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 100,
+    "_damage_range": 500,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1366,8 +1384,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": ""
+    "_effect": [
+      280
+    ],
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成280伤害"
   },
   {
     "_id": 1000211,
@@ -1383,7 +1403,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 100,
+    "_damage_range": 500,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1411,8 +1431,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": ""
+    "_effect": [
+      300
+    ],
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成300伤害"
   },
   {
     "_id": 1000212,
@@ -1428,7 +1450,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 100,
+    "_damage_range": 500,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1456,8 +1478,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": ""
+    "_effect": [
+      320
+    ],
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成320伤害"
   },
   {
     "_id": 1000213,
@@ -1473,7 +1497,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 100,
+    "_damage_range": 500,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1501,8 +1525,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": ""
+    "_effect": [
+      340
+    ],
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成340伤害"
   },
   {
     "_id": 1000214,
@@ -1518,7 +1544,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 100,
+    "_damage_range": 500,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1546,8 +1572,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": ""
+    "_effect": [
+      360
+    ],
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成360伤害"
   },
   {
     "_id": 1000215,
@@ -1563,7 +1591,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 100,
+    "_damage_range": 500,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1591,8 +1619,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": ""
+    "_effect": [
+      380
+    ],
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成380伤害"
   },
   {
     "_id": 1000216,
@@ -1608,7 +1638,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 100,
+    "_damage_range": 500,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1636,8 +1666,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": ""
+    "_effect": [
+      400
+    ],
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成400伤害"
   },
   {
     "_id": 1000217,
@@ -1653,7 +1685,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 100,
+    "_damage_range": 500,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1681,8 +1713,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": ""
+    "_effect": [
+      420
+    ],
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成420伤害"
   },
   {
     "_id": 1000218,
@@ -1698,7 +1732,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 100,
+    "_damage_range": 500,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1726,8 +1760,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": ""
+    "_effect": [
+      440
+    ],
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成440伤害"
   },
   {
     "_id": 1000219,
@@ -1743,7 +1779,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 100,
+    "_damage_range": 500,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1771,8 +1807,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": ""
+    "_effect": [
+      460
+    ],
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成460伤害"
   },
   {
     "_id": 1000220,
@@ -1788,7 +1826,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 100,
+    "_damage_range": 500,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1816,8 +1854,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": ""
+    "_effect": [
+      480
+    ],
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成480伤害"
   },
   {
     "_id": 1000301,
@@ -7341,7 +7381,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20334
+    ],
     "_description": "友方弓兵获得20%攻击力"
   },
   {
@@ -7386,7 +7428,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20335
+    ],
     "_description": "友方弓兵获得22%攻击力"
   },
   {
@@ -7431,7 +7475,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20336
+    ],
     "_description": "友方弓兵获得24%攻击力"
   },
   {
@@ -7476,7 +7522,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20337
+    ],
     "_description": "友方弓兵获得26%攻击力"
   },
   {
@@ -7521,7 +7569,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20338
+    ],
     "_description": "友方弓兵获得28%攻击力"
   },
   {
@@ -7566,7 +7616,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20339
+    ],
     "_description": "友方弓兵获得30%攻击力"
   },
   {
@@ -7611,7 +7663,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20340
+    ],
     "_description": "友方弓兵获得32%攻击力"
   },
   {
@@ -7656,7 +7710,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20341
+    ],
     "_description": "友方弓兵获得34%攻击力"
   },
   {
@@ -7701,7 +7757,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20342
+    ],
     "_description": "友方弓兵获得36%攻击力"
   },
   {
@@ -7746,7 +7804,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20343
+    ],
     "_description": "友方弓兵获得38%攻击力"
   },
   {
@@ -7791,7 +7851,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20344
+    ],
     "_description": "友方弓兵获得40%攻击力"
   },
   {
@@ -7836,7 +7898,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20345
+    ],
     "_description": "友方弓兵获得42%攻击力"
   },
   {
@@ -7881,7 +7945,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20346
+    ],
     "_description": "友方弓兵获得44%攻击力"
   },
   {
@@ -7926,7 +7992,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20347
+    ],
     "_description": "友方弓兵获得46%攻击力"
   },
   {
@@ -7971,7 +8039,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20348
+    ],
     "_description": "友方弓兵获得48%攻击力"
   },
   {
@@ -8016,7 +8086,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20349
+    ],
     "_description": "友方弓兵获得50%攻击力"
   },
   {
@@ -8061,7 +8133,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20350
+    ],
     "_description": "友方弓兵获得52%攻击力"
   },
   {
@@ -8106,7 +8180,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20351
+    ],
     "_description": "友方弓兵获得54%攻击力"
   },
   {
@@ -8151,7 +8227,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20352
+    ],
     "_description": "友方弓兵获得56%攻击力"
   },
   {
@@ -8196,7 +8274,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20353
+    ],
     "_description": "友方弓兵获得58%攻击力"
   },
   {
@@ -8213,7 +8293,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 0,
+    "_damage_range": 400,
     "_preference": "TestTargetingPreference",
     "_lock_method": 1,
     "_pass_type": [
@@ -8241,8 +8321,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "普通攻击附带小型 AOE 效果，自身攻击力提升20%"
+    "_effect": [
+      20044
+    ],
+    "_description": "普通攻击附带小型 AOE 效果，（demo期不用加攻击力）自身攻击力提升20%"
   },
   {
     "_id": 1001002,
@@ -8258,7 +8340,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 0,
+    "_damage_range": 400,
     "_preference": "TestTargetingPreference",
     "_lock_method": 1,
     "_pass_type": [
@@ -8286,8 +8368,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "普通攻击附带小型 AOE 效果，自身攻击力提升22%"
+    "_effect": [
+      20044
+    ],
+    "_description": "普通攻击附带小型 AOE 效果，（demo期不用加攻击力）自身攻击力提升21%"
   },
   {
     "_id": 1001003,
@@ -8303,7 +8387,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 0,
+    "_damage_range": 400,
     "_preference": "TestTargetingPreference",
     "_lock_method": 1,
     "_pass_type": [
@@ -8331,8 +8415,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "普通攻击附带小型 AOE 效果，自身攻击力提升24%"
+    "_effect": [
+      20044
+    ],
+    "_description": "普通攻击附带小型 AOE 效果，（demo期不用加攻击力）自身攻击力提升22%"
   },
   {
     "_id": 1001004,
@@ -8348,7 +8434,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 0,
+    "_damage_range": 400,
     "_preference": "TestTargetingPreference",
     "_lock_method": 1,
     "_pass_type": [
@@ -8376,8 +8462,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "普通攻击附带小型 AOE 效果，自身攻击力提升26%"
+    "_effect": [
+      20044
+    ],
+    "_description": "普通攻击附带小型 AOE 效果，（demo期不用加攻击力）自身攻击力提升23%"
   },
   {
     "_id": 1001005,
@@ -8393,7 +8481,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 0,
+    "_damage_range": 400,
     "_preference": "TestTargetingPreference",
     "_lock_method": 1,
     "_pass_type": [
@@ -8421,8 +8509,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "普通攻击附带小型 AOE 效果，自身攻击力提升28%"
+    "_effect": [
+      20044
+    ],
+    "_description": "普通攻击附带小型 AOE 效果，（demo期不用加攻击力）自身攻击力提升24%"
   },
   {
     "_id": 1001006,
@@ -8438,7 +8528,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 0,
+    "_damage_range": 400,
     "_preference": "TestTargetingPreference",
     "_lock_method": 1,
     "_pass_type": [
@@ -8466,8 +8556,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "普通攻击附带小型 AOE 效果，自身攻击力提升30%"
+    "_effect": [
+      20044
+    ],
+    "_description": "普通攻击附带小型 AOE 效果，（demo期不用加攻击力）自身攻击力提升25%"
   },
   {
     "_id": 1001007,
@@ -8483,7 +8575,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 0,
+    "_damage_range": 400,
     "_preference": "TestTargetingPreference",
     "_lock_method": 1,
     "_pass_type": [
@@ -8511,8 +8603,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "普通攻击附带小型 AOE 效果，自身攻击力提升32%"
+    "_effect": [
+      20044
+    ],
+    "_description": "普通攻击附带小型 AOE 效果，（demo期不用加攻击力）自身攻击力提升26%"
   },
   {
     "_id": 1001008,
@@ -8528,7 +8622,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 0,
+    "_damage_range": 400,
     "_preference": "TestTargetingPreference",
     "_lock_method": 1,
     "_pass_type": [
@@ -8556,8 +8650,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "普通攻击附带小型 AOE 效果，自身攻击力提升34%"
+    "_effect": [
+      20044
+    ],
+    "_description": "普通攻击附带小型 AOE 效果，（demo期不用加攻击力）自身攻击力提升27%"
   },
   {
     "_id": 1001009,
@@ -8573,7 +8669,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 0,
+    "_damage_range": 400,
     "_preference": "TestTargetingPreference",
     "_lock_method": 1,
     "_pass_type": [
@@ -8601,8 +8697,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "普通攻击附带小型 AOE 效果，自身攻击力提升36%"
+    "_effect": [
+      20044
+    ],
+    "_description": "普通攻击附带小型 AOE 效果，（demo期不用加攻击力）自身攻击力提升28%"
   },
   {
     "_id": 1001010,
@@ -8618,7 +8716,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 0,
+    "_damage_range": 400,
     "_preference": "TestTargetingPreference",
     "_lock_method": 1,
     "_pass_type": [
@@ -8646,8 +8744,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "普通攻击附带小型 AOE 效果，自身攻击力提升38%"
+    "_effect": [
+      20044
+    ],
+    "_description": "普通攻击附带小型 AOE 效果，（demo期不用加攻击力）自身攻击力提升29%"
   },
   {
     "_id": 1001011,
@@ -8663,7 +8763,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 0,
+    "_damage_range": 400,
     "_preference": "TestTargetingPreference",
     "_lock_method": 1,
     "_pass_type": [
@@ -8691,8 +8791,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "普通攻击附带小型 AOE 效果，自身攻击力提升40%"
+    "_effect": [
+      20044
+    ],
+    "_description": "普通攻击附带小型 AOE 效果，（demo期不用加攻击力）自身攻击力提升30%"
   },
   {
     "_id": 1001012,
@@ -8708,7 +8810,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 0,
+    "_damage_range": 400,
     "_preference": "TestTargetingPreference",
     "_lock_method": 1,
     "_pass_type": [
@@ -8736,8 +8838,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "普通攻击附带小型 AOE 效果，自身攻击力提升42%"
+    "_effect": [
+      20044
+    ],
+    "_description": "普通攻击附带小型 AOE 效果，（demo期不用加攻击力）自身攻击力提升31%"
   },
   {
     "_id": 1001013,
@@ -8753,7 +8857,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 0,
+    "_damage_range": 400,
     "_preference": "TestTargetingPreference",
     "_lock_method": 1,
     "_pass_type": [
@@ -8781,8 +8885,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "普通攻击附带小型 AOE 效果，自身攻击力提升44%"
+    "_effect": [
+      20044
+    ],
+    "_description": "普通攻击附带小型 AOE 效果，（demo期不用加攻击力）自身攻击力提升32%"
   },
   {
     "_id": 1001014,
@@ -8798,7 +8904,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 0,
+    "_damage_range": 400,
     "_preference": "TestTargetingPreference",
     "_lock_method": 1,
     "_pass_type": [
@@ -8826,8 +8932,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "普通攻击附带小型 AOE 效果，自身攻击力提升46%"
+    "_effect": [
+      20044
+    ],
+    "_description": "普通攻击附带小型 AOE 效果，（demo期不用加攻击力）自身攻击力提升33%"
   },
   {
     "_id": 1001015,
@@ -8843,7 +8951,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 0,
+    "_damage_range": 400,
     "_preference": "TestTargetingPreference",
     "_lock_method": 1,
     "_pass_type": [
@@ -8871,8 +8979,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "普通攻击附带小型 AOE 效果，自身攻击力提升48%"
+    "_effect": [
+      20044
+    ],
+    "_description": "普通攻击附带小型 AOE 效果，（demo期不用加攻击力）自身攻击力提升34%"
   },
   {
     "_id": 1001016,
@@ -8888,7 +8998,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 0,
+    "_damage_range": 400,
     "_preference": "TestTargetingPreference",
     "_lock_method": 1,
     "_pass_type": [
@@ -8916,8 +9026,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "普通攻击附带小型 AOE 效果，自身攻击力提升50%"
+    "_effect": [
+      20044
+    ],
+    "_description": "普通攻击附带小型 AOE 效果，（demo期不用加攻击力）自身攻击力提升35%"
   },
   {
     "_id": 1001017,
@@ -8933,7 +9045,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 0,
+    "_damage_range": 400,
     "_preference": "TestTargetingPreference",
     "_lock_method": 1,
     "_pass_type": [
@@ -8961,8 +9073,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "普通攻击附带小型 AOE 效果，自身攻击力提升52%"
+    "_effect": [
+      20044
+    ],
+    "_description": "普通攻击附带小型 AOE 效果，（demo期不用加攻击力）自身攻击力提升36%"
   },
   {
     "_id": 1001018,
@@ -8978,7 +9092,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 0,
+    "_damage_range": 400,
     "_preference": "TestTargetingPreference",
     "_lock_method": 1,
     "_pass_type": [
@@ -9006,8 +9120,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "普通攻击附带小型 AOE 效果，自身攻击力提升54%"
+    "_effect": [
+      20044
+    ],
+    "_description": "普通攻击附带小型 AOE 效果，（demo期不用加攻击力）自身攻击力提升37%"
   },
   {
     "_id": 1001019,
@@ -9023,7 +9139,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 0,
+    "_damage_range": 400,
     "_preference": "TestTargetingPreference",
     "_lock_method": 1,
     "_pass_type": [
@@ -9051,8 +9167,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "普通攻击附带小型 AOE 效果，自身攻击力提升56%"
+    "_effect": [
+      20044
+    ],
+    "_description": "普通攻击附带小型 AOE 效果，（demo期不用加攻击力）自身攻击力提升38%"
   },
   {
     "_id": 1001020,
@@ -9068,7 +9186,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 0,
+    "_damage_range": 400,
     "_preference": "TestTargetingPreference",
     "_lock_method": 1,
     "_pass_type": [
@@ -9096,8 +9214,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "普通攻击附带小型 AOE 效果，自身攻击力提升58%"
+    "_effect": [
+      20044
+    ],
+    "_description": "普通攻击附带小型 AOE 效果，（demo期不用加攻击力）自身攻击力提升39%"
   },
   {
     "_id": 1001101,
