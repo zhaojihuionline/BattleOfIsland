@@ -817,14 +817,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1697284781}
     m_Modifications:
-    - target: {fileID: 1718799845954685134, guid: 0a7634fc91baa6048b3302f6aa237404, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2254923261540080812, guid: 0a7634fc91baa6048b3302f6aa237404, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3434442203283177181, guid: 0a7634fc91baa6048b3302f6aa237404, type: 3}
       propertyPath: m_Name
       value: BagPanel
