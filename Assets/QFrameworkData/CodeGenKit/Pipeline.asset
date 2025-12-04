@@ -15,12 +15,12 @@ MonoBehaviour:
   CurrentTask:
     ShowLog: 0
     Status: 1
-    GameObject: {fileID: 0}
+    GameObject: {fileID: 796774559317167324, guid: 956ae65b4d63dc0479999fb0efc74131, type: 3}
     From: 0
     NameToFullName: []
     BindInfos: []
-    ScriptsFolder: Assets\Scripts\Hotfix\GameLogic\Entity
-    ClassName: EntityController
+    ScriptsFolder: Assets\Scripts\Hotfix\GameLogic\Skill\Skill
+    ClassName: skill_10012
     Namespace: QFramework.Game
     MainCode: 
     DesignerCode: 

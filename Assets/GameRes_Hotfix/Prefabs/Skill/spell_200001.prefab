@@ -19741,6 +19741,10 @@ MonoBehaviour:
   ArchitectureFullTypeName: GameApp
   ViewControllerFullTypeName: 
   enableDebug: 0
+  FSM:
+    mCurrentStateId: 0
+    FrameCountOfCurrentState: 1
+    SecondsOfCurrentState: 0
   Effect: {fileID: 9049635694179562846}
 --- !u!1 &4184580611023061913
 GameObject:
@@ -24589,7 +24593,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2505943453706851613
 Transform:
   m_ObjectHideFlags: 0

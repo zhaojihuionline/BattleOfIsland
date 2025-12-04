@@ -33,7 +33,10 @@ public class EffectDefense_PercentReduction_buliding : EffectEntity
 
     public override void OnExit()
     {
-
+        if (target.Find("FX_Badun_Skill0"))
+        {
+            Object.Destroy(target.Find("FX_Badun_Skill0").gameObject);
+        }
     }
 
     public override void Update()

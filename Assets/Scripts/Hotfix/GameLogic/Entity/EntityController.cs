@@ -262,6 +262,7 @@ namespace QFramework.Game
 
 			bloodController.gameObject.SetActive(true);
 
+			//Debug.Log($"当前血量{currentHP}");
             currentHP -= damage;
 
 			// 更新受伤特效
@@ -522,6 +523,7 @@ namespace QFramework.Game
 			protected override void OnEnter()
 			{
 				mTarget.OnIdleEnter();
+				Debug.Log("周期性检测前:" + mTarget.isRelease);
                 // 启动周期性检测（每5帧）
                 _idleController = ActionKit.Repeat()
 					.Condition(() => !mTarget.isRelease && mFSM.CurrentStateId == EntityState.Idle)
@@ -544,30 +546,6 @@ namespace QFramework.Game
                                 mTarget.Move(target.transform);
                                 mFSM.ChangeState(EntityState.MoveToTarget);
                             }
-                            //try
-                            //{
-                            //	if (mTarget.nomalAttackPacket != null)// 临时加的防止空引用，如果普攻包为空，说明初始化没做好
-                            //                         {
-                            //                             var target = mTarget.SendCommand(new FindTargetCommand(mTarget.targetList, mTarget.nomalAttackPacket._data.TagMask, 99999, mTarget.nomalAttackPacket._data.Preference, mTarget.gameObject));
-                            //                             if (target == null)
-                            //                             {
-                            //                                 Debug.Log($"{mTarget.name}IdleState中找不到目标");
-                            //                                 return;
-                            //                             }
-
-                            //                             Debug.Log($"{mTarget.name}: 准备移动到: " + target.name);
-                            //                             mTarget.Move(target.transform);
-                            //                             mFSM.ChangeState(EntityState.MoveToTarget);
-                            //	}
-                            //	else
-                            //	{
-                            //		Debug.LogWarning($"{mTarget.name}的普攻包为空，无法进行索敌");
-                            //	}
-                            //}
-                            //catch (System.Exception e)
-                            //{
-                            //	Debug.Log($"mTarget.name{mTarget.name}错误原因: {e.Message} 当前名字：{mTarget.gameObject.name}");
-                            //                     }
                         }
 					})
 					.Start(mTarget);
