@@ -13,7 +13,7 @@ namespace QFramework.UI
         /// <summary>
         /// 根据品质枚举获取对应的品质背景图片资源路径
         /// </summary>
-        private static string GetQualitySpritePath(Enum_ItemQuality quality)
+        public static string GetQualitySpritePath(Enum_ItemQuality quality)
         {
             switch (quality)
             {
