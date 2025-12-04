@@ -41,12 +41,25 @@ namespace QFramework.UI
         /// </summary>
         public void Show(IList<RewardDelta> deltas)
         {
-            if (root != null)
-            {
-                root.SetActive(true);
-            }
+			// 确保 root 引用正确
+			if (root == null)
+			{
+				root = gameObject;
+			}
 
-            RefreshRewards(deltas);
+			// 确保挂载脚本的 GameObject 处于激活状态（避免第一次点击时 Awake 未执行的问题）
+			if (!gameObject.activeSelf)
+			{
+				gameObject.SetActive(true);
+			}
+
+			// 显示弹窗根节点
+			if (root != null && !root.activeSelf)
+			{
+				root.SetActive(true);
+			}
+
+			RefreshRewards(deltas);
         }
 
         /// <summary>
@@ -54,10 +67,15 @@ namespace QFramework.UI
         /// </summary>
         public void Hide()
         {
-            if (root != null)
-            {
-                root.SetActive(false);
-            }
+			if (root == null)
+			{
+				root = gameObject;
+			}
+
+			if (root != null)
+			{
+				root.SetActive(false);
+			}
 
             ClearRewards();
         }
