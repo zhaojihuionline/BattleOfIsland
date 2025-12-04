@@ -7,7 +7,7 @@ namespace QFramework.UI
     /// 背包右侧 Page 的基类
     /// 所有具体的 Page View 都应该继承此类
     /// </summary>
-    public abstract class BagPageViewBase : MonoBehaviour
+    public abstract class BagPageViewBase : MonoBehaviour, IController
     {
         /// <summary>
         /// 显示该 Page
@@ -42,6 +42,20 @@ namespace QFramework.UI
         /// Page 隐藏时的回调
         /// </summary>
         protected virtual void OnHide() { }
+
+        /// <summary>
+        /// IController 接口实现：获取架构
+        /// </summary>
+        public IArchitecture GetArchitecture()
+        {
+            // 通过父级查找 BagPanel（IController）
+            var bagPanel = GetComponentInParent<BagPanel>();
+            if (bagPanel != null)
+            {
+                return bagPanel.GetArchitecture();
+            }
+            return null;
+        }
     }
 }
 

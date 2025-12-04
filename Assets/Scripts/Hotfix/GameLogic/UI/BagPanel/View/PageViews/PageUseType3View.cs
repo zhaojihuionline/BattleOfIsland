@@ -15,9 +15,9 @@ namespace QFramework.UI
         [SerializeField] private TextMeshProUGUI titleText;
         [SerializeField] private TextMeshProUGUI descriptionText;
         [SerializeField] private Image iconImage;
+        [SerializeField] private Image qualityFrameImage;  // 品质框
+        [SerializeField] private TextMeshProUGUI countText;  // 数量文本
         [SerializeField] private Button jumpButton;
-        
-        // 可以根据实际需要添加更多节点引用
         
         private BagItemData currentItemData;
 
@@ -64,6 +64,19 @@ namespace QFramework.UI
                 iconImage.sprite = itemData.IconSprite;
                 iconImage.enabled = itemData.IconSprite != null;
             }
+
+            // 更新品质框
+            if (qualityFrameImage != null)
+            {
+                qualityFrameImage.sprite = itemData.QualitySprite;
+                qualityFrameImage.enabled = itemData.QualitySprite != null;
+            }
+
+            // 更新数量显示
+            if (countText != null)
+            {
+                countText.text = $"数量: {itemData.Count}";
+            }
         }
 
         private void ResetView()
@@ -71,6 +84,8 @@ namespace QFramework.UI
             if (titleText != null) titleText.text = "";
             if (descriptionText != null) descriptionText.text = "";
             if (iconImage != null) iconImage.enabled = false;
+            if (qualityFrameImage != null) qualityFrameImage.enabled = false;
+            if (countText != null) countText.text = "";
         }
 
         private void OnJumpButtonClicked()

@@ -16,9 +16,9 @@ namespace QFramework.UI
         [SerializeField] private TextMeshProUGUI descriptionText;
         [SerializeField] private TextMeshProUGUI levelRequirementText;  // 等级要求文本
         [SerializeField] private Image iconImage;
+        [SerializeField] private Image qualityFrameImage;  // 品质框
+        [SerializeField] private TextMeshProUGUI countText;  // 数量文本
         [SerializeField] private Button closeButton;
-        
-        // 可以根据实际需要添加更多节点引用
         
         private BagItemData currentItemData;
         private int requiredLevel;
@@ -69,6 +69,19 @@ namespace QFramework.UI
                 iconImage.enabled = itemData.IconSprite != null;
             }
 
+            // 更新品质框
+            if (qualityFrameImage != null)
+            {
+                qualityFrameImage.sprite = itemData.QualitySprite;
+                qualityFrameImage.enabled = itemData.QualitySprite != null;
+            }
+
+            // 更新数量显示
+            if (countText != null)
+            {
+                countText.text = $"数量: {itemData.Count}";
+            }
+
             // 显示等级要求
             if (levelRequirementText != null)
             {
@@ -83,6 +96,8 @@ namespace QFramework.UI
             if (descriptionText != null) descriptionText.text = "";
             if (levelRequirementText != null) levelRequirementText.text = "";
             if (iconImage != null) iconImage.enabled = false;
+            if (qualityFrameImage != null) qualityFrameImage.enabled = false;
+            if (countText != null) countText.text = "";
         }
 
         private void OnCloseButtonClicked()

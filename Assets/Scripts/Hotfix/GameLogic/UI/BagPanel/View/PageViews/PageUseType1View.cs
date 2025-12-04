@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using cfg;
+using QFramework;
 
 namespace QFramework.UI
 {
@@ -16,12 +17,14 @@ namespace QFramework.UI
         [SerializeField] private TextMeshProUGUI titleText;
         [SerializeField] private TextMeshProUGUI descriptionText;
         [SerializeField] private Image iconImage;
+        [SerializeField] private Image qualityFrameImage;  // 品质框
+        [SerializeField] private TextMeshProUGUI countText;  // 数量文本
+        [SerializeField] private AdjusterView adjusterView;  // 数量调节器
         [SerializeField] private Button useButton;
         [SerializeField] private Button sellButton;
         
-        // 可以根据实际需要添加更多节点引用
-        
         private BagItemData currentItemData;
+        private int useCount = 1;  // 当前选择的使用数量
 
         private void Awake()
         {
@@ -34,6 +37,12 @@ namespace QFramework.UI
             if (sellButton != null)
             {
                 sellButton.onClick.AddListener(OnSellButtonClicked);
+            }
+
+            // 初始化数量调节器
+            if (adjusterView != null)
+            {
+                adjusterView.OnValueChanged += OnAdjusterValueChanged;
             }
         }
 
@@ -48,6 +57,11 @@ namespace QFramework.UI
             if (sellButton != null)
             {
                 sellButton.onClick.RemoveListener(OnSellButtonClicked);
+            }
+
+            if (adjusterView != null)
+            {
+                adjusterView.OnValueChanged -= OnAdjusterValueChanged;
             }
         }
 
@@ -82,6 +96,27 @@ namespace QFramework.UI
                 iconImage.enabled = itemData.IconSprite != null;
             }
 
+            // 更新品质框
+            if (qualityFrameImage != null)
+            {
+                qualityFrameImage.sprite = itemData.QualitySprite;
+                qualityFrameImage.enabled = itemData.QualitySprite != null;
+            }
+
+            // 更新数量显示
+            if (countText != null)
+            {
+                countText.text = $"数量: {itemData.Count}";
+            }
+
+            // 更新数量调节器
+            if (adjusterView != null)
+            {
+                adjusterView.SetRange(1, itemData.Count);
+                useCount = Mathf.Min(useCount, itemData.Count);
+                adjusterView.SetValue(useCount);
+            }
+
             // 根据物品状态更新按钮状态
             UpdateButtonStates(itemData);
         }
@@ -91,12 +126,20 @@ namespace QFramework.UI
             if (titleText != null) titleText.text = "";
             if (descriptionText != null) descriptionText.text = "";
             if (iconImage != null) iconImage.enabled = false;
+            if (qualityFrameImage != null) qualityFrameImage.enabled = false;
+            if (countText != null) countText.text = "";
+            if (adjusterView != null)
+            {
+                adjusterView.SetRange(1, 1);
+                adjusterView.SetValue(1);
+            }
+            useCount = 1;
         }
 
         private void UpdateButtonStates(BagItemData itemData)
         {
             // 根据物品状态决定按钮是否可用
-            bool canUse = itemData != null && itemData.IsInteractable;
+            bool canUse = itemData != null && itemData.IsInteractable && itemData.Count > 0;
             
             if (useButton != null)
             {
@@ -109,21 +152,39 @@ namespace QFramework.UI
             }
         }
 
+        private void OnAdjusterValueChanged(int value)
+        {
+            useCount = value;
+        }
+
         private void OnUseButtonClicked()
         {
             if (currentItemData == null) return;
             
-            Debug.Log($"PageUseType1: 使用物品 {currentItemData.ItemId}");
+            if (useCount <= 0 || useCount > currentItemData.Count)
+            {
+                Debug.LogWarning($"PageUseType1: 使用数量无效 {useCount}, 物品数量: {currentItemData.Count}");
+                return;
+            }
+
+            Debug.Log($"PageUseType1: 使用物品 {currentItemData.ItemId}, 数量: {useCount}");
             // 发送使用物品的命令
-            // this.SendCommand(new UseBagItemCommand(currentItemData.BagId, 1));
+            this.SendCommand(new UseBagItemCommand(currentItemData.BagId, useCount));
         }
 
         private void OnSellButtonClicked()
         {
             if (currentItemData == null) return;
             
-            Debug.Log($"PageUseType1: 出售物品 {currentItemData.ItemId}");
-            // 发送出售物品的命令
+            if (useCount <= 0 || useCount > currentItemData.Count)
+            {
+                Debug.LogWarning($"PageUseType1: 出售数量无效 {useCount}, 物品数量: {currentItemData.Count}");
+                return;
+            }
+
+            Debug.Log($"PageUseType1: 出售物品 {currentItemData.ItemId}, 数量: {useCount}");
+            // 发送丢弃物品的命令（出售使用丢弃命令）
+            this.SendCommand(new DiscardBagItemCommand(currentItemData.BagId, useCount));
         }
 
         protected override void OnShow()
