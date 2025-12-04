@@ -40,6 +40,9 @@ namespace QFramework.UI
 		[SerializeField] private PageUseTypeXView pageUseTypeXView;
 		[SerializeField] private PageEmptyView pageEmptyView;
 
+		[Header("Popup Views")]
+		[SerializeField] private ObtainRewardsView obtainRewardsView;
+
 		private IBagTabSystem bagTabSystem;
 		private IBagModel bagModel;
 		private List<BagItemView> itemViews = new List<BagItemView>();  // 当前显示的物品视图列表
@@ -84,6 +87,7 @@ namespace QFramework.UI
 
 			// 初始化 Page Views
 			InitPageViews();
+			InitPopupViews();
 
 			// 监听Tab切换事件
 			this.RegisterEvent<BagTabChangedEvent>(OnTabChanged)
@@ -93,9 +97,25 @@ namespace QFramework.UI
 			this.RegisterEvent<BagItemsUpdatedEvent>(OnBagItemsUpdated)
 				.UnRegisterWhenGameObjectDestroyed(gameObject);
 
+			// 监听奖励弹窗事件
+			this.RegisterEvent<RewardsObtainedEvent>(OnRewardsObtained)
+				.UnRegisterWhenGameObjectDestroyed(gameObject);
+
 			// 检查背包是否为空，如果为空则初始化测试数据
 			CheckAndInitializeBag();
 		}
+
+		private void InitPopupViews()
+		{
+            if (obtainRewardsView == null)
+            {
+                var popup = transform.Find("popup/ObtainRewards");
+                if (popup != null)
+                {
+                    obtainRewardsView = popup.GetComponent<ObtainRewardsView>();
+                }
+            }
+        }
 
 		/// <summary>
 		/// 查找物品容器和滚动视图
@@ -232,6 +252,28 @@ namespace QFramework.UI
 		private void OnBagItemsUpdated(BagItemsUpdatedEvent e)
 		{
 			RefreshItemList(e.TabIndex);
+		}
+
+		/// <summary>
+		/// 获得奖励事件处理
+		/// </summary>
+		private void OnRewardsObtained(RewardsObtainedEvent e)
+		{
+			if (e.Deltas == null || e.Deltas.Count == 0) return;
+
+			if (obtainRewardsView == null)
+			{
+				InitPopupViews();
+			}
+
+			if (obtainRewardsView != null)
+			{
+				obtainRewardsView.Show(e.Deltas);
+			}
+			else
+			{
+				Debug.LogWarning("BagPanel: ObtainRewardsView 未设置，无法展示奖励");
+			}
 		}
 
 		/// <summary>

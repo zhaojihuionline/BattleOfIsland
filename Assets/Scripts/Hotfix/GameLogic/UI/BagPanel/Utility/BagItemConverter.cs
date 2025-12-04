@@ -59,6 +59,71 @@ namespace QFramework.UI
         }
 
         /// <summary>
+        /// 根据配置表填充静态数据和资源
+        /// </summary>
+        private static void ApplyItemConfig(BagItemData itemData)
+        {
+            if (itemData == null) return;
+
+            try
+            {
+                var itemConfig = CfgMgr.Instance.Tables.TbItem.Get(itemData.ItemId);
+                if (itemConfig == null) return;
+
+                itemData.ItemName = itemConfig.Name ?? "";
+                itemData.Description = itemConfig.Description ?? "";
+                itemData.Quality = itemConfig.Quality;
+                itemData.ItemType = itemConfig.ItemType;
+                itemData.ItemSubType = itemConfig.ItemSubType;
+                itemData.Category = itemConfig.Category;
+                itemData.UseType = itemConfig.UseType;
+                itemData.UseLevel = itemConfig.UseLevel;
+                itemData.UseMax = itemConfig.UseMax;
+                itemData.RewardID = itemConfig.RewardID;
+                itemData.TipsID = itemConfig.TipsID;
+                itemData.IsStackable = itemConfig.IsStackable;
+                itemData.MaxStack = itemConfig.MaxStack;
+
+                ResLoader loader = ResLoader.Allocate();
+
+                try
+                {
+                    if (!string.IsNullOrEmpty(itemConfig.ItemIcon0))
+                    {
+                        try
+                        {
+                            itemData.IconSprite = loader.LoadSync<Sprite>(itemConfig.ItemIcon0);
+                        }
+                        catch
+                        {
+                            // 可以在此加载默认图标
+                        }
+                    }
+
+                    string qualityPath = GetQualitySpritePath(itemConfig.Quality);
+                    itemData.QualitySprite = TryLoadSprite(loader, qualityPath);
+
+                    if (itemData.QualitySprite == null)
+                    {
+                        Debug.LogWarning($"BagItemConverter: 品质背景加载失败 Path={qualityPath}, ItemId={itemData.ItemId}, Quality={itemConfig.Quality}");
+                    }
+                }
+                catch (System.Exception ex)
+                {
+                    Debug.LogWarning($"BagItemConverter: 加载资源失败 ItemId={itemData.ItemId}, Error={ex.Message}");
+                }
+                finally
+                {
+                    // loader.Recycle2Cache(); // 如需统一管理，可在此回收
+                }
+            }
+            catch (System.Exception ex)
+            {
+                Debug.LogWarning($"BagItemConverter: 无法获取物品配置 ItemId={itemData.ItemId}, Error={ex.Message}");
+            }
+        }
+
+        /// <summary>
         /// 将服务器 BagItem 转换为 UI 的 BagItemData
         /// </summary>
         public static BagItemData ConvertFromServer(BagItem serverItem)
@@ -76,92 +141,67 @@ namespace QFramework.UI
                 CooldownPercent = 0f,
                 Category = cfg.Enum_Order.NONE  // 默认值
             };
-            
-            // 从配置表获取物品信息（包括Category、Quality等）
-            try
+
+            ApplyItemConfig(itemData);
+
+            return itemData;
+        }
+
+        /// <summary>
+        /// 将 RewardDelta 转换为 BagItemData
+        /// </summary>
+        public static BagItemData CreateFromRewardDelta(RewardDelta delta)
+        {
+            if (delta?.Reward == null) return null;
+            return CreateFromRewardItem(delta.Reward);
+        }
+
+        /// <summary>
+        /// 将 RewardItem 转换为 BagItemData
+        /// </summary>
+        public static BagItemData CreateFromRewardItem(RewardItem rewardItem)
+        {
+            if (rewardItem == null) return null;
+
+            switch (rewardItem.RewardDetailCase)
             {
-                var itemConfig = CfgMgr.Instance.Tables.TbItem.Get(serverItem.ItemId);
-                if (itemConfig != null)
-                {
-                    // 填充配置表静态数据
-                    itemData.ItemName = itemConfig.Name ?? "";
-                    itemData.Description = itemConfig.Description ?? "";
-                    itemData.Quality = itemConfig.Quality;
-                    itemData.ItemType = itemConfig.ItemType;
-                    itemData.ItemSubType = itemConfig.ItemSubType;
-                    itemData.Category = itemConfig.Category;
-                    itemData.UseType = itemConfig.UseType;
-                    itemData.UseLevel = itemConfig.UseLevel;
-                    itemData.UseMax = itemConfig.UseMax;
-                    itemData.RewardID = itemConfig.RewardID;
-                    itemData.TipsID = itemConfig.TipsID;
-                    itemData.IsStackable = itemConfig.IsStackable;
-                    itemData.MaxStack = itemConfig.MaxStack;
-                    
-                    // 加载资源
-                    ResLoader loader = ResLoader.Allocate();
-                    
-                    try
-                    {
-                        // 加载物品图标（使用配置表中的 ItemIcon0）
-                        if (!string.IsNullOrEmpty(itemConfig.ItemIcon0))
-                        {
-                            // 尝试加载图标，如果失败则使用默认图标
-                            try
-                            {
-                                itemData.IconSprite = loader.LoadSync<Sprite>(itemConfig.ItemIcon0);
-                            }
-                            catch
-                            {
-                                // 如果配置的图标路径加载失败，使用默认图标
-                                // itemData.IconSprite = loader.LoadSync<Sprite>("ui_icon_@3x");
-                            }
-                        }
-                        else
-                        {
-                            // 如果没有配置图标，使用默认图标
-                            // itemData.IconSprite = loader.LoadSync<Sprite>("ui_icon_@3x");
-                        }
-                        
-                        // 根据品质加载对应的品质背景图片
-                        string qualityPath = GetQualitySpritePath(itemConfig.Quality);
-                        
-                        // 对于有空格的文件名，尝试多个可能的路径
-                        string[] tryPaths = null;
-                        tryPaths = new string[] { qualityPath };
-                        
-                        itemData.QualitySprite = TryLoadSprite(loader, tryPaths);
-                        
-                        if (itemData.QualitySprite == null)
-                        {
-                            Debug.LogError($"BagItemConverter: 品质背景加载失败，尝试的路径={string.Join(", ", tryPaths)}, ItemId={serverItem.ItemId}, Quality={itemConfig.Quality}");
-                        }
-                        else
-                        {
-                            Debug.Log($"BagItemConverter: 成功加载品质背景，路径={qualityPath}, ItemId={serverItem.ItemId}, Quality={itemConfig.Quality}");
-                        }
-                        
-                        // 背景图片暂时使用品质图片（如果需要单独的背景，可以后续扩展）
-                        // itemData.BackgroundSprite = itemData.QualitySprite;
-                    }
-                    catch (System.Exception ex)
-                    {
-                        Debug.LogWarning($"BagItemConverter: 加载资源失败 ItemId={serverItem.ItemId}, Error={ex.Message}");
-                    }
-                    finally
-                    {
-                        // 注意：ResLoader 需要在适当的时候回收，但这里不能立即回收
-                        // 因为 Sprite 资源可能还在使用中。可以考虑在 BagItemView 销毁时回收
-                        // 或者使用全局的 ResLoader 管理
-                        // loader.Recycle2Cache();
-                    }
-                }
+                case RewardItem.RewardDetailOneofCase.Item:
+                    return CreateFromItemReward(rewardItem.Item);
+                case RewardItem.RewardDetailOneofCase.Currency:
+                    return CreateFromSimpleReward(rewardItem.Currency?.ItemId ?? 0, (int)(rewardItem.Currency?.Delta ?? 0));
+                case RewardItem.RewardDetailOneofCase.Resource:
+                    return CreateFromSimpleReward(rewardItem.Resource?.ItemId ?? 0, (int)(rewardItem.Resource?.Delta ?? 0));
+                default:
+                    return null;
             }
-            catch (System.Exception ex)
+        }
+
+        private static BagItemData CreateFromItemReward(ItemReward itemReward)
+        {
+            if (itemReward == null) return null;
+            return CreateFromSimpleReward(itemReward.ItemId, (int)itemReward.Amount, itemReward.BagId);
+        }
+
+        private static BagItemData CreateFromSimpleReward(int itemId, int count, long bagId = 0)
+        {
+            if (itemId == 0 || count == 0) return null;
+
+            var itemData = new BagItemData
             {
-                Debug.LogWarning($"BagItemConverter: 无法获取物品配置 ItemId={serverItem.ItemId}, Error={ex.Message}");
-            }
-            
+                BagId = bagId,
+                ItemId = itemId,
+                Count = count,
+                IsLocked = false,
+                IsInteractable = false,
+                IsSelected = false,
+                IsEquipped = false,
+                IsNew = false,
+                CooldownPercent = 0f,
+                Category = cfg.Enum_Order.NONE
+            };
+
+            ApplyItemConfig(itemData);
+
             return itemData;
         }
     }

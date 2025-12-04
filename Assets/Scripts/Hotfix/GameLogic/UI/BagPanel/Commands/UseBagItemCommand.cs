@@ -72,6 +72,10 @@ namespace QFramework.UI
             if (response.Rewards != null && response.Rewards.Count > 0)
             {
                 await this.SendCommand(new ApplyRewardDeltasCommand(response.Rewards));
+                this.SendEvent(new RewardsObtainedEvent
+                {
+                    Deltas = new List<RewardDelta>(response.Rewards)
+                });
             }
 
             return response;
