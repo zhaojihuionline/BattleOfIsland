@@ -295,6 +295,7 @@ MonoBehaviour:
   cooldownMaskImage: {fileID: 6880658618498941482}
   countBadge: {fileID: 6880658618498941440}
   countText: {fileID: 6880658618498941447}
+  nameText: {fileID: 8228495616907962655}
   equipTagImage: {fileID: 6880658618498941462}
   newTagImage: {fileID: 6880658618498941467}
   lockedTagImage: {fileID: 6880658618498941472}
