@@ -512,6 +512,24 @@ namespace QFramework.UI
 			if (pageUseTypeXView != null) allPageViews.Add(pageUseTypeXView);
 			if (pageEmptyView != null) allPageViews.Add(pageEmptyView);
 
+			// 输出初始化结果
+			Debug.Log($"BagPanel: Page Views 初始化完成 - " +
+				$"PageUseType1:{(pageUseType1View != null ? "✓" : "✗")} " +
+				$"PageUseType2Fixed:{(pageUseType2FixedView != null ? "✓" : "✗")} " +
+				$"PageUseType2Random:{(pageUseType2RandomView != null ? "✓" : "✗")} " +
+				$"PageUseType2Choice:{(pageUseType2ChoiceView != null ? "✓" : "✗")} " +
+				$"PageUseType3:{(pageUseType3View != null ? "✓" : "✗")} " +
+				$"PageUseTypeX:{(pageUseTypeXView != null ? "✓" : "✗")} " +
+				$"PageEmpty:{(pageEmptyView != null ? "✓" : "✗")}");
+
+			// 检查是否有 Page View 未初始化
+			if (allPageViews.Count == 0)
+			{
+				Debug.LogError("BagPanel: 警告！所有 Page View 都为 null！请确保：\n" +
+					"1. 在 Unity 中为每个 Page GameObject 添加对应的 View 脚本组件\n" +
+					"2. 在 BagPanel 的 Inspector 中拖放 Page View 引用，或确保 right 节点下的 Page GameObject 名称正确");
+			}
+
 			// 默认隐藏所有 Page
 			HideAllPages();
 		}
@@ -550,13 +568,19 @@ namespace QFramework.UI
 				currentActivePageView = pageView;
 				pageView.Show();
 				pageView.RefreshData(itemData);
+				Debug.Log($"BagPanel: 切换到 Page {pageView.GetType().Name}");
 			}
 			else
 			{
+				Debug.LogWarning("BagPanel: 目标 Page View 为 null，尝试显示 Empty Page");
 				// 如果找不到目标 Page，显示 Empty Page
 				if (pageEmptyView != null)
 				{
 					SwitchToPage(pageEmptyView, null);
+				}
+				else
+				{
+					Debug.LogError("BagPanel: PageEmptyView 也为 null，无法显示任何 Page！请检查 Page View 是否正确初始化。");
 				}
 			}
 		}
@@ -566,8 +590,11 @@ namespace QFramework.UI
 		/// </summary>
 		public void SwitchPageByItemData(BagItemData itemData)
 		{
+			Debug.Log($"BagPanel: SwitchPageByItemData 被调用，ItemData={(itemData != null ? $"ItemId={itemData.ItemId}" : "null")}");
+			
 			if (itemData == null)
 			{
+				Debug.Log("BagPanel: ItemData 为 null，显示 PageEmpty");
 				SwitchToPage(pageEmptyView, null);
 				return;
 			}
@@ -592,10 +619,13 @@ namespace QFramework.UI
 				return;
 			}
 
+			Debug.Log($"BagPanel: 物品配置获取成功，UseType={itemConfig.UseType}, UseLevel={itemConfig.UseLevel}, RewardID={itemConfig.RewardID}");
+
 			// 1. 首先检查玩家建筑大厅等级是否满足要求
 			int playerHallLevel = GetPlayerHallLevel();
 			if (playerHallLevel < itemConfig.UseLevel)
 			{
+				Debug.Log($"BagPanel: 玩家等级不足 (当前:{playerHallLevel} < 需要:{itemConfig.UseLevel})，显示 PageUseTypeX");
 				SwitchToPage(pageUseTypeXView, itemData);
 				return;
 			}
@@ -607,6 +637,7 @@ namespace QFramework.UI
 			{
 				case cfg.Enum_UseType.DisplayUse:  // 1
 					targetPage = pageUseType1View;
+					Debug.Log($"BagPanel: UseType=DisplayUse，选择 PageUseType1View ({(targetPage != null ? "存在" : "为null")})");
 					break;
 
 				case cfg.Enum_UseType.CanUse:  // 2
@@ -618,16 +649,20 @@ namespace QFramework.UI
 							var rewardConfig = CfgMgr.Instance.Tables.TbReward.Get(itemConfig.RewardID);
 							if (rewardConfig != null)
 							{
+								Debug.Log($"BagPanel: RewardType={rewardConfig.RewardType}");
 								switch (rewardConfig.RewardType)
 								{
 									case cfg.Enum_RewardType.Fixed:  // 1
 										targetPage = pageUseType2FixedView;
+										Debug.Log($"BagPanel: 选择 PageUseType2FixedView ({(targetPage != null ? "存在" : "为null")})");
 										break;
 									case cfg.Enum_RewardType.Random:  // 2
 										targetPage = pageUseType2RandomView;
+										Debug.Log($"BagPanel: 选择 PageUseType2RandomView ({(targetPage != null ? "存在" : "为null")})");
 										break;
 									case cfg.Enum_RewardType.Choice:  // 3
 										targetPage = pageUseType2ChoiceView;
+										Debug.Log($"BagPanel: 选择 PageUseType2ChoiceView ({(targetPage != null ? "存在" : "为null")})");
 										break;
 									default:
 										Debug.LogWarning($"BagPanel: 未知的 RewardType {rewardConfig.RewardType}，使用 Fixed");
@@ -656,6 +691,7 @@ namespace QFramework.UI
 
 				case cfg.Enum_UseType.JumpUse:  // 3
 					targetPage = pageUseType3View;
+					Debug.Log($"BagPanel: UseType=JumpUse，选择 PageUseType3View ({(targetPage != null ? "存在" : "为null")})");
 					break;
 
 				default:
@@ -664,7 +700,13 @@ namespace QFramework.UI
 					break;
 			}
 
-			SwitchToPage(targetPage ?? pageEmptyView, itemData);
+			if (targetPage == null)
+			{
+				Debug.LogWarning($"BagPanel: 目标 Page 为 null，使用 PageEmptyView");
+				targetPage = pageEmptyView;
+			}
+
+			SwitchToPage(targetPage, itemData);
 		}
 
 		/// <summary>
