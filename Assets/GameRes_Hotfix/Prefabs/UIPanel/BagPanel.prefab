@@ -225,7 +225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4853648607676222795}
-  - component: {fileID: 2468501774193451920}
+  - component: {fileID: 3152380156339930839}
   m_Layer: 0
   m_Name: PageUseType3
   m_TagString: Untagged
@@ -254,7 +254,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2468501774193451920
+--- !u!114 &3152380156339930839
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 154932381669145410}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 553542df95c61334ea39d16bd969e2d1, type: 3}
+  m_Script: {fileID: 11500000, guid: d6603a843cf0e0c4ab1ef1a101a6b53a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   titleText: {fileID: 0}
@@ -4164,7 +4164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5601195267995415304}
-  - component: {fileID: 222999827515855844}
+  - component: {fileID: 1649218410047552388}
   m_Layer: 0
   m_Name: PageUseType2-Random
   m_TagString: Untagged
@@ -4193,7 +4193,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &222999827515855844
+--- !u!114 &1649218410047552388
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4202,7 +4202,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2879172131038870759}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e49c6ef89b58c1740a15dc792f71f4a7, type: 3}
+  m_Script: {fileID: 11500000, guid: a0fd9b8cfaa810f41b4fede93cfa4b89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   titleText: {fileID: 0}
@@ -4374,7 +4374,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3285793639840446725}
-  - component: {fileID: 792047493129954936}
+  - component: {fileID: 239786111221008484}
   m_Layer: 0
   m_Name: PageEmpty
   m_TagString: Untagged
@@ -4403,7 +4403,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &792047493129954936
+--- !u!114 &239786111221008484
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4412,7 +4412,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2983264566558655853}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9375e0f23dc8e014fbc22d3362e32abe, type: 3}
+  m_Script: {fileID: 11500000, guid: 48db4d6c637f85b43918c1d02b35b687, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   emptyText: {fileID: 0}
@@ -5175,13 +5175,13 @@ MonoBehaviour:
   spacingX: 10
   spacingY: 10
   rightNode: {fileID: 564598327585517036}
-  pageUseType1View: {fileID: 8219085820717112981}
-  pageUseType2FixedView: {fileID: 8914116325200052057}
-  pageUseType2RandomView: {fileID: 222999827515855844}
-  pageUseType2ChoiceView: {fileID: 7499974551960311615}
-  pageUseType3View: {fileID: 2468501774193451920}
-  pageUseTypeXView: {fileID: 4135430794282788504}
-  pageEmptyView: {fileID: 792047493129954936}
+  pageUseType1View: {fileID: 7415910333852027449}
+  pageUseType2FixedView: {fileID: 8782216790985657172}
+  pageUseType2RandomView: {fileID: 1649218410047552388}
+  pageUseType2ChoiceView: {fileID: 1561103389199351820}
+  pageUseType3View: {fileID: 3152380156339930839}
+  pageUseTypeXView: {fileID: 3094967389893464622}
+  pageEmptyView: {fileID: 239786111221008484}
 --- !u!1 &3443021047367265062
 GameObject:
   m_ObjectHideFlags: 0
@@ -9572,7 +9572,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8091946753288861865}
-  - component: {fileID: 8914116325200052057}
+  - component: {fileID: 8782216790985657172}
   m_Layer: 0
   m_Name: PageUseType2-Fixed
   m_TagString: Untagged
@@ -9601,7 +9601,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8914116325200052057
+--- !u!114 &8782216790985657172
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9610,7 +9610,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5843212379722101595}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c62508a2306be84287e8824ae27b063, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c4e22d3bfcec0846ae702dd9bdd4456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   titleText: {fileID: 0}
@@ -9938,7 +9938,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7533274418473964525}
-  - component: {fileID: 4135430794282788504}
+  - component: {fileID: 3094967389893464622}
   m_Layer: 0
   m_Name: PageUseTypeX
   m_TagString: Untagged
@@ -9967,7 +9967,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &4135430794282788504
+--- !u!114 &3094967389893464622
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9976,7 +9976,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6167196726630285406}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bd0c1e5c624a9341bb095e4dee45946, type: 3}
+  m_Script: {fileID: 11500000, guid: a8ab1d1d06a68bf47a8ee362ddda3927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   titleText: {fileID: 0}
@@ -10714,7 +10714,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7827353401490747518}
-  - component: {fileID: 7499974551960311615}
+  - component: {fileID: 1561103389199351820}
   m_Layer: 0
   m_Name: PageUseType2-Choice
   m_TagString: Untagged
@@ -10743,7 +10743,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &7499974551960311615
+--- !u!114 &1561103389199351820
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10752,7 +10752,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6406063447294886808}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1dd3558674f90eb499673f04102023c1, type: 3}
+  m_Script: {fileID: 11500000, guid: ff02b82fdd014704db4f6bd2d303b45d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   titleText: {fileID: 0}
@@ -12489,7 +12489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6462466155564552627}
-  - component: {fileID: 8219085820717112981}
+  - component: {fileID: 7415910333852027449}
   m_Layer: 0
   m_Name: PageUseType1
   m_TagString: Untagged
@@ -12518,7 +12518,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8219085820717112981
+--- !u!114 &7415910333852027449
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12527,7 +12527,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8023368116573225569}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91cac62394025244eaada0b04c118a2b, type: 3}
+  m_Script: {fileID: 11500000, guid: df565d8b51b301c4b97251c7cad03ced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   titleText: {fileID: 0}

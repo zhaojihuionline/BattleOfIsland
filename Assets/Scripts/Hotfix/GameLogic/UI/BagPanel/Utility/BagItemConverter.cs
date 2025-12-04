@@ -83,7 +83,20 @@ namespace QFramework.UI
                 var itemConfig = CfgMgr.Instance.Tables.TbItem.Get(serverItem.ItemId);
                 if (itemConfig != null)
                 {
+                    // 填充配置表静态数据
+                    itemData.ItemName = itemConfig.Name ?? "";
+                    itemData.Description = itemConfig.Description ?? "";
+                    itemData.Quality = itemConfig.Quality;
+                    itemData.ItemType = itemConfig.ItemType;
+                    itemData.ItemSubType = itemConfig.ItemSubType;
                     itemData.Category = itemConfig.Category;
+                    itemData.UseType = itemConfig.UseType;
+                    itemData.UseLevel = itemConfig.UseLevel;
+                    itemData.UseMax = itemConfig.UseMax;
+                    itemData.RewardID = itemConfig.RewardID;
+                    itemData.TipsID = itemConfig.TipsID;
+                    itemData.IsStackable = itemConfig.IsStackable;
+                    itemData.MaxStack = itemConfig.MaxStack;
                     
                     // 加载资源
                     ResLoader loader = ResLoader.Allocate();

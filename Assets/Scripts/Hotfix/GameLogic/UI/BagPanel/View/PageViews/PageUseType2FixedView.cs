@@ -48,24 +48,16 @@ namespace QFramework.UI
                 return;
             }
 
-            // 获取物品配置
-            var itemConfig = CfgMgr.Instance.Tables.TbItem.Get(itemData.ItemId);
-            if (itemConfig == null)
-            {
-                Debug.LogWarning($"PageUseType2FixedView: 无法获取物品配置 ItemId={itemData.ItemId}");
-                ResetView();
-                return;
-            }
-
+            // 使用 BagItemData 中已存储的配置表数据，避免重复查询
             // 更新显示内容
             if (titleText != null)
             {
-                titleText.text = itemConfig.Name ?? "";
+                titleText.text = itemData.ItemName ?? "";
             }
 
             if (descriptionText != null)
             {
-                descriptionText.text = itemConfig.Description ?? "";
+                descriptionText.text = itemData.Description ?? "";
             }
 
             if (iconImage != null)
@@ -74,10 +66,10 @@ namespace QFramework.UI
                 iconImage.enabled = itemData.IconSprite != null;
             }
 
-            // 显示奖励信息（固定奖励）
-            if (itemConfig.RewardID > 0)
+            // 显示奖励信息（固定奖励）- 需要查询 Reward 配置表
+            if (itemData.RewardID > 0)
             {
-                var rewardConfig = CfgMgr.Instance.Tables.TbReward.Get(itemConfig.RewardID);
+                var rewardConfig = CfgMgr.Instance.Tables.TbReward.Get(itemData.RewardID);
                 if (rewardConfig != null)
                 {
                     // TODO: 根据 rewardConfig.RewardDetail 显示奖励列表

@@ -599,33 +599,14 @@ namespace QFramework.UI
 				return;
 			}
 
-			// 获取物品配置
-			cfg.Item itemConfig = null;
-			try
-			{
-				itemConfig = CfgMgr.Instance.Tables.TbItem.Get(itemData.ItemId);
-			}
-			catch (System.Exception ex)
-			{
-				Debug.LogError($"BagPanel: 无法获取物品配置 ItemId={itemData.ItemId}, Error={ex.Message}");
-				SwitchToPage(pageEmptyView, null);
-				return;
-			}
-
-			if (itemConfig == null)
-			{
-				Debug.LogWarning($"BagPanel: 物品配置不存在 ItemId={itemData.ItemId}");
-				SwitchToPage(pageEmptyView, null);
-				return;
-			}
-
-			Debug.Log($"BagPanel: 物品配置获取成功，UseType={itemConfig.UseType}, UseLevel={itemConfig.UseLevel}, RewardID={itemConfig.RewardID}");
+			// 使用 BagItemData 中已存储的配置表数据，避免重复查询
+			Debug.Log($"BagPanel: 使用 BagItemData 中的配置数据，UseType={itemData.UseType}, UseLevel={itemData.UseLevel}, RewardID={itemData.RewardID}");
 
 			// 1. 首先检查玩家建筑大厅等级是否满足要求
 			int playerHallLevel = GetPlayerHallLevel();
-			if (playerHallLevel < itemConfig.UseLevel)
+			if (playerHallLevel < itemData.UseLevel)
 			{
-				Debug.Log($"BagPanel: 玩家等级不足 (当前:{playerHallLevel} < 需要:{itemConfig.UseLevel})，显示 PageUseTypeX");
+				Debug.Log($"BagPanel: 玩家等级不足 (当前:{playerHallLevel} < 需要:{itemData.UseLevel})，显示 PageUseTypeX");
 				SwitchToPage(pageUseTypeXView, itemData);
 				return;
 			}
@@ -633,7 +614,7 @@ namespace QFramework.UI
 			// 2. 根据 UseType 判断显示哪个 Page
 			BagPageViewBase targetPage = null;
 
-			switch (itemConfig.UseType)
+			switch (itemData.UseType)
 			{
 				case cfg.Enum_UseType.DisplayUse:  // 1
 					targetPage = pageUseType1View;
@@ -642,11 +623,11 @@ namespace QFramework.UI
 
 				case cfg.Enum_UseType.CanUse:  // 2
 											   // 根据 RewardID 获取 Reward 配置，根据 RewardType 选择对应的 PageUseType2 变体
-					if (itemConfig.RewardID > 0)
+					if (itemData.RewardID > 0)
 					{
 						try
 						{
-							var rewardConfig = CfgMgr.Instance.Tables.TbReward.Get(itemConfig.RewardID);
+							var rewardConfig = CfgMgr.Instance.Tables.TbReward.Get(itemData.RewardID);
 							if (rewardConfig != null)
 							{
 								Debug.Log($"BagPanel: RewardType={rewardConfig.RewardType}");
@@ -672,13 +653,13 @@ namespace QFramework.UI
 							}
 							else
 							{
-								Debug.LogWarning($"BagPanel: Reward 配置不存在 RewardID={itemConfig.RewardID}，使用 Fixed");
+								Debug.LogWarning($"BagPanel: Reward 配置不存在 RewardID={itemData.RewardID}，使用 Fixed");
 								targetPage = pageUseType2FixedView;
 							}
 						}
 						catch (System.Exception ex)
 						{
-							Debug.LogError($"BagPanel: 无法获取 Reward 配置 RewardID={itemConfig.RewardID}, Error={ex.Message}，使用 Fixed");
+							Debug.LogError($"BagPanel: 无法获取 Reward 配置 RewardID={itemData.RewardID}, Error={ex.Message}，使用 Fixed");
 							targetPage = pageUseType2FixedView;
 						}
 					}
@@ -695,7 +676,7 @@ namespace QFramework.UI
 					break;
 
 				default:
-					Debug.LogWarning($"BagPanel: 未知的 UseType {itemConfig.UseType}，显示 Empty");
+					Debug.LogWarning($"BagPanel: 未知的 UseType {itemData.UseType}，显示 Empty");
 					targetPage = pageEmptyView;
 					break;
 			}

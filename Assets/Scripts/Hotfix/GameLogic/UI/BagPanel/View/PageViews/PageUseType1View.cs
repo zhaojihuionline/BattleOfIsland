@@ -62,25 +62,17 @@ namespace QFramework.UI
                 return;
             }
 
-            // 获取物品配置
-            var itemConfig = CfgMgr.Instance.Tables.TbItem.Get(itemData.ItemId);
-            if (itemConfig == null)
-            {
-                Debug.LogWarning($"PageUseType1View: 无法获取物品配置 ItemId={itemData.ItemId}");
-                ResetView();
-                return;
-            }
-
+            // 使用 BagItemData 中已存储的配置表数据，避免重复查询
             // 更新标题
             if (titleText != null)
             {
-                titleText.text = itemConfig.Name ?? "未知物品";
+                titleText.text = !string.IsNullOrEmpty(itemData.ItemName) ? itemData.ItemName : "未知物品";
             }
 
             // 更新描述
             if (descriptionText != null)
             {
-                descriptionText.text = itemConfig.Description ?? "";
+                descriptionText.text = itemData.Description ?? "";
             }
 
             // 更新图标

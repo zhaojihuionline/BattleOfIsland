@@ -19,6 +19,7 @@ namespace QFramework.UI
         [SerializeField] private Image cooldownMaskImage;
         [SerializeField] private GameObject countBadge;
         [SerializeField] private TextMeshProUGUI countText;
+        [SerializeField] private TextMeshProUGUI nameText;  // 物品名称文本
         [SerializeField] private Image equipTagImage;
         [SerializeField] private Image newTagImage;
         [SerializeField] private Image lockedTagImage;
@@ -94,12 +95,22 @@ namespace QFramework.UI
             }
 
             UpdateCount(Data.Count);
+            UpdateName(Data.ItemName);
             SetSelected(Data.IsSelected);
             SetEquipped(Data.IsEquipped);
             SetNew(Data.IsNew);
             SetLocked(Data.IsLocked);
             SetInteractable(Data.IsInteractable);
             UpdateCooldown(Data.CooldownPercent);
+        }
+
+        public void UpdateName(string itemName)
+        {
+            if (nameText != null)
+            {
+                nameText.text = itemName ?? "";
+                nameText.gameObject.SetActive(!string.IsNullOrEmpty(itemName));
+            }
         }
 
         public void UpdateCount(int count)
