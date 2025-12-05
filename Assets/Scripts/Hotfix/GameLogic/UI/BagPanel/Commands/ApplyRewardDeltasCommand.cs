@@ -81,16 +81,43 @@ namespace QFramework.UI
                 return;
             }
 
-            // 在所有 Tab 中查找该物品
-            var existingItem = bagModel.GetItemByItemId(itemReward.ItemId);
+            // 优先使用 BagId 查找物品（更准确），如果没有 BagId 或找不到，再使用 ItemId
+            BagItemData existingItem = null;
+            if (itemReward.BagId > 0)
+            {
+                existingItem = bagModel.GetItemByBagId(itemReward.BagId);
+            }
+            
+            if (existingItem == null)
+            {
+                // 如果通过 BagId 找不到，尝试通过 ItemId 查找（兼容旧逻辑）
+                existingItem = bagModel.GetItemByItemId(itemReward.ItemId);
+            }
+
             if (existingItem != null)
             {
-                // 物品已存在，增加数量
-                existingItem.Count += (int)itemReward.Amount;
-                bagModel.UpdateItem(existingItem);
-
-                // 获取物品所在的 Tab 索引并发送更新事件
+                // 获取物品所在的 Tab 索引（在更新前获取，因为移除后无法获取）
                 var tabIndex = bagModel.GetTabIndexByBagId(existingItem.BagId);
+                
+                // 更新物品数量
+                existingItem.Count += (int)itemReward.Amount;
+                
+                // 如果数量为0或负数，移除物品
+                if (existingItem.Count <= 0)
+                {
+                    bagModel.RemoveItem(existingItem.BagId);
+                    Debug.Log(
+                        $"[Reward] 物品已用完，已移除 ItemId={itemReward.ItemId} BagId={existingItem.BagId} Amount={itemReward.Amount}");
+                }
+                else
+                {
+                    // 数量大于0，更新物品数据
+                    bagModel.UpdateItem(existingItem);
+                    Debug.Log(
+                        $"[Reward] 物品奖励已更新 ItemId={itemReward.ItemId} BagId={existingItem.BagId} Amount={itemReward.Amount} 新数量={existingItem.Count}");
+                }
+
+                // 发送物品更新事件，通知UI刷新
                 if (tabIndex >= 0)
                 {
                     this.SendEvent(new BagItemsUpdatedEvent
@@ -99,15 +126,12 @@ namespace QFramework.UI
                         Items = bagModel.GetItemsByTab(tabIndex)
                     });
                 }
-
-                Debug.Log(
-                    $"[Reward] 物品奖励已更新 ItemId={itemReward.ItemId} Amount={itemReward.Amount} 新数量={existingItem.Count}");
             }
             else
             {
                 // 物品不存在，等待后端同步（因为需要 bag_id 才能创建新物品）
                 Debug.LogWarning(
-                    $"[Reward] 物品奖励 ItemId={itemReward.ItemId} Amount={itemReward.Amount} 在本地缓存中未找到，等待后端同步");
+                    $"[Reward] 物品奖励 ItemId={itemReward.ItemId} BagId={itemReward.BagId} Amount={itemReward.Amount} 在本地缓存中未找到，等待后端同步");
             }
         }
     }
