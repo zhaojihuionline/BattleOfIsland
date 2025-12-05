@@ -66,7 +66,8 @@ namespace QFramework.UI
                 return null;
             }
 
-            // 注意：背包物品数量变化由后端计算并通过后续同步/推送更新，本地这里不再手动修改 BagModel
+            // 更新本地 BagModel 数据（减少物品数量或移除物品）
+            // ApplyLocalUse();
 
             // 处理使用物品带来的货币/资源/物品奖励变更
             if (response.Rewards != null && response.Rewards.Count > 0)
@@ -80,5 +81,52 @@ namespace QFramework.UI
 
             return response;
         }
+
+        /// <summary>
+        /// 应用本地使用物品的逻辑（减少数量或移除物品）
+        /// </summary>
+        // private void ApplyLocalUse()
+        // {
+        //     var bagModel = this.GetModel<IBagModel>();
+        //     if (bagModel == null)
+        //     {
+        //         Debug.LogWarning("UseBagItemCommand: BagModel 未注册，无法同步本地数据。");
+        //         return;
+        //     }
+
+        //     var notifyTabIndex = tabIndex >= 0 ? tabIndex : bagModel.GetTabIndexByBagId(bagId);
+        //     var localItem = bagModel.GetItemByBagId(bagId);
+
+        //     if (localItem != null)
+        //     {
+        //         // 减少物品数量
+        //         localItem.Count = Mathf.Max(0, localItem.Count - useCount);
+                
+        //         // 如果数量为0，移除物品
+        //         if (localItem.Count <= 0)
+        //         {
+        //             bagModel.RemoveItem(bagId);
+        //         }
+        //         else
+        //         {
+        //             // 更新物品数据
+        //             bagModel.UpdateItem(localItem);
+        //         }
+
+        //         // 发送物品更新事件，通知UI刷新
+        //         if (notifyTabIndex >= 0)
+        //         {
+        //             this.SendEvent(new BagItemsUpdatedEvent
+        //             {
+        //                 TabIndex = notifyTabIndex,
+        //                 Items = bagModel.GetItemsByTab(notifyTabIndex)
+        //             });
+        //         }
+        //     }
+        //     else
+        //     {
+        //         Debug.LogWarning($"UseBagItemCommand: 本地找不到 BagId={bagId} 的物品，无法更新本地数据");
+        //     }
+        // }
     }
 }

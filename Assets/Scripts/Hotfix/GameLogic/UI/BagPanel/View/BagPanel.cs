@@ -52,6 +52,7 @@ namespace QFramework.UI
 		// 所有 Page View 的列表
 		private List<BagPageViewBase> allPageViews = new List<BagPageViewBase>();
 		private BagPageViewBase currentActivePageView;
+		private BagItemData currentSelectedItemData;  // 当前选中的物品数据
 
 		protected override void OnInit(IUIData uiData = null)
 		{
@@ -252,6 +253,33 @@ namespace QFramework.UI
 		private void OnBagItemsUpdated(BagItemsUpdatedEvent e)
 		{
 			RefreshItemList(e.TabIndex);
+			
+			// 刷新当前显示的页面视图（如果当前Tab更新且当前页面显示的是被更新的物品）
+			if (currentActivePageView != null && currentSelectedItemData != null)
+			{
+				// 检查当前选中的物品是否在当前更新的Tab中
+				int currentTabIndex = bagTabSystem.CurrentTabIndex;
+				if (e.TabIndex == currentTabIndex)
+				{
+					// 从BagModel中获取最新的物品数据
+					var updatedItemData = bagModel.GetItemByBagId(currentSelectedItemData.BagId);
+					
+					if (updatedItemData != null)
+					{
+						// 物品还存在，刷新页面视图
+						currentSelectedItemData = updatedItemData;
+						currentActivePageView.RefreshData(updatedItemData);
+						Debug.Log($"BagPanel: 刷新当前页面视图，BagId={updatedItemData.BagId}, Count={updatedItemData.Count}");
+					}
+					else
+					{
+						// 物品已被移除，显示空页面
+						currentSelectedItemData = null;
+						SwitchPageByItemData(null);
+						Debug.Log($"BagPanel: 当前物品已被移除，显示空页面");
+					}
+				}
+			}
 		}
 
 		/// <summary>
@@ -633,6 +661,9 @@ namespace QFramework.UI
 		public void SwitchPageByItemData(BagItemData itemData)
 		{
 			Debug.Log($"BagPanel: SwitchPageByItemData 被调用，ItemData={(itemData != null ? $"ItemId={itemData.ItemId}" : "null")}");
+			
+			// 更新当前选中的物品数据
+			currentSelectedItemData = itemData;
 			
 			if (itemData == null)
 			{
