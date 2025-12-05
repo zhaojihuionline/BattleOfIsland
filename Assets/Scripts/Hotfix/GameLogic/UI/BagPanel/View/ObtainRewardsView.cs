@@ -15,6 +15,7 @@ namespace QFramework.UI
         [SerializeField] private Transform content;
         [SerializeField] private GameObject bagItemPrefab;
         [SerializeField] private Button closeButton;
+        [SerializeField] private Button confirmButton;
 
         private readonly List<GameObject> rewardItems = new List<GameObject>();
 
@@ -28,6 +29,11 @@ namespace QFramework.UI
             if (closeButton != null)
             {
                 closeButton.onClick.AddListener(Hide);
+            }
+
+            if (confirmButton != null)
+            {
+                confirmButton.onClick.AddListener(Hide);
             }
 
             if (root != null)
