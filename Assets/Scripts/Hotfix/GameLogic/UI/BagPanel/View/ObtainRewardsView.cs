@@ -88,6 +88,14 @@ namespace QFramework.UI
 
             foreach (var delta in deltas)
             {
+                // 过滤掉消耗的物品，只显示获得的奖励
+                // delta.After > delta.Before 表示数量增加（获得）
+                // delta.After <= delta.Before 表示数量不变或减少（消耗）
+                if (delta.After <= delta.Before)
+                {
+                    continue;  // 跳过消耗的物品
+                }
+
                 var itemData = BagItemConverter.CreateFromRewardDelta(delta);
                 if (itemData == null) continue;
 

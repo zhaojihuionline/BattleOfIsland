@@ -149,11 +149,39 @@ namespace QFramework.UI
 
         /// <summary>
         /// 将 RewardDelta 转换为 BagItemData
+        /// 使用实际变化量（delta.After - delta.Before）作为获得的数量
         /// </summary>
         public static BagItemData CreateFromRewardDelta(RewardDelta delta)
         {
             if (delta?.Reward == null) return null;
-            return CreateFromRewardItem(delta.Reward);
+
+            // 计算实际变化量（获得的数量）
+            long actualChange = delta.After - delta.Before;
+            if (actualChange <= 0) return null;  // 只处理获得的情况（数量增加）
+
+            switch (delta.Reward.RewardDetailCase)
+            {
+                case RewardItem.RewardDetailOneofCase.Item:
+                    // 对于物品奖励，使用实际变化量
+                    var itemReward = delta.Reward.Item;
+                    if (itemReward == null) return null;
+                    return CreateFromSimpleReward(itemReward.ItemId, (int)actualChange, itemReward.BagId);
+
+                case RewardItem.RewardDetailOneofCase.Currency:
+                    // 对于货币，使用实际变化量
+                    var currency = delta.Reward.Currency;
+                    if (currency == null) return null;
+                    return CreateFromSimpleReward(currency.ItemId, (int)actualChange);
+
+                case RewardItem.RewardDetailOneofCase.Resource:
+                    // 对于资源，使用实际变化量
+                    var resource = delta.Reward.Resource;
+                    if (resource == null) return null;
+                    return CreateFromSimpleReward(resource.ItemId, (int)actualChange);
+
+                default:
+                    return null;
+            }
         }
 
         /// <summary>
