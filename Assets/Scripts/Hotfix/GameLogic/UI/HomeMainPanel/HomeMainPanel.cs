@@ -27,7 +27,7 @@ namespace QFramework.UI
 			btn_goBag.onClick.AddListener(() =>
             {
                 UIKit.OpenPanel<BagPanel>();
-                UIKit.ClosePanel<HomeMainPanel>();
+                UIKit.HidePanel<HomeMainPanel>();
             });
         }
 		

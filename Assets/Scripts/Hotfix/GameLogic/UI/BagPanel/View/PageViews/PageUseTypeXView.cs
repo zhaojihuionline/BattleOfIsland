@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using cfg;
+using QFramework;
 
 namespace QFramework.UI
 {
@@ -85,7 +86,9 @@ namespace QFramework.UI
             // 显示等级要求
             if (levelRequirementText != null)
             {
-                int playerHallLevel = GetPlayerHallLevel();
+                // 通过 IController 接口获取 BagPanel，使用统一的 GetPlayerHallLevel 方法
+                var bagPanel = GetComponentInParent<BagPanel>();
+                int playerHallLevel = bagPanel != null ? bagPanel.GetPlayerHallLevel() : 1;
                 levelRequirementText.text = $"需要建筑大厅等级: {requiredLevel}\n当前等级: {playerHallLevel}";
             }
         }
@@ -102,19 +105,10 @@ namespace QFramework.UI
 
         private void OnCloseButtonClicked()
         {
-            // 关闭提示，可以隐藏当前 Page 或返回空状态
-            Debug.Log("PageUseTypeX: 关闭等级不足提示");
-        }
-
-        /// <summary>
-        /// 获取玩家建筑大厅等级
-        /// TODO: 根据项目实际情况从 Model 或 System 获取
-        /// </summary>
-        private int GetPlayerHallLevel()
-        {
-            // 暂时返回固定值，后续需要从实际的 Model 或 System 获取
-            // 例如：return this.GetModel<IBuildingModel>().GetHallLevel();
-            return 1;  // 临时值
+            // 关闭背包面板，返回主界面
+            Debug.Log("PageUseTypeX: 关闭等级不足提示，关闭背包面板");
+            UIKit.ClosePanel<BagPanel>();
+            UIKit.ShowPanel<HomeMainPanel>();
         }
     }
 }

@@ -775,11 +775,11 @@ namespace QFramework.UI
 		/// 获取玩家建筑大厅等级
 		/// TODO: 根据项目实际情况从 Model 或 System 获取
 		/// </summary>
-		private int GetPlayerHallLevel()
+		public int GetPlayerHallLevel()
 		{
 			// 暂时返回固定值，后续需要从实际的 Model 或 System 获取
 			// 例如：return this.GetModel<IBuildingModel>().GetHallLevel();
-			return 1;  // 临时值，需要根据项目实际情况实现
+			return 1;  // 临时值，需要根据项目实际情况实现（统一返回1，避免与PageUseTypeXView不一致）
 		}
 
 		// 实现IController接口
