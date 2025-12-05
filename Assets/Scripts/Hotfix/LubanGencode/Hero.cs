@@ -23,7 +23,7 @@ public sealed partial class Hero : Luban.BeanBase
         Id = (int)_obj.GetValue("Id");
         Name = (string)_obj.GetValue("Name");
         Title = (string)_obj.GetValue("Title");
-        Type = (Enum_HeroType)(int)_obj.GetValue("Type");
+        HeroType = (Enum_HeroType)(int)_obj.GetValue("HeroType");
         Quality = (Enum_HeroQuality)(int)_obj.GetValue("Quality");
         Position = (string)_obj.GetValue("Position");
         Sex = (Enum_Sex)(int)_obj.GetValue("Sex");
@@ -54,7 +54,7 @@ public sealed partial class Hero : Luban.BeanBase
     /// <summary>
     /// 英雄类型
     /// </summary>
-    public readonly Enum_HeroType Type;
+    public readonly Enum_HeroType HeroType;
     /// <summary>
     /// 英雄品质
     /// </summary>
@@ -102,7 +102,7 @@ public sealed partial class Hero : Luban.BeanBase
         + "Id:" + Id + ","
         + "Name:" + Name + ","
         + "Title:" + Title + ","
-        + "Type:" + Type + ","
+        + "HeroType:" + HeroType + ","
         + "Quality:" + Quality + ","
         + "Position:" + Position + ","
         + "Sex:" + Sex + ","

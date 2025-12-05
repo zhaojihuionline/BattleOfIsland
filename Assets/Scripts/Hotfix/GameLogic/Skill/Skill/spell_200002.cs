@@ -1,3 +1,4 @@
+using DG.Tweening;
 using QFramework;
 using QFramework.Game;
 using System.Collections;
@@ -15,6 +16,7 @@ public partial class spell_200002 : SkillController
     {
         base.OnDo_Cast();
 
+        // 查找场上战斗力最高的英雄
         var hero = this.GetModel<BattleInModel>().player_allEntitys.Where(entity => entity.transform.CompareTag("Hero")).FirstOrDefault();
 
         GameObject effect = Instantiate(Effect, hero.transform.position, Quaternion.identity);
@@ -23,6 +25,17 @@ public partial class spell_200002 : SkillController
         effect.transform.localPosition = Vector3.zero;
         effect.transform.localScale = Vector3.one * 1.75f;
         effect.SetActive(true);
+
+        // 延迟一段时间删除特效，暂时写在这里，后续优化
+        DOVirtual.DelayedCall(5f, () =>
+        {
+            if (hero != null)
+            {
+                Destroy(effect);
+                Destroy(this.gameObject);
+            }
+        });
+
         // TODO: 添加buff
     }
 }

@@ -34,7 +34,7 @@ public sealed partial class Mercenary : Luban.BeanBase
         Cost = (int)_obj.GetValue("Cost");
         Mod = (string)_obj.GetValue("Mod");
         { var __json0 = _obj.GetValue("Skill"); Skill = new System.Collections.Generic.List<int>((__json0 as JArray).Count); foreach(JToken __e0 in __json0) { int __v0;  __v0 = (int)__e0;  Skill.Add(__v0); }   }
-        MercenaryType = (Enum_MercenaryType)(int)_obj.GetValue("MercenaryType");
+        MercenaryType = (EMercenaryType)(int)_obj.GetValue("MercenaryType");
     }
 
     public static Mercenary DeserializeMercenary(JToken _buf)
@@ -101,7 +101,7 @@ public sealed partial class Mercenary : Luban.BeanBase
     /// <summary>
     /// 雇佣兵类型
     /// </summary>
-    public readonly Enum_MercenaryType MercenaryType;
+    public readonly EMercenaryType MercenaryType;
 
 
     public const int __ID__ = -777715498;

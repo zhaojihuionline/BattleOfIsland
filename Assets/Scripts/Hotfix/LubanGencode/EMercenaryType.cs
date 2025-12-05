@@ -11,7 +11,7 @@
 
 namespace cfg
 { 
-    public enum Enum_MercenaryType
+    public enum EMercenaryType
     {
         NONE = 0,
         /// <summary>
