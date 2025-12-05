@@ -817,21 +817,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1697284781}
     m_Modifications:
-    - target: {fileID: 2983264566558655853, guid: 0a7634fc91baa6048b3302f6aa237404, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3434442203283177181, guid: 0a7634fc91baa6048b3302f6aa237404, type: 3}
       propertyPath: m_Name
       value: BagPanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 6167196726630285406, guid: 0a7634fc91baa6048b3302f6aa237404, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8023368116573225569, guid: 0a7634fc91baa6048b3302f6aa237404, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8466328955220297937, guid: 0a7634fc91baa6048b3302f6aa237404, type: 3}
       propertyPath: m_Pivot.x
