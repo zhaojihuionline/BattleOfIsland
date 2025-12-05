@@ -252,14 +252,17 @@ namespace QFramework.UI
 		/// </summary>
 		private void OnBagItemsUpdated(BagItemsUpdatedEvent e)
 		{
-			RefreshItemList(e.TabIndex);
+			// 获取当前显示的Tab索引
+			int currentTabIndex = bagTabSystem.CurrentTabIndex;
 			
-			// 刷新当前显示的页面视图（如果当前Tab更新且当前页面显示的是被更新的物品）
-			if (currentActivePageView != null && currentSelectedItemData != null)
+			// 只有更新的Tab是当前显示的Tab时，才刷新物品列表
+			// 这样可以避免更新其他Tab时导致当前Tab被切换
+			if (e.TabIndex == currentTabIndex)
 			{
-				// 检查当前选中的物品是否在当前更新的Tab中
-				int currentTabIndex = bagTabSystem.CurrentTabIndex;
-				if (e.TabIndex == currentTabIndex)
+				RefreshItemList(e.TabIndex);
+				
+				// 刷新当前显示的页面视图（如果当前页面显示的是被更新的物品）
+				if (currentActivePageView != null && currentSelectedItemData != null)
 				{
 					// 从BagModel中获取最新的物品数据
 					var updatedItemData = bagModel.GetItemByBagId(currentSelectedItemData.BagId);
@@ -279,6 +282,11 @@ namespace QFramework.UI
 						Debug.Log($"BagPanel: 当前物品已被移除，显示空页面");
 					}
 				}
+			}
+			else
+			{
+				// 更新的不是当前显示的Tab，只更新数据模型，不刷新UI
+				Debug.Log($"BagPanel: Tab {e.TabIndex} 的物品已更新，但不是当前显示的Tab（当前Tab: {currentTabIndex}），仅更新数据模型");
 			}
 		}
 
