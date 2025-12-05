@@ -43,6 +43,9 @@ namespace QFramework.UI
 		[Header("Popup Views")]
 		[SerializeField] private ObtainRewardsView obtainRewardsView;
 
+		[Header("返回按钮")]
+		[SerializeField] private Button returnButton;  // top/group-return 节点的返回按钮
+
 		private IBagTabSystem bagTabSystem;
 		private IBagModel bagModel;
 		private List<BagItemView> itemViews = new List<BagItemView>();  // 当前显示的物品视图列表
@@ -90,6 +93,9 @@ namespace QFramework.UI
 			InitPageViews();
 			InitPopupViews();
 
+			// 初始化返回按钮
+			InitReturnButton();
+
 			// 监听Tab切换事件
 			this.RegisterEvent<BagTabChangedEvent>(OnTabChanged)
 				.UnRegisterWhenGameObjectDestroyed(gameObject);
@@ -117,6 +123,33 @@ namespace QFramework.UI
                 }
             }
         }
+
+		/// <summary>
+		/// 初始化返回按钮
+		/// </summary>
+		private void InitReturnButton()
+		{
+			// 绑定返回按钮点击事件
+			if (returnButton != null)
+			{
+				returnButton.onClick.AddListener(OnReturnButtonClicked);
+			}
+			else
+			{
+				Debug.LogWarning("BagPanel: 返回按钮未找到，请检查路径 top/group-return 或手动设置 returnButton");
+			}
+		}
+
+		/// <summary>
+		/// 返回按钮点击事件处理
+		/// </summary>
+		private void OnReturnButtonClicked()
+		{
+			Debug.Log("BagPanel: 返回按钮被点击，关闭背包面板并返回主界面");
+			// 关闭背包面板，返回主界面
+			UIKit.ClosePanel<BagPanel>();
+			UIKit.ShowPanel<HomeMainPanel>();
+		}
 
 		/// <summary>
 		/// 查找物品容器和滚动视图
@@ -412,6 +445,12 @@ namespace QFramework.UI
 
 		protected override void OnClose()
 		{
+			// 清理返回按钮事件
+			if (returnButton != null)
+			{
+				returnButton.onClick.RemoveListener(OnReturnButtonClicked);
+			}
+
 			// 清空物品视图
 			foreach (var itemView in itemViews)
 			{
