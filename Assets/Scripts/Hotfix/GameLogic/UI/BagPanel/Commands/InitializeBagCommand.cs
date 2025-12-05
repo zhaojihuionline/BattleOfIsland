@@ -65,7 +65,8 @@ namespace QFramework.UI
             }
 
             // 取前 120 条（避免生成过大），可按需要调整
-            var sampledItems = wrapper.Items.Take(120).ToList();
+            // var sampledItems = wrapper.Items.Take(120).ToList();
+            var sampledItems = wrapper.Items.ToList();
 
             foreach (var item in sampledItems)
             {
