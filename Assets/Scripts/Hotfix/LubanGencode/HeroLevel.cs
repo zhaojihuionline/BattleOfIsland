@@ -45,7 +45,7 @@ public sealed partial class HeroLevel : Luban.BeanBase
         PenetratAdd3 = (float)_obj.GetValue("PenetratAdd3");
         { var __json0 = _obj.GetValue("Skill"); Skill = new System.Collections.Generic.List<int>((__json0 as JArray).Count); foreach(JToken __e0 in __json0) { int __v0;  __v0 = (int)__e0;  Skill.Add(__v0); }   }
         { var __json0 = _obj.GetValue("SkillEnable"); SkillEnable = new System.Collections.Generic.List<int>((__json0 as JArray).Count); foreach(JToken __e0 in __json0) { int __v0;  __v0 = (int)__e0;  SkillEnable.Add(__v0); }   }
-        DamageRange = (int)_obj.GetValue("_damage_range");
+        DamageRange = (int)_obj.GetValue("DamageRange");
     }
 
     public static HeroLevel DeserializeHeroLevel(JToken _buf)
@@ -194,7 +194,7 @@ public sealed partial class HeroLevel : Luban.BeanBase
         + "PenetratAdd3:" + PenetratAdd3 + ","
         + "Skill:" + Luban.StringUtil.CollectionToString(Skill) + ","
         + "SkillEnable:" + Luban.StringUtil.CollectionToString(SkillEnable) + ","
-        + "damageRange:" + DamageRange + ","
+        + "DamageRange:" + DamageRange + ","
         + "}";
     }
 }

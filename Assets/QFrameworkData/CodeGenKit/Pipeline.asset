@@ -15,12 +15,12 @@ MonoBehaviour:
   CurrentTask:
     ShowLog: 0
     Status: 1
-    GameObject: {fileID: 796774559317167324, guid: 956ae65b4d63dc0479999fb0efc74131, type: 3}
+    GameObject: {fileID: 2432222454079710498, guid: e7d436126ce323240b42632ae2156d9a, type: 3}
     From: 0
     NameToFullName: []
     BindInfos: []
     ScriptsFolder: Assets\Scripts\Hotfix\GameLogic\Skill\Skill
-    ClassName: skill_10012
+    ClassName: spell_200003
     Namespace: QFramework.Game
     MainCode: 
     DesignerCode: 

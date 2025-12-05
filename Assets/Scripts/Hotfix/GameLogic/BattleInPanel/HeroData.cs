@@ -1,4 +1,6 @@
 using cfg;
+using log4net.Core;
+using QFramework.Game;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -57,7 +59,7 @@ public class WeaponData
     }
 }
 [System.Serializable]
-public class HeroData
+public class HeroData : UnitData
 {
     /// <summary>
     /// Ӣ��id
@@ -107,6 +109,7 @@ public class HeroData
     /// �չ�������Χ
     /// </summary>
     public float attackRange;
+    public float damageRange;
     /// <summary>
     /// ��������
     /// </summary>
@@ -166,9 +169,62 @@ public class HeroData
             skillID = heroInfo_level.Skill
         };
     }
+
+    EntityController entityController;
+    public void Init(EntityController entityController)
+    {
+        this.entityController = entityController;
+    }
+
+    public override void ChangeAttribute(AttributeChangeData attributeChangeData)
+    {
+        switch (attributeChangeData.attributeType)
+        {
+            case cfg.AttributeType.AttackType:
+                damageRange = ProcessCalculate(attributeChangeData.baseCalculateType, damageRange, attributeChangeData.value);
+                break;
+                //todo:扩展写在这里
+        }
+    }
+
+    float ProcessCalculate(cfg.EBaseCalculateType baseCalculateType, float attribute,int value)
+    {
+        float fValue = value / 100;
+        switch (baseCalculateType)
+        {
+            case EBaseCalculateType.Add:
+                attribute += fValue;
+                break;
+            case EBaseCalculateType.Subtract:
+                attribute -= fValue;
+                break;
+            case EBaseCalculateType.Multiply:
+                attribute *= (1 + (float)fValue);
+                break;
+            case EBaseCalculateType.Divide:
+                attribute *= (1 - (float)fValue);
+                break;
+        }
+        return attribute;
+    }
+
+    public override float GetDamageRange()
+    {
+        //foreach(var buffEntity in entityController.buffRunner.buffEntities)
+        //{
+        //    foreach(var effect in buffEntity.effects)
+        //    {
+        //        foreach(var effectNode in effect.effect.buffTable.BuffTickEffect)
+        //        {
+
+        //        }
+        //    }
+        //}
+        return damageRange;
+    }
 }
 
-public class MercenaryData
+public class MercenaryData : UnitData
 {
     /// <summary>
     /// С��id
@@ -237,7 +293,6 @@ public class MercenaryData
         Cost = mercenary.Cost;
     }
 
-
     public MercenaryData Clone()
     {
         return (MercenaryData)this.MemberwiseClone();
@@ -259,7 +314,7 @@ public class BuildingLayoutData
     public string user_id;
     public BuildingData[] buildings;
 }
-public class BuildingData
+public class BuildingData : UnitData
 {
     public float x;
     public float z;
@@ -272,4 +327,55 @@ public class BuildingData
     public float rotation_x;
     public float rotation_y;
     public float rotation_z;
+
+    cfg.BuildsLevel buildsLevel = null;
+
+    public int Attack;
+    public int Defense;
+    public int Health;
+    public int SearchRange;
+    public int AttackRange;
+    public int AttackSpeed;
+    public int Penetrate;
+    public int Power;
+
+    public BuildingData(cfg.BuildsLevel buildsLevel)
+    {
+      this.buildsLevel = buildsLevel;
+    }
+}
+
+public class UnitData : IUnitData
+{
+    public EntityController entityController;
+
+    public virtual void ChangeAttribute(AttributeChangeData attributeChangeData)
+    {
+        
+    }
+
+    public virtual float GetDamageRange()
+    {
+        return 0;
+    }
+
+    public virtual void Init(EntityController entityController)
+    {
+        this.entityController = entityController;
+    }
+}
+
+public interface IUnitData
+{
+    void Init(EntityController entityController);
+    void ChangeAttribute(AttributeChangeData attributeChangeData);
+
+    float GetDamageRange();
+}
+
+public struct AttributeChangeData
+{
+    public cfg.AttributeType attributeType;
+    public int value;
+    public cfg.EBaseCalculateType baseCalculateType;
 }

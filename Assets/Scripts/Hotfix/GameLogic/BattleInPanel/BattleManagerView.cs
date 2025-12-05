@@ -141,13 +141,13 @@ namespace QFramework.UI
             return 10001;
         }
 
-        public GameObject BuildBuildingsEntity(int id, int lv, Vector3 spawnPoint, Vector3 _qua, bool isEnemy = false)
+        public GameObject BuildBuildingsEntity(BuildingData buildingData, bool isEnemy = false)
         {
             var _system = this.GetSystem<EntitySystem>();
             var bmodel = this.GetModel<BattleInModel>();
             bmodel.TotalEntityCount.Value++;
-            GameObject newBuildings = _system.CreatEntityBuilding(id, lv, spawnPoint, isEnemy);
-            newBuildings.transform.eulerAngles = _qua;
+            GameObject newBuildings = _system.CreatEntityBuilding(buildingData, isEnemy);
+            newBuildings.transform.eulerAngles = new Vector3(buildingData.rotation_x, buildingData.rotation_y, buildingData.rotation_z);
             return newBuildings;
         }
 

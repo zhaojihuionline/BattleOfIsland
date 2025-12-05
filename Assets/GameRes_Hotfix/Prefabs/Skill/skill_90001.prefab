@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 796774559317167324}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.42}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -56,6 +56,10 @@ MonoBehaviour:
   ArchitectureFullTypeName: GameApp
   ViewControllerFullTypeName: 
   enableDebug: 0
+  FSM:
+    mCurrentStateId: 0
+    FrameCountOfCurrentState: 1
+    SecondsOfCurrentState: 0
   Model: {fileID: 6764770394164552040}
   BPath: {fileID: 8518367508882320259}
 --- !u!114 &6612299468339945811
@@ -167,7 +171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1976721452590163172, guid: 44560ee6eaa69b8419de73d512ef75c2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1976721452590163172, guid: 44560ee6eaa69b8419de73d512ef75c2, type: 3}
       propertyPath: m_LocalRotation.w

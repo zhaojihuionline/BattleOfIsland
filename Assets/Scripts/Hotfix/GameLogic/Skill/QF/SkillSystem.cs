@@ -123,7 +123,7 @@ public class SkillSystem : AbstractSystem, ISkillSystem
     /// <param name="center"></param>
     /// <param name="maxDistance"></param>
     /// <returns></returns>
-    public List<GameObject> FindObjectsByDistance(List<GameObject> objects, Vector3 center, float maxDistance)
+    public List<GameObject> FindObjectsByDistance(List<GameObject> objects, Vector3 center, float maxDistance = 9999)
     {
         //如果判断距离是0的话 直接返回全部 不进行距离判断  大概率是自己位置直接找个目标 方向之类的释放
         if (maxDistance <= 0f)
@@ -138,6 +138,7 @@ public class SkillSystem : AbstractSystem, ISkillSystem
 
             //float distance = Vector3.Distance(obj.transform.position, center);
             float distance = Vector2.Distance(new Vector2(obj.transform.position.x, obj.transform.position.z), new Vector2(center.x, center.z));
+            //Debug.Log($"FindObjectsByDistance {obj.name} {distance} {maxDistance} {distance <= maxDistance}");
             if (distance <= maxDistance)
             {
                 foundObjects.Add(obj);

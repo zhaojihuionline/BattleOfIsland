@@ -188,9 +188,21 @@ namespace QFramework.UI
             this.Delay(1.5f, () =>
             {
                 Destroy(newQianyao);
-                var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(20000101);// 腐朽之森技能
-                this.SendCommand<ReleaseSpellCommand>(new ReleaseSpellCommand(tbskill, null, null, Vector3.zero));
+                var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(20000101);// 腐朽之森法术技能
+                this.SendCommand<ReleaseSpellCommand>(new ReleaseSpellCommand(tbskill, null, default, Vector3.zero));
             });
+            //this.Delay(1.5f, () =>
+            //{
+            //    Destroy(newQianyao);
+            //    var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(20000201);// 先祖教诲法术技能
+            //    this.SendCommand<ReleaseSpellCommand>(new ReleaseSpellCommand(tbskill, null, default, Vector3.zero));
+            //});
+            //this.Delay(1.5f, () =>
+            //{
+            //    Destroy(newQianyao);
+      			//var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(20000301);// 迷你蘑菇法术技能
+             //   this.SendCommand<ReleaseSpellCommand>(new ReleaseSpellCommand(tbskill, null, default, Vector3.zero));            //});
+
         }
         /// <summary>
         /// 进入战斗流程

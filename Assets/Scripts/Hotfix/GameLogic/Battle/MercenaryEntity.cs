@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using QFramework.UI;
 
-public class MercenaryEntity : ViewController,ICanHurt, ICanResponseBuff
+public class MercenaryEntity : UnitViewController, ICanHurt, ICanResponseBuff
 {
     public bool canMove { get; set; }
     public bool canAttack { get; set; }
@@ -197,6 +197,16 @@ public class MercenaryEntity : ViewController,ICanHurt, ICanResponseBuff
             Debug.Log("Ó¶±øËÀÍö");
         }
         ChangeModelColorFX();
+    }
+
+    public void OnAttackTypeChange(int damageRange)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void OnAttributeChange(AttributeChangeData attributeChangeData)
+    {
+        throw new System.NotImplementedException();
     }
     #endregion
 }

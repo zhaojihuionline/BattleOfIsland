@@ -1,3 +1,4 @@
+using cfg;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,7 @@ public class Effect
     /// </summary>
     public int attributeValue;
     public cfg.EffectNode effectNode;
+    public BuffTable buffTable;
     /// <summary>
     /// 此效果的持续时间，正常情况下直接取所依附的buff持续时间
     /// </summary>
@@ -24,8 +26,10 @@ public class Effect
         this.attributeValue = attributeValue;
     }
 
-    public Effect(cfg.EffectNode effectNode)
+    public Effect(BuffTable buffTable,int i)
     {
+        this.buffTable = buffTable;
+        effectNode = buffTable.BuffEffect[i];
         this.attributeID = (int)effectNode.Type;
         this.effectNode = effectNode;
         this.attributeValue = effectNode.Param[1];

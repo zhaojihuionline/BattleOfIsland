@@ -33,7 +33,7 @@ public class BuildData
         buildsLevel = CfgMgr.Instance.Tables.TbBuildsLevel.Get(bid * 100 + newLevel);
     }
 }
-public class BuildEntity : ViewController,ICanHurt,ICanResponseBuff
+public class BuildEntity : UnitViewController, ICanHurt,ICanResponseBuff
 {
     public BuildData buildData;
     public MeshRenderer mesh;
@@ -218,5 +218,15 @@ public class BuildEntity : ViewController,ICanHurt,ICanResponseBuff
     public void SetDefaultSpeed()
     {
 
+    }
+
+    public void OnAttackTypeChange(int damageRange)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void OnAttributeChange(AttributeChangeData attributeChangeData)
+    {
+        throw new System.NotImplementedException();
     }
 }

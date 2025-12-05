@@ -35,7 +35,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130102,
@@ -73,7 +73,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130103,
@@ -111,7 +111,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130104,
@@ -149,7 +149,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130105,
@@ -187,7 +187,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130106,
@@ -225,7 +225,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130107,
@@ -263,7 +263,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130108,
@@ -301,7 +301,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130109,
@@ -339,7 +339,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130110,
@@ -377,7 +377,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130111,
@@ -415,7 +415,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130112,
@@ -453,7 +453,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130113,
@@ -491,7 +491,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130114,
@@ -529,7 +529,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130115,
@@ -567,7 +567,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130116,
@@ -605,7 +605,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130117,
@@ -643,7 +643,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130118,
@@ -681,7 +681,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130119,
@@ -719,7 +719,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130120,
@@ -757,7 +757,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130121,
@@ -795,7 +795,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130122,
@@ -833,7 +833,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130123,
@@ -871,7 +871,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130124,
@@ -909,7 +909,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130125,
@@ -947,7 +947,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130126,
@@ -985,7 +985,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130127,
@@ -1023,7 +1023,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130128,
@@ -1061,7 +1061,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130129,
@@ -1099,7 +1099,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 130130,
@@ -1137,7 +1137,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120201,
@@ -1175,7 +1175,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120202,
@@ -1213,7 +1213,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120203,
@@ -1251,7 +1251,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120204,
@@ -1289,7 +1289,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120205,
@@ -1327,7 +1327,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120206,
@@ -1365,7 +1365,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120207,
@@ -1403,7 +1403,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120208,
@@ -1441,7 +1441,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120209,
@@ -1479,7 +1479,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120210,
@@ -1517,7 +1517,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120211,
@@ -1555,7 +1555,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120212,
@@ -1593,7 +1593,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120213,
@@ -1631,7 +1631,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120214,
@@ -1669,7 +1669,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120215,
@@ -1707,7 +1707,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120216,
@@ -1745,7 +1745,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120217,
@@ -1783,7 +1783,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120218,
@@ -1821,7 +1821,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120219,
@@ -1859,7 +1859,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120220,
@@ -1897,7 +1897,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120221,
@@ -1935,7 +1935,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120222,
@@ -1973,7 +1973,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120223,
@@ -2011,7 +2011,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120224,
@@ -2049,7 +2049,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120225,
@@ -2087,7 +2087,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120226,
@@ -2125,7 +2125,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120227,
@@ -2163,7 +2163,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120228,
@@ -2201,7 +2201,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120229,
@@ -2239,7 +2239,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120230,
@@ -2277,7 +2277,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110101,
@@ -2315,7 +2315,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110102,
@@ -2353,7 +2353,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110103,
@@ -2391,7 +2391,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110104,
@@ -2429,7 +2429,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110105,
@@ -2467,7 +2467,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110106,
@@ -2505,7 +2505,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110107,
@@ -2543,7 +2543,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110108,
@@ -2581,7 +2581,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110109,
@@ -2619,7 +2619,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110110,
@@ -2657,7 +2657,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110111,
@@ -2695,7 +2695,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110112,
@@ -2733,7 +2733,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110113,
@@ -2771,7 +2771,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110114,
@@ -2809,7 +2809,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110115,
@@ -2847,7 +2847,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110116,
@@ -2885,7 +2885,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110117,
@@ -2923,7 +2923,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110118,
@@ -2961,7 +2961,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110119,
@@ -2999,7 +2999,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110120,
@@ -3037,7 +3037,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110121,
@@ -3075,7 +3075,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110122,
@@ -3113,7 +3113,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110123,
@@ -3151,7 +3151,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110124,
@@ -3189,7 +3189,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110125,
@@ -3227,7 +3227,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110126,
@@ -3265,7 +3265,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110127,
@@ -3303,7 +3303,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110128,
@@ -3341,7 +3341,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110129,
@@ -3379,7 +3379,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 110130,
@@ -3417,7 +3417,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120101,
@@ -3455,7 +3455,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120102,
@@ -3493,7 +3493,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120103,
@@ -3531,7 +3531,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120104,
@@ -3569,7 +3569,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120105,
@@ -3607,7 +3607,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120106,
@@ -3645,7 +3645,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120107,
@@ -3683,7 +3683,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120108,
@@ -3721,7 +3721,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120109,
@@ -3759,7 +3759,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120110,
@@ -3797,7 +3797,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120111,
@@ -3835,7 +3835,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120112,
@@ -3873,7 +3873,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120113,
@@ -3911,7 +3911,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120114,
@@ -3949,7 +3949,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120115,
@@ -3987,7 +3987,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120116,
@@ -4025,7 +4025,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120117,
@@ -4063,7 +4063,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120118,
@@ -4101,7 +4101,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120119,
@@ -4139,7 +4139,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120120,
@@ -4177,7 +4177,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120121,
@@ -4215,7 +4215,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120122,
@@ -4253,7 +4253,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120123,
@@ -4291,7 +4291,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120124,
@@ -4329,7 +4329,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120125,
@@ -4367,7 +4367,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120126,
@@ -4405,7 +4405,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120127,
@@ -4443,7 +4443,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120128,
@@ -4481,7 +4481,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120129,
@@ -4519,7 +4519,7 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   },
   {
     "Id": 120130,
@@ -4557,6 +4557,6 @@
       0,
       0
     ],
-    "_damage_range": 0
+    "DamageRange": 0
   }
 ]

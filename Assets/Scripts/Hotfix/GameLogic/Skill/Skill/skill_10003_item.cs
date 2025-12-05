@@ -43,8 +43,8 @@ namespace QFramework.Game
 			//具体碰撞策略  需要根据tag和layer进行判断 这个会进行配置 跟索敌层级应该是一致的
 			Debug.Log("skill_1000301_item 碰撞到 " + other.gameObject.name);
 			if (packet.target != null)
-			{
-				packet.target.GetComponent<IRoleEntity>().BeHurt(100);
+            {
+                SkillKit.BeHurt(packet, 100);
 			}
 		}
 

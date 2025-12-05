@@ -16655,7 +16655,8 @@
     "_prefab": "skill_90002",
     "_cast_ranage": 1000,
     "_tag_mask": [
-      "Hero"
+      "Hero",
+      "Mercenary"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",

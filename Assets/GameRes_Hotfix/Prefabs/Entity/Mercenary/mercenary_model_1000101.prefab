@@ -1159,7 +1159,7 @@ GameObject:
   - component: {fileID: 1296897104097501993}
   m_Layer: 0
   m_Name: mercenary_model_1000101
-  m_TagString: Untagged
+  m_TagString: Mercenary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

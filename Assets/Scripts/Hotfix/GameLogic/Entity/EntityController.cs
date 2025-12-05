@@ -7,8 +7,8 @@ using UnityEngine;
 
 namespace QFramework.Game
 {
-	public partial class EntityController : ViewController, IRoleEntity
-	{
+	public partial class EntityController : UnitViewController, IRoleEntity, ICanResponseBuff
+    {
 		// 动画配置字典，可以配置特殊动画名称
 		private Dictionary<EntityState, string> animationMap = new Dictionary<EntityState, string>()
 		{
@@ -78,17 +78,23 @@ namespace QFramework.Game
 		{
 			this.SendCommand(new RemoveEntityFromBattleModelCommand(this.gameObject, this.IsEnemy));
 			this.SendCommand(new EntityDeathCommand(null, this.gameObject));
+			
 
-			if (this.transform.CompareTag("Build") || this.transform.CompareTag("Tower"))
+            if (this.transform.CompareTag("Build") || this.transform.CompareTag("Tower"))
 			{
 				// 生成摧毁特效，暂时写在这里
 				ResLoader loader = ResLoader.Allocate();
 				GameObject destroyFXPrefab = loader.LoadSync<GameObject>("FX_build_cuihui");
 				var newFX = Instantiate(destroyFXPrefab, this.transform.position + new Vector3(0, 1, 0), Quaternion.identity);
 				Destroy(newFX, 1f);
-				loader.Recycle2Cache();
+                Destroy(gameObject);
+                loader.Recycle2Cache();
 			}
-			Destroy(gameObject);
+			else
+			{
+                PlayStateAnimation(EntityState.Die);
+				Destroy(gameObject, 1.25f);
+            }
 		}
 		protected virtual void OnDieExit() { }
 		protected virtual void OnDieUpdate() { }
@@ -168,7 +174,7 @@ namespace QFramework.Game
 				else if (table.SkillType == SkillType.PASSIVE_SKILL)
 				{
 					//被动技能直接触发  ToDo  目标还是要根据选择规则和偏好去选择 目前之哟一个对自己生效的被动  先写死
-					this.SendCommand(new ReleaseSkillCommand(table, gameObject, gameObject, gameObject.transform.position));
+					this.SendCommand(new ReleaseSkillCommand(table, gameObject, new TargetData() { Target = gameObject }, gameObject.transform.position));
 				}
 			}
 		}
@@ -191,12 +197,12 @@ namespace QFramework.Game
             }
         }
 
-		/// <summary>
-		/// 生成实体后的初始化方法
-		/// </summary>
-		/// <param name="id"></param>
-		/// <param name="lv"></param>
-		public void Init(bool isEnemy = false)
+        /// <summary>
+        /// 生成实体后的初始化方法
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="lv"></param>
+        public void Init(IUnitData unitData, bool isEnemy = false)
 		{
 			// //测试列表  初始化  后边迁移到BattleModel
 			// var tg = GameObject.Find("EnemyGroup");
@@ -204,9 +210,11 @@ namespace QFramework.Game
 			// {
 			// 	targetList.Add(item.gameObject);
 			// }
+			unitData.Init(this);
+            this.unitData = unitData;
 
-			//根据是不是敌人 确定当前使用的目标列表
-			BattleInModel model = this.GetModel<BattleInModel>();
+            //根据是不是敌人 确定当前使用的目标列表
+            BattleInModel model = this.GetModel<BattleInModel>();
             targetList = isEnemy ? model.player_allEntitys : model.opponent_allEntitys;
 
 			//entityAttribute = this.GetModel<EntityAttributeModel>();
@@ -244,6 +252,19 @@ namespace QFramework.Game
 			};
 		}
 
+		public void AddBlood(int v)
+		{
+			currentHP += v;
+			if (currentHP > HPMAX)
+			{
+				currentHP = HPMAX;
+                if (bloodController != null)
+                {
+                    float percent = (float)currentHP / HPMAX;
+                    bloodController.UpdateBlood(percent);
+                }
+            }
+        }
 		public void BeHurt(int damage)
 		{
 			if (currentHP <= 0 && IsAlive)
@@ -261,8 +282,6 @@ namespace QFramework.Game
 			}
 
 			bloodController.gameObject.SetActive(true);
-
-			//Debug.Log($"当前血量{currentHP}");
             currentHP -= damage;
 
 			// 更新受伤特效
@@ -381,46 +400,46 @@ namespace QFramework.Game
 					continue;
 				}
 
-				GameObject target = null;
+				TargetData targetData = new();
 				//TODO
-				if (table.Preference == "HealthBelowPercentStrategy")
+				List<GameObject> targetListNow = null;
+                if (table.Preference == "HealthBelowPercentStrategy")
 				{
-					List<GameObject> targetListNow = this.GetModel<BattleInModel>().player_allEntitys;
-					target = this.SendCommand(new FindTargetCommand(targetListNow, table.TagMask, table.CastRanage, table.Preference, gameObject));
+					targetListNow = this.GetModel<BattleInModel>().player_allEntitys;
 				}
 				else
 				{
-					target = this.SendCommand(new FindTargetCommand(targetList, table.TagMask, table.CastRanage, table.Preference, gameObject));
-				}
-
-				//如果有目标  那么就可以释放技能了
-
-				if (target == null)
+					targetListNow = targetList;
+                }
+                targetData = this.SendCommand(new FindTargetCommand(targetListNow, table, this));
+				
+                //如果有目标  那么就可以释放技能了
+                if (targetData.Target == null)
 				{
 					//Debug.LogError("没有目标 不能释放技能");
 					continue;
 				}
 				//释放技能之前需要先转身
 				packet.Value.CanRelease = false;
-				if (rotateSpeed > 0 && target != gameObject)
+				if (rotateSpeed > 0 && targetData.Target != gameObject)
 				{
-					transform.DOLookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z), rotateSpeed).SetEase(Ease.Linear)
+					transform.DOLookAt(new Vector3(targetData.Target.transform.position.x, transform.position.y, targetData.Target.transform.position.z), rotateSpeed).SetEase(Ease.Linear)
 								.SetSpeedBased()
 								.OnComplete(() =>
 								{
 									//检查一下 目标可能已经没有了
-									if (target == null)
+									if (targetData.Target == null)
 									{
 										return;
 									}
 									Debug.Log($"准备释放技能 ID:{packet.Value._data.Id}");
-									this.SendCommand(new ReleaseSkillCommand(table, gameObject, target, target.transform.position));
+									this.SendCommand(new ReleaseSkillCommand(table, gameObject, targetData, targetData.Target.transform.position));
 								});
 				}
 				else
 				{
 					Debug.Log($"准备释放技能 ID:{packet.Value._data.Id}");
-					this.SendCommand(new ReleaseSkillCommand(table, gameObject, target, target.transform.position));
+					this.SendCommand(new ReleaseSkillCommand(table, gameObject, new TargetData() { Target = targetData.Target }, targetData.Target.transform.position));
 				}
 				return true;
 			}
@@ -493,10 +512,16 @@ namespace QFramework.Game
 			return animator;
 		}
 
-		#endregion
+        void ICanResponseBuff.OnAttributeChange(AttributeChangeData attributeChangeData)
+        {
+            unitData.ChangeAttribute(attributeChangeData);
+        }
 
-		#region 状态机相关
-		public FSM<EntityState> FSM = new FSM<EntityState>();
+
+        #endregion
+
+        #region 状态机相关
+        public FSM<EntityState> FSM = new FSM<EntityState>();
 
 		public enum EntityState
 		{
@@ -530,23 +555,27 @@ namespace QFramework.Game
 					.DelayFrame(5)
 					.Callback(() =>
 					{
-                        mTarget.SendCommand<CleanInvalidTargetsCommand>(new CleanInvalidTargetsCommand(mTarget.targetList));
+						mTarget.SendCommand<CleanInvalidTargetsCommand>(new CleanInvalidTargetsCommand(mTarget.targetList));
 						if (mTarget.targetList.Count > 0)
 						{
-                            if (mTarget.nomalAttackPacket != null)// 临时加的防止空引用，如果普攻包为空，说明初始化没做好
-                            {
-                                var target = mTarget.SendCommand(new FindTargetCommand(mTarget.targetList, mTarget.nomalAttackPacket._data.TagMask, 99999, mTarget.nomalAttackPacket._data.Preference, mTarget.gameObject));
-                                if (target == null)
-                                {
-                                    Debug.Log($"{mTarget.name}IdleState中找不到目标");
-                                    return;
-                                }
+							{
+								if (mTarget.nomalAttackPacket != null)// 临时加的防止空引用，如果普攻包为空，说明初始化没做好
+								{
+                                    var target = mTarget.SendCommand(new FindTargetCommand(mTarget.targetList, mTarget.nomalAttackPacket._data, mTarget, 99999));
+                                    //var target = mTarget.SendCommand(new FindTargetCommand(mTarget.targetList, mTarget.nomalAttackPacket._data.TagMask, 99999, mTarget.nomalAttackPacket._data.Preference, mTarget.gameObject));
+                                    if (target.Target == null)
+									{
+										Debug.Log($"{mTarget.name}IdleState中找不到目标");
 
-                                Debug.Log($"{mTarget.name}: 准备移动到: " + target.name);
-                                mTarget.Move(target.transform);
-                                mFSM.ChangeState(EntityState.MoveToTarget);
-                            }
-                        }
+										return;
+									}
+
+									Debug.Log($"{mTarget.name}: 准备移动到: " + target.Target.name);
+									mTarget.Move(target.Target.transform);
+									mFSM.ChangeState(EntityState.MoveToTarget);
+								}
+							}
+						}
 					})
 					.Start(mTarget);
 			}
@@ -592,8 +621,8 @@ namespace QFramework.Game
 						}
 
 						//可能需要优化  每次都创建命令对象  有点浪费
-						var obj = mTarget.SendCommand(new FindTargetCommand(mTarget.targetList, mTarget.nomalAttackPacket._data.TagMask, mTarget.nomalAttackPacket._data.CastRanage, mTarget.nomalAttackPacket._data.Preference, mTarget.gameObject));
-						if (obj != null)
+						var obj = mTarget.SendCommand(new FindTargetCommand(mTarget.targetList, mTarget.nomalAttackPacket._data, mTarget));
+						if (obj.Target != null)
 						{
 							Debug.Log("aaaaaaaaaaaaaaaaaaaaa");
 							// 找到目标，进入攻击状态
@@ -640,8 +669,8 @@ namespace QFramework.Game
 					.Callback(() =>
 					{
 						//可能需要优化  每次都创建命令对象  有点浪费
-						var obj = mTarget.SendCommand(new FindTargetCommand(mTarget.targetList, mTarget.nomalAttackPacket._data.TagMask, mTarget.nomalAttackPacket._data.CastRanage, mTarget.nomalAttackPacket._data.Preference, mTarget.gameObject));
-						if (obj == null)
+						var obj = mTarget.SendCommand(new FindTargetCommand(mTarget.targetList, mTarget.nomalAttackPacket._data, mTarget));
+						if (obj.Target == null)
 						{
 							// 没有目标了 进入待机 重新索敌
 							mFSM.ChangeState(EntityState.Idle);

@@ -88,7 +88,9 @@ public class MapManager : MonoBehaviour
             //BattleManagerView.Instance.battleInPanel.SetAllEntitys(newBuildings);
             //objectsToPlace.Add(newBuildings);
             Vector3 p = GetNonOverlappingPosition();
-            GameObject newBuild = BattleManagerView.Instance.BuildBuildingsEntity(bids[i], 1, p, Vector3.zero, true);
+            int level = 1;
+            BuildsLevel buildsLevel = CfgMgr.Instance.Tables.TbBuildsLevel.Get(bids[i] * 100 + level);
+            GameObject newBuild = BattleManagerView.Instance.BuildBuildingsEntity( new BuildingData(buildsLevel) { config_id = bids[i],level = level,x = p.x,z = p.z,rotation_x = 0,rotation_y = 0 ,rotation_z = 0}, true);
             if (isUpload)
             {
                 await GameRemoteAPI.ConstructBuilding(bids[i], p.x, p.z, newBuild.transform.eulerAngles);
@@ -110,7 +112,7 @@ public class MapManager : MonoBehaviour
             //    //newBuildings.transform.position = new Vector3(buildingData.x, 0, buildingData.z);
             //    //BattleManagerView.Instance.battleInPanel.SetAllEntitys(newBuildings);
             //    //objectsToPlace.Add(newBuildings);
-                BattleManagerView.Instance.BuildBuildingsEntity(buildingData.config_id, buildingData.level, new Vector3(buildingData.x, 0, buildingData.z),new Vector3(buildingData.rotation_x, buildingData.rotation_y, buildingData.rotation_z), true);
+                BattleManagerView.Instance.BuildBuildingsEntity(buildingData, true);
             //}
         }
         TotalPlacedObjects = layoutData.buildings.Length;

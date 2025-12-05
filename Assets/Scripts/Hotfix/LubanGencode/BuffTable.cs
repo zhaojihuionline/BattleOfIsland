@@ -26,6 +26,9 @@ public sealed partial class BuffTable : Luban.BeanBase
         Des = (string)_obj.GetValue("Des");
         Show = (bool)_obj.GetValue("Show");
         { var __json0 = _obj.GetValue("Buff_effect"); BuffEffect = new System.Collections.Generic.List<EffectNode>((__json0 as JArray).Count); foreach(JToken __e0 in __json0) { EffectNode __v0;  __v0 = global::cfg.EffectNode.DeserializeEffectNode(__e0);  BuffEffect.Add(__v0); }   }
+        BaseCalType = (EBaseCalculateType)(int)_obj.GetValue("BaseCalType");
+        FirstGoal = (ECampType)(int)_obj.GetValue("FirstGoal");
+        NextGoal = (ETargetType)(int)_obj.GetValue("NextGoal");
         Time = (int)_obj.GetValue("Time");
         Overlay = (bool)_obj.GetValue("Overlay");
         ReFlash = (bool)_obj.GetValue("ReFlash");
@@ -65,6 +68,18 @@ public sealed partial class BuffTable : Luban.BeanBase
     /// 效果
     /// </summary>
     public readonly System.Collections.Generic.List<EffectNode> BuffEffect;
+    /// <summary>
+    /// 基本运算类型
+    /// </summary>
+    public readonly EBaseCalculateType BaseCalType;
+    /// <summary>
+    /// 首选目标
+    /// </summary>
+    public readonly ECampType FirstGoal;
+    /// <summary>
+    /// 次选目标
+    /// </summary>
+    public readonly ETargetType NextGoal;
     /// <summary>
     /// 持续时间（0是瞬发，-1是永久）
     /// </summary>
@@ -117,6 +132,9 @@ public sealed partial class BuffTable : Luban.BeanBase
         + "Des:" + Des + ","
         + "Show:" + Show + ","
         + "BuffEffect:" + Luban.StringUtil.CollectionToString(BuffEffect) + ","
+        + "BaseCalType:" + BaseCalType + ","
+        + "FirstGoal:" + FirstGoal + ","
+        + "NextGoal:" + NextGoal + ","
         + "Time:" + Time + ","
         + "Overlay:" + Overlay + ","
         + "ReFlash:" + ReFlash + ","

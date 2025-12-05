@@ -17,15 +17,17 @@ namespace QFramework.Game
 		{
 			base.OnDo_Cast();
 			Transform res = packetData.target.transform;
-			if (res != null)
+			GameObject effect = null;
+
+            if (res != null)
 			{
-				GameObject effect = Instantiate(Effect, res.position, Quaternion.identity);
+				effect = Instantiate(Effect, res.position, Quaternion.identity);
 				effect.SetActive(true);
 			}
 			IHaveHP ch = packetData.target.GetComponent<IHaveHP>();
-			ch.currentHP += ch.HPMAX * packetData._data.Effect[0];
+			//ch.currentHP += ch.HPMAX * packetData._data.Effect[0];
 			// 加一个加血buff
+			this.SendCommand(new AddSingleBuffToTargetCommand(packetData.target.transform, packetData._data.Effect[0], effect));
 		}
-
 	}
 }

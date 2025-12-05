@@ -15,7 +15,8 @@
     "Mod": "mercenary_model_1000101",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 1
   },
   {
     "Id": 1000102,
@@ -33,7 +34,8 @@
     "Mod": "mercenary_model_1000102",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 1
   },
   {
     "Id": 1000103,
@@ -51,7 +53,8 @@
     "Mod": "mercenary_model_1000103",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 1
   },
   {
     "Id": 1000104,
@@ -69,7 +72,8 @@
     "Mod": "mercenary_model_1000104",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 1
   },
   {
     "Id": 1000105,
@@ -87,7 +91,8 @@
     "Mod": "mercenary_model_1000105",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 1
   },
   {
     "Id": 1000106,
@@ -105,7 +110,8 @@
     "Mod": "mercenary_model_1000106",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 1
   },
   {
     "Id": 1000107,
@@ -123,7 +129,8 @@
     "Mod": "mercenary_model_1000107",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 1
   },
   {
     "Id": 1000108,
@@ -141,7 +148,8 @@
     "Mod": "mercenary_model_1000108",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 1
   },
   {
     "Id": 1000109,
@@ -159,7 +167,8 @@
     "Mod": "mercenary_model_1000109",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 1
   },
   {
     "Id": 1000110,
@@ -177,7 +186,8 @@
     "Mod": "mercenary_model_1000110",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 1
   },
   {
     "Id": 1000111,
@@ -195,7 +205,8 @@
     "Mod": "mercenary_model_1000111",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 1
   },
   {
     "Id": 1000112,
@@ -213,7 +224,8 @@
     "Mod": "mercenary_model_1000112",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 1
   },
   {
     "Id": 1000113,
@@ -231,7 +243,8 @@
     "Mod": "mercenary_model_1000113",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 1
   },
   {
     "Id": 1000114,
@@ -249,7 +262,8 @@
     "Mod": "mercenary_model_1000114",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 1
   },
   {
     "Id": 1000115,
@@ -267,7 +281,8 @@
     "Mod": "mercenary_model_1000115",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 1
   },
   {
     "Id": 1000116,
@@ -285,7 +300,8 @@
     "Mod": "mercenary_model_1000116",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 1
   },
   {
     "Id": 1000117,
@@ -303,7 +319,8 @@
     "Mod": "mercenary_model_1000117",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 1
   },
   {
     "Id": 1000118,
@@ -321,7 +338,8 @@
     "Mod": "mercenary_model_1000118",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 1
   },
   {
     "Id": 1000119,
@@ -339,7 +357,8 @@
     "Mod": "mercenary_model_1000119",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 1
   },
   {
     "Id": 1000120,
@@ -357,7 +376,8 @@
     "Mod": "mercenary_model_1000120",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 1
   },
   {
     "Id": 2000101,
@@ -375,7 +395,8 @@
     "Mod": "mercenary_model_2000101",
     "Skill": [
       90001
-    ]
+    ],
+    "MercenaryType": 2
   },
   {
     "Id": 2000102,
@@ -393,7 +414,8 @@
     "Mod": "mercenary_model_2000102",
     "Skill": [
       90001
-    ]
+    ],
+    "MercenaryType": 2
   },
   {
     "Id": 2000103,
@@ -411,7 +433,8 @@
     "Mod": "mercenary_model_2000103",
     "Skill": [
       90001
-    ]
+    ],
+    "MercenaryType": 2
   },
   {
     "Id": 2000104,
@@ -429,7 +452,8 @@
     "Mod": "mercenary_model_2000104",
     "Skill": [
       90001
-    ]
+    ],
+    "MercenaryType": 2
   },
   {
     "Id": 2000105,
@@ -447,7 +471,8 @@
     "Mod": "mercenary_model_2000105",
     "Skill": [
       90001
-    ]
+    ],
+    "MercenaryType": 2
   },
   {
     "Id": 2000106,
@@ -465,7 +490,8 @@
     "Mod": "mercenary_model_2000106",
     "Skill": [
       90001
-    ]
+    ],
+    "MercenaryType": 2
   },
   {
     "Id": 2000107,
@@ -483,7 +509,8 @@
     "Mod": "mercenary_model_2000107",
     "Skill": [
       90001
-    ]
+    ],
+    "MercenaryType": 2
   },
   {
     "Id": 2000108,
@@ -501,7 +528,8 @@
     "Mod": "mercenary_model_2000108",
     "Skill": [
       90001
-    ]
+    ],
+    "MercenaryType": 2
   },
   {
     "Id": 2000109,
@@ -519,7 +547,8 @@
     "Mod": "mercenary_model_2000109",
     "Skill": [
       90001
-    ]
+    ],
+    "MercenaryType": 2
   },
   {
     "Id": 2000110,
@@ -537,7 +566,8 @@
     "Mod": "mercenary_model_2000110",
     "Skill": [
       90001
-    ]
+    ],
+    "MercenaryType": 2
   },
   {
     "Id": 2000111,
@@ -555,7 +585,8 @@
     "Mod": "mercenary_model_2000111",
     "Skill": [
       90001
-    ]
+    ],
+    "MercenaryType": 2
   },
   {
     "Id": 2000112,
@@ -573,7 +604,8 @@
     "Mod": "mercenary_model_2000112",
     "Skill": [
       90001
-    ]
+    ],
+    "MercenaryType": 2
   },
   {
     "Id": 2000113,
@@ -591,7 +623,8 @@
     "Mod": "mercenary_model_2000113",
     "Skill": [
       90001
-    ]
+    ],
+    "MercenaryType": 2
   },
   {
     "Id": 2000114,
@@ -609,7 +642,8 @@
     "Mod": "mercenary_model_2000114",
     "Skill": [
       90001
-    ]
+    ],
+    "MercenaryType": 2
   },
   {
     "Id": 2000115,
@@ -627,7 +661,8 @@
     "Mod": "mercenary_model_2000115",
     "Skill": [
       90001
-    ]
+    ],
+    "MercenaryType": 2
   },
   {
     "Id": 2000116,
@@ -645,7 +680,8 @@
     "Mod": "mercenary_model_2000116",
     "Skill": [
       90001
-    ]
+    ],
+    "MercenaryType": 2
   },
   {
     "Id": 2000117,
@@ -663,7 +699,8 @@
     "Mod": "mercenary_model_2000117",
     "Skill": [
       90001
-    ]
+    ],
+    "MercenaryType": 2
   },
   {
     "Id": 2000118,
@@ -681,7 +718,8 @@
     "Mod": "mercenary_model_2000118",
     "Skill": [
       90001
-    ]
+    ],
+    "MercenaryType": 2
   },
   {
     "Id": 2000119,
@@ -699,7 +737,8 @@
     "Mod": "mercenary_model_2000119",
     "Skill": [
       90001
-    ]
+    ],
+    "MercenaryType": 2
   },
   {
     "Id": 2000120,
@@ -717,7 +756,8 @@
     "Mod": "mercenary_model_2000120",
     "Skill": [
       90001
-    ]
+    ],
+    "MercenaryType": 2
   },
   {
     "Id": 3000101,
@@ -735,7 +775,8 @@
     "Mod": "mercenary_model_3000101",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 3
   },
   {
     "Id": 3000102,
@@ -753,7 +794,8 @@
     "Mod": "mercenary_model_3000102",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 3
   },
   {
     "Id": 3000103,
@@ -771,7 +813,8 @@
     "Mod": "mercenary_model_3000103",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 3
   },
   {
     "Id": 3000104,
@@ -789,7 +832,8 @@
     "Mod": "mercenary_model_3000104",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 3
   },
   {
     "Id": 3000105,
@@ -807,7 +851,8 @@
     "Mod": "mercenary_model_3000105",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 3
   },
   {
     "Id": 3000106,
@@ -825,7 +870,8 @@
     "Mod": "mercenary_model_3000106",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 3
   },
   {
     "Id": 3000107,
@@ -843,7 +889,8 @@
     "Mod": "mercenary_model_3000107",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 3
   },
   {
     "Id": 3000108,
@@ -861,7 +908,8 @@
     "Mod": "mercenary_model_3000108",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 3
   },
   {
     "Id": 3000109,
@@ -879,7 +927,8 @@
     "Mod": "mercenary_model_3000109",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 3
   },
   {
     "Id": 3000110,
@@ -897,7 +946,8 @@
     "Mod": "mercenary_model_3000110",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 3
   },
   {
     "Id": 3000111,
@@ -915,7 +965,8 @@
     "Mod": "mercenary_model_3000111",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 3
   },
   {
     "Id": 3000112,
@@ -933,7 +984,8 @@
     "Mod": "mercenary_model_3000112",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 3
   },
   {
     "Id": 3000113,
@@ -951,7 +1003,8 @@
     "Mod": "mercenary_model_3000113",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 3
   },
   {
     "Id": 3000114,
@@ -969,7 +1022,8 @@
     "Mod": "mercenary_model_3000114",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 3
   },
   {
     "Id": 3000115,
@@ -987,7 +1041,8 @@
     "Mod": "mercenary_model_3000115",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 3
   },
   {
     "Id": 3000116,
@@ -1005,7 +1060,8 @@
     "Mod": "mercenary_model_3000116",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 3
   },
   {
     "Id": 3000117,
@@ -1023,7 +1079,8 @@
     "Mod": "mercenary_model_3000117",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 3
   },
   {
     "Id": 3000118,
@@ -1041,7 +1098,8 @@
     "Mod": "mercenary_model_3000118",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 3
   },
   {
     "Id": 3000119,
@@ -1059,7 +1117,8 @@
     "Mod": "mercenary_model_3000119",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 3
   },
   {
     "Id": 3000120,
@@ -1077,6 +1136,7 @@
     "Mod": "mercenary_model_3000120",
     "Skill": [
       90003
-    ]
+    ],
+    "MercenaryType": 3
   }
 ]

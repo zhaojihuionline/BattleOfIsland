@@ -16,7 +16,6 @@ public class skill_10005 : SkillController
     }
     protected override void OnStart_Cast()
     {
-        base.OnStart_Cast();
         Debug.Log("skill_1000501 技能施法开始");
         Debug.Log("效果：巴顿举起盾牌并放大");
 
@@ -43,5 +42,6 @@ public class skill_10005 : SkillController
             //}
             this.SendCommand(new AddSingleBuffToTargetCommand(packetData.caster.transform, packetData._data.Effect[0], newFXEntity));
         }
+        base.OnStart_Cast();
     }
 }

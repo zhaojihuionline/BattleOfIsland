@@ -1,9 +1,10 @@
+using cfg;
+using QFramework;
+using QFramework.Game;
+using QFramework.UI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using QFramework;
-using QFramework.Game;
-using cfg;
 
 /// <summary>
 /// 
@@ -50,7 +51,17 @@ public class EntitySystem : AbstractSystem, IEntitySystem
         //根据等级获取对应表数据
         HeroLevel hlvtable = CfgMgr.Instance.Tables.TbHeroLevel.Get(id * 100 + lv);
 
-        res.Init(isEnemy);
+        BattleInPanel battleInPanel = UIKit.GetPanel<BattleInPanel>();
+        HeroData heroData = null;
+        foreach (var data in battleInPanel.playerSelf.playerData.armyDatas[battleInPanel.playerSelf.CurrentSelectedArmyID].heroDatas)
+        {
+            if(data.HeroID == id)
+            {
+                heroData = data;
+            }
+        }
+
+        res.Init(heroData, isEnemy);
         res.InitHaveHp(hlvtable.Health);
         //res.currentHP = 100;
         List<int> paramList = new List<int>();
@@ -106,7 +117,10 @@ public class EntitySystem : AbstractSystem, IEntitySystem
         }
         res.SetMoveSpeed(mercenary.Speed / 100f);
         res.InitCanSkill(paramList);
-        res.Init(isEnemy);
+
+
+        MercenaryData mercenaryData = new MercenaryData(mercenary);
+        res.Init(mercenaryData,isEnemy);
         if (isEnemy)
         {
             BattleInModel BM = this.GetModel<BattleInModel>();
@@ -125,30 +139,29 @@ public class EntitySystem : AbstractSystem, IEntitySystem
     /// </summary>
     /// <param name="id"></param>
     /// <param name="lv"></param>
-    public GameObject CreatEntityBuilding(int id, int lv, Vector3 spawnPoint, bool isEnemy = false)
+    public GameObject CreatEntityBuilding(BuildingData buildingData, bool isEnemy = false)
     {
-        cfg.BuildsLevel buildLevel = CfgMgr.Instance.Tables.TbBuildsLevel.Get(id * 100 + lv);
+        cfg.BuildsLevel buildLevel = CfgMgr.Instance.Tables.TbBuildsLevel.Get(buildingData.config_id * 100 + buildingData.level);
 
         GameObject BEntity = null;
-        if (resourcesBuildMap.ContainsKey(id))
+        if (resourcesBuildMap.ContainsKey(buildingData.config_id))
         {
-            BEntity = resourcesBuildMap[id];
+            BEntity = resourcesBuildMap[buildingData.config_id];
         }
         else
         {
             BEntity = loader.LoadSync<GameObject>(buildLevel.BuildModel);
-            resourcesBuildMap.Add(id, BEntity);
+            resourcesBuildMap.Add(buildingData.config_id, BEntity);
         }
-        EntityController res = Object.Instantiate<GameObject>(BEntity, spawnPoint, Quaternion.identity).GetComponent<EntityController>();
+        EntityController res = Object.Instantiate<GameObject>(BEntity, new Vector3(buildingData.x,0, buildingData.z), Quaternion.identity).GetComponent<EntityController>();
         //根据等级获取对应表数据
-
-        res.Init(isEnemy);
+        res.Init(buildingData,isEnemy);
         res.InitHaveHp(buildLevel.Health);
         List<int> paramList = new List<int>();
         //获取技能列表  等级需要从服务器拉取  现在默认1级别  服务器数据为英雄等级表+技能等级 
         foreach (var item in buildLevel.Skill)
         {
-            paramList.Add(item * 100 + lv);
+            paramList.Add(item * 100 + buildingData.level);
         }
         res.InitCanSkill(paramList);
 

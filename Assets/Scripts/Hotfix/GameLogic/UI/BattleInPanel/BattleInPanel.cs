@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static PlasticPipe.PlasticProtocol.Messages.NegotiationCommand;
 
 namespace QFramework.UI
 {
@@ -124,6 +125,8 @@ namespace QFramework.UI
                     var newShieldId = await GameRemoteAPI.RecruitHero(1301, "罗兰");// 招募骑兵英雄
                     await GameRemoteAPI.DeployHero(armydetail.ArmyId, newShieldId);// 将招募到的英雄部署到军队中
 
+   					//var newElfvId = await GameRemoteAPI.RecruitHero(1201, "艾利佛");// 招募艾利佛英雄
+                    //await GameRemoteAPI.DeployHero(armydetail.ArmyId, newElfvId);// 将招募到的英雄部署到军队中
                     MapManager.instance.RebuildBuildingsUseLocalData(true,14001,14001,14001,14001);// 生成默认建筑布局
                 }
                 // 再次重新获取下当前军队详情，不要用之前缓存的数据
@@ -148,6 +151,35 @@ namespace QFramework.UI
                 }
             }
         }
+
+        public async void DeployHero4()
+        {
+            var arminfo = await this.SendCommand(new GetArmyInfoCommand());
+            if (arminfo.Count > 0)
+            {
+                var armid = arminfo[Player.DefaultArmyID].ArmyId;
+                var armydetail = await this.SendCommand(new GetArmyDetailCommand(armid));// 军队详情
+                var newShieldId = await GameRemoteAPI.RecruitHero(1301, "艾利佛");// 招募骑兵英雄
+                await GameRemoteAPI.DeployHero(armydetail.ArmyId, newShieldId);// 将招募到的英雄部署到军队中
+            }
+        }
+		/// <summary>
+		/// 随机从一组敌人数据中取一个
+		/// </summary>
+		public int SearchNewOpponent(Player player)
+		{
+			//var playerOppData = PlayerManager.Instance.GetRemotePlayerData(5);
+            Player playerOpponent = PlayerManager.Instance.players[0];// 后面直接赋值为playerOppData，现在暂时用第一个测试
+            
+            ActorInfoViewContainersearch.OpponentInfoContainer.Init(player);
+			//if (isFirst)
+			//{
+   //             // 这里根据获取到的对手数据，摆放对手的建筑物
+   //             MapManager.instance.RebuildBuildingsUseLocalData(false,14001);// 这里用一个默认建筑物测试
+
+   //         }
+			return 0;
+		}
 
         /// <summary>
         /// 更新摧毁率进度条和抓手位置

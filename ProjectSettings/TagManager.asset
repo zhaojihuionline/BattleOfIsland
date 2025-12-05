@@ -9,6 +9,8 @@ TagManager:
   - Hero
   - Hero
   - Tower
+  - Enemy
+  - Mercenary
   layers:
   - Default
   - TransparentFX

@@ -24,7 +24,7 @@ namespace cfg
         /// <summary>
         /// 攻击力
         /// </summary>
-        Attack = 2,
+        Attack_1 = 2,
         /// <summary>
         /// 移动速度前三个不用
         /// </summary>
@@ -72,7 +72,7 @@ namespace cfg
         /// <summary>
         /// (x,y)x暂无意义，y表示改变属性（增加百分比攻击力）
         /// </summary>
-        AttackUp_Percent = 14,
+        Attack = 14,
         /// <summary>
         /// (x,y)x暂无意义，y表示改变属性（增加百分比移动速度）
         /// </summary>

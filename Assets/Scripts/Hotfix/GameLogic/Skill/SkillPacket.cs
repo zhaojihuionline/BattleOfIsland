@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using cfg;
 using UnityEngine;
@@ -13,7 +14,18 @@ public class SkillPacket
     //释放者
     public GameObject caster = null;
     //目标
-    public GameObject target = null;
+    public GameObject target 
+    {
+        get { return targetData.Target;}
+        set {targetData.Target = value;}
+    }
+
+    //aoe伤害时，aoe范围内的目标单位（包括target）
+    public List<GameObject> targets
+    {
+        get { return targetData.Targets; }
+        set { targetData.Targets = value; }
+    }
     //目标点
     public Vector3 targetPoint = Vector3.zero;
     //剩余穿透次数 
@@ -29,11 +41,11 @@ public class SkillPacket
     {
         get
         {
-            if (battleInModel.DestructionRate.Value * 100 >= skillEnable)//开启
+            //if (battleInModel.DestructionRate.Value * 100 >= skillEnable)//开启
             {
                 return _canRelease;
             }
-            else
+            //else
             {
                 return false;
             }
@@ -45,6 +57,7 @@ public class SkillPacket
     }
 
     BattleInModel battleInModel;
+    TargetData targetData;
 
     public SkillPacket()
     {
@@ -57,7 +70,7 @@ public class SkillPacket
         SetTable(_data);
     }
 
-    public void Init(SkillTable _data, GameObject caster, GameObject target, Vector3 point)
+    public void Init(SkillTable _data, GameObject caster, TargetData target, Vector3 point)
     {
         SetTable(_data);
         SetCaster(caster);
@@ -75,11 +88,13 @@ public class SkillPacket
     {
         this.caster = caster;
     }
-    public void SetTarget(GameObject target, Vector3 point)
+
+    public void SetTarget(TargetData target, Vector3 point)
     {
+        this.targetData = target;
         targetPoint = point;
-        this.target = target;
     }
+
     //设置伤害值没放在初始化里边
     public void SetDamsge(DamageDate damage)
     {
@@ -96,5 +111,6 @@ public class SkillPacket
         skillPassType = SkillPassType.NONE;
         _effect = null;
         _canRelease = false;
+        targetData = default;
     }
 }

@@ -48,4 +48,6 @@ public interface ICanResponseBuff
     void SetDefense_PercentReduction_all(int chanveValue) { }
 
     void SetDefenseDown_Percent(int chanveValue) { }
+
+    void OnAttributeChange(AttributeChangeData attributeChangeData);
 }

@@ -7643,7 +7643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &178666049588197032
 Transform:
   m_ObjectHideFlags: 0
@@ -10112,6 +10112,10 @@ MonoBehaviour:
   rotateSpeed: 300
   targetList: []
   Defense_PercentReductionValue: 0
+  FSM:
+    mCurrentStateId: 0
+    FrameCountOfCurrentState: 1
+    SecondsOfCurrentState: 0
   aiPath: {fileID: 2213532435593145501}
   aiDestination: {fileID: 3521081441436585799}
   bloodController: {fileID: 2638316086971281173}
@@ -19495,7 +19499,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3052704958031120559
 Transform:
   m_ObjectHideFlags: 0

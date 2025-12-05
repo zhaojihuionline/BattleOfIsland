@@ -117,7 +117,7 @@ public class BuffRunner : IRunner
 
         for (int i = 0; i < results.Count; i++)
         {
-            Effect newEffect = new Effect(results[i]);
+            Effect newEffect = new Effect(buff_Protocol,i);
             _effects.Add(newEffect);
         }
         Buff _buff = new Buff(

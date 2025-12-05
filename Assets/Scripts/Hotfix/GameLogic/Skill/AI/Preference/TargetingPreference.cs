@@ -66,6 +66,29 @@ public class TargetingPreference : ScriptableObject
         return selectedGroup.SelectTarget(param);
     }
 
+    public List<GameObject> SelectTargets(Data param)
+    {
+        List<GameObject> availableTargets = param.GetField<List<GameObject>>("targetList");
+        if (preferenceGroups.Count == 0)
+        {
+            Debug.LogWarning("No preference groups configured!");
+            return availableTargets;
+        }
+
+        var aliveTargets = availableTargets.Where(t => t.activeSelf).ToList();
+        if (aliveTargets.Count == 0) return null;
+
+        // 选择偏好组
+        var selectedGroup = SelectPreferenceGroup();
+        if (selectedGroup == null)
+        {
+            Debug.LogWarning("No valid preference group selected!");
+            return aliveTargets;
+        }
+        param.SetField("targetList", aliveTargets);
+        return selectedGroup.SelectTargets(param);
+    }
+
     /// <summary>
     /// 选择偏好组
     /// </summary>

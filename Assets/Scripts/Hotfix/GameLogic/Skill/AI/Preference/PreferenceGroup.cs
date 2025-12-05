@@ -70,6 +70,33 @@ public class PreferenceGroup
         return targetScores.OrderByDescending(x => x.Value).First().Key;
     }
 
+    public List<GameObject> SelectTargets(Data param)
+    {
+        List<GameObject> targets = param.GetField<List<GameObject>>("targetList");
+        if (targets.Count == 0) return null;
+
+        //var targetScores = new Dictionary<GameObject, float>();
+        //foreach (var target in targets)
+        //{
+        //    param.SetField<GameObject>("target", target);
+
+        //    float score = CalculateScore(param);
+        //    targetScores[target] = score;
+
+        //    //Debug.Log("========== PreferenceGroup 计算目标得分 ==========");
+        //    //Debug.Log($"偏好组: {groupName}, 目标: {target.name}, 得分: {score}");
+        //}
+
+        ////因为是按照顺序遍历的各个节点 所以  一旦这一轮的得分为0的时候 说明没有目标 下边也可以不用判断了 
+        //if (targetScores.Values.All(v => Mathf.Approximately(v, 0f)))
+        //{
+        //    Debug.Log("所有目标得分为0");
+        //    return null;
+        //}
+
+        return targets;
+    }
+
     /// <summary>
     /// 添加偏好节点
     /// </summary>
