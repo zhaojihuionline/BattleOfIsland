@@ -40,14 +40,14 @@ namespace QFramework.UI
         [SerializeField] private int previewCount = 1;
         [SerializeField] [Range(0f, 1f)] private float previewCooldown = 0f;
 
-        private CanvasGroup canvasGroup;
+        // private CanvasGroup canvasGroup;
 
         public BagItemData Data { get; private set; }
         public Action<BagItemView> OnClicked;
 
         private void Awake()
         {
-            canvasGroup = GetComponent<CanvasGroup>();
+            // canvasGroup = GetComponent<CanvasGroup>();
 
             if (clickButton == null)
             {
@@ -184,12 +184,12 @@ namespace QFramework.UI
 
         public void SetInteractable(bool interactable)
         {
-            if (canvasGroup != null)
-            {
-                canvasGroup.interactable = interactable;
-                canvasGroup.blocksRaycasts = interactable;
-                canvasGroup.alpha = interactable ? 1f : 0.5f;
-            }
+            // if (canvasGroup != null)
+            // {
+            //     canvasGroup.interactable = interactable;
+            //     canvasGroup.blocksRaycasts = interactable;
+            //     canvasGroup.alpha = interactable ? 1f : 0.5f;
+            // }
 
             if (Data != null)
             {
@@ -283,14 +283,14 @@ namespace QFramework.UI
             }
 
             // 预览可交互状态
-            if (canvasGroup == null)
-            {
-                canvasGroup = GetComponent<CanvasGroup>();
-            }
-            if (canvasGroup != null)
-            {
-                canvasGroup.alpha = previewInteractable ? 1f : 0.5f;
-            }
+            // if (canvasGroup == null)
+            // {
+            //     canvasGroup = GetComponent<CanvasGroup>();
+            // }
+            // if (canvasGroup != null)
+            // {
+            //     canvasGroup.alpha = previewInteractable ? 1f : 0.5f;
+            // }
         }
 #endif
     }
