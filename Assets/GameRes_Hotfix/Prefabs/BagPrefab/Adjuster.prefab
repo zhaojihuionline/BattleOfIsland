@@ -102,6 +102,7 @@ MonoBehaviour:
   minusButton: {fileID: 8429322564914205736}
   plusButton: {fileID: 5406927689093338331}
   countText: {fileID: 7198462976184318619}
+  maxButton: {fileID: 5078948316050439545}
 --- !u!1 &755443034774013136
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,6 +16,9 @@ namespace QFramework.UI
         [SerializeField] private Button plusButton;
         [SerializeField] private TextMeshProUGUI countText;
 
+        // 一键最大值按钮
+        [SerializeField] private Button maxButton;
+
         private int minValue = 1;
         private int maxValue = 1;
         private int currentValue = 1;
@@ -55,6 +58,11 @@ namespace QFramework.UI
             {
                 plusButton.onClick.AddListener(OnPlusButtonClicked);
             }
+
+            if (maxButton != null)
+            {
+                maxButton.onClick.AddListener(OnMaxButtonClicked);
+            }
         }
 
         private void OnDestroy()
@@ -72,6 +80,11 @@ namespace QFramework.UI
             if (plusButton != null)
             {
                 plusButton.onClick.RemoveListener(OnPlusButtonClicked);
+            }
+
+            if (maxButton != null)
+            {
+                maxButton.onClick.RemoveListener(OnMaxButtonClicked);
             }
         }
 
@@ -119,6 +132,11 @@ namespace QFramework.UI
         private void OnPlusButtonClicked()
         {
             CurrentValue = currentValue + 1;
+        }
+
+        private void OnMaxButtonClicked()
+        {
+            CurrentValue = maxValue;
         }
 
         private void UpdateUI()
