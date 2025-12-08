@@ -38,7 +38,12 @@ namespace QFramework.UI
         {
             if (tabItems.TryGetValue(tabIndex, out var items))
             {
-                return new List<BagItemData>(items); // 返回副本，避免外部修改
+                // 在同一分类(Category)下，道具首先按子类型ID升序排列，
+                // 子类型ID相同的道具再按品质ID升序排列
+                return items
+                    .OrderBy(item => item.ItemSubType)    // 先按子类型升序
+                    .ThenBy(item => item.Quality)         // 再按品质升序
+                    .ToList();
             }
             return new List<BagItemData>();
         }
@@ -121,11 +126,16 @@ namespace QFramework.UI
                 }
             }
             
-            // 设置新数据
-            tabItems[tabIndex] = new List<BagItemData>(items);
+            // 设置新数据并排序：先按子类型升序，再按品质升序
+            var sortedItems = items
+                .OrderBy(item => item.ItemSubType)
+                .ThenBy(item => item.Quality)
+                .ToList();
+            
+            tabItems[tabIndex] = sortedItems;
             
             // 更新 bagIdToItem 索引
-            foreach (var item in items)
+            foreach (var item in sortedItems)
             {
                 bagIdToItem[item.BagId] = item;
                 bagIdToTabIndex[item.BagId] = tabIndex;
