@@ -93,7 +93,7 @@ namespace QFramework.UI
                 }
                 else
                 {
-                    nameText.text = "";
+                    nameText.text = string.Empty;
                 }
             }
 
