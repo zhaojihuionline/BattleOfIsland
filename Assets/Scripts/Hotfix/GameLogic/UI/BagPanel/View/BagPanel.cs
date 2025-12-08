@@ -419,6 +419,19 @@ namespace QFramework.UI
 				scrollRect.verticalNormalizedPosition = 1f;
 			}
 
+			// 如果 tab 有数据，默认选中第一个物品
+			if (items != null && items.Count > 0)
+			{
+				var firstItemData = items[0];
+				currentSelectedItemData = firstItemData;
+				SwitchPageByItemData(firstItemData);
+				Debug.Log($"BagPanel: Tab {tabIndex} 默认选中第一个物品，BagId={firstItemData.BagId}, ItemId={firstItemData.ItemId}");
+			}
+			else
+			{
+				currentSelectedItemData = null;
+			}
+
 			Debug.Log($"BagPanel: 刷新Tab {tabIndex} 的物品列表，数量: {items.Count}");
 		}
 
@@ -505,7 +518,7 @@ namespace QFramework.UI
 		}
 
 		/// <summary>
-		/// 检查背包是否为空，如果为空则初始化测试数据
+		/// 检查背包是否为空，如果为空则初始化测试数据，然后从网络获取所有背包数据并分配到各个 tab
 		/// </summary>
 		private void CheckAndInitializeBag()
 		{
@@ -530,15 +543,121 @@ namespace QFramework.UI
 				}
 			}
 
-			// 如果所有 Tab 都没有数据，则初始化测试数据
-			if (!hasAnyData)
+			// 使用 UniTask.Void 在后台执行异步操作，不阻塞 OnInit
+			UniTask.Void(async () =>
 			{
-				Debug.Log("BagPanel: 检测到背包为空，开始初始化测试数据...");
-				// 使用 UniTask.Void 在后台执行异步初始化，不阻塞 OnInit
-				UniTask.Void(async () =>
+				// 如果所有 Tab 都没有数据，则初始化测试数据
+				if (!hasAnyData)
 				{
+					Debug.Log("BagPanel: 检测到背包为空，开始初始化测试数据...");
 					await this.SendCommand(new InitializeBagCommand());
+					// 等待初始化完成后再加载数据
+					await UniTask.Delay(100); // 给服务器一点时间处理
+				}
+
+				// 无论背包是否为空，都从网络获取一次所有背包数据并分配到各个 tab
+				Debug.Log("BagPanel: 从网络获取所有背包数据并分配到各个 tab...");
+				await LoadAllBagDataFromServer();
+			});
+		}
+
+		/// <summary>
+		/// 从服务器加载所有背包数据并分配到各个 tab
+		/// </summary>
+		private async UniTask LoadAllBagDataFromServer()
+		{
+			if (bagModel == null)
+			{
+				Debug.LogError("BagPanel: BagModel 未注册，无法加载背包数据");
+				return;
+			}
+
+			// 从服务器获取所有物品
+			var response = await this.SendCommand(new GetBagItemsCommand(
+				1,
+				int.MaxValue,
+				PitayaGame.Enums.ItemType.Unknown,  // 获取所有物品
+				86400f)); // 1 天超时
+
+			if (response == null)
+			{
+				Debug.LogError("BagPanel: 从服务器获取背包数据失败");
+				return;
+			}
+
+			// 转换所有物品
+			var allItems = new List<BagItemData>();
+			if (response.Items != null)
+			{
+				foreach (var serverItem in response.Items)
+				{
+					var itemData = BagItemConverter.ConvertFromServer(serverItem);
+					if (itemData != null)
+					{
+						allItems.Add(itemData);
+					}
+				}
+			}
+
+			// 按照 Category 分配到各个 tab
+			var tabItemsMap = new Dictionary<int, List<BagItemData>>();
+			for (int i = 0; i < tabConfigs.Count; i++)
+			{
+				tabItemsMap[i] = new List<BagItemData>();
+			}
+
+			foreach (var item in allItems)
+			{
+				int tabIndex = MapCategoryToTabIndex(item.Category);
+				if (tabIndex >= 0 && tabIndex < tabConfigs.Count)
+				{
+					tabItemsMap[tabIndex].Add(item);
+				}
+			}
+
+			// 更新各个 tab 的数据
+			for (int i = 0; i < tabConfigs.Count; i++)
+			{
+				bagModel.SetItemsByTab(i, tabItemsMap[i]);
+				Debug.Log($"BagPanel: Tab {i} 已加载 {tabItemsMap[i].Count} 个物品");
+			}
+
+			// 刷新当前显示的 tab
+			int currentTabIndex = bagTabSystem.CurrentTabIndex;
+			if (currentTabIndex >= 0 && currentTabIndex < tabConfigs.Count)
+			{
+				// 直接调用事件处理方法，因为 IController 不能直接发送事件
+				OnBagItemsUpdated(new BagItemsUpdatedEvent
+				{
+					TabIndex = currentTabIndex,
+					Items = bagModel.GetItemsByTab(currentTabIndex)
 				});
+			}
+
+			Debug.Log($"BagPanel: 所有背包数据已加载完成，共 {allItems.Count} 个物品");
+		}
+
+		/// <summary>
+		/// 将 Category 映射到 Tab 索引（与 SwitchBagTabCommand 中的逻辑保持一致）
+		/// </summary>
+		private int MapCategoryToTabIndex(cfg.Enum_Order category)
+		{
+			switch (category)
+			{
+				case cfg.Enum_Order.Resource:
+					return 0;  // 资源页
+				case cfg.Enum_Order.Speed:
+					return 1;  // 加速页
+				case cfg.Enum_Order.Box:
+					return 2;  // 宝箱页
+				case cfg.Enum_Order.Equit:
+					return 3;  // 装备页
+				case cfg.Enum_Order.Material:
+					return 4;  // 材料页
+				case cfg.Enum_Order.Other:
+					return 5;  // 其他页
+				default:
+					return -1;
 			}
 		}
 
