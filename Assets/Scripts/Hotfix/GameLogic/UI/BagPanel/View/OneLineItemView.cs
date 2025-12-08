@@ -84,10 +84,17 @@ namespace QFramework.UI
 
             var itemConfig = rewardDetail.Id_Ref;
 
-            // 显示物品名称
+            // 显示物品名称（带数量）
             if (nameText != null)
             {
-                nameText.text = itemConfig.Name ?? "";
+                if (!string.IsNullOrEmpty(itemConfig.Name))
+                {
+                    nameText.text = $"{itemConfig.Name} X{rewardDetail.Num}";
+                }
+                else
+                {
+                    nameText.text = "";
+                }
             }
 
             // 显示数量
