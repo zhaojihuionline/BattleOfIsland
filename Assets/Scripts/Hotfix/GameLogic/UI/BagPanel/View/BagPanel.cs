@@ -16,6 +16,22 @@ namespace QFramework.UI
 	{
 	}
 
+	/// <summary>
+	/// Tab页选中记录
+	/// </summary>
+	[System.Serializable]
+	public class TabSelectedRecord
+	{
+		public long BagId;           // 选中的物品BagId
+		public int DisplayIndex;     // 物品在显示列表中的索引位置
+		
+		public TabSelectedRecord(long bagId, int displayIndex)
+		{
+			BagId = bagId;
+			DisplayIndex = displayIndex;
+		}
+	}
+
 	public partial class BagPanel : UIPanel, IController
 	{
 		[Header("Tab设置")]
@@ -57,8 +73,8 @@ namespace QFramework.UI
 		private BagPageViewBase currentActivePageView;
 		private BagItemData currentSelectedItemData;  // 当前选中的物品数据
 		
-		// 每个Tab页选中的物品记录 (TabIndex -> BagId)
-		private Dictionary<int, long> tabSelectedItemRecord = new Dictionary<int, long>();
+		// 每个Tab页选中的物品记录 (TabIndex -> TabSelectedRecord)
+		private Dictionary<int, TabSelectedRecord> tabSelectedItemRecord = new Dictionary<int, TabSelectedRecord>();
 
 		protected override void OnInit(IUIData uiData = null)
 		{
@@ -311,26 +327,6 @@ namespace QFramework.UI
 				
 				// 刷新物品列表 (内部会自动选择合适的物品显示)
 				RefreshItemList(e.TabIndex);
-				
-				// 检查刷新后的选中状态
-				// 注意: RefreshItemList 已经处理了选择逻辑,这里只需要判断物品是否被移除
-				if (previousSelectedBagId.HasValue)
-				{
-					// 检查之前选中的物品是否还存在
-					var updatedItemData = bagModel.GetItemByBagId(previousSelectedBagId.Value);
-					
-					if (updatedItemData == null)
-					{
-						// 物品已被移除，需要选择后一位物品
-						Debug.Log($"BagPanel: 当前物品已被移除 BagId={previousSelectedBagId.Value}，尝试显示后一位物品");
-						SelectNextItemAfterRemoval(currentTabIndex, previousItemIndex);
-					}
-					else
-					{
-						// 物品还存在,RefreshItemList 已经处理了,这里只记录日志
-						Debug.Log($"BagPanel: 物品数量更新 BagId={updatedItemData.BagId}, Count={updatedItemData.Count}");
-					}
-				}
 			}
 			else
 			{
@@ -439,22 +435,38 @@ namespace QFramework.UI
 
 			// 智能选择要显示的物品
 			BagItemData itemToSelect = null;
+			int selectedIndex = -1;
 			
 			Debug.Log($"BagPanel: 开始为 Tab {tabIndex} 智能选择物品，当前有 {items.Count} 个物品");
 			
 			// 1. 优先尝试恢复该tab之前选中的物品
 			if (tabSelectedItemRecord.ContainsKey(tabIndex))
 			{
-				long previousBagId = tabSelectedItemRecord[tabIndex];
-				itemToSelect = items.Find(item => item.BagId == previousBagId);
+				var record = tabSelectedItemRecord[tabIndex];
+				long previousBagId = record.BagId;
+				int previousIndex = record.DisplayIndex;
 				
-				if (itemToSelect != null)
+				// 先尝试通过BagId查找
+				int foundIndex = items.FindIndex(item => item.BagId == previousBagId);
+				if (foundIndex >= 0)
 				{
-					Debug.Log($"BagPanel: Tab {tabIndex} 恢复之前选中的物品 BagId={previousBagId}, ItemId={itemToSelect.ItemId}");
+					itemToSelect = items[foundIndex];
+					selectedIndex = foundIndex;
+					Debug.Log($"BagPanel: Tab {tabIndex} 通过BagId恢复之前选中的物品 BagId={previousBagId}, Index={foundIndex}, ItemId={itemToSelect.ItemId}");
 				}
 				else
 				{
-					Debug.Log($"BagPanel: Tab {tabIndex} 之前选中的物品 BagId={previousBagId} 不存在于当前列表中");
+					// BagId没找到(物品可能被消耗了),尝试使用之前的索引位置
+					if (previousIndex >= 0 && previousIndex < items.Count)
+					{
+						itemToSelect = items[previousIndex];
+						selectedIndex = previousIndex;
+						Debug.Log($"BagPanel: Tab {tabIndex} 之前选中的物品BagId={previousBagId}不存在,使用之前的索引位置 Index={previousIndex}, 新物品BagId={itemToSelect.BagId}, ItemId={itemToSelect.ItemId}");
+					}
+					else
+					{
+						Debug.Log($"BagPanel: Tab {tabIndex} 之前的索引={previousIndex}也无效(列表长度={items.Count})");
+					}
 				}
 			}
 			else
@@ -462,10 +474,11 @@ namespace QFramework.UI
 				Debug.Log($"BagPanel: Tab {tabIndex} 没有之前的选中记录");
 			}
 			
-			// 2. 如果之前没有选中记录或之前选中的物品不存在了,选择第一个物品
+			// 2. 如果之前没有选中记录或之前选中的物品/索引都无效,选择第一个物品
 			if (itemToSelect == null && items.Count > 0)
 			{
 				itemToSelect = items[0];
+				selectedIndex = 0;
 				Debug.Log($"BagPanel: Tab {tabIndex} 选择第一个物品 BagId={itemToSelect.BagId}, ItemId={itemToSelect.ItemId}");
 			}
 			
@@ -473,9 +486,9 @@ namespace QFramework.UI
 			if (itemToSelect != null)
 			{
 				currentSelectedItemData = itemToSelect;
-				tabSelectedItemRecord[tabIndex] = itemToSelect.BagId;
+				tabSelectedItemRecord[tabIndex] = new TabSelectedRecord(itemToSelect.BagId, selectedIndex);
 				SwitchPageByItemData(itemToSelect);
-				Debug.Log($"BagPanel: Tab {tabIndex} 最终选中物品 BagId={itemToSelect.BagId}, ItemId={itemToSelect.ItemId}");
+				Debug.Log($"BagPanel: Tab {tabIndex} 最终选中物品 BagId={itemToSelect.BagId}, Index={selectedIndex}, ItemId={itemToSelect.ItemId}");
 			}
 			else
 			{
@@ -728,9 +741,15 @@ namespace QFramework.UI
 
 			Debug.Log($"点击 BagItem → Tab:{bagTabSystem.CurrentTabIndex} BagId:{view.Data.BagId} ItemId:{view.Data.ItemId}");
 
-			// 保存当前tab的选中记录
+			// 保存当前tab的选中记录(包括BagId和索引)
 			int currentTabIndex = bagTabSystem.CurrentTabIndex;
-			tabSelectedItemRecord[currentTabIndex] = view.Data.BagId;
+			
+			// 查找当前点击物品在列表中的索引
+			var items = bagModel.GetItemsByTab(currentTabIndex);
+			int clickedIndex = items?.FindIndex(item => item.BagId == view.Data.BagId) ?? -1;
+			
+			tabSelectedItemRecord[currentTabIndex] = new TabSelectedRecord(view.Data.BagId, clickedIndex);
+			Debug.Log($"BagPanel: 保存Tab {currentTabIndex} 的选中记录 BagId={view.Data.BagId}, Index={clickedIndex}");
 			
 			// 根据物品数据切换显示对应的 Page
 			SwitchPageByItemData(view.Data);
@@ -758,32 +777,36 @@ namespace QFramework.UI
 			
 			// 选择下一个物品
 			BagItemData nextItem = null;
+			int nextIndex = -1;
 			
 			// 如果被移除的物品索引有效,尝试选择同位置的物品(即原来的"下一个"物品)
 			if (removedItemIndex >= 0 && removedItemIndex < items.Count)
 			{
 				nextItem = items[removedItemIndex];
+				nextIndex = removedItemIndex;
 				Debug.Log($"BagPanel: 选择原位置的物品 (索引={removedItemIndex}, BagId={nextItem.BagId})");
 			}
 			else if (removedItemIndex >= items.Count && items.Count > 0)
 			{
 				// 如果被移除的是最后一个,选择新的最后一个
-				nextItem = items[items.Count - 1];
-				Debug.Log($"BagPanel: 被移除的是最后一个,选择新的最后一个 (索引={items.Count - 1}, BagId={nextItem.BagId})");
+				nextIndex = items.Count - 1;
+				nextItem = items[nextIndex];
+				Debug.Log($"BagPanel: 被移除的是最后一个,选择新的最后一个 (索引={nextIndex}, BagId={nextItem.BagId})");
 			}
 			else if (items.Count > 0)
 			{
 				// 其他情况,选择第一个
-				nextItem = items[0];
+				nextIndex = 0;
+				nextItem = items[nextIndex];
 				Debug.Log($"BagPanel: 选择第一个物品 (BagId={nextItem.BagId})");
 			}
 			
 			if (nextItem != null)
 			{
 				currentSelectedItemData = nextItem;
-				tabSelectedItemRecord[tabIndex] = nextItem.BagId;
+				tabSelectedItemRecord[tabIndex] = new TabSelectedRecord(nextItem.BagId, nextIndex);
 				SwitchPageByItemData(nextItem);
-				Debug.Log($"BagPanel: 物品被移除后,显示下一个物品 BagId={nextItem.BagId}");
+				Debug.Log($"BagPanel: 物品被移除后,显示下一个物品 BagId={nextItem.BagId}, Index={nextIndex}");
 			}
 			else
 			{
