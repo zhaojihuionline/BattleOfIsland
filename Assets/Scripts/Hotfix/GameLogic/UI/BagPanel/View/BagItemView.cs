@@ -117,7 +117,7 @@ namespace QFramework.UI
         {
             if (countBadge == null || countText == null) return;
 
-            bool show = count > 1;
+            bool show = count > 0;
             countBadge.SetActive(show);
             if (show)
             {
@@ -267,7 +267,7 @@ namespace QFramework.UI
             // 预览数量
             if (countBadge != null && countText != null)
             {
-                bool showCount = previewCount > 1;
+                bool showCount = previewCount > 0;
                 countBadge.SetActive(showCount);
                 if (showCount)
                 {
