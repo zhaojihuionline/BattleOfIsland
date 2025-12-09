@@ -111,7 +111,20 @@ namespace QFramework.UI
             // 显示选择提示
             if (choiceHintText != null)
             {
-                choiceHintText.text = "请选择你想要的奖励（可多选）：";
+                // 根据 maxSelect 显示不同提示
+                int maxSelect = currentRewardConfig?.RewardParam ?? 0;
+                if (maxSelect <= 0)
+                {
+                    choiceHintText.text = "当前配置不允许选择奖励";
+                }
+                else if (maxSelect == 1)
+                {
+                    choiceHintText.text = "请选择你想要的奖励（单选）：";
+                }
+                else
+                {
+                    choiceHintText.text = $"请选择你想要的奖励（最多选择 {maxSelect} 项）：";
+                }
             }
 
             // 显示奖励选择列表（自选奖励）- 需要查询 Reward 配置表
@@ -164,7 +177,11 @@ namespace QFramework.UI
 
                 if (itemView != null)
                 {
-                    itemView.SetData(rewardDetail, showWeight: false, enableSelection: true);
+                    // 根据 maxSelect 判断是否启用选择功能
+                    int maxSelect = rewardConfig.RewardParam;
+                    bool enableSelection = maxSelect > 0;  // ✅ maxSelect <= 0 时禁用选择
+                    
+                    itemView.SetData(rewardDetail, showWeight: false, enableSelection: enableSelection);
                     itemView.OnSelectionChanged += OnRewardItemSelectionChanged;
                     rewardItemViews.Add(itemView);
                 }
@@ -203,22 +220,54 @@ namespace QFramework.UI
             if (itemView?.RewardDetail == null) return;
 
             int rewardId = itemView.RewardDetail.Id;
+            int maxSelect = currentRewardConfig?.RewardParam ?? 0;
+
+            // ✅ 禁止选择模式: maxSelect <= 0
+            if (maxSelect <= 0)
+            {
+                // 不允许选择任何项目
+                if (selected)
+                {
+                    itemView.SetSelected(false);
+                    Debug.LogWarning("PageUseType2Choice: 当前配置不允许选择奖励");
+                }
+                return;
+            }
 
             if (selected)
             {
-                // 检查选择数量限制
-                int maxSelect = currentRewardConfig?.RewardParam ?? 0;
-                if (maxSelect > 0 && selectedRewardIds.Count >= maxSelect)
+                // ✅ 单选模式: maxSelect == 1
+                if (maxSelect == 1)
                 {
-                    // 已达到最大选择数量，取消选择
-                    itemView.SetSelected(false);
-                    Debug.LogWarning($"PageUseType2Choice: 最多只能选择 {maxSelect} 项奖励");
-                    return;
-                }
+                    // 取消其他所有选项,只保留当前选项
+                    foreach (var otherView in rewardItemViews)
+                    {
+                        if (otherView != itemView && otherView.IsSelected)
+                        {
+                            otherView.SetSelected(false);
+                        }
+                    }
 
-                if (!selectedRewardIds.Contains(rewardId))
-                {
+                    // 清空选择列表并添加当前项
+                    selectedRewardIds.Clear();
                     selectedRewardIds.Add(rewardId);
+                }
+                // ✅ 复选模式: maxSelect > 1
+                else
+                {
+                    // 检查选择数量限制
+                    if (selectedRewardIds.Count >= maxSelect)
+                    {
+                        // 已达到最大选择数量，取消选择
+                        itemView.SetSelected(false);
+                        Debug.LogWarning($"PageUseType2Choice: 最多只能选择 {maxSelect} 项奖励");
+                        return;
+                    }
+
+                    if (!selectedRewardIds.Contains(rewardId))
+                    {
+                        selectedRewardIds.Add(rewardId);
+                    }
                 }
             }
             else
@@ -236,8 +285,8 @@ namespace QFramework.UI
         {
             if (confirmButton != null)
             {
-                // 至少需要选择一个奖励
-                confirmButton.interactable = selectedRewardIds.Count > 0;
+                // 至少需要选择0个奖励
+                confirmButton.interactable = selectedRewardIds.Count >= 0;
             }
         }
 
