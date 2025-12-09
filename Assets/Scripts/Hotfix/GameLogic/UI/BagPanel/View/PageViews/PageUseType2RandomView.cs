@@ -25,14 +25,11 @@ namespace QFramework.UI
         [SerializeField] private Button previewButton;  // 预览按钮（弹出随机奖励详情）
 
         [Header("Probability Popup")]
-        [SerializeField] private GameObject probabilityRoot;  // popup/Probability 根节点
-        [SerializeField] private Transform probabilityContent;  // 概率列表 Content
-        [SerializeField] private Button probabilityCloseButton;
-        [SerializeField] private GameObject probabilityItemPrefab;  // OneLineProp 预制体
+        [SerializeField] private ProbabilityView probabilityView;  // 概率弹窗组件
+
         
         private BagItemData currentItemData;
         private int useCount = 1;  // 当前选择的使用数量
-        private List<OneLinePropView> probabilityItemViews = new List<OneLinePropView>();
 
         private void Awake()
         {
@@ -49,21 +46,6 @@ namespace QFramework.UI
             if (adjusterView != null)
             {
                 adjusterView.OnValueChanged += OnAdjusterValueChanged;
-            }
-
-            if (probabilityCloseButton != null)
-            {
-                probabilityCloseButton.onClick.AddListener(HideProbabilityPopup);
-            }
-            else if (probabilityRoot != null)
-            {
-                // 如果概率弹窗内部的关闭按钮未直接引用，可尝试在子节点中查找
-                var closeBtn = probabilityRoot.transform.Find("Button-Close")?.GetComponent<Button>();
-                if (closeBtn != null)
-                {
-                    probabilityCloseButton = closeBtn;
-                    probabilityCloseButton.onClick.AddListener(HideProbabilityPopup);
-                }
             }
         }
 
@@ -83,13 +65,6 @@ namespace QFramework.UI
             {
                 adjusterView.OnValueChanged -= OnAdjusterValueChanged;
             }
-
-            if (probabilityCloseButton != null)
-            {
-                probabilityCloseButton.onClick.RemoveListener(HideProbabilityPopup);
-            }
-
-            ClearProbabilityList();
         }
 
         public override void RefreshData(BagItemData itemData)
@@ -174,7 +149,10 @@ namespace QFramework.UI
             }
             useCount = 1;
 
-            HideProbabilityPopup();
+            if (probabilityView != null)
+            {
+                probabilityView.Hide();
+            }
         }
 
         private void OnAdjusterValueChanged(int value)
@@ -197,7 +175,14 @@ namespace QFramework.UI
                 return;
             }
 
-            ShowProbabilityPopup(rewardConfig);
+            if (probabilityView != null)
+            {
+                probabilityView.Show(rewardConfig);
+            }
+            else
+            {
+                Debug.LogWarning("PageUseType2Random: probabilityView 未设置，无法展示概率弹窗");
+            }
         }
 
         private void OnConfirmButtonClicked()
@@ -214,88 +199,6 @@ namespace QFramework.UI
             // 发送使用物品的命令
             this.SendCommand(new UseBagItemCommand(currentItemData.BagId, useCount));
         }
-
-        #region Probability Popup
-
-        private void ShowProbabilityPopup(cfg.Reward rewardConfig)
-        {
-            if (probabilityRoot == null)
-            {
-                Debug.LogWarning("PageUseType2Random: probabilityRoot 未设置，无法展示概率弹窗");
-                return;
-            }
-
-            probabilityRoot.SetActive(true);
-            RefreshProbabilityList(rewardConfig);
-        }
-
-        private void HideProbabilityPopup()
-        {
-            if (probabilityRoot != null)
-            {
-                probabilityRoot.SetActive(false);
-            }
-
-            ClearProbabilityList();
-        }
-
-        private void RefreshProbabilityList(cfg.Reward rewardConfig)
-        {
-            ClearProbabilityList();
-
-            if (probabilityContent == null || probabilityItemPrefab == null)
-            {
-                Debug.LogWarning("PageUseType2Random: probabilityContent 或 probabilityItemPrefab 未设置");
-                return;
-            }
-
-            if (rewardConfig.RewardDetail == null || rewardConfig.RewardDetail.Count == 0)
-            {
-                return;
-            }
-
-            int totalWeight = 0;
-            foreach (var detail in rewardConfig.RewardDetail)
-            {
-                if (detail != null && detail.Weight > 0)
-                {
-                    totalWeight += detail.Weight;
-                }
-            }
-
-            foreach (var rewardDetail in rewardConfig.RewardDetail)
-            {
-                if (rewardDetail?.Id_Ref == null) continue;
-
-                var itemObj = GameObject.Instantiate(probabilityItemPrefab, probabilityContent);
-                var itemView = itemObj.GetComponent<OneLinePropView>();
-
-                if (itemView != null)
-                {
-                    itemView.SetData(rewardDetail, totalWeight);
-                    probabilityItemViews.Add(itemView);
-                }
-                else
-                {
-                    Debug.LogError("PageUseType2Random: OneLineProp 预制体缺少 OneLinePropView 组件！");
-                    GameObject.Destroy(itemObj);
-                }
-            }
-        }
-
-        private void ClearProbabilityList()
-        {
-            foreach (var view in probabilityItemViews)
-            {
-                if (view != null && view.gameObject != null)
-                {
-                    GameObject.Destroy(view.gameObject);
-                }
-            }
-            probabilityItemViews.Clear();
-        }
-
-        #endregion
     }
 }
 

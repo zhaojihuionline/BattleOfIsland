@@ -16,6 +16,7 @@ namespace QFramework.UI
         [SerializeField] private GameObject bagItemPrefab;
         [SerializeField] private Button closeButton;
         [SerializeField] private Button confirmButton;
+        [SerializeField] private Button maskButton;  // 遮罩层按钮(点击关闭)
 
         private readonly List<GameObject> rewardItems = new List<GameObject>();
 
@@ -34,6 +35,11 @@ namespace QFramework.UI
             if (confirmButton != null)
             {
                 confirmButton.onClick.AddListener(Hide);
+            }
+
+            if (maskButton != null)
+            {
+                maskButton.onClick.AddListener(OnMaskButtonClicked);
             }
 
             if (root != null)
@@ -86,6 +92,12 @@ namespace QFramework.UI
             ClearRewards();
         }
 
+        private void OnMaskButtonClicked()
+        {
+            Debug.Log("ObtainRewardsView: 点击遮罩层,关闭弹窗");
+            Hide();
+        }
+
         private void RefreshRewards(IList<RewardDelta> deltas)
         {
             ClearRewards();
@@ -127,6 +139,24 @@ namespace QFramework.UI
                 }
             }
             rewardItems.Clear();
+        }
+
+        private void OnDestroy()
+        {
+            if (closeButton != null)
+            {
+                closeButton.onClick.RemoveListener(Hide);
+            }
+
+            if (confirmButton != null)
+            {
+                confirmButton.onClick.RemoveListener(Hide);
+            }
+
+            if (maskButton != null)
+            {
+                maskButton.onClick.RemoveListener(OnMaskButtonClicked);
+            }
         }
     }
 }
