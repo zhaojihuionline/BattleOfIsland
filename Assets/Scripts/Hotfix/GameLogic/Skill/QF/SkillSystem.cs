@@ -1,8 +1,11 @@
+using cfg;
+using PitayaClient.Protocol;
+using QFramework;
+using QFramework.Game;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using QFramework;
-using cfg;
+using UnityEngine.Rendering.VirtualTexturing;
 
 /// <summary>
 /// 
@@ -17,7 +20,7 @@ public interface ISkillSystem : ISystem
 /// 对象池生成技能 回收技能
 /// 释放后全部交由对应的SkillController去执行具体逻辑
 /// </summary>
-public class SkillSystem : AbstractSystem, ISkillSystem
+public class SkillSystem : AbstractSystem, ISkillSystem,ICanSendCommand
 {
     public Dictionary<int, GameObject> resourcesMap = new Dictionary<int, GameObject>();
     protected override void OnInit()
@@ -25,6 +28,19 @@ public class SkillSystem : AbstractSystem, ISkillSystem
         ResKit.Init();
     }
 
+    public void ReleaseSkill(SkillTable _data, GameObject caster, TargetData target, Vector3 point)
+    {
+        SkillPacket Packet = new SkillPacket();
+        Packet.SetTable(_data);
+        Packet.SetCaster(caster);
+        Packet.SetTarget(target, point);
+        //测试伤害
+        DamageDate damageDate = new DamageDate();
+        damageDate.Init();
+        damageDate.SetDamage(HurtType.PHYSICAL_DAMAGE, 0);
+        Packet.SetDamsge(damageDate);
+        ReleaseSkill(Packet);
+    }
     /// <summary>
     /// 创建技能
     /// </summary>
@@ -32,6 +48,45 @@ public class SkillSystem : AbstractSystem, ISkillSystem
     {
         Debug.Log($"释放技能 {Packet._data.Name} 对目标 {Packet.target} 位置 {Packet.targetPoint}");
 
+        switch (Packet._data.SkillType)
+        {
+            case SkillType.PASSIVE_SKILL:
+                {
+                    foreach (var buffId in Packet._data.Effect)
+                    {
+                        //筛选出技能施法目标
+                        Packet.TargetData = this.SendCommand(new QuerySkillTargets(Packet.caster, buffId));
+                        this.SendCommand<AddSingleBuffToTargetCommand>(new AddSingleBuffToTargetCommand(Packet.TargetData, buffId, null));
+                    }
+                    SkillController skillController = DisplaySkill(Packet);
+                    skillController.SetSkillPacket(Packet);
+                }
+                break;
+            case SkillType.AURA_SKILL:
+                {
+                    foreach (var buffId in Packet._data.Effect)
+                    {
+                        //筛选出技能施法目标
+                        Packet.TargetData = this.SendCommand(new QuerySkillTargets(Packet.caster, buffId));
+                        this.SendCommand<AddSingleBuffToTargetCommand>(new AddSingleBuffToTargetCommand(Packet.TargetData, buffId, null));
+                    }
+                    SkillController skillController = DisplaySkill(Packet);
+                    skillController.SetSkillPacket(Packet);
+                }
+                break;
+            case SkillType.NORMAL_ATTACK:
+            case SkillType.ACTIVE_SKILL:
+                {
+                    SkillController skillController = DisplaySkill(Packet);
+                    skillController.SetSkillPacket(Packet);
+                    Packet.CanRelease = false;//进入冷却了
+                }
+                break;
+        }
+    }
+
+    SkillController DisplaySkill(SkillPacket Packet)
+    {
         GameObject skill = null;
         if (resourcesMap.ContainsKey(Packet._data.Id))
         {
@@ -58,8 +113,22 @@ public class SkillSystem : AbstractSystem, ISkillSystem
             }
         }
         GameObject res = Object.Instantiate(skill, point, Quaternion.identity);
-        res.GetComponent<QFramework.Game.SkillController>().SetSkillPacket(Packet);
-        Packet.CanRelease = false;//进入冷却了
+        SkillController skillController = res.GetComponent<QFramework.Game.SkillController>();
+
+        switch(Packet._data.SkillType)
+        {
+            case SkillType.PASSIVE_SKILL:
+            case SkillType.AURA_SKILL:
+                res.transform.parent = Packet.caster.transform;
+                res.transform.localPosition = Vector3.zero;
+                break;
+            case SkillType.NORMAL_ATTACK:
+            case SkillType.ACTIVE_SKILL:
+
+                break;
+        }
+
+        return skillController;
     }
 
     /// <summary>

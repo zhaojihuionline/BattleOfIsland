@@ -15,8 +15,10 @@ public class BuffRunner : IRunner
     // buff
     public List<BuffEntity> buffEntities { get; private set; }
 
-    public void Init()
+    BattleInModel battleInModel;
+    public void Init(BattleInModel battleInModel = null)
     {
+        this.battleInModel = battleInModel;
         buffDatas = new List<Buff>();
         buffEntities = new List<BuffEntity>();
     }
@@ -148,8 +150,6 @@ public class BuffRunner : IRunner
             newBuffEntity.Init(buffDatas[i], target, this);
             buffEntities.Add(newBuffEntity);
         }
-
-        
     }
 
     BuffEntity AddNewBuffEntity(Transform target, Buff buff)
@@ -169,6 +169,8 @@ public class BuffRunner : IRunner
         {
             buffEntities[i].BUpdate();
         }
+
+
     }
     /// <summary>
     /// 升级buff
@@ -223,6 +225,28 @@ public class BuffRunner : IRunner
                 }
             }
         }
+    }
+
+    public bool HasBuff(int id)
+    {
+        bool hasBuff = false;
+        if (buffEntities.Count > 0)
+        {
+            for (int i = 0; i < buffEntities.Count; i++)
+            {
+                if (buffEntities[i].buff.id == id && buffEntities[i].isUsed == false)
+                {
+                    hasBuff = true;
+                    break;
+                }
+            }
+        }
+        return hasBuff;
+    }
+
+    public void GetBuff()
+    {
+
     }
 
     /// <summary>

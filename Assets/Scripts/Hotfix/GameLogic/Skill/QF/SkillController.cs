@@ -373,7 +373,8 @@ namespace QFramework.Game
 		}
 		protected virtual void OnDo_RecoveryExit() { }
 
-		protected virtual void OnEnd_Recovery()
+        protected bool KeepAlive { get; set; } = false;
+        protected virtual void OnEnd_Recovery()
 		{
 			if (enableDebug)
 			{
@@ -383,6 +384,8 @@ namespace QFramework.Game
 			{
 				packetData.caster.GetComponent<ICanSkill>().isRelease = false;
 			}
+
+			if(!KeepAlive)
 			Destroy(gameObject);
 		}
 		protected virtual void OnEnd_RecoveryExit() { }

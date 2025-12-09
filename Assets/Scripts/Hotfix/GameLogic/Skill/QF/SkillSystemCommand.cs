@@ -1,4 +1,6 @@
 using cfg;
+using HutongGames.PlayMaker;
+using PitayaClient.Protocol;
 using QFramework;
 using QFramework.Game;
 using System;
@@ -8,6 +10,8 @@ using System.Linq;
 using Unity.VisualScripting.YamlDotNet.Serialization.NodeTypeResolvers;
 using UnityEngine;
 using static UnityEditor.ShaderKeywordFilter.FilterAttribute;
+using static UnityEngine.EventSystems.EventTrigger;
+using static UnityEngine.GraphicsBuffer;
 
 /// <summary>
 /// 
@@ -19,57 +23,70 @@ public class SkillSystemCommand : AbstractCommand
     }
 }
 
-public class ReleaseSkillCommand : AbstractCommand
-{
-    SkillPacket Packet;
-    SkillSystem system;
-    //这个id是 id+lv  id在对应的英雄表格中 技能列表
-    public ReleaseSkillCommand(SkillPacket Packet)
-    {
-        this.Packet = Packet;
-    }
-    public ReleaseSkillCommand(SkillTable _data, GameObject caster, TargetData target, Vector3 point)
-    {
-        Packet = new SkillPacket();
+//public class ReleaseSkillCommand : AbstractCommand
+//{
+//    SkillPacket Packet;
+//    SkillSystem system;
+//    //这个id是 id+lv  id在对应的英雄表格中 技能列表
+//    public ReleaseSkillCommand(SkillPacket Packet)
+//    {
+//        this.Packet = Packet;
+//    }
+//    public ReleaseSkillCommand(SkillTable _data, GameObject caster, TargetData target, Vector3 point)
+//    {
+//        Packet = new SkillPacket();
 
-        Init(_data, caster, target, point);
-    }
+//        Init(_data, caster, target, point);
+//    }
 
-    public ReleaseSkillCommand(int id, int lv, GameObject caster, TargetData target, Vector3 point)
-    {
-        Packet = new SkillPacket();
-        Init(CfgMgr.GetSkillTableS(id * 100 + lv), caster, target, point);
-    }
+//    //public ReleaseSkillCommand(int id, int lv, GameObject caster, TargetData target, Vector3 point)
+//    //{
+//    //    Packet = new SkillPacket();
+//    //    Init(CfgMgr.GetSkillTableS(id * 100 + lv), caster, target, point);
+//    //}
 
-    public void Init(SkillTable _data, GameObject caster, TargetData target, Vector3 point)
-    {
-        Packet.SetTable(_data);
-        Packet.SetCaster(caster);
-        Packet.SetTarget(target, point);
-        //测试伤害
-        DamageDate damageDate = new DamageDate();
-        damageDate.Init();
-        damageDate.SetDamage(HurtType.PHYSICAL_DAMAGE, 0);
-        Packet.SetDamsge(damageDate);
-    }
-    protected override void OnExecute()
-    {
-        switch (Packet._data.SkillType)
-        {
-            case SkillType.PASSIVE_SKILL:
-                if(Packet._data.Effect.Count > 0)
-                {
-                    this.SendCommand<AddSingleBuffToTargetCommand>(new AddSingleBuffToTargetCommand(Packet.target.transform, Packet._data.Effect[0], null));
-                }
-                break;
-            case SkillType.NORMAL_ATTACK:
-            case SkillType.ACTIVE_SKILL:
-                system = this.GetSystem<SkillSystem>();
-                system.ReleaseSkill(Packet);
-                break;
-        }
-    }
-}
+//    public void Init(SkillTable _data, GameObject caster, TargetData target, Vector3 point)
+//    {
+//        Packet.SetTable(_data);
+//        Packet.SetCaster(caster);
+//        Packet.SetTarget(target, point);
+//        //测试伤害
+//        DamageDate damageDate = new DamageDate();
+//        damageDate.Init();
+//        damageDate.SetDamage(HurtType.PHYSICAL_DAMAGE, 0);
+//        Packet.SetDamsge(damageDate);
+//    }
+//    protected override void OnExecute()
+//    {
+//        Debug.Log($"释放技能 AddBuff skillId:{Packet._data.Id}");
+//        switch (Packet._data.SkillType)
+//        {
+//            case SkillType.PASSIVE_SKILL:
+
+//                foreach(var buffId in Packet._data.Effect)
+//                {
+//                    //筛选出技能施法目标
+//                    Packet.TargetData = this.SendCommand(new QuerySkillTargets(Packet.caster, buffId));
+//                    this.SendCommand<AddSingleBuffToTargetCommand>(new AddSingleBuffToTargetCommand(Packet.TargetData, buffId, null));
+//                }
+//                //this.SendCommand<AddSingleBuffToTargetCommand>(new AddSingleBuffToTargetCommand(Packet.target.transform, Packet._data.Effect[0], null));
+//                break;
+//            case SkillType.AURA_SKILL:
+//                foreach (var buffId in Packet._data.Effect)
+//                {
+//                    //筛选出技能施法目标
+//                    Packet.TargetData = this.SendCommand(new QuerySkillTargets(Packet.caster, buffId));
+//                    this.SendCommand<AddSingleBuffToTargetCommand>(new AddSingleBuffToTargetCommand(Packet.TargetData, buffId, null));
+//                }
+//                break;
+//            case SkillType.NORMAL_ATTACK:
+//            case SkillType.ACTIVE_SKILL:
+//                system = this.GetSystem<SkillSystem>();
+//                system.ReleaseSkill(Packet);
+//                break;
+//        }
+//    }
+//}
 
 public class ReleaseSpellCommand : AbstractCommand
 {
@@ -142,6 +159,11 @@ public class CleanInvalidTargetsCommand : AbstractCommand
 
 public struct TargetData
 {
+    public static TargetData New()
+    {
+        return new TargetData { Target = null, Targets = new List<GameObject>() };
+    }
+
     public GameObject Target;
     public List<GameObject> Targets;
 }
@@ -152,29 +174,6 @@ public class FindTargetCommand : AbstractCommand<TargetData>
     Vector3 centerPoint;
     SkillTable skillTable;
     float searchRange = -1;
-    ///// <summary>
-    ///// 查找目标的命令  参数需要  传入目标列表  标签列表  范围  偏好规则  查找者
-    ///// </summary>
-    ///// <param name="targetList">目标列表</param>
-    ///// <param name="listMask">列表Mask</param>
-    ///// <param name="range">检测范围</param>
-    ///// <param name="preference">规则偏好</param>
-    ///// <param name="gameObject">目标  没有目标传位置坐标</param>
-    //public FindTargetCommand(List<GameObject> targetList, List<string> listMask, float range, string preference, GameObject gameObject)
-    //{
-    //    this.targetList = targetList;
-    //    this.gameObject = gameObject;
-    //    if (this.gameObject != null)
-    //    {
-    //        centerPoint = this.gameObject.transform.position;
-    //    }
-    //}
-    //public FindTargetCommand(List<GameObject> targetList, List<string> listMask, float range, string preference, Vector3 centerPoint)
-    //{
-    //    this.targetList = targetList;
-    //    this.centerPoint = centerPoint;
-    //    gameObject = null;
-    //}
 
     public FindTargetCommand(List<GameObject> targetList, SkillTable skillTable, EntityController entityController, float searchRange = -1)
     {
@@ -246,67 +245,61 @@ public class FindTargetCommand : AbstractCommand<TargetData>
     }
 }
 
-//public class FindAOETargetsCommand : AbstractCommand<List<GameObject>>
-//{
-//    EntityController entityController;
-//    float radius;
-//    List<GameObject> enemys;
-//    SkillTable skillTable;
-//    public FindAOETargetsCommand(EntityController entityController, float radius, List<GameObject> enemys,SkillTable skillTable)
-//    {
-//        this.entityController = entityController;
-//        this.radius = radius;
-//        this.enemys = enemys;
-//        this.skillTable = skillTable;
-//    }
+public class QuerySkillTargets : AbstractCommand<TargetData>
+{
+    GameObject caster;
+    BuffTable buffTable;
+    public QuerySkillTargets(GameObject caster, int buffId)
+    {
+        this.caster = caster;
+        this.buffTable = CfgMgr.Instance.Tables.TbBuff.Get(buffId);
+    }
+    protected override TargetData OnExecute()
+    {
+        TargetData targetData = TargetData.New();
+        List<GameObject> entitys = null;
+        var battleInModel = this.GetModel<BattleInModel>();
+        switch (buffTable.FirstGoal)
+        {
+            case ECampType.NONE:
 
-//    List<GameObject> list = new List<GameObject>();
-//    protected override List<GameObject> OnExecute()
-//    {
-//        list.Clear();
-//        //范围小于等于0  且有查找者的时候  就是自身为目标   
-//        if (radius <= 0)
-//        {
-//            list.Add(entityController.gameObject);
-//            return list;
-//        }
-//        SkillSystem system = this.GetSystem<SkillSystem>();
-//        system.CleanInvalidTargets(enemys);
-//        //索敌规则  看配置 全部敌方列表 tag layer + 规则 最近等等 
-//        //根据tag筛选目标  筛选返回结果  这是可以进行选择的目标列表
-//        List<GameObject> targetGList = system.FindObjectsByTagsOptimized(enemys, skillTable.TagMask);
-//        if (targetGList == null || targetGList.Count == 0)
-//        {
-//            // Debug.LogError($"{this.gameObject.name}: 没有符合标签的目标");
-//            return null;
-//        }
-//        //根据索敌距离再次进行筛选 就是范围内可以选择的列表  可能没有施法者
-//        targetGList = system.FindObjectsByDistance(targetGList, entityController.transform.position, radius / 100f);
+                break;
+            case ECampType.All:
 
-//        if (targetGList == null || targetGList.Count == 0)
-//        {
-//            // Debug.LogError($"{this.gameObject.name}: 没有符合距离的目标");
-//            return null;
-//        }
-//        ResLoader loader = ResLoader.Allocate();
-//        //这就是读取的索敌规则 用它去查看有没有目标就可以  是否每帧执行看情况
-//        TargetingPreference targetingPreference = loader.LoadSync<TargetingPreference>(skillTable.Preference);
+                break;
+            case ECampType.Self:
+                targetData.Target = caster;
+                break;
+            case ECampType.Friend:
+                entitys = battleInModel.player_allEntitys;
+                break;
+            case ECampType.Enemy:
+                entitys = battleInModel.opponent_allEntitys;
+                break;
+        }
 
-//        List<GameObject> targets = targetingPreference.SelectTargets(new IData.Data()
-//        {
-//            data = new Dictionary<string, IData.IVariable>()
-//                {
-//                    {
-//                        "targetList",
-//                        new IData.Variable<List<GameObject>>(targetGList)
-//                    },
-//                    {
-//                        "self",
-//                        new IData.Variable<GameObject>(entityController.gameObject)
-//                    }
-//                }
-//        });
-//        loader.Recycle2Cache();
-//        return targets;
-//    }
-//}
+        if (entitys == null)
+            return targetData;
+
+        foreach (var entity in entitys)
+        {
+            AddEntity(entity, ref targetData);
+        }
+        
+        return targetData;
+    }
+
+    void AddEntity(GameObject entity,ref TargetData targetData)
+    {
+        EntityController entityController = entity.GetComponent<EntityController>();
+        foreach (ETargetType value in Enum.GetValues(typeof(ETargetType)))
+        {
+            if (value == ETargetType.NONE) continue;
+            if (buffTable.NextGoal.HasFlag(value))
+            {
+                targetData.Targets.Add(entity);
+                break;
+            }
+        }
+    }
+}

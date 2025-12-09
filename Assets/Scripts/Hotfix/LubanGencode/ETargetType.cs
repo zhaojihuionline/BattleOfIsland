@@ -30,15 +30,15 @@ namespace cfg
         /// <summary>
         /// 盾兵雇佣兵
         /// </summary>
-        ShieldSoldier = 4,
+        Shield = 4,
         /// <summary>
         /// 骑兵英雄
         /// </summary>
-        CavalryHero = 5,
+        RiderHero = 5,
         /// <summary>
         /// 骑兵雇佣兵
         /// </summary>
-        Cavalry = 6,
+        Rider = 6,
         /// <summary>
         /// 大本营（核心建筑）
         /// </summary>
@@ -63,6 +63,26 @@ namespace cfg
         /// 防御型建筑（箭塔）
         /// </summary>
         Tower = 12,
+        /// <summary>
+        /// 所有英雄
+        /// </summary>
+        Hero = 13,
+        /// <summary>
+        /// 所有建筑
+        /// </summary>
+        Build = 14,
+        /// <summary>
+        /// 自己
+        /// </summary>
+        Self = 15,
+        /// <summary>
+        /// 雇佣兵
+        /// </summary>
+        Mercenary = 16,
+        /// <summary>
+        /// 玩家自己的数据（战斗临时调用）
+        /// </summary>
+        PlayerSelf = 17,
     }
 
 } 

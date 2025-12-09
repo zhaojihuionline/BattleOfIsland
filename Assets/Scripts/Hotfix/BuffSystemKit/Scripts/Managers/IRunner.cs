@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IRunner
 {
-    void Init();
+    void Init(BattleInModel battleInModel);
 }

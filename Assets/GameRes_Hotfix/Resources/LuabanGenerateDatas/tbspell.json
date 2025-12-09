@@ -47,7 +47,7 @@
     "_hurt_type": 0,
     "_icon": "spell_icon_200005",
     "_prefab": "spell_200005",
-    "_description": "让血量最低（数值）的英雄立刻恢复30%"
+    "_description": "让血量最低（数值）的英雄立刻恢复100点"
   },
   {
     "_id": 200006,

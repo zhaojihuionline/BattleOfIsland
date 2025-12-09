@@ -71,7 +71,6 @@ public class EntitySystem : AbstractSystem, IEntitySystem
             paramList.Add(item * 100 + lv);
         }
         res.SetMoveSpeed(hlvtable.Speed / 100f);
-        res.InitCanSkill(paramList,hlvtable.SkillEnable);
 
         if (isEnemy)
         {
@@ -83,6 +82,8 @@ public class EntitySystem : AbstractSystem, IEntitySystem
             BattleInModel BM = this.GetModel<BattleInModel>();
             BM.player_allEntitys.Add(res.gameObject);
         }
+
+        res.InitCanSkill(paramList,hlvtable.SkillEnable);
         return res.gameObject;
 
     }

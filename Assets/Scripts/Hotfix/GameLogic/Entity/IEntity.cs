@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using QFramework;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,7 +11,7 @@ public interface IEntity { }
 /// <summary>
 /// 不管是角色实体还是建筑  只要是能放技能  而且可以收到伤害的  都要继承这个接口
 /// </summary>
-public interface IRoleEntity : IBuildEntity
+public interface IRoleEntity : IBuildEntity, ICanSendEvent
 {
 
 }

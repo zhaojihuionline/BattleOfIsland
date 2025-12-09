@@ -11,7 +11,7 @@ namespace QFramework.Game
 			base.OnDo_Cast();
 			//或许可能有释放动画  应该循环触发所有的  现只有一个  目标选择逻辑待补全
 			//直接触发一个Buff
-			this.SendCommand<AddSingleBuffToTargetCommand>(new AddSingleBuffToTargetCommand(packetData.target.transform, packetData._data.Effect[0], null));
+			this.SendCommand<AddSingleBuffToTargetCommand>(new AddSingleBuffToTargetCommand(packetData.TargetData, packetData._data.Effect[0], null));
 		}
 	}
 }

@@ -25,7 +25,8 @@ namespace QFramework.Game
                     effect.transform.localScale = Vector3.one * 1.75f;
                     effect.SetActive(true);
                     // 给每个箭塔添加buff
-                    this.SendCommand<AddSingleBuffToTargetCommand>(new AddSingleBuffToTargetCommand(entity.transform, packetData._data.Effect[0], effect));//这里的：packetData._data.Effect[0]就是BuffId是20294
+                    TargetData targetData = new TargetData() { Target = entity };
+                    this.SendCommand<AddSingleBuffToTargetCommand>(new AddSingleBuffToTargetCommand(targetData, packetData._data.Effect[0], effect));//这里的：packetData._data.Effect[0]就是BuffId是20294
                 }
             });
         }

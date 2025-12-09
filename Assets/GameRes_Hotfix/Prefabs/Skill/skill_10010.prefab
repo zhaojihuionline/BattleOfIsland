@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3245768203595111966}
-  - component: {fileID: 3949237144606320750}
   - component: {fileID: 6612299468339945811}
   - component: {fileID: 8518367508882320259}
   - component: {fileID: 9045932283398240110}
@@ -34,36 +33,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6924409391780847390}
-  - {fileID: 2789535119950166421}
-  - {fileID: 1372576506995437954}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3949237144606320750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 796774559317167324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11de241748bb87f4689422443cab68fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Namespace: QFramework.Game
-  ScriptName: skill_9000201
-  ScriptsFolder: Assets\Scripts\Hotfix\GameLogic\Skill\Skill
-  GeneratePrefab: 0
-  PrefabFolder: Assets/GameRes_Hotfix/Prefabs/ViewController
-  ArchitectureFullTypeName: GameApp
-  ViewControllerFullTypeName: 
-  enableDebug: 0
-  FSM:
-    mCurrentStateId: 0
-    FrameCountOfCurrentState: 1
-    SecondsOfCurrentState: 0
-  Model: {fileID: 6764770394164552040}
-  BPath: {fileID: 8518367508882320259}
 --- !u!114 &6612299468339945811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,6 +77,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae90dd8ec2f964f459aa6ca9a019a7ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Namespace: QFramework.Game
+  ScriptName: skill_10010
+  ScriptsFolder: Assets\Scripts\Hotfix\GameLogic\Skill\Skill
+  GeneratePrefab: 0
+  PrefabFolder: Assets/GameRes_Hotfix/Prefabs/ViewController
+  ArchitectureFullTypeName: 
+  ViewControllerFullTypeName: 
+  enableDebug: 0
+  FSM:
+    mCurrentStateId: 0
+    FrameCountOfCurrentState: 1
+    SecondsOfCurrentState: 0
+  Model: {fileID: 796774559317167324}
+  BPath: {fileID: 8518367508882320259}
 --- !u!1 &6764770394164552040
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,6 +122,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3073584046182853532}
+  - {fileID: 2789535119950166421}
+  - {fileID: 1372576506995437954}
   m_Father: {fileID: 3245768203595111966}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3255830948178959418
@@ -251,7 +238,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 3245768203595111966}
+    m_TransformParent: {fileID: 6924409391780847390}
     m_Modifications:
     - target: {fileID: 512475263413382071, guid: 0ef1453917a200240a273a93cbc217f9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -345,11 +332,23 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 3245768203595111966}
+    m_TransformParent: {fileID: 6924409391780847390}
     m_Modifications:
     - target: {fileID: 4987948784023282068, guid: 3ce1dcb63f3f78e47ad2da42867b7374, type: 3}
       propertyPath: m_Name
       value: FX_Skill_Oliver_putonggongji
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908342601297298749, guid: 3ce1dcb63f3f78e47ad2da42867b7374, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908342601297298749, guid: 3ce1dcb63f3f78e47ad2da42867b7374, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908342601297298749, guid: 3ce1dcb63f3f78e47ad2da42867b7374, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5908342601297298749, guid: 3ce1dcb63f3f78e47ad2da42867b7374, type: 3}
       propertyPath: m_LocalPosition.x

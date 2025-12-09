@@ -204,8 +204,8 @@
       }
     ],
     "BaseCalType": 2,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 3,
+    "NextGoal": 13,
     "Time": 3000,
     "Overlay": false,
     "ReFlash": false,
@@ -245,7 +245,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 5000,
@@ -287,7 +287,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 5000,
@@ -329,7 +329,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 5000,
@@ -371,7 +371,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 5000,
@@ -413,7 +413,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 5000,
@@ -455,7 +455,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 5000,
@@ -497,7 +497,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 5000,
@@ -539,7 +539,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 5000,
@@ -581,7 +581,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 5000,
@@ -623,7 +623,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 5000,
@@ -665,7 +665,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 5000,
@@ -707,7 +707,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 5000,
@@ -749,7 +749,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 5000,
@@ -791,7 +791,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 5000,
@@ -833,7 +833,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 5000,
@@ -875,7 +875,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 5000,
@@ -917,7 +917,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 5000,
@@ -959,7 +959,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 5000,
@@ -1001,7 +1001,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 5000,
@@ -1043,7 +1043,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 5000,
@@ -1085,7 +1085,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 3000,
@@ -1127,7 +1127,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 3000,
@@ -1169,7 +1169,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 3000,
@@ -1211,7 +1211,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 3000,
@@ -1253,7 +1253,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 3000,
@@ -1295,7 +1295,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 3000,
@@ -1337,7 +1337,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 3000,
@@ -1379,7 +1379,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 3000,
@@ -1421,7 +1421,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 3000,
@@ -1463,7 +1463,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 3000,
@@ -1505,7 +1505,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 3000,
@@ -1547,7 +1547,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 3000,
@@ -1589,7 +1589,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 3000,
@@ -1631,7 +1631,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 3000,
@@ -1673,7 +1673,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 3000,
@@ -1715,7 +1715,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 3000,
@@ -1757,7 +1757,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 3000,
@@ -1799,7 +1799,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 3000,
@@ -1841,7 +1841,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 3000,
@@ -1883,7 +1883,7 @@
         ]
       }
     ],
-    "BaseCalType": 3,
+    "BaseCalType": 4,
     "FirstGoal": 0,
     "NextGoal": 0,
     "Time": 3000,
@@ -12832,7 +12832,7 @@
   },
   {
     "id": 20274,
-    "Name": "恢复血量",
+    "Name": "恢复血量x%",
     "Icon": "20001",
     "Des": "恢复22%血量",
     "Show": true,
@@ -12874,7 +12874,7 @@
   },
   {
     "id": 20275,
-    "Name": "恢复血量",
+    "Name": "恢复血量x%",
     "Icon": "20001",
     "Des": "恢复24%血量",
     "Show": true,
@@ -12916,7 +12916,7 @@
   },
   {
     "id": 20276,
-    "Name": "恢复血量",
+    "Name": "恢复血量x%",
     "Icon": "20001",
     "Des": "恢复26%血量",
     "Show": true,
@@ -12958,7 +12958,7 @@
   },
   {
     "id": 20277,
-    "Name": "恢复血量",
+    "Name": "恢复血量x%",
     "Icon": "20001",
     "Des": "恢复28%血量",
     "Show": true,
@@ -13000,7 +13000,7 @@
   },
   {
     "id": 20278,
-    "Name": "恢复血量",
+    "Name": "恢复血量x%",
     "Icon": "20001",
     "Des": "恢复30%血量",
     "Show": true,
@@ -13042,7 +13042,7 @@
   },
   {
     "id": 20279,
-    "Name": "恢复血量",
+    "Name": "恢复血量x%",
     "Icon": "20001",
     "Des": "恢复32%血量",
     "Show": true,
@@ -13084,7 +13084,7 @@
   },
   {
     "id": 20280,
-    "Name": "恢复血量",
+    "Name": "恢复血量x%",
     "Icon": "20001",
     "Des": "恢复34%血量",
     "Show": true,
@@ -13126,7 +13126,7 @@
   },
   {
     "id": 20281,
-    "Name": "恢复血量",
+    "Name": "恢复血量x%",
     "Icon": "20001",
     "Des": "恢复36%血量",
     "Show": true,
@@ -13168,7 +13168,7 @@
   },
   {
     "id": 20282,
-    "Name": "恢复血量",
+    "Name": "恢复血量x%",
     "Icon": "20001",
     "Des": "恢复38%血量",
     "Show": true,
@@ -13210,7 +13210,7 @@
   },
   {
     "id": 20283,
-    "Name": "恢复血量",
+    "Name": "恢复血量x%",
     "Icon": "20001",
     "Des": "恢复40%血量",
     "Show": true,
@@ -13252,7 +13252,7 @@
   },
   {
     "id": 20284,
-    "Name": "恢复血量",
+    "Name": "恢复血量x%",
     "Icon": "20001",
     "Des": "恢复42%血量",
     "Show": true,
@@ -13294,7 +13294,7 @@
   },
   {
     "id": 20285,
-    "Name": "恢复血量",
+    "Name": "恢复血量x%",
     "Icon": "20001",
     "Des": "恢复44%血量",
     "Show": true,
@@ -13336,7 +13336,7 @@
   },
   {
     "id": 20286,
-    "Name": "恢复血量",
+    "Name": "恢复血量x%",
     "Icon": "20001",
     "Des": "恢复46%血量",
     "Show": true,
@@ -13378,7 +13378,7 @@
   },
   {
     "id": 20287,
-    "Name": "恢复血量",
+    "Name": "恢复血量x%",
     "Icon": "20001",
     "Des": "恢复48%血量",
     "Show": true,
@@ -13420,7 +13420,7 @@
   },
   {
     "id": 20288,
-    "Name": "恢复血量",
+    "Name": "恢复血量x%",
     "Icon": "20001",
     "Des": "恢复50%血量",
     "Show": true,
@@ -13462,7 +13462,7 @@
   },
   {
     "id": 20289,
-    "Name": "恢复血量",
+    "Name": "恢复血量x%",
     "Icon": "20001",
     "Des": "恢复52%血量",
     "Show": true,
@@ -13504,7 +13504,7 @@
   },
   {
     "id": 20290,
-    "Name": "恢复血量",
+    "Name": "恢复血量x%",
     "Icon": "20001",
     "Des": "恢复54%血量",
     "Show": true,
@@ -13546,7 +13546,7 @@
   },
   {
     "id": 20291,
-    "Name": "恢复血量",
+    "Name": "恢复血量x%",
     "Icon": "20001",
     "Des": "恢复56%血量",
     "Show": true,
@@ -13588,7 +13588,7 @@
   },
   {
     "id": 20292,
-    "Name": "恢复血量",
+    "Name": "恢复血量x%",
     "Icon": "20001",
     "Des": "恢复58%血量",
     "Show": true,
@@ -13630,7 +13630,7 @@
   },
   {
     "id": 20293,
-    "Name": "恢复血量",
+    "Name": "恢复血量x%",
     "Icon": "20001",
     "Des": "恢复60%血量",
     "Show": true,
@@ -14526,8 +14526,8 @@
       }
     ],
     "BaseCalType": 1,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 2,
+    "NextGoal": 7,
     "Time": -1,
     "Overlay": false,
     "ReFlash": false,
@@ -14568,8 +14568,8 @@
       }
     ],
     "BaseCalType": 1,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 2,
+    "NextGoal": 7,
     "Time": -1,
     "Overlay": false,
     "ReFlash": false,
@@ -14610,8 +14610,8 @@
       }
     ],
     "BaseCalType": 1,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 2,
+    "NextGoal": 7,
     "Time": -1,
     "Overlay": false,
     "ReFlash": false,
@@ -14652,8 +14652,8 @@
       }
     ],
     "BaseCalType": 1,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 2,
+    "NextGoal": 7,
     "Time": -1,
     "Overlay": false,
     "ReFlash": false,
@@ -14694,8 +14694,8 @@
       }
     ],
     "BaseCalType": 1,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 2,
+    "NextGoal": 7,
     "Time": -1,
     "Overlay": false,
     "ReFlash": false,
@@ -14736,8 +14736,8 @@
       }
     ],
     "BaseCalType": 1,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 2,
+    "NextGoal": 7,
     "Time": -1,
     "Overlay": false,
     "ReFlash": false,
@@ -14778,8 +14778,8 @@
       }
     ],
     "BaseCalType": 1,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 2,
+    "NextGoal": 7,
     "Time": -1,
     "Overlay": false,
     "ReFlash": false,
@@ -14820,8 +14820,8 @@
       }
     ],
     "BaseCalType": 1,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 2,
+    "NextGoal": 7,
     "Time": -1,
     "Overlay": false,
     "ReFlash": false,
@@ -14862,8 +14862,8 @@
       }
     ],
     "BaseCalType": 1,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 2,
+    "NextGoal": 7,
     "Time": -1,
     "Overlay": false,
     "ReFlash": false,
@@ -14904,8 +14904,8 @@
       }
     ],
     "BaseCalType": 1,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 2,
+    "NextGoal": 7,
     "Time": -1,
     "Overlay": false,
     "ReFlash": false,
@@ -14946,8 +14946,8 @@
       }
     ],
     "BaseCalType": 1,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 2,
+    "NextGoal": 7,
     "Time": -1,
     "Overlay": false,
     "ReFlash": false,
@@ -14988,8 +14988,8 @@
       }
     ],
     "BaseCalType": 1,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 2,
+    "NextGoal": 7,
     "Time": -1,
     "Overlay": false,
     "ReFlash": false,
@@ -15030,8 +15030,8 @@
       }
     ],
     "BaseCalType": 1,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 2,
+    "NextGoal": 7,
     "Time": -1,
     "Overlay": false,
     "ReFlash": false,
@@ -15072,8 +15072,8 @@
       }
     ],
     "BaseCalType": 1,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 2,
+    "NextGoal": 7,
     "Time": -1,
     "Overlay": false,
     "ReFlash": false,
@@ -15114,8 +15114,8 @@
       }
     ],
     "BaseCalType": 1,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 2,
+    "NextGoal": 7,
     "Time": -1,
     "Overlay": false,
     "ReFlash": false,
@@ -15156,8 +15156,8 @@
       }
     ],
     "BaseCalType": 1,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 2,
+    "NextGoal": 7,
     "Time": -1,
     "Overlay": false,
     "ReFlash": false,
@@ -15198,8 +15198,8 @@
       }
     ],
     "BaseCalType": 1,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 2,
+    "NextGoal": 7,
     "Time": -1,
     "Overlay": false,
     "ReFlash": false,
@@ -15240,8 +15240,8 @@
       }
     ],
     "BaseCalType": 1,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 2,
+    "NextGoal": 7,
     "Time": -1,
     "Overlay": false,
     "ReFlash": false,
@@ -15282,8 +15282,8 @@
       }
     ],
     "BaseCalType": 1,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 2,
+    "NextGoal": 7,
     "Time": -1,
     "Overlay": false,
     "ReFlash": false,
@@ -15324,8 +15324,8 @@
       }
     ],
     "BaseCalType": 1,
-    "FirstGoal": 0,
-    "NextGoal": 0,
+    "FirstGoal": 2,
+    "NextGoal": 7,
     "Time": -1,
     "Overlay": false,
     "ReFlash": false,
@@ -15352,9 +15352,9 @@
   },
   {
     "id": 20334,
-    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
     "Icon": "20022",
-    "Des": "为友方弓兵增加20%攻击力",
+    "Des": "为友方盾兵增加20%攻击力",
     "Show": true,
     "Buff_effect": [
       {
@@ -15394,9 +15394,9 @@
   },
   {
     "id": 20335,
-    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
     "Icon": "20022",
-    "Des": "为友方弓兵增加22%攻击力",
+    "Des": "为友方盾兵增加22%攻击力",
     "Show": true,
     "Buff_effect": [
       {
@@ -15436,9 +15436,9 @@
   },
   {
     "id": 20336,
-    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
     "Icon": "20022",
-    "Des": "为友方弓兵增加24%攻击力",
+    "Des": "为友方盾兵增加24%攻击力",
     "Show": true,
     "Buff_effect": [
       {
@@ -15478,9 +15478,9 @@
   },
   {
     "id": 20337,
-    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
     "Icon": "20022",
-    "Des": "为友方弓兵增加26%攻击力",
+    "Des": "为友方盾兵增加26%攻击力",
     "Show": true,
     "Buff_effect": [
       {
@@ -15520,9 +15520,9 @@
   },
   {
     "id": 20338,
-    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
     "Icon": "20022",
-    "Des": "为友方弓兵增加28%攻击力",
+    "Des": "为友方盾兵增加28%攻击力",
     "Show": true,
     "Buff_effect": [
       {
@@ -15562,9 +15562,9 @@
   },
   {
     "id": 20339,
-    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
     "Icon": "20022",
-    "Des": "为友方弓兵增加30%攻击力",
+    "Des": "为友方盾兵增加30%攻击力",
     "Show": true,
     "Buff_effect": [
       {
@@ -15604,9 +15604,9 @@
   },
   {
     "id": 20340,
-    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
     "Icon": "20022",
-    "Des": "为友方弓兵增加32%攻击力",
+    "Des": "为友方盾兵增加32%攻击力",
     "Show": true,
     "Buff_effect": [
       {
@@ -15646,9 +15646,9 @@
   },
   {
     "id": 20341,
-    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
     "Icon": "20022",
-    "Des": "为友方弓兵增加34%攻击力",
+    "Des": "为友方盾兵增加34%攻击力",
     "Show": true,
     "Buff_effect": [
       {
@@ -15688,9 +15688,9 @@
   },
   {
     "id": 20342,
-    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
     "Icon": "20022",
-    "Des": "为友方弓兵增加36%攻击力",
+    "Des": "为友方盾兵增加36%攻击力",
     "Show": true,
     "Buff_effect": [
       {
@@ -15730,9 +15730,9 @@
   },
   {
     "id": 20343,
-    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
     "Icon": "20022",
-    "Des": "为友方弓兵增加38%攻击力",
+    "Des": "为友方盾兵增加38%攻击力",
     "Show": true,
     "Buff_effect": [
       {
@@ -15772,9 +15772,9 @@
   },
   {
     "id": 20344,
-    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
     "Icon": "20022",
-    "Des": "为友方弓兵增加40%攻击力",
+    "Des": "为友方盾兵增加40%攻击力",
     "Show": true,
     "Buff_effect": [
       {
@@ -15814,9 +15814,9 @@
   },
   {
     "id": 20345,
-    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
     "Icon": "20022",
-    "Des": "为友方弓兵增加42%攻击力",
+    "Des": "为友方盾兵增加42%攻击力",
     "Show": true,
     "Buff_effect": [
       {
@@ -15856,9 +15856,9 @@
   },
   {
     "id": 20346,
-    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
     "Icon": "20022",
-    "Des": "为友方弓兵增加44%攻击力",
+    "Des": "为友方盾兵增加44%攻击力",
     "Show": true,
     "Buff_effect": [
       {
@@ -15898,9 +15898,9 @@
   },
   {
     "id": 20347,
-    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
     "Icon": "20022",
-    "Des": "为友方弓兵增加46%攻击力",
+    "Des": "为友方盾兵增加46%攻击力",
     "Show": true,
     "Buff_effect": [
       {
@@ -15940,9 +15940,9 @@
   },
   {
     "id": 20348,
-    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
     "Icon": "20022",
-    "Des": "为友方弓兵增加48%攻击力",
+    "Des": "为友方盾兵增加48%攻击力",
     "Show": true,
     "Buff_effect": [
       {
@@ -15982,9 +15982,9 @@
   },
   {
     "id": 20349,
-    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
     "Icon": "20022",
-    "Des": "为友方弓兵增加50%攻击力",
+    "Des": "为友方盾兵增加50%攻击力",
     "Show": true,
     "Buff_effect": [
       {
@@ -16024,9 +16024,9 @@
   },
   {
     "id": 20350,
-    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
     "Icon": "20022",
-    "Des": "为友方弓兵增加52%攻击力",
+    "Des": "为友方盾兵增加52%攻击力",
     "Show": true,
     "Buff_effect": [
       {
@@ -16066,9 +16066,9 @@
   },
   {
     "id": 20351,
-    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
     "Icon": "20022",
-    "Des": "为友方弓兵增加54%攻击力",
+    "Des": "为友方盾兵增加54%攻击力",
     "Show": true,
     "Buff_effect": [
       {
@@ -16108,9 +16108,9 @@
   },
   {
     "id": 20352,
-    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
     "Icon": "20022",
-    "Des": "为友方弓兵增加56%攻击力",
+    "Des": "为友方盾兵增加56%攻击力",
     "Show": true,
     "Buff_effect": [
       {
@@ -16150,9 +16150,9 @@
   },
   {
     "id": 20353,
-    "Name": "增加友方弓兵（雇佣兵+英雄）x%攻击力",
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
     "Icon": "20022",
-    "Des": "为友方弓兵增加58%攻击力",
+    "Des": "为友方盾兵增加58%攻击力",
     "Show": true,
     "Buff_effect": [
       {
@@ -16167,6 +16167,7468 @@
     "FirstGoal": 2,
     "NextGoal": 3,
     "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20354,
+    "Name": "对敌方建筑造成x伤害",
+    "Icon": "20023",
+    "Des": "对敌方建筑造成50伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          50
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20355,
+    "Name": "对敌方建筑造成x伤害",
+    "Icon": "20023",
+    "Des": "对敌方建筑造成75伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          75
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20356,
+    "Name": "对敌方建筑造成x伤害",
+    "Icon": "20023",
+    "Des": "对敌方建筑造成100伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20357,
+    "Name": "对敌方建筑造成x伤害",
+    "Icon": "20023",
+    "Des": "对敌方建筑造成125伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          125
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20358,
+    "Name": "对敌方建筑造成x伤害",
+    "Icon": "20023",
+    "Des": "对敌方建筑造成150伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          150
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20359,
+    "Name": "对敌方建筑造成x伤害",
+    "Icon": "20023",
+    "Des": "对敌方建筑造成175伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          175
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20360,
+    "Name": "对敌方建筑造成x伤害",
+    "Icon": "20023",
+    "Des": "对敌方建筑造成200伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          200
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20361,
+    "Name": "对敌方建筑造成x伤害",
+    "Icon": "20023",
+    "Des": "对敌方建筑造成225伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          225
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20362,
+    "Name": "对敌方建筑造成x伤害",
+    "Icon": "20023",
+    "Des": "对敌方建筑造成250伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          250
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20363,
+    "Name": "对敌方建筑造成x伤害",
+    "Icon": "20023",
+    "Des": "对敌方建筑造成275伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          275
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20364,
+    "Name": "对敌方建筑造成x伤害",
+    "Icon": "20023",
+    "Des": "对敌方建筑造成300伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          300
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20365,
+    "Name": "对敌方建筑造成x伤害",
+    "Icon": "20023",
+    "Des": "对敌方建筑造成325伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          325
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20366,
+    "Name": "对敌方建筑造成x伤害",
+    "Icon": "20023",
+    "Des": "对敌方建筑造成350伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          350
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20367,
+    "Name": "对敌方建筑造成x伤害",
+    "Icon": "20023",
+    "Des": "对敌方建筑造成375伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          375
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20368,
+    "Name": "对敌方建筑造成x伤害",
+    "Icon": "20023",
+    "Des": "对敌方建筑造成400伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          400
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20369,
+    "Name": "对敌方建筑造成x伤害",
+    "Icon": "20023",
+    "Des": "对敌方建筑造成425伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          425
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20370,
+    "Name": "对敌方建筑造成x伤害",
+    "Icon": "20023",
+    "Des": "对敌方建筑造成450伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          450
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20371,
+    "Name": "对敌方建筑造成x伤害",
+    "Icon": "20023",
+    "Des": "对敌方建筑造成475伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          475
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20372,
+    "Name": "对敌方建筑造成x伤害",
+    "Icon": "20023",
+    "Des": "对敌方建筑造成500伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          500
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20373,
+    "Name": "对敌方建筑造成x伤害",
+    "Icon": "20023",
+    "Des": "对敌方建筑造成525伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          525
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20374,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20024",
+    "Des": "对前方所有敌人造成50伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          50
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20375,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20024",
+    "Des": "对前方所有敌人造成75伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          75
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20376,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20024",
+    "Des": "对前方所有敌人造成100伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20377,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20024",
+    "Des": "对前方所有敌人造成125伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          125
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20378,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20024",
+    "Des": "对前方所有敌人造成150伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          150
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20379,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20024",
+    "Des": "对前方所有敌人造成175伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          175
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20380,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20024",
+    "Des": "对前方所有敌人造成200伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          200
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20381,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20024",
+    "Des": "对前方所有敌人造成225伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          225
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20382,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20024",
+    "Des": "对前方所有敌人造成250伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          250
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20383,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20024",
+    "Des": "对前方所有敌人造成275伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          275
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20384,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20024",
+    "Des": "对前方所有敌人造成300伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          300
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20385,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20024",
+    "Des": "对前方所有敌人造成325伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          325
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20386,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20024",
+    "Des": "对前方所有敌人造成350伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          350
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20387,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20024",
+    "Des": "对前方所有敌人造成375伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          375
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20388,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20024",
+    "Des": "对前方所有敌人造成400伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          400
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20389,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20024",
+    "Des": "对前方所有敌人造成425伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          425
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20390,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20024",
+    "Des": "对前方所有敌人造成450伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          450
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20391,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20024",
+    "Des": "对前方所有敌人造成475伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          475
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20392,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20024",
+    "Des": "对前方所有敌人造成500伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          500
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20393,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20024",
+    "Des": "对前方所有敌人造成525伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          525
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20394,
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20025",
+    "Des": "为友方盾兵增加20%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          20
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 2,
+    "NextGoal": 7,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20395,
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20025",
+    "Des": "为友方盾兵增加22%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          22
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 2,
+    "NextGoal": 7,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20396,
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20025",
+    "Des": "为友方盾兵增加24%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          24
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 2,
+    "NextGoal": 7,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20397,
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20025",
+    "Des": "为友方盾兵增加26%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          26
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 2,
+    "NextGoal": 7,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20398,
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20025",
+    "Des": "为友方盾兵增加28%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          28
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 2,
+    "NextGoal": 7,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20399,
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20025",
+    "Des": "为友方盾兵增加30%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          30
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 2,
+    "NextGoal": 7,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20400,
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20025",
+    "Des": "为友方盾兵增加32%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          32
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 2,
+    "NextGoal": 7,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20401,
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20025",
+    "Des": "为友方盾兵增加34%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          34
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 2,
+    "NextGoal": 7,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20402,
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20025",
+    "Des": "为友方盾兵增加36%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          36
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 2,
+    "NextGoal": 7,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20403,
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20025",
+    "Des": "为友方盾兵增加38%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          38
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 2,
+    "NextGoal": 7,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20404,
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20025",
+    "Des": "为友方盾兵增加40%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          40
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 2,
+    "NextGoal": 7,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20405,
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20025",
+    "Des": "为友方盾兵增加42%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          42
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 2,
+    "NextGoal": 7,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20406,
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20025",
+    "Des": "为友方盾兵增加44%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          44
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 2,
+    "NextGoal": 7,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20407,
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20025",
+    "Des": "为友方盾兵增加46%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          46
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 2,
+    "NextGoal": 7,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20408,
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20025",
+    "Des": "为友方盾兵增加48%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          48
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 2,
+    "NextGoal": 7,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20409,
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20025",
+    "Des": "为友方盾兵增加50%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          50
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 2,
+    "NextGoal": 7,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20410,
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20025",
+    "Des": "为友方盾兵增加52%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          52
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 2,
+    "NextGoal": 7,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20411,
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20025",
+    "Des": "为友方盾兵增加54%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          54
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 2,
+    "NextGoal": 7,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20412,
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20025",
+    "Des": "为友方盾兵增加56%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          56
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 2,
+    "NextGoal": 7,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20413,
+    "Name": "增加友方盾兵（雇佣兵+英雄）x%攻击力",
+    "Icon": "20025",
+    "Des": "为友方盾兵增加58%攻击力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          58
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 2,
+    "NextGoal": 7,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20414,
+    "Name": "增加自己x点防御力",
+    "Icon": "20026",
+    "Des": "增加自己20点防御力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 35,
+        "_param": [
+          100,
+          20
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 4,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20415,
+    "Name": "增加自己x点防御力",
+    "Icon": "20026",
+    "Des": "增加自己22点防御力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 35,
+        "_param": [
+          100,
+          22
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 4,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20416,
+    "Name": "增加自己x点防御力",
+    "Icon": "20026",
+    "Des": "增加自己24点防御力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 35,
+        "_param": [
+          100,
+          24
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 4,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20417,
+    "Name": "增加自己x点防御力",
+    "Icon": "20026",
+    "Des": "增加自己26点防御力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 35,
+        "_param": [
+          100,
+          26
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 4,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20418,
+    "Name": "增加自己x点防御力",
+    "Icon": "20026",
+    "Des": "增加自己28点防御力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 35,
+        "_param": [
+          100,
+          28
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 4,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20419,
+    "Name": "增加自己x点防御力",
+    "Icon": "20026",
+    "Des": "增加自己30点防御力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 35,
+        "_param": [
+          100,
+          30
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 4,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20420,
+    "Name": "增加自己x点防御力",
+    "Icon": "20026",
+    "Des": "增加自己32点防御力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 35,
+        "_param": [
+          100,
+          32
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 4,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20421,
+    "Name": "增加自己x点防御力",
+    "Icon": "20026",
+    "Des": "增加自己34点防御力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 35,
+        "_param": [
+          100,
+          34
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 4,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20422,
+    "Name": "增加自己x点防御力",
+    "Icon": "20026",
+    "Des": "增加自己36点防御力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 35,
+        "_param": [
+          100,
+          36
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 4,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20423,
+    "Name": "增加自己x点防御力",
+    "Icon": "20026",
+    "Des": "增加自己38点防御力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 35,
+        "_param": [
+          100,
+          38
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 4,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20424,
+    "Name": "增加自己x点防御力",
+    "Icon": "20026",
+    "Des": "增加自己40点防御力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 35,
+        "_param": [
+          100,
+          40
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 4,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20425,
+    "Name": "增加自己x点防御力",
+    "Icon": "20026",
+    "Des": "增加自己42点防御力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 35,
+        "_param": [
+          100,
+          42
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 4,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20426,
+    "Name": "增加自己x点防御力",
+    "Icon": "20026",
+    "Des": "增加自己44点防御力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 35,
+        "_param": [
+          100,
+          44
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 4,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20427,
+    "Name": "增加自己x点防御力",
+    "Icon": "20026",
+    "Des": "增加自己46点防御力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 35,
+        "_param": [
+          100,
+          46
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 4,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20428,
+    "Name": "增加自己x点防御力",
+    "Icon": "20026",
+    "Des": "增加自己48点防御力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 35,
+        "_param": [
+          100,
+          48
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 4,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20429,
+    "Name": "增加自己x点防御力",
+    "Icon": "20026",
+    "Des": "增加自己50点防御力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 35,
+        "_param": [
+          100,
+          50
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 4,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20430,
+    "Name": "增加自己x点防御力",
+    "Icon": "20026",
+    "Des": "增加自己52点防御力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 35,
+        "_param": [
+          100,
+          52
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 4,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20431,
+    "Name": "增加自己x点防御力",
+    "Icon": "20026",
+    "Des": "增加自己54点防御力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 35,
+        "_param": [
+          100,
+          54
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 4,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20432,
+    "Name": "增加自己x点防御力",
+    "Icon": "20026",
+    "Des": "增加自己56点防御力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 35,
+        "_param": [
+          100,
+          56
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 4,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20433,
+    "Name": "增加自己x点防御力",
+    "Icon": "20026",
+    "Des": "增加自己58点防御力",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 35,
+        "_param": [
+          100,
+          58
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 4,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20434,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20027",
+    "Des": "对前方所有敌人造成50伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          50
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20435,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20027",
+    "Des": "对前方所有敌人造成75伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          75
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20436,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20027",
+    "Des": "对前方所有敌人造成100伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20437,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20027",
+    "Des": "对前方所有敌人造成125伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          125
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20438,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20027",
+    "Des": "对前方所有敌人造成150伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          150
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20439,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20027",
+    "Des": "对前方所有敌人造成175伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          175
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20440,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20027",
+    "Des": "对前方所有敌人造成200伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          200
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20441,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20027",
+    "Des": "对前方所有敌人造成225伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          225
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20442,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20027",
+    "Des": "对前方所有敌人造成250伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          250
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20443,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20027",
+    "Des": "对前方所有敌人造成275伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          275
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20444,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20027",
+    "Des": "对前方所有敌人造成300伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          300
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20445,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20027",
+    "Des": "对前方所有敌人造成325伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          325
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20446,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20027",
+    "Des": "对前方所有敌人造成350伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          350
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20447,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20027",
+    "Des": "对前方所有敌人造成375伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          375
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20448,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20027",
+    "Des": "对前方所有敌人造成400伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          400
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20449,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20027",
+    "Des": "对前方所有敌人造成425伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          425
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20450,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20027",
+    "Des": "对前方所有敌人造成450伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          450
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20451,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20027",
+    "Des": "对前方所有敌人造成475伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          475
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20452,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20027",
+    "Des": "对前方所有敌人造成500伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          500
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20453,
+    "Name": "对前方所有敌人造成x伤害",
+    "Icon": "20027",
+    "Des": "对前方所有敌人造成525伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 34,
+        "_param": [
+          100,
+          525
+        ]
+      }
+    ],
+    "BaseCalType": 2,
+    "FirstGoal": 3,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20454,
+    "Name": "持续时间内所有友方单位移速降低x%",
+    "Icon": "20028",
+    "Des": "3秒内所有友方单位移速降低20%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 3,
+        "_param": [
+          100,
+          20
+        ]
+      }
+    ],
+    "BaseCalType": 4,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20455,
+    "Name": "持续时间内所有友方单位攻击力增加x%",
+    "Icon": "20029",
+    "Des": "3秒内所有友方单位攻击力增加20%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          20
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20456,
+    "Name": "持续时间内所有友方单位攻击力增加x%",
+    "Icon": "20029",
+    "Des": "3秒内所有友方单位攻击力增加22%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          22
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20457,
+    "Name": "持续时间内所有友方单位攻击力增加x%",
+    "Icon": "20029",
+    "Des": "3秒内所有友方单位攻击力增加24%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          24
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20458,
+    "Name": "持续时间内所有友方单位攻击力增加x%",
+    "Icon": "20029",
+    "Des": "3秒内所有友方单位攻击力增加26%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          26
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20459,
+    "Name": "持续时间内所有友方单位攻击力增加x%",
+    "Icon": "20029",
+    "Des": "3秒内所有友方单位攻击力增加28%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          28
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20460,
+    "Name": "持续时间内所有友方单位攻击力增加x%",
+    "Icon": "20029",
+    "Des": "3秒内所有友方单位攻击力增加30%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          30
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20461,
+    "Name": "持续时间内所有友方单位攻击力增加x%",
+    "Icon": "20029",
+    "Des": "3秒内所有友方单位攻击力增加32%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          32
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20462,
+    "Name": "持续时间内所有友方单位攻击力增加x%",
+    "Icon": "20029",
+    "Des": "3秒内所有友方单位攻击力增加34%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          34
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20463,
+    "Name": "持续时间内所有友方单位攻击力增加x%",
+    "Icon": "20029",
+    "Des": "3秒内所有友方单位攻击力增加36%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          36
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20464,
+    "Name": "持续时间内所有友方单位攻击力增加x%",
+    "Icon": "20029",
+    "Des": "3秒内所有友方单位攻击力增加38%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          38
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20465,
+    "Name": "持续时间内所有友方单位攻击力增加x%",
+    "Icon": "20029",
+    "Des": "3秒内所有友方单位攻击力增加40%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          40
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20466,
+    "Name": "持续时间内所有友方单位攻击力增加x%",
+    "Icon": "20029",
+    "Des": "3秒内所有友方单位攻击力增加42%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          42
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20467,
+    "Name": "持续时间内所有友方单位攻击力增加x%",
+    "Icon": "20029",
+    "Des": "3秒内所有友方单位攻击力增加44%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          44
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20468,
+    "Name": "持续时间内所有友方单位攻击力增加x%",
+    "Icon": "20029",
+    "Des": "3秒内所有友方单位攻击力增加46%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          46
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20469,
+    "Name": "持续时间内所有友方单位攻击力增加x%",
+    "Icon": "20029",
+    "Des": "3秒内所有友方单位攻击力增加48%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          48
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20470,
+    "Name": "持续时间内所有友方单位攻击力增加x%",
+    "Icon": "20029",
+    "Des": "3秒内所有友方单位攻击力增加50%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          50
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20471,
+    "Name": "持续时间内所有友方单位攻击力增加x%",
+    "Icon": "20029",
+    "Des": "3秒内所有友方单位攻击力增加52%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          52
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20472,
+    "Name": "持续时间内所有友方单位攻击力增加x%",
+    "Icon": "20029",
+    "Des": "3秒内所有友方单位攻击力增加54%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          54
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20473,
+    "Name": "持续时间内所有友方单位攻击力增加x%",
+    "Icon": "20029",
+    "Des": "3秒内所有友方单位攻击力增加56%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          56
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20474,
+    "Name": "持续时间内所有友方单位攻击力增加x%",
+    "Icon": "20029",
+    "Des": "3秒内所有友方单位攻击力增加58%",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 14,
+        "_param": [
+          100,
+          58
+        ]
+      }
+    ],
+    "BaseCalType": 3,
+    "FirstGoal": 1,
+    "NextGoal": 29,
+    "Time": 3000,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20475,
+    "Name": "获得x点cost",
+    "Icon": "20030",
+    "Des": "获得100点cost",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 36,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 17,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20476,
+    "Name": "获得x点cost",
+    "Icon": "20030",
+    "Des": "获得150点cost",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 36,
+        "_param": [
+          100,
+          150
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 17,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20477,
+    "Name": "获得x点cost",
+    "Icon": "20030",
+    "Des": "获得200点cost",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 36,
+        "_param": [
+          100,
+          200
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 17,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20478,
+    "Name": "获得x点cost",
+    "Icon": "20030",
+    "Des": "获得250点cost",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 36,
+        "_param": [
+          100,
+          250
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 17,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20479,
+    "Name": "获得x点cost",
+    "Icon": "20030",
+    "Des": "获得300点cost",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 36,
+        "_param": [
+          100,
+          300
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 17,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20480,
+    "Name": "获得x点cost",
+    "Icon": "20030",
+    "Des": "获得350点cost",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 36,
+        "_param": [
+          100,
+          350
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 17,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20481,
+    "Name": "获得x点cost",
+    "Icon": "20030",
+    "Des": "获得400点cost",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 36,
+        "_param": [
+          100,
+          400
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 17,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20482,
+    "Name": "获得x点cost",
+    "Icon": "20030",
+    "Des": "获得450点cost",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 36,
+        "_param": [
+          100,
+          450
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 17,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20483,
+    "Name": "获得x点cost",
+    "Icon": "20030",
+    "Des": "获得500点cost",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 36,
+        "_param": [
+          100,
+          500
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 17,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20484,
+    "Name": "获得x点cost",
+    "Icon": "20030",
+    "Des": "获得550点cost",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 36,
+        "_param": [
+          100,
+          550
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 17,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20485,
+    "Name": "获得x点cost",
+    "Icon": "20030",
+    "Des": "获得600点cost",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 36,
+        "_param": [
+          100,
+          600
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 17,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20486,
+    "Name": "获得x点cost",
+    "Icon": "20030",
+    "Des": "获得650点cost",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 36,
+        "_param": [
+          100,
+          650
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 17,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20487,
+    "Name": "获得x点cost",
+    "Icon": "20030",
+    "Des": "获得700点cost",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 36,
+        "_param": [
+          100,
+          700
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 17,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20488,
+    "Name": "获得x点cost",
+    "Icon": "20030",
+    "Des": "获得750点cost",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 36,
+        "_param": [
+          100,
+          750
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 17,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20489,
+    "Name": "获得x点cost",
+    "Icon": "20030",
+    "Des": "获得800点cost",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 36,
+        "_param": [
+          100,
+          800
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 17,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20490,
+    "Name": "获得x点cost",
+    "Icon": "20030",
+    "Des": "获得850点cost",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 36,
+        "_param": [
+          100,
+          850
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 17,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20491,
+    "Name": "获得x点cost",
+    "Icon": "20030",
+    "Des": "获得900点cost",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 36,
+        "_param": [
+          100,
+          900
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 17,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20492,
+    "Name": "获得x点cost",
+    "Icon": "20030",
+    "Des": "获得950点cost",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 36,
+        "_param": [
+          100,
+          950
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 17,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20493,
+    "Name": "获得x点cost",
+    "Icon": "20030",
+    "Des": "获得1000点cost",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 36,
+        "_param": [
+          100,
+          1000
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 17,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20494,
+    "Name": "获得x点cost",
+    "Icon": "20030",
+    "Des": "获得1050点cost",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 36,
+        "_param": [
+          100,
+          1050
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 17,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20495,
+    "Name": "每秒恢复x点血量",
+    "Icon": "20031",
+    "Des": "每秒恢复3点血量",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          3
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": true,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          3
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20496,
+    "Name": "每秒恢复x点血量",
+    "Icon": "20031",
+    "Des": "每秒恢复4点血量",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          4
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": true,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          4
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20497,
+    "Name": "每秒恢复x点血量",
+    "Icon": "20031",
+    "Des": "每秒恢复5点血量",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          5
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": true,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          5
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20498,
+    "Name": "每秒恢复x点血量",
+    "Icon": "20031",
+    "Des": "每秒恢复6点血量",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          6
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": true,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          6
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20499,
+    "Name": "每秒恢复x点血量",
+    "Icon": "20031",
+    "Des": "每秒恢复7点血量",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          7
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": true,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          7
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20500,
+    "Name": "每秒恢复x点血量",
+    "Icon": "20031",
+    "Des": "每秒恢复8点血量",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          8
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": true,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          8
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20501,
+    "Name": "每秒恢复x点血量",
+    "Icon": "20031",
+    "Des": "每秒恢复9点血量",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          9
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": true,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          9
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20502,
+    "Name": "每秒恢复x点血量",
+    "Icon": "20031",
+    "Des": "每秒恢复10点血量",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          10
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": true,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          10
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20503,
+    "Name": "每秒恢复x点血量",
+    "Icon": "20031",
+    "Des": "每秒恢复11点血量",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          11
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": true,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          11
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20504,
+    "Name": "每秒恢复x点血量",
+    "Icon": "20031",
+    "Des": "每秒恢复12点血量",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          12
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": true,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          12
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20505,
+    "Name": "每秒恢复x点血量",
+    "Icon": "20031",
+    "Des": "每秒恢复13点血量",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          13
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": true,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          13
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20506,
+    "Name": "每秒恢复x点血量",
+    "Icon": "20031",
+    "Des": "每秒恢复14点血量",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          14
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": true,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          14
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20507,
+    "Name": "每秒恢复x点血量",
+    "Icon": "20031",
+    "Des": "每秒恢复15点血量",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          15
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": true,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          15
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20508,
+    "Name": "每秒恢复x点血量",
+    "Icon": "20031",
+    "Des": "每秒恢复16点血量",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          16
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": true,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          16
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20509,
+    "Name": "每秒恢复x点血量",
+    "Icon": "20031",
+    "Des": "每秒恢复17点血量",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          17
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": true,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          17
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20510,
+    "Name": "每秒恢复x点血量",
+    "Icon": "20031",
+    "Des": "每秒恢复18点血量",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          18
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": true,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          18
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20511,
+    "Name": "每秒恢复x点血量",
+    "Icon": "20031",
+    "Des": "每秒恢复19点血量",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          19
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": true,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          19
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20512,
+    "Name": "每秒恢复x点血量",
+    "Icon": "20031",
+    "Des": "每秒恢复20点血量",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          20
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": true,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          20
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20513,
+    "Name": "每秒恢复x点血量",
+    "Icon": "20031",
+    "Des": "每秒恢复21点血量",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          21
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": true,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          21
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20514,
+    "Name": "每秒恢复x点血量",
+    "Icon": "20031",
+    "Des": "每秒恢复22点血量",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          22
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 15,
+    "Time": -1,
+    "Overlay": true,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          22
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20515,
+    "Name": "恢复血量x点",
+    "Icon": "20032",
+    "Des": "恢复血量100点",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20516,
+    "Name": "恢复血量x点",
+    "Icon": "20032",
+    "Des": "恢复血量200点",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          200
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20517,
+    "Name": "恢复血量x点",
+    "Icon": "20032",
+    "Des": "恢复血量300点",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          300
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20518,
+    "Name": "恢复血量x点",
+    "Icon": "20032",
+    "Des": "恢复血量400点",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          400
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20519,
+    "Name": "恢复血量x点",
+    "Icon": "20032",
+    "Des": "恢复血量500点",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          500
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20520,
+    "Name": "恢复血量x点",
+    "Icon": "20032",
+    "Des": "恢复血量600点",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          600
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20521,
+    "Name": "恢复血量x点",
+    "Icon": "20032",
+    "Des": "恢复血量700点",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          700
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20522,
+    "Name": "恢复血量x点",
+    "Icon": "20032",
+    "Des": "恢复血量800点",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          800
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20523,
+    "Name": "恢复血量x点",
+    "Icon": "20032",
+    "Des": "恢复血量900点",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          900
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20524,
+    "Name": "恢复血量x点",
+    "Icon": "20032",
+    "Des": "恢复血量1000点",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          1000
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20525,
+    "Name": "恢复血量x点",
+    "Icon": "20032",
+    "Des": "恢复血量1100点",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          1100
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20526,
+    "Name": "恢复血量x点",
+    "Icon": "20032",
+    "Des": "恢复血量1200点",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          1200
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20527,
+    "Name": "恢复血量x点",
+    "Icon": "20032",
+    "Des": "恢复血量1300点",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          1300
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20528,
+    "Name": "恢复血量x点",
+    "Icon": "20032",
+    "Des": "恢复血量1400点",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          1400
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20529,
+    "Name": "恢复血量x点",
+    "Icon": "20032",
+    "Des": "恢复血量1500点",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          1500
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20530,
+    "Name": "恢复血量x点",
+    "Icon": "20032",
+    "Des": "恢复血量1600点",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          1600
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20531,
+    "Name": "恢复血量x点",
+    "Icon": "20032",
+    "Des": "恢复血量1700点",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          1700
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20532,
+    "Name": "恢复血量x点",
+    "Icon": "20032",
+    "Des": "恢复血量1800点",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          1800
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20533,
+    "Name": "恢复血量x点",
+    "Icon": "20032",
+    "Des": "恢复血量1900点",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          1900
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 13,
+    "Time": 0,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20534,
+    "Name": "恢复血量x点",
+    "Icon": "20032",
+    "Des": "恢复血量2000点",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 9,
+        "_param": [
+          100,
+          2000
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 2,
+    "NextGoal": 13,
+    "Time": 0,
     "Overlay": false,
     "ReFlash": false,
     "TickCd": 0,

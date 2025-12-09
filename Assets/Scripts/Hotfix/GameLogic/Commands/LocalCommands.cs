@@ -1,13 +1,14 @@
+using Cysharp.Threading.Tasks;
+using PitayaClient.Network.Manager;
+using PitayaGame.Enums;
+using PitayaGame.GameSvr;
 using QFramework;
+using QFramework.Game;
+using QFramework.UI;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using QFramework.UI;
-using QFramework.Game;
-using Cysharp.Threading.Tasks;
-using PitayaClient.Network.Manager;
-using PitayaGame.GameSvr;
-using PitayaGame.Enums;
+using static UnityEngine.GraphicsBuffer;
 
 /// <summary>
 /// �ֲ��決AStar��������Command
@@ -92,22 +93,37 @@ public class SetAllBuildingsLayerCommand : AbstractCommand
 /// </summary>
 public class AddSingleBuffToTargetCommand : AbstractCommand
 {
-    public Transform target;
+    public TargetData targetData;
     public int buffid;
     public GameObject effectObj;
-    public AddSingleBuffToTargetCommand(Transform _target, int _buffid,GameObject effectObj)
+    public AddSingleBuffToTargetCommand(TargetData targetData, int _buffid, GameObject effectObj)
     {
-        this.target = _target;
+        this.targetData = targetData;
         this.buffid = _buffid;
         this.effectObj = effectObj;
     }
+
     protected override void OnExecute()
     {
+        AddBuff(targetData.Target);
+        foreach (var target in targetData.Targets)
+        {
+            if (targetData.Target == target)
+                continue;
+            AddBuff(target);
+        }
+    }
+
+    void AddBuff(GameObject target)
+    {
+        if(!target)return;
         var buffRunner = target.GetComponent<EntityController>().buffRunner;
+        if (buffRunner.HasBuff(buffid)) return;
+        Debug.Log($"AddBuff target{target} {buffid}");
         if (buffRunner != null)
         {
-            buffRunner.GiveBuff(target, buffid);
-            buffRunner.ExecuteBuffs();
+            buffRunner.GiveBuff(target.transform, buffid);
+            buffRunner.ExecuteBuff(buffid);
         }
     }
 }

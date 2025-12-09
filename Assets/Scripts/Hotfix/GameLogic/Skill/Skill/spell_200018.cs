@@ -26,7 +26,7 @@ namespace QFramework.Game
                 ActionKit.Delay(0.1f, () =>
                 {
                     int buffId = packetData._data.Effect[0];
-					this.SendCommand(new AddSingleBuffToTargetCommand(res.Target.transform, buffId, effect));// 添加雷霆伤害技能对应的buff
+					this.SendCommand(new AddSingleBuffToTargetCommand(new TargetData { Target = res.Target}, buffId, effect));// 添加雷霆伤害技能对应的buff
                                                                                                //res.GetComponent<ICanHurt>().BeHurt(packetData.damageDate.GetAllDamage());
                 }).Start(this);
             }

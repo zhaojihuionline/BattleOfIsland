@@ -26,7 +26,7 @@ namespace cfg
         /// </summary>
         Attack_1 = 2,
         /// <summary>
-        /// 移动速度前三个不用
+        /// (x,y)x暂无意义，y表示改变属性（移速变化）
         /// </summary>
         Speed = 3,
         /// <summary>
@@ -149,6 +149,18 @@ namespace cfg
         /// (x,y,z)x表示伤害次数，y表示伤害值，z表示间隔(/100 比如填30等于0.3秒）
         /// </summary>
         RandomTargetDamage = 33,
+        /// <summary>
+        /// (x,y)x暂无意义，y表示改变属性（血量值变化）
+        /// </summary>
+        Health = 34,
+        /// <summary>
+        /// (x,y)x暂无意义，y表示改变属性（防御力值变化）
+        /// </summary>
+        Defense = 35,
+        /// <summary>
+        /// (x,y)x暂无意义，y表示改变属性（cost值变化）
+        /// </summary>
+        Cost = 36,
     }
 
 } 

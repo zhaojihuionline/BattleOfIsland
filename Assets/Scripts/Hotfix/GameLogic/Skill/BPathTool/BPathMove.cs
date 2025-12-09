@@ -37,7 +37,7 @@ public class BPathMove : MonoBehaviour, IController
             });
     }
 
-    public void DOTweenMovePath(Transform tar)
+    public void DOTweenMovePath(Transform tar,bool destroy = true)
     {
         target = tar;
         Vector3 previousPosition = transform.position;
@@ -91,6 +91,7 @@ public class BPathMove : MonoBehaviour, IController
         .OnComplete(() =>
         {
             OnMoveComplete?.Invoke();
+            if(destroy)
             Destroy(gameObject);
         });
     }

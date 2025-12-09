@@ -27,7 +27,7 @@ namespace QFramework.Game
 			IHaveHP ch = packetData.target.GetComponent<IHaveHP>();
 			//ch.currentHP += ch.HPMAX * packetData._data.Effect[0];
 			// 加一个加血buff
-			this.SendCommand(new AddSingleBuffToTargetCommand(packetData.target.transform, packetData._data.Effect[0], effect));
+			this.SendCommand(new AddSingleBuffToTargetCommand(packetData.TargetData, packetData._data.Effect[0], effect));
 		}
 	}
 }

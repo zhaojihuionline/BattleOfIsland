@@ -40,7 +40,8 @@ public class skill_10005 : SkillController
             //{
 
             //}
-            this.SendCommand(new AddSingleBuffToTargetCommand(packetData.caster.transform, packetData._data.Effect[0], newFXEntity));
+
+            this.SendCommand(new AddSingleBuffToTargetCommand(new TargetData() { Target = packetData.caster}, packetData._data.Effect[0], newFXEntity));
         }
         base.OnStart_Cast();
     }

@@ -928,9 +928,9 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000201",
     "_prefab": "skill_10002",
-    "_cast_ranage": 200,
+    "_cast_ranage": 2000,
     "_tag_mask": [
-      "Build",
+      "Tower",
       "Hero"
     ],
     "_damage_range": 500,
@@ -945,26 +945,26 @@
     "_coll_time": 1000,
     "_release_time": [
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       }
     ],
     "_effect": [
-      100
+      20354
     ],
-    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成100伤害"
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成50伤害"
   },
   {
     "_id": 1000202,
@@ -975,7 +975,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000202",
     "_prefab": "skill_10002",
-    "_cast_ranage": 200,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -992,26 +992,26 @@
     "_coll_time": 1000,
     "_release_time": [
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       }
     ],
     "_effect": [
-      120
+      20355
     ],
-    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成120伤害"
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成75伤害"
   },
   {
     "_id": 1000203,
@@ -1022,7 +1022,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000203",
     "_prefab": "skill_10002",
-    "_cast_ranage": 200,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -1039,26 +1039,26 @@
     "_coll_time": 1000,
     "_release_time": [
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       }
     ],
     "_effect": [
-      140
+      20356
     ],
-    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成140伤害"
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成100伤害"
   },
   {
     "_id": 1000204,
@@ -1069,7 +1069,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000204",
     "_prefab": "skill_10002",
-    "_cast_ranage": 200,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -1086,26 +1086,26 @@
     "_coll_time": 1000,
     "_release_time": [
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       }
     ],
     "_effect": [
-      160
+      20357
     ],
-    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成160伤害"
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成125伤害"
   },
   {
     "_id": 1000205,
@@ -1116,7 +1116,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000205",
     "_prefab": "skill_10002",
-    "_cast_ranage": 200,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -1133,26 +1133,26 @@
     "_coll_time": 1000,
     "_release_time": [
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       }
     ],
     "_effect": [
-      180
+      20358
     ],
-    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成180伤害"
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成150伤害"
   },
   {
     "_id": 1000206,
@@ -1163,7 +1163,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000206",
     "_prefab": "skill_10002",
-    "_cast_ranage": 200,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -1180,26 +1180,26 @@
     "_coll_time": 1000,
     "_release_time": [
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       }
     ],
     "_effect": [
-      200
+      20359
     ],
-    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成200伤害"
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成175伤害"
   },
   {
     "_id": 1000207,
@@ -1210,7 +1210,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000207",
     "_prefab": "skill_10002",
-    "_cast_ranage": 200,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -1227,26 +1227,26 @@
     "_coll_time": 1000,
     "_release_time": [
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       }
     ],
     "_effect": [
-      220
+      20360
     ],
-    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成220伤害"
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成200伤害"
   },
   {
     "_id": 1000208,
@@ -1257,7 +1257,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000208",
     "_prefab": "skill_10002",
-    "_cast_ranage": 200,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -1274,26 +1274,26 @@
     "_coll_time": 1000,
     "_release_time": [
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       }
     ],
     "_effect": [
-      240
+      20361
     ],
-    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成240伤害"
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成225伤害"
   },
   {
     "_id": 1000209,
@@ -1304,7 +1304,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000209",
     "_prefab": "skill_10002",
-    "_cast_ranage": 200,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -1321,26 +1321,26 @@
     "_coll_time": 1000,
     "_release_time": [
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       }
     ],
     "_effect": [
-      260
+      20362
     ],
-    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成260伤害"
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成250伤害"
   },
   {
     "_id": 1000210,
@@ -1351,7 +1351,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000210",
     "_prefab": "skill_10002",
-    "_cast_ranage": 200,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -1368,26 +1368,26 @@
     "_coll_time": 1000,
     "_release_time": [
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       }
     ],
     "_effect": [
-      280
+      20363
     ],
-    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成280伤害"
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成275伤害"
   },
   {
     "_id": 1000211,
@@ -1398,7 +1398,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000211",
     "_prefab": "skill_10002",
-    "_cast_ranage": 200,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -1415,24 +1415,24 @@
     "_coll_time": 1000,
     "_release_time": [
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       }
     ],
     "_effect": [
-      300
+      20364
     ],
     "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成300伤害"
   },
@@ -1445,7 +1445,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000212",
     "_prefab": "skill_10002",
-    "_cast_ranage": 200,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -1462,26 +1462,26 @@
     "_coll_time": 1000,
     "_release_time": [
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       }
     ],
     "_effect": [
-      320
+      20365
     ],
-    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成320伤害"
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成325伤害"
   },
   {
     "_id": 1000213,
@@ -1492,7 +1492,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000213",
     "_prefab": "skill_10002",
-    "_cast_ranage": 200,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -1509,26 +1509,26 @@
     "_coll_time": 1000,
     "_release_time": [
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       }
     ],
     "_effect": [
-      340
+      20366
     ],
-    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成340伤害"
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成350伤害"
   },
   {
     "_id": 1000214,
@@ -1539,7 +1539,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000214",
     "_prefab": "skill_10002",
-    "_cast_ranage": 200,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -1556,26 +1556,26 @@
     "_coll_time": 1000,
     "_release_time": [
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       }
     ],
     "_effect": [
-      360
+      20367
     ],
-    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成360伤害"
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成375伤害"
   },
   {
     "_id": 1000215,
@@ -1586,7 +1586,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000215",
     "_prefab": "skill_10002",
-    "_cast_ranage": 200,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -1603,26 +1603,26 @@
     "_coll_time": 1000,
     "_release_time": [
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       }
     ],
     "_effect": [
-      380
+      20368
     ],
-    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成380伤害"
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成400伤害"
   },
   {
     "_id": 1000216,
@@ -1633,7 +1633,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000216",
     "_prefab": "skill_10002",
-    "_cast_ranage": 200,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -1650,26 +1650,26 @@
     "_coll_time": 1000,
     "_release_time": [
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       }
     ],
     "_effect": [
-      400
+      20369
     ],
-    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成400伤害"
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成425伤害"
   },
   {
     "_id": 1000217,
@@ -1680,7 +1680,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000217",
     "_prefab": "skill_10002",
-    "_cast_ranage": 200,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -1697,26 +1697,26 @@
     "_coll_time": 1000,
     "_release_time": [
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       }
     ],
     "_effect": [
-      420
+      20370
     ],
-    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成420伤害"
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成450伤害"
   },
   {
     "_id": 1000218,
@@ -1727,7 +1727,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000218",
     "_prefab": "skill_10002",
-    "_cast_ranage": 200,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -1744,26 +1744,26 @@
     "_coll_time": 1000,
     "_release_time": [
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       }
     ],
     "_effect": [
-      440
+      20371
     ],
-    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成440伤害"
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成475伤害"
   },
   {
     "_id": 1000219,
@@ -1774,7 +1774,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000219",
     "_prefab": "skill_10002",
-    "_cast_ranage": 200,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -1791,26 +1791,26 @@
     "_coll_time": 1000,
     "_release_time": [
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       }
     ],
     "_effect": [
-      460
+      20372
     ],
-    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成460伤害"
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成500伤害"
   },
   {
     "_id": 1000220,
@@ -1821,7 +1821,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000220",
     "_prefab": "skill_10002",
-    "_cast_ranage": 200,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -1838,26 +1838,26 @@
     "_coll_time": 1000,
     "_release_time": [
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 100
       },
       {
-        "_animator": "animator",
+        "_animator": "attack",
         "_time": 0
       }
     ],
     "_effect": [
-      480
+      20373
     ],
-    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成480伤害"
+    "_description": "标记一个区域，释放一个炸弹飞行器，爆炸造成525伤害"
   },
   {
     "_id": 1000301,
@@ -2841,7 +2841,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20003,
+      20434
+    ],
     "_description": "释放一段泡泡，对前方区域造成 100 点 AOE 伤害;若命中敌方英雄，使其 3 秒内无法移动"
   },
   {
@@ -2886,7 +2889,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20003,
+      20435
+    ],
     "_description": "释放一段泡泡，对前方区域造成 150 点 AOE 伤害;若命中敌方英雄，使其 3 秒内无法移动"
   },
   {
@@ -2931,7 +2937,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20003,
+      20436
+    ],
     "_description": "释放一段泡泡，对前方区域造成 200 点 AOE 伤害;若命中敌方英雄，使其 3 秒内无法移动"
   },
   {
@@ -2976,7 +2985,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20003,
+      20437
+    ],
     "_description": "释放一段泡泡，对前方区域造成 250 点 AOE 伤害;若命中敌方英雄，使其 3 秒内无法移动"
   },
   {
@@ -3021,7 +3033,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20003,
+      20438
+    ],
     "_description": "释放一段泡泡，对前方区域造成 300 点 AOE 伤害;若命中敌方英雄，使其 3 秒内无法移动"
   },
   {
@@ -3066,7 +3081,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20003,
+      20439
+    ],
     "_description": "释放一段泡泡，对前方区域造成 350 点 AOE 伤害;若命中敌方英雄，使其 3 秒内无法移动"
   },
   {
@@ -3111,7 +3129,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20003,
+      20440
+    ],
     "_description": "释放一段泡泡，对前方区域造成 400 点 AOE 伤害;若命中敌方英雄，使其 3 秒内无法移动"
   },
   {
@@ -3156,7 +3177,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20003,
+      20441
+    ],
     "_description": "释放一段泡泡，对前方区域造成 450 点 AOE 伤害;若命中敌方英雄，使其 3 秒内无法移动"
   },
   {
@@ -3201,7 +3225,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20003,
+      20442
+    ],
     "_description": "释放一段泡泡，对前方区域造成 500 点 AOE 伤害;若命中敌方英雄，使其 3 秒内无法移动"
   },
   {
@@ -3246,7 +3273,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20003,
+      20443
+    ],
     "_description": "释放一段泡泡，对前方区域造成 550 点 AOE 伤害;若命中敌方英雄，使其 3 秒内无法移动"
   },
   {
@@ -3291,7 +3321,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20003,
+      20444
+    ],
     "_description": "释放一段泡泡，对前方区域造成 600 点 AOE 伤害;若命中敌方英雄，使其 3 秒内无法移动"
   },
   {
@@ -3336,7 +3369,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20003,
+      20445
+    ],
     "_description": "释放一段泡泡，对前方区域造成 650 点 AOE 伤害;若命中敌方英雄，使其 3 秒内无法移动"
   },
   {
@@ -3381,7 +3417,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20003,
+      20446
+    ],
     "_description": "释放一段泡泡，对前方区域造成 700 点 AOE 伤害;若命中敌方英雄，使其 3 秒内无法移动"
   },
   {
@@ -3426,7 +3465,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20003,
+      20447
+    ],
     "_description": "释放一段泡泡，对前方区域造成 750 点 AOE 伤害;若命中敌方英雄，使其 3 秒内无法移动"
   },
   {
@@ -3471,7 +3513,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20003,
+      20448
+    ],
     "_description": "释放一段泡泡，对前方区域造成 800 点 AOE 伤害;若命中敌方英雄，使其 3 秒内无法移动"
   },
   {
@@ -3516,7 +3561,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20003,
+      20449
+    ],
     "_description": "释放一段泡泡，对前方区域造成 850 点 AOE 伤害;若命中敌方英雄，使其 3 秒内无法移动"
   },
   {
@@ -3561,7 +3609,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20003,
+      20450
+    ],
     "_description": "释放一段泡泡，对前方区域造成 900 点 AOE 伤害;若命中敌方英雄，使其 3 秒内无法移动"
   },
   {
@@ -3606,7 +3657,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20003,
+      20451
+    ],
     "_description": "释放一段泡泡，对前方区域造成 950 点 AOE 伤害;若命中敌方英雄，使其 3 秒内无法移动"
   },
   {
@@ -3651,7 +3705,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20003,
+      20452
+    ],
     "_description": "释放一段泡泡，对前方区域造成 1000 点 AOE 伤害;若命中敌方英雄，使其 3 秒内无法移动"
   },
   {
@@ -3696,7 +3753,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20003,
+      20453
+    ],
     "_description": "释放一段泡泡，对前方区域造成 1050 点 AOE 伤害;若命中敌方英雄，使其 3 秒内无法移动"
   },
   {
@@ -4648,7 +4708,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000601",
     "_prefab": "skill_10006",
-    "_cast_ranage": 0,
+    "_cast_ranage": 200,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -4681,7 +4741,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20374
+    ],
     "_description": "用剑向前挥舞，对前方范围内敌人造成100伤害"
   },
   {
@@ -4693,7 +4755,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000602",
     "_prefab": "skill_10006",
-    "_cast_ranage": 0,
+    "_cast_ranage": 200,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -4726,7 +4788,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20375
+    ],
     "_description": "用剑向前挥舞，对前方范围内敌人造成150伤害"
   },
   {
@@ -4738,7 +4802,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000603",
     "_prefab": "skill_10006",
-    "_cast_ranage": 0,
+    "_cast_ranage": 200,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -4771,7 +4835,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20376
+    ],
     "_description": "用剑向前挥舞，对前方范围内敌人造成200伤害"
   },
   {
@@ -4783,7 +4849,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000604",
     "_prefab": "skill_10006",
-    "_cast_ranage": 0,
+    "_cast_ranage": 200,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -4816,7 +4882,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20377
+    ],
     "_description": "用剑向前挥舞，对前方范围内敌人造成250伤害"
   },
   {
@@ -4828,7 +4896,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000605",
     "_prefab": "skill_10006",
-    "_cast_ranage": 0,
+    "_cast_ranage": 200,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -4861,7 +4929,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20378
+    ],
     "_description": "用剑向前挥舞，对前方范围内敌人造成300伤害"
   },
   {
@@ -4873,7 +4943,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000606",
     "_prefab": "skill_10006",
-    "_cast_ranage": 0,
+    "_cast_ranage": 200,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -4906,7 +4976,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20379
+    ],
     "_description": "用剑向前挥舞，对前方范围内敌人造成350伤害"
   },
   {
@@ -4918,7 +4990,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000607",
     "_prefab": "skill_10006",
-    "_cast_ranage": 0,
+    "_cast_ranage": 200,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -4951,7 +5023,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20380
+    ],
     "_description": "用剑向前挥舞，对前方范围内敌人造成400伤害"
   },
   {
@@ -4963,7 +5037,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000608",
     "_prefab": "skill_10006",
-    "_cast_ranage": 0,
+    "_cast_ranage": 200,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -4996,7 +5070,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20381
+    ],
     "_description": "用剑向前挥舞，对前方范围内敌人造成450伤害"
   },
   {
@@ -5008,7 +5084,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000609",
     "_prefab": "skill_10006",
-    "_cast_ranage": 0,
+    "_cast_ranage": 200,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -5041,7 +5117,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20382
+    ],
     "_description": "用剑向前挥舞，对前方范围内敌人造成500伤害"
   },
   {
@@ -5053,7 +5131,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000610",
     "_prefab": "skill_10006",
-    "_cast_ranage": 0,
+    "_cast_ranage": 200,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -5086,7 +5164,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20383
+    ],
     "_description": "用剑向前挥舞，对前方范围内敌人造成550伤害"
   },
   {
@@ -5098,7 +5178,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000611",
     "_prefab": "skill_10006",
-    "_cast_ranage": 0,
+    "_cast_ranage": 200,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -5131,7 +5211,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20384
+    ],
     "_description": "用剑向前挥舞，对前方范围内敌人造成600伤害"
   },
   {
@@ -5143,7 +5225,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000612",
     "_prefab": "skill_10006",
-    "_cast_ranage": 0,
+    "_cast_ranage": 200,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -5176,7 +5258,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20385
+    ],
     "_description": "用剑向前挥舞，对前方范围内敌人造成650伤害"
   },
   {
@@ -5188,7 +5272,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000613",
     "_prefab": "skill_10006",
-    "_cast_ranage": 0,
+    "_cast_ranage": 200,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -5221,7 +5305,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20386
+    ],
     "_description": "用剑向前挥舞，对前方范围内敌人造成700伤害"
   },
   {
@@ -5233,7 +5319,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000614",
     "_prefab": "skill_10006",
-    "_cast_ranage": 0,
+    "_cast_ranage": 200,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -5266,7 +5352,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20387
+    ],
     "_description": "用剑向前挥舞，对前方范围内敌人造成750伤害"
   },
   {
@@ -5278,7 +5366,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000615",
     "_prefab": "skill_10006",
-    "_cast_ranage": 0,
+    "_cast_ranage": 200,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -5311,7 +5399,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20388
+    ],
     "_description": "用剑向前挥舞，对前方范围内敌人造成800伤害"
   },
   {
@@ -5323,7 +5413,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000616",
     "_prefab": "skill_10006",
-    "_cast_ranage": 0,
+    "_cast_ranage": 200,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -5356,7 +5446,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20389
+    ],
     "_description": "用剑向前挥舞，对前方范围内敌人造成850伤害"
   },
   {
@@ -5368,7 +5460,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000617",
     "_prefab": "skill_10006",
-    "_cast_ranage": 0,
+    "_cast_ranage": 200,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -5401,7 +5493,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20390
+    ],
     "_description": "用剑向前挥舞，对前方范围内敌人造成900伤害"
   },
   {
@@ -5413,7 +5507,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000618",
     "_prefab": "skill_10006",
-    "_cast_ranage": 0,
+    "_cast_ranage": 200,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -5446,7 +5540,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20391
+    ],
     "_description": "用剑向前挥舞，对前方范围内敌人造成950伤害"
   },
   {
@@ -5458,7 +5554,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000619",
     "_prefab": "skill_10006",
-    "_cast_ranage": 0,
+    "_cast_ranage": 200,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -5491,7 +5587,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20392
+    ],
     "_description": "用剑向前挥舞，对前方范围内敌人造成1000伤害"
   },
   {
@@ -5503,7 +5601,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000620",
     "_prefab": "skill_10006",
-    "_cast_ranage": 0,
+    "_cast_ranage": 200,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -5536,7 +5634,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20393
+    ],
     "_description": "用剑向前挥舞，对前方范围内敌人造成1050伤害"
   },
   {
@@ -12942,10 +13042,9 @@
       }
     ],
     "_effect": [
-      20274,
-      30
+      20495
     ],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 22% 体力"
+    "_description": "每秒恢复3血"
   },
   {
     "_id": 1001502,
@@ -12990,10 +13089,9 @@
       }
     ],
     "_effect": [
-      20275,
-      30
+      20496
     ],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 24% 体力"
+    "_description": "每秒恢复4血"
   },
   {
     "_id": 1001503,
@@ -13038,10 +13136,9 @@
       }
     ],
     "_effect": [
-      20276,
-      30
+      20497
     ],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 26% 体力"
+    "_description": "每秒恢复5血"
   },
   {
     "_id": 1001504,
@@ -13086,10 +13183,9 @@
       }
     ],
     "_effect": [
-      20277,
-      30
+      20498
     ],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 28% 体力"
+    "_description": "每秒恢复6血"
   },
   {
     "_id": 1001505,
@@ -13134,10 +13230,9 @@
       }
     ],
     "_effect": [
-      20278,
-      30
+      20499
     ],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 30% 体力"
+    "_description": "每秒恢复7血"
   },
   {
     "_id": 1001506,
@@ -13182,10 +13277,9 @@
       }
     ],
     "_effect": [
-      20279,
-      30
+      20500
     ],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 32% 体力"
+    "_description": "每秒恢复8血"
   },
   {
     "_id": 1001507,
@@ -13230,10 +13324,9 @@
       }
     ],
     "_effect": [
-      20280,
-      30
+      20501
     ],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 34% 体力"
+    "_description": "每秒恢复9血"
   },
   {
     "_id": 1001508,
@@ -13278,10 +13371,9 @@
       }
     ],
     "_effect": [
-      20281,
-      30
+      20502
     ],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 36% 体力"
+    "_description": "每秒恢复10血"
   },
   {
     "_id": 1001509,
@@ -13326,10 +13418,9 @@
       }
     ],
     "_effect": [
-      20282,
-      30
+      20503
     ],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 38% 体力"
+    "_description": "每秒恢复11血"
   },
   {
     "_id": 1001510,
@@ -13374,10 +13465,9 @@
       }
     ],
     "_effect": [
-      20283,
-      30
+      20504
     ],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 40% 体力"
+    "_description": "每秒恢复12血"
   },
   {
     "_id": 1001511,
@@ -13422,10 +13512,9 @@
       }
     ],
     "_effect": [
-      20284,
-      30
+      20505
     ],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 42% 体力"
+    "_description": "每秒恢复13血"
   },
   {
     "_id": 1001512,
@@ -13470,10 +13559,9 @@
       }
     ],
     "_effect": [
-      20285,
-      30
+      20506
     ],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 44% 体力"
+    "_description": "每秒恢复14血"
   },
   {
     "_id": 1001513,
@@ -13518,10 +13606,9 @@
       }
     ],
     "_effect": [
-      20286,
-      30
+      20507
     ],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 46% 体力"
+    "_description": "每秒恢复15血"
   },
   {
     "_id": 1001514,
@@ -13566,10 +13653,9 @@
       }
     ],
     "_effect": [
-      20287,
-      30
+      20508
     ],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 48% 体力"
+    "_description": "每秒恢复16血"
   },
   {
     "_id": 1001515,
@@ -13614,10 +13700,9 @@
       }
     ],
     "_effect": [
-      20288,
-      30
+      20509
     ],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 50% 体力"
+    "_description": "每秒恢复17血"
   },
   {
     "_id": 1001516,
@@ -13662,10 +13747,9 @@
       }
     ],
     "_effect": [
-      20289,
-      30
+      20510
     ],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 52% 体力"
+    "_description": "每秒恢复18血"
   },
   {
     "_id": 1001517,
@@ -13710,10 +13794,9 @@
       }
     ],
     "_effect": [
-      20290,
-      30
+      20511
     ],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 54% 体力"
+    "_description": "每秒恢复19血"
   },
   {
     "_id": 1001518,
@@ -13758,10 +13841,9 @@
       }
     ],
     "_effect": [
-      20291,
-      30
+      20512
     ],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 56% 体力"
+    "_description": "每秒恢复20血"
   },
   {
     "_id": 1001519,
@@ -13806,10 +13888,9 @@
       }
     ],
     "_effect": [
-      20292,
-      30
+      20513
     ],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 58% 体力"
+    "_description": "每秒恢复21血"
   },
   {
     "_id": 1001520,
@@ -13854,10 +13935,9 @@
       }
     ],
     "_effect": [
-      20293,
-      30
+      20514
     ],
-    "_description": "当巴顿体力首次低于 30% 时，自动回复 60% 体力"
+    "_description": "每秒恢复22血"
   },
   {
     "_id": 1001601,
@@ -14841,8 +14921,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为小兵盾兵提升10% 攻击力"
+    "_effect": [
+      20394
+    ],
+    "_description": "为友方盾兵提升10% 攻击力"
   },
   {
     "_id": 1001702,
@@ -14886,8 +14968,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为小兵盾兵提升12% 攻击力"
+    "_effect": [
+      20395
+    ],
+    "_description": "为友方盾兵提升12% 攻击力"
   },
   {
     "_id": 1001703,
@@ -14931,8 +15015,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为小兵盾兵提升14% 攻击力"
+    "_effect": [
+      20396
+    ],
+    "_description": "为友方盾兵提升14% 攻击力"
   },
   {
     "_id": 1001704,
@@ -14976,8 +15062,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为小兵盾兵提升16% 攻击力"
+    "_effect": [
+      20397
+    ],
+    "_description": "为友方盾兵提升16% 攻击力"
   },
   {
     "_id": 1001705,
@@ -15021,8 +15109,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为小兵盾兵提升18% 攻击力"
+    "_effect": [
+      20398
+    ],
+    "_description": "为友方盾兵提升18% 攻击力"
   },
   {
     "_id": 1001706,
@@ -15066,8 +15156,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为小兵盾兵提升20% 攻击力"
+    "_effect": [
+      20399
+    ],
+    "_description": "为友方盾兵提升20% 攻击力"
   },
   {
     "_id": 1001707,
@@ -15111,8 +15203,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为小兵盾兵提升22% 攻击力"
+    "_effect": [
+      20400
+    ],
+    "_description": "为友方盾兵提升22% 攻击力"
   },
   {
     "_id": 1001708,
@@ -15156,8 +15250,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为小兵盾兵提升24% 攻击力"
+    "_effect": [
+      20401
+    ],
+    "_description": "为友方盾兵提升24% 攻击力"
   },
   {
     "_id": 1001709,
@@ -15201,8 +15297,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为小兵盾兵提升26% 攻击力"
+    "_effect": [
+      20402
+    ],
+    "_description": "为友方盾兵提升26% 攻击力"
   },
   {
     "_id": 1001710,
@@ -15246,8 +15344,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为小兵盾兵提升28% 攻击力"
+    "_effect": [
+      20403
+    ],
+    "_description": "为友方盾兵提升28% 攻击力"
   },
   {
     "_id": 1001711,
@@ -15291,8 +15391,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为小兵盾兵提升30% 攻击力"
+    "_effect": [
+      20404
+    ],
+    "_description": "为友方盾兵提升30% 攻击力"
   },
   {
     "_id": 1001712,
@@ -15336,8 +15438,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为小兵盾兵提升32% 攻击力"
+    "_effect": [
+      20405
+    ],
+    "_description": "为友方盾兵提升32% 攻击力"
   },
   {
     "_id": 1001713,
@@ -15381,8 +15485,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为小兵盾兵提升34% 攻击力"
+    "_effect": [
+      20406
+    ],
+    "_description": "为友方盾兵提升34% 攻击力"
   },
   {
     "_id": 1001714,
@@ -15426,8 +15532,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为小兵盾兵提升36% 攻击力"
+    "_effect": [
+      20407
+    ],
+    "_description": "为友方盾兵提升36% 攻击力"
   },
   {
     "_id": 1001715,
@@ -15471,8 +15579,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为小兵盾兵提升38% 攻击力"
+    "_effect": [
+      20408
+    ],
+    "_description": "为友方盾兵提升38% 攻击力"
   },
   {
     "_id": 1001716,
@@ -15516,8 +15626,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为小兵盾兵提升40% 攻击力"
+    "_effect": [
+      20409
+    ],
+    "_description": "为友方盾兵提升40% 攻击力"
   },
   {
     "_id": 1001717,
@@ -15561,8 +15673,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为小兵盾兵提升42% 攻击力"
+    "_effect": [
+      20410
+    ],
+    "_description": "为友方盾兵提升42% 攻击力"
   },
   {
     "_id": 1001718,
@@ -15606,8 +15720,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为小兵盾兵提升44% 攻击力"
+    "_effect": [
+      20411
+    ],
+    "_description": "为友方盾兵提升44% 攻击力"
   },
   {
     "_id": 1001719,
@@ -15651,8 +15767,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为小兵盾兵提升46% 攻击力"
+    "_effect": [
+      20412
+    ],
+    "_description": "为友方盾兵提升46% 攻击力"
   },
   {
     "_id": 1001720,
@@ -15696,8 +15814,10 @@
         "_time": 0
       }
     ],
-    "_effect": [],
-    "_description": "为小兵盾兵提升48% 攻击力"
+    "_effect": [
+      20413
+    ],
+    "_description": "为友方盾兵提升48% 攻击力"
   },
   {
     "_id": 1001801,
@@ -15741,7 +15861,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20414
+    ],
     "_description": "增加20防御力"
   },
   {
@@ -15786,7 +15908,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20415
+    ],
     "_description": "增加22防御力"
   },
   {
@@ -15831,7 +15955,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20416
+    ],
     "_description": "增加24防御力"
   },
   {
@@ -15876,7 +16002,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20417
+    ],
     "_description": "增加26防御力"
   },
   {
@@ -15921,7 +16049,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20418
+    ],
     "_description": "增加28防御力"
   },
   {
@@ -15966,7 +16096,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20419
+    ],
     "_description": "增加30防御力"
   },
   {
@@ -16011,7 +16143,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20420
+    ],
     "_description": "增加32防御力"
   },
   {
@@ -16056,7 +16190,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20421
+    ],
     "_description": "增加34防御力"
   },
   {
@@ -16101,7 +16237,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20422
+    ],
     "_description": "增加36防御力"
   },
   {
@@ -16146,7 +16284,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20423
+    ],
     "_description": "增加38防御力"
   },
   {
@@ -16191,7 +16331,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20424
+    ],
     "_description": "增加40防御力"
   },
   {
@@ -16236,7 +16378,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20425
+    ],
     "_description": "增加42防御力"
   },
   {
@@ -16281,7 +16425,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20426
+    ],
     "_description": "增加44防御力"
   },
   {
@@ -16326,7 +16472,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20427
+    ],
     "_description": "增加46防御力"
   },
   {
@@ -16371,7 +16519,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20428
+    ],
     "_description": "增加48防御力"
   },
   {
@@ -16416,7 +16566,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20429
+    ],
     "_description": "增加50防御力"
   },
   {
@@ -16461,7 +16613,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20430
+    ],
     "_description": "增加52防御力"
   },
   {
@@ -16506,7 +16660,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20431
+    ],
     "_description": "增加54防御力"
   },
   {
@@ -16551,7 +16707,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20432
+    ],
     "_description": "增加56防御力"
   },
   {
@@ -16596,7 +16754,9 @@
         "_time": 0
       }
     ],
-    "_effect": [],
+    "_effect": [
+      20433
+    ],
     "_description": "增加58防御力"
   },
   {
@@ -16913,6 +17073,96 @@
     ],
     "_effect": [],
     "_description": "demo英雄（疯狂发明家）的普通攻击"
+  },
+  {
+    "_id": 9000801,
+    "_lv": 1,
+    "_skill": 90008,
+    "_name": "普通攻击demohero",
+    "_skill_type": 1,
+    "_hurt_type": 0,
+    "_icon": "skill_icon_9000801",
+    "_prefab": "skill_90008",
+    "_cast_ranage": 350,
+    "_tag_mask": [
+      "Tower",
+      "Hero"
+    ],
+    "_damage_range": 0,
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
+    "_coll_time": 200,
+    "_release_time": [
+      {
+        "_animator": "attack",
+        "_time": 0
+      },
+      {
+        "_animator": "attack",
+        "_time": 20
+      },
+      {
+        "_animator": "attack",
+        "_time": 0
+      },
+      {
+        "_animator": "attack",
+        "_time": 0
+      }
+    ],
+    "_effect": [],
+    "_description": "demo英雄（盾兵雷恩）的普通攻击"
+  },
+  {
+    "_id": 9000901,
+    "_lv": 1,
+    "_skill": 90009,
+    "_name": "普通攻击demohero",
+    "_skill_type": 1,
+    "_hurt_type": 1,
+    "_icon": "skill_icon_9000901",
+    "_prefab": "skill_90009",
+    "_cast_ranage": 500,
+    "_tag_mask": [
+      "Tower",
+      "Hero"
+    ],
+    "_damage_range": 0,
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
+    "_coll_time": 150,
+    "_release_time": [
+      {
+        "_animator": "attack",
+        "_time": 0
+      },
+      {
+        "_animator": "attack",
+        "_time": 20
+      },
+      {
+        "_animator": "attack",
+        "_time": 0
+      },
+      {
+        "_animator": "attack",
+        "_time": 0
+      }
+    ],
+    "_effect": [],
+    "_description": "demo英雄（弓兵宝丽）的普通攻击"
   },
   {
     "_id": 20000101,
@@ -19164,15 +19414,42 @@
     "_icon": "spell_icon_20000401",
     "_prefab": "spell_200004",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20454,
+      20455
+    ],
+    "_description": "持续3秒，所有友方单位移速降低20%，获得攻击力增加20%"
   },
   {
     "_id": 20000402,
@@ -19184,15 +19461,42 @@
     "_icon": "spell_icon_20000402",
     "_prefab": "spell_200004",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20454,
+      20456
+    ],
+    "_description": "持续3秒，所有友方单位移速降低20%，获得攻击力增加22%"
   },
   {
     "_id": 20000403,
@@ -19204,15 +19508,42 @@
     "_icon": "spell_icon_20000403",
     "_prefab": "spell_200004",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20454,
+      20457
+    ],
+    "_description": "持续3秒，所有友方单位移速降低20%，获得攻击力增加24%"
   },
   {
     "_id": 20000404,
@@ -19224,15 +19555,42 @@
     "_icon": "spell_icon_20000404",
     "_prefab": "spell_200004",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20454,
+      20458
+    ],
+    "_description": "持续3秒，所有友方单位移速降低20%，获得攻击力增加26%"
   },
   {
     "_id": 20000405,
@@ -19244,15 +19602,42 @@
     "_icon": "spell_icon_20000405",
     "_prefab": "spell_200004",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20454,
+      20459
+    ],
+    "_description": "持续3秒，所有友方单位移速降低20%，获得攻击力增加28%"
   },
   {
     "_id": 20000406,
@@ -19264,15 +19649,42 @@
     "_icon": "spell_icon_20000406",
     "_prefab": "spell_200004",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20454,
+      20460
+    ],
+    "_description": "持续3秒，所有友方单位移速降低20%，获得攻击力增加30%"
   },
   {
     "_id": 20000407,
@@ -19284,15 +19696,42 @@
     "_icon": "spell_icon_20000407",
     "_prefab": "spell_200004",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20454,
+      20461
+    ],
+    "_description": "持续3秒，所有友方单位移速降低20%，获得攻击力增加32%"
   },
   {
     "_id": 20000408,
@@ -19304,15 +19743,42 @@
     "_icon": "spell_icon_20000408",
     "_prefab": "spell_200004",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20454,
+      20462
+    ],
+    "_description": "持续3秒，所有友方单位移速降低20%，获得攻击力增加34%"
   },
   {
     "_id": 20000409,
@@ -19324,15 +19790,42 @@
     "_icon": "spell_icon_20000409",
     "_prefab": "spell_200004",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20454,
+      20463
+    ],
+    "_description": "持续3秒，所有友方单位移速降低20%，获得攻击力增加36%"
   },
   {
     "_id": 20000410,
@@ -19344,15 +19837,42 @@
     "_icon": "spell_icon_20000410",
     "_prefab": "spell_200004",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20454,
+      20464
+    ],
+    "_description": "持续3秒，所有友方单位移速降低20%，获得攻击力增加38%"
   },
   {
     "_id": 20000411,
@@ -19364,15 +19884,42 @@
     "_icon": "spell_icon_20000411",
     "_prefab": "spell_200004",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20454,
+      20465
+    ],
+    "_description": "持续3秒，所有友方单位移速降低20%，获得攻击力增加40%"
   },
   {
     "_id": 20000412,
@@ -19384,15 +19931,42 @@
     "_icon": "spell_icon_20000412",
     "_prefab": "spell_200004",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20454,
+      20466
+    ],
+    "_description": "持续3秒，所有友方单位移速降低20%，获得攻击力增加42%"
   },
   {
     "_id": 20000413,
@@ -19404,15 +19978,42 @@
     "_icon": "spell_icon_20000413",
     "_prefab": "spell_200004",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20454,
+      20467
+    ],
+    "_description": "持续3秒，所有友方单位移速降低20%，获得攻击力增加44%"
   },
   {
     "_id": 20000414,
@@ -19424,15 +20025,42 @@
     "_icon": "spell_icon_20000414",
     "_prefab": "spell_200004",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20454,
+      20468
+    ],
+    "_description": "持续3秒，所有友方单位移速降低20%，获得攻击力增加46%"
   },
   {
     "_id": 20000415,
@@ -19444,15 +20072,42 @@
     "_icon": "spell_icon_20000415",
     "_prefab": "spell_200004",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20454,
+      20469
+    ],
+    "_description": "持续3秒，所有友方单位移速降低20%，获得攻击力增加48%"
   },
   {
     "_id": 20000416,
@@ -19464,15 +20119,42 @@
     "_icon": "spell_icon_20000416",
     "_prefab": "spell_200004",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20454,
+      20470
+    ],
+    "_description": "持续3秒，所有友方单位移速降低20%，获得攻击力增加50%"
   },
   {
     "_id": 20000417,
@@ -19484,15 +20166,42 @@
     "_icon": "spell_icon_20000417",
     "_prefab": "spell_200004",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20454,
+      20471
+    ],
+    "_description": "持续3秒，所有友方单位移速降低20%，获得攻击力增加52%"
   },
   {
     "_id": 20000418,
@@ -19504,15 +20213,42 @@
     "_icon": "spell_icon_20000418",
     "_prefab": "spell_200004",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20454,
+      20472
+    ],
+    "_description": "持续3秒，所有友方单位移速降低20%，获得攻击力增加54%"
   },
   {
     "_id": 20000419,
@@ -19524,15 +20260,42 @@
     "_icon": "spell_icon_20000419",
     "_prefab": "spell_200004",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20454,
+      20473
+    ],
+    "_description": "持续3秒，所有友方单位移速降低20%，获得攻击力增加56%"
   },
   {
     "_id": 20000420,
@@ -19544,15 +20307,42 @@
     "_icon": "spell_icon_20000420",
     "_prefab": "spell_200004",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20454,
+      20474
+    ],
+    "_description": "持续3秒，所有友方单位移速降低20%，获得攻击力增加58%"
   },
   {
     "_id": 20000501,
@@ -19564,15 +20354,41 @@
     "_icon": "spell_icon_20000501",
     "_prefab": "spell_200005",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20515
+    ],
+    "_description": "为血量最低的英雄恢复100点血量"
   },
   {
     "_id": 20000502,
@@ -19584,15 +20400,41 @@
     "_icon": "spell_icon_20000502",
     "_prefab": "spell_200005",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20516
+    ],
+    "_description": "为血量最低的英雄恢复200点血量"
   },
   {
     "_id": 20000503,
@@ -19604,15 +20446,41 @@
     "_icon": "spell_icon_20000503",
     "_prefab": "spell_200005",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20517
+    ],
+    "_description": "为血量最低的英雄恢复300点血量"
   },
   {
     "_id": 20000504,
@@ -19624,15 +20492,41 @@
     "_icon": "spell_icon_20000504",
     "_prefab": "spell_200005",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20518
+    ],
+    "_description": "为血量最低的英雄恢复400点血量"
   },
   {
     "_id": 20000505,
@@ -19644,15 +20538,41 @@
     "_icon": "spell_icon_20000505",
     "_prefab": "spell_200005",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20519
+    ],
+    "_description": "为血量最低的英雄恢复500点血量"
   },
   {
     "_id": 20000506,
@@ -19664,15 +20584,41 @@
     "_icon": "spell_icon_20000506",
     "_prefab": "spell_200005",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20520
+    ],
+    "_description": "为血量最低的英雄恢复600点血量"
   },
   {
     "_id": 20000507,
@@ -19684,15 +20630,41 @@
     "_icon": "spell_icon_20000507",
     "_prefab": "spell_200005",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20521
+    ],
+    "_description": "为血量最低的英雄恢复700点血量"
   },
   {
     "_id": 20000508,
@@ -19704,15 +20676,41 @@
     "_icon": "spell_icon_20000508",
     "_prefab": "spell_200005",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20522
+    ],
+    "_description": "为血量最低的英雄恢复800点血量"
   },
   {
     "_id": 20000509,
@@ -19724,15 +20722,41 @@
     "_icon": "spell_icon_20000509",
     "_prefab": "spell_200005",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20523
+    ],
+    "_description": "为血量最低的英雄恢复900点血量"
   },
   {
     "_id": 20000510,
@@ -19744,15 +20768,41 @@
     "_icon": "spell_icon_20000510",
     "_prefab": "spell_200005",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20524
+    ],
+    "_description": "为血量最低的英雄恢复1000点血量"
   },
   {
     "_id": 20000511,
@@ -19764,15 +20814,41 @@
     "_icon": "spell_icon_20000511",
     "_prefab": "spell_200005",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20525
+    ],
+    "_description": "为血量最低的英雄恢复1100点血量"
   },
   {
     "_id": 20000512,
@@ -19784,15 +20860,41 @@
     "_icon": "spell_icon_20000512",
     "_prefab": "spell_200005",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20526
+    ],
+    "_description": "为血量最低的英雄恢复1200点血量"
   },
   {
     "_id": 20000513,
@@ -19804,15 +20906,41 @@
     "_icon": "spell_icon_20000513",
     "_prefab": "spell_200005",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20527
+    ],
+    "_description": "为血量最低的英雄恢复1300点血量"
   },
   {
     "_id": 20000514,
@@ -19824,15 +20952,41 @@
     "_icon": "spell_icon_20000514",
     "_prefab": "spell_200005",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20528
+    ],
+    "_description": "为血量最低的英雄恢复1400点血量"
   },
   {
     "_id": 20000515,
@@ -19844,15 +20998,41 @@
     "_icon": "spell_icon_20000515",
     "_prefab": "spell_200005",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20529
+    ],
+    "_description": "为血量最低的英雄恢复1500点血量"
   },
   {
     "_id": 20000516,
@@ -19864,15 +21044,41 @@
     "_icon": "spell_icon_20000516",
     "_prefab": "spell_200005",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20530
+    ],
+    "_description": "为血量最低的英雄恢复1600点血量"
   },
   {
     "_id": 20000517,
@@ -19884,15 +21090,41 @@
     "_icon": "spell_icon_20000517",
     "_prefab": "spell_200005",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20531
+    ],
+    "_description": "为血量最低的英雄恢复1700点血量"
   },
   {
     "_id": 20000518,
@@ -19904,15 +21136,41 @@
     "_icon": "spell_icon_20000518",
     "_prefab": "spell_200005",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20532
+    ],
+    "_description": "为血量最低的英雄恢复1800点血量"
   },
   {
     "_id": 20000519,
@@ -19924,15 +21182,41 @@
     "_icon": "spell_icon_20000519",
     "_prefab": "spell_200005",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20533
+    ],
+    "_description": "为血量最低的英雄恢复1900点血量"
   },
   {
     "_id": 20000520,
@@ -19944,15 +21228,41 @@
     "_icon": "spell_icon_20000520",
     "_prefab": "spell_200005",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20534
+    ],
+    "_description": "为血量最低的英雄恢复2000点血量"
   },
   {
     "_id": 20000601,
@@ -19970,9 +21280,28 @@
     "_lock_method": 0,
     "_pass_type": [],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20475
+    ],
+    "_description": "获得100点cost"
   },
   {
     "_id": 20000602,
@@ -19990,9 +21319,28 @@
     "_lock_method": 0,
     "_pass_type": [],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20476
+    ],
+    "_description": "获得150点cost"
   },
   {
     "_id": 20000603,
@@ -20010,9 +21358,28 @@
     "_lock_method": 0,
     "_pass_type": [],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20477
+    ],
+    "_description": "获得200点cost"
   },
   {
     "_id": 20000604,
@@ -20030,9 +21397,28 @@
     "_lock_method": 0,
     "_pass_type": [],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20478
+    ],
+    "_description": "获得250点cost"
   },
   {
     "_id": 20000605,
@@ -20050,9 +21436,28 @@
     "_lock_method": 0,
     "_pass_type": [],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20479
+    ],
+    "_description": "获得300点cost"
   },
   {
     "_id": 20000606,
@@ -20070,9 +21475,28 @@
     "_lock_method": 0,
     "_pass_type": [],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20480
+    ],
+    "_description": "获得350点cost"
   },
   {
     "_id": 20000607,
@@ -20090,9 +21514,28 @@
     "_lock_method": 0,
     "_pass_type": [],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20481
+    ],
+    "_description": "获得400点cost"
   },
   {
     "_id": 20000608,
@@ -20110,9 +21553,28 @@
     "_lock_method": 0,
     "_pass_type": [],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20482
+    ],
+    "_description": "获得450点cost"
   },
   {
     "_id": 20000609,
@@ -20130,9 +21592,28 @@
     "_lock_method": 0,
     "_pass_type": [],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20483
+    ],
+    "_description": "获得500点cost"
   },
   {
     "_id": 20000610,
@@ -20150,9 +21631,28 @@
     "_lock_method": 0,
     "_pass_type": [],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20484
+    ],
+    "_description": "获得550点cost"
   },
   {
     "_id": 20000611,
@@ -20170,9 +21670,28 @@
     "_lock_method": 0,
     "_pass_type": [],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20485
+    ],
+    "_description": "获得600点cost"
   },
   {
     "_id": 20000612,
@@ -20190,9 +21709,28 @@
     "_lock_method": 0,
     "_pass_type": [],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20486
+    ],
+    "_description": "获得650点cost"
   },
   {
     "_id": 20000613,
@@ -20210,9 +21748,28 @@
     "_lock_method": 0,
     "_pass_type": [],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20487
+    ],
+    "_description": "获得700点cost"
   },
   {
     "_id": 20000614,
@@ -20230,9 +21787,28 @@
     "_lock_method": 0,
     "_pass_type": [],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20488
+    ],
+    "_description": "获得750点cost"
   },
   {
     "_id": 20000615,
@@ -20250,9 +21826,28 @@
     "_lock_method": 0,
     "_pass_type": [],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20489
+    ],
+    "_description": "获得800点cost"
   },
   {
     "_id": 20000616,
@@ -20270,9 +21865,28 @@
     "_lock_method": 0,
     "_pass_type": [],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20490
+    ],
+    "_description": "获得850点cost"
   },
   {
     "_id": 20000617,
@@ -20290,9 +21904,28 @@
     "_lock_method": 0,
     "_pass_type": [],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20491
+    ],
+    "_description": "获得900点cost"
   },
   {
     "_id": 20000618,
@@ -20310,9 +21943,28 @@
     "_lock_method": 0,
     "_pass_type": [],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20492
+    ],
+    "_description": "获得950点cost"
   },
   {
     "_id": 20000619,
@@ -20330,9 +21982,28 @@
     "_lock_method": 0,
     "_pass_type": [],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20493
+    ],
+    "_description": "获得1000点cost"
   },
   {
     "_id": 20000620,
@@ -20350,9 +22021,28 @@
     "_lock_method": 0,
     "_pass_type": [],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20494
+    ],
+    "_description": "获得1050点cost"
   },
   {
     "_id": 20000701,

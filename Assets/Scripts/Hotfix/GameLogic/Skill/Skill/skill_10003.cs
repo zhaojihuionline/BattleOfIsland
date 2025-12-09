@@ -10,6 +10,11 @@ namespace QFramework.Game
         [SerializeField] private int projectileCount = 3;
         [SerializeField] private float spreadAngle = 60f;
 
+        void OnEnable()
+        {
+            Debug.Log($"skill_10003.OnEnable");
+        }
+
         protected override void OnStart_Cast()
         {
             Debug.Log("skill_1000301 技能施法开始");

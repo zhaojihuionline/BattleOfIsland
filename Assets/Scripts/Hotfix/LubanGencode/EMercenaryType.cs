@@ -21,7 +21,7 @@ namespace cfg
         /// <summary>
         /// 弓雇佣兵
         /// </summary>
-        Bow = 2,
+        Arche = 2,
         /// <summary>
         /// 骑兵雇佣兵
         /// </summary>

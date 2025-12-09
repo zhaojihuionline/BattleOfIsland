@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2075244122025035167
 Transform:
   m_ObjectHideFlags: 0
@@ -139,7 +139,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6924409391780847390}
-  - {fileID: 1372576506995437954}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3949237144606320750
@@ -229,6 +228,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2075244122025035167}
+  - {fileID: 1372576506995437954}
   m_Father: {fileID: 3245768203595111966}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3255830948178959418
@@ -253,7 +253,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 3245768203595111966}
+    m_TransformParent: {fileID: 6924409391780847390}
     m_Modifications:
     - target: {fileID: 4987948784023282068, guid: 3ce1dcb63f3f78e47ad2da42867b7374, type: 3}
       propertyPath: m_Name

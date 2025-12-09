@@ -26,6 +26,9 @@ public class SkillPacket
         get { return targetData.Targets; }
         set { targetData.Targets = value; }
     }
+    TargetData targetData;
+    public TargetData TargetData { get { return targetData; } set { targetData = value; } }
+
     //目标点
     public Vector3 targetPoint = Vector3.zero;
     //剩余穿透次数 
@@ -57,7 +60,6 @@ public class SkillPacket
     }
 
     BattleInModel battleInModel;
-    TargetData targetData;
 
     public SkillPacket()
     {

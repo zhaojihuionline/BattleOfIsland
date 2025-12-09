@@ -100,12 +100,12 @@ namespace QFramework.Game
 		protected virtual void OnDieUpdate() { }
 		#endregion
 
-		void Awake()
+		protected override void Awake()
 		{
 			animator = GetComponentInChildren<Animator>();
 		}
 
-		void Start()
+        protected override void Start()
 		{
 			FSM.AddState(EntityState.Idle, new IdleState(FSM, this));
 			FSM.AddState(EntityState.MoveToTarget, new MoveToTargetState(FSM, this));
@@ -174,11 +174,39 @@ namespace QFramework.Game
 				else if (table.SkillType == SkillType.PASSIVE_SKILL)
 				{
 					//被动技能直接触发  ToDo  目标还是要根据选择规则和偏好去选择 目前之哟一个对自己生效的被动  先写死
-					this.SendCommand(new ReleaseSkillCommand(table, gameObject, new TargetData() { Target = gameObject }, gameObject.transform.position));
+                    //this.SendCommand(new ReleaseSkillCommand(table, gameObject, TargetData.New(), gameObject.transform.position));
+					this.GetSystem<SkillSystem>().ReleaseSkill(table,gameObject, TargetData.New(), gameObject.transform.position);
 				}
-			}
-		}
+                else if (table.SkillType == SkillType.AURA_SKILL)
+				{
+                    //this.SendCommand(new ReleaseSkillCommand(table, gameObject, TargetData.New(), gameObject.transform.position));
+                    this.GetSystem<SkillSystem>().ReleaseSkill(table, gameObject, TargetData.New(), gameObject.transform.position);
+                }
+				else
+				{
+					Debug.LogError($"Error!!!发现未开发的技能 {skillID}");
+				}
 
+            }
+
+            this.RegisterEvent<OnEntityCreate>(e =>
+            {
+				if (transform.GetInstanceID() == e.entity.transform.GetInstanceID())
+					return;
+				foreach(var skillId in skills)
+				{
+					SkillTable skillTable = CfgMgr.Instance.Tables.TbSkillTable.Get(skillId);
+					if(skillTable.SkillType == SkillType.AURA_SKILL)
+					{
+                        //this.SendCommand(new ReleaseSkillCommand(skillTable, gameObject, TargetData.New(), gameObject.transform.position));
+                        this.GetSystem<SkillSystem>().ReleaseSkill(skillTable, gameObject, TargetData.New(), gameObject.transform.position);
+                    }
+				}
+            }).UnRegisterWhenGameObjectDestroyed(gameObject);
+
+            this.SendEvent<OnEntityCreate>(new OnEntityCreate { entity = this });
+		}
+		 
 		public void InitHaveHp(int hpMax)
 		{
 			//根据等级获取对应表数据
@@ -221,7 +249,7 @@ namespace QFramework.Game
 
 
 			buffRunner = new BuffRunner();
-			buffRunner.Init();
+			buffRunner.Init(this.GetModel<BattleInModel>());
         }
 
         public void SetMoveSpeed(float spd)
@@ -240,6 +268,8 @@ namespace QFramework.Game
 				Vector3 cameraForward = Camera.main.transform.forward;
 				bloodController.transform.rotation = Quaternion.LookRotation(cameraForward);
 			}
+
+			buffRunner?.UpdateBuffs();
 		}
 
 		private int GetSortOrder(SkillType type)
@@ -433,14 +463,16 @@ namespace QFramework.Game
 										return;
 									}
 									Debug.Log($"准备释放技能 ID:{packet.Value._data.Id}");
-									this.SendCommand(new ReleaseSkillCommand(table, gameObject, targetData, targetData.Target.transform.position));
-								});
+									//this.SendCommand(new ReleaseSkillCommand(table, gameObject, targetData, targetData.Target.transform.position));
+                                    this.GetSystem<SkillSystem>().ReleaseSkill(table, gameObject, targetData, targetData.Target.transform.position);
+                                });
 				}
 				else
 				{
 					Debug.Log($"准备释放技能 ID:{packet.Value._data.Id}");
-					this.SendCommand(new ReleaseSkillCommand(table, gameObject, new TargetData() { Target = targetData.Target }, targetData.Target.transform.position));
-				}
+					//this.SendCommand(new ReleaseSkillCommand(table, gameObject, new TargetData() { Target = targetData.Target }, targetData.Target.transform.position));
+                    this.GetSystem<SkillSystem>().ReleaseSkill(table, gameObject, new TargetData() { Target = targetData.Target }, targetData.Target.transform.position);
+                }
 				return true;
 			}
 			return false;

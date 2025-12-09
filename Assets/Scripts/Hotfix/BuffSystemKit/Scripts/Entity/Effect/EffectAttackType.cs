@@ -10,12 +10,13 @@ public class EffectAttackType : EffectEntity
     {
         AttributeChangeData attributeChangeData = new AttributeChangeData()
         {
-            attributeType = cfg.AttributeType.AttackType,
+            attributeType = attributeType,
             value = effect.effectNode.Param[1],
             baseCalculateType = effect.buffTable.BaseCalType,
+
         };
         target.GetComponent<ICanResponseBuff>().OnAttributeChange(attributeChangeData);
-        //IsFinished = true;
+        IsFinished = true;
         //buffEntity.RemoveEffect(this);
     }
 

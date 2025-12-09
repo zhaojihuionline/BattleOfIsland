@@ -18,8 +18,8 @@ public class EntityTestManager : MonoBehaviour, IController
         //现在制作一件事 就是点击按钮生成一个英雄
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            var aaa = this.GetModel<BattleInModel>();
-            this.SendCommand(new ReleaseSkillCommand(10001, 1, gameObject, new TargetData() { Target = aaa.opponent_allEntitys[0] }, Vector3.zero));
+            //var aaa = this.GetModel<BattleInModel>();
+            //this.SendCommand(new ReleaseSkillCommand(10001, 1, gameObject, new TargetData() { Target = aaa.opponent_allEntitys[0] }, Vector3.zero));
         }
         //现在制作一件事 就是点击按钮生成一个英雄
         if (Input.GetKeyDown(KeyCode.W))

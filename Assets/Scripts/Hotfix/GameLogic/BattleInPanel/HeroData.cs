@@ -101,6 +101,7 @@ public class HeroData : UnitData
     /// �չ������˺�
     /// </summary>
     public float attackDamage;
+    public float defence;
     /// <summary>
     /// �չ������ٶ�
     /// </summary>
@@ -170,39 +171,44 @@ public class HeroData : UnitData
         };
     }
 
-    EntityController entityController;
-    public void Init(EntityController entityController)
-    {
-        this.entityController = entityController;
-    }
-
     public override void ChangeAttribute(AttributeChangeData attributeChangeData)
     {
         switch (attributeChangeData.attributeType)
         {
             case cfg.AttributeType.AttackType:
-                damageRange = ProcessCalculate(attributeChangeData.baseCalculateType, damageRange, attributeChangeData.value);
+                damageRange = ProcessCalculate(attributeChangeData.baseCalculateType, damageRange, attributeChangeData.value, attributeChangeData.attributeType);
+                break;
+            case cfg.AttributeType.Attack:
+                attackDamage = ProcessCalculate(attributeChangeData.baseCalculateType, attackDamage, attributeChangeData.value, attributeChangeData.attributeType);
+                break;
+            case cfg.AttributeType.Defense:
+                defence = ProcessCalculate(attributeChangeData.baseCalculateType, defence, attributeChangeData.value, attributeChangeData.attributeType);
                 break;
                 //todo:扩展写在这里
         }
     }
 
-    float ProcessCalculate(cfg.EBaseCalculateType baseCalculateType, float attribute,int value)
+    float ProcessCalculate(cfg.EBaseCalculateType baseCalculateType, float attribute,int value,cfg.AttributeType attributeType)
     {
-        float fValue = value / 100;
+        float preAttribute = attribute;
+        float fValue = value / 100f;
         switch (baseCalculateType)
         {
             case EBaseCalculateType.Add:
                 attribute += fValue;
+                Debug.Log($"属性加成 {attributeType} {baseCalculateType}属性增加{fValue} 加成前：{preAttribute} 加成后：{attribute} HeroName:{HeroName} GoName:{entityController.name}");
                 break;
             case EBaseCalculateType.Subtract:
                 attribute -= fValue;
+                Debug.Log($"属性加成 {attributeType} {baseCalculateType}属性减少{fValue} 加成前：{preAttribute} 加成后：{attribute} HeroName:{HeroName} GoName:{entityController.name}");
                 break;
             case EBaseCalculateType.Multiply:
                 attribute *= (1 + (float)fValue);
+                Debug.Log($"属性加成 {attributeType} {baseCalculateType}属性加成{fValue} 加成前：{preAttribute} 加成后：{attribute} HeroName:{HeroName} GoName:{entityController.name}");
                 break;
             case EBaseCalculateType.Divide:
                 attribute *= (1 - (float)fValue);
+                Debug.Log($"属性加成 {attributeType} {baseCalculateType}属性减成{fValue} 加成前：{preAttribute} 加成后：{attribute} HeroName:{HeroName} GoName:{entityController.name}");
                 break;
         }
         return attribute;
@@ -221,6 +227,11 @@ public class HeroData : UnitData
         //    }
         //}
         return damageRange;
+    }
+
+    public override Enum_HeroType GetHeroType()
+    {
+        return CFG_HeroData.HeroType;
     }
 }
 
@@ -278,8 +289,10 @@ public class MercenaryData : UnitData
     public int Counts;
     public int Cost;
 
+    cfg.Mercenary mercenary;
     public MercenaryData(cfg.Mercenary mercenary)
     {
+        this.mercenary = mercenary;
         SoldierID = mercenary.Id;
         SoldierName = mercenary.Name;
         SoldierModelID = 1;
@@ -296,6 +309,11 @@ public class MercenaryData : UnitData
     public MercenaryData Clone()
     {
         return (MercenaryData)this.MemberwiseClone();
+    }
+
+    public override EMercenaryType GetMercenaryType()
+    {
+        return mercenary.MercenaryType;
     }
 }
 
@@ -359,6 +377,16 @@ public class UnitData : IUnitData
         return 0;
     }
 
+    public virtual Enum_HeroType GetHeroType()
+    {
+        return Enum_HeroType.None;
+    }
+
+    public virtual EMercenaryType GetMercenaryType()
+    {
+        return EMercenaryType.NONE;
+    }
+
     public virtual void Init(EntityController entityController)
     {
         this.entityController = entityController;
@@ -371,6 +399,8 @@ public interface IUnitData
     void ChangeAttribute(AttributeChangeData attributeChangeData);
 
     float GetDamageRange();
+    Enum_HeroType GetHeroType();
+    EMercenaryType GetMercenaryType();
 }
 
 public struct AttributeChangeData
