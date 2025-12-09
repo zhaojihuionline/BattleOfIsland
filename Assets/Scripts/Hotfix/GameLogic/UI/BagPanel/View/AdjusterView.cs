@@ -15,6 +15,7 @@ namespace QFramework.UI
         [SerializeField] private Button minusButton;
         [SerializeField] private Button plusButton;
         [SerializeField] private TextMeshProUGUI countText;
+        [SerializeField] private TMP_InputField inputField;
 
         // 一键最大值按钮
         [SerializeField] private Button maxButton;
@@ -63,6 +64,12 @@ namespace QFramework.UI
             {
                 maxButton.onClick.AddListener(OnMaxButtonClicked);
             }
+
+            if (inputField != null)
+            {
+                inputField.contentType = TMP_InputField.ContentType.IntegerNumber;
+                inputField.onEndEdit.AddListener(OnInputFieldEndEdit);
+            }
         }
 
         private void OnDestroy()
@@ -85,6 +92,11 @@ namespace QFramework.UI
             if (maxButton != null)
             {
                 maxButton.onClick.RemoveListener(OnMaxButtonClicked);
+            }
+
+            if (inputField != null)
+            {
+                inputField.onEndEdit.RemoveListener(OnInputFieldEndEdit);
             }
         }
 
@@ -139,6 +151,27 @@ namespace QFramework.UI
             CurrentValue = maxValue;
         }
 
+        private void OnInputFieldEndEdit(string value)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                // 输入为空,恢复当前值
+                UpdateInputField();
+                return;
+            }
+
+            if (int.TryParse(value, out int intValue))
+            {
+                // 限制在有效范围内
+                CurrentValue = Mathf.Clamp(intValue, minValue, maxValue);
+            }
+            else
+            {
+                // 解析失败,恢复当前值
+                UpdateInputField();
+            }
+        }
+
         private void UpdateUI()
         {
             // 更新 Slider
@@ -153,6 +186,9 @@ namespace QFramework.UI
                 countText.text = currentValue.ToString();
             }
 
+            // 更新输入框
+            UpdateInputField();
+
             // 更新按钮状态
             if (minusButton != null)
             {
@@ -162,6 +198,14 @@ namespace QFramework.UI
             if (plusButton != null)
             {
                 plusButton.interactable = currentValue < maxValue;
+            }
+        }
+
+        private void UpdateInputField()
+        {
+            if (inputField != null)
+            {
+                inputField.text = currentValue.ToString();
             }
         }
     }
