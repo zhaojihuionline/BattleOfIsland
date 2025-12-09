@@ -91,6 +91,12 @@ namespace QFramework.UI
                 int playerHallLevel = bagPanel != null ? bagPanel.GetPlayerHallLevel() : 1;
                 levelRequirementText.text = $"需要建筑大厅等级: {requiredLevel}\n当前等级: {playerHallLevel}";
             }
+
+            // 等级不够时隐藏关闭按钮
+            if (closeButton != null)
+            {
+                closeButton.gameObject.SetActive(false);
+            }
         }
 
         private void ResetView()
@@ -101,6 +107,12 @@ namespace QFramework.UI
             if (iconImage != null) iconImage.enabled = false;
             if (qualityFrameImage != null) qualityFrameImage.enabled = false;
             if (countText != null) countText.text = "";
+
+            // 重置时显示关闭按钮
+            if (closeButton != null)
+            {
+                closeButton.gameObject.SetActive(true);
+            }
         }
 
         private void OnCloseButtonClicked()
