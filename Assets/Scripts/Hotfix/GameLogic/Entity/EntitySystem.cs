@@ -109,7 +109,7 @@ public class EntitySystem : AbstractSystem, IEntitySystem
             resourcesRoleMap.Add(id, HEntity);
         }
         EntityController res = Object.Instantiate<GameObject>(HEntity, spawnPoint, Quaternion.identity).GetComponent<EntityController>();
-        res.InitHaveHp(mercenary.Health);
+        
         List<int> paramList = new List<int>();
         //获取技能列表  等级需要从服务器拉取  现在默认1级别  服务器数据为英雄等级表+技能等级 
         foreach (var item in mercenary.Skill)
@@ -117,11 +117,12 @@ public class EntitySystem : AbstractSystem, IEntitySystem
             paramList.Add(item * 100 + lv);
         }
         res.SetMoveSpeed(mercenary.Speed / 100f);
-        res.InitCanSkill(paramList);
+        
 
 
         MercenaryData mercenaryData = new MercenaryData(mercenary);
         res.Init(mercenaryData,isEnemy);
+        res.InitHaveHp(mercenary.Health);
         if (isEnemy)
         {
             BattleInModel BM = this.GetModel<BattleInModel>();
@@ -132,6 +133,7 @@ public class EntitySystem : AbstractSystem, IEntitySystem
             BattleInModel BM = this.GetModel<BattleInModel>();
             BM.player_allEntitys.Add(res.gameObject);
         }
+        res.InitCanSkill(paramList);
         return null;
     }
 

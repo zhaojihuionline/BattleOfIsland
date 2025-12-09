@@ -185,12 +185,12 @@ namespace QFramework.UI
             //    GameObject _target = this.SendCommand(new FindTargetCommand(battleInModel.opponent_allEntitys, tbskill.TagMask, tbskill.CastRanage, tbskill.Preference, Vector3.zero));
             //    this.SendCommand<ReleaseSpellCommand>(new ReleaseSpellCommand(tbskill, null, _target, Vector3.zero));
             //});
-            this.Delay(1.5f, () =>
-            {
-                Destroy(newQianyao);
-                var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(20000101);// 腐朽之森法术技能
-                this.SendCommand<ReleaseSpellCommand>(new ReleaseSpellCommand(tbskill, null, default, Vector3.zero));
-            });
+            //this.Delay(1.5f, () =>
+            //{
+            //    Destroy(newQianyao);
+            //    var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(20000101);// 腐朽之森法术技能
+            //    this.SendCommand<ReleaseSpellCommand>(new ReleaseSpellCommand(tbskill, null, default, Vector3.zero));
+            //});
             //this.Delay(1.5f, () =>
             //{
             //    Destroy(newQianyao);
@@ -200,8 +200,23 @@ namespace QFramework.UI
             //this.Delay(1.5f, () =>
             //{
             //    Destroy(newQianyao);
-      			//var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(20000301);// 迷你蘑菇法术技能
-             //   this.SendCommand<ReleaseSpellCommand>(new ReleaseSpellCommand(tbskill, null, default, Vector3.zero));            //});
+            //var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(20000301);// 迷你蘑菇法术技能
+            //   this.SendCommand<ReleaseSpellCommand>(new ReleaseSpellCommand(tbskill, null, default, Vector3.zero));            
+            //});
+
+            //this.Delay(1.5f, () =>
+            //{
+            //    Destroy(newQianyao);
+            //    var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(20000401);// 醺酒法术技能
+            //    this.SendCommand<ReleaseSpellCommand>(new ReleaseSpellCommand(tbskill, null, default, Vector3.zero));
+            //});
+
+            this.Delay(1.5f, () =>
+            {
+                Destroy(newQianyao);
+                var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(20000501);// 复苏术法术技能
+                this.SendCommand<ReleaseSpellCommand>(new ReleaseSpellCommand(tbskill, null, default, Vector3.zero));
+            });
 
         }
         /// <summary>

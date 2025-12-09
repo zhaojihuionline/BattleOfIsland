@@ -1,3 +1,4 @@
+using PitayaClient.Protocol;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,7 @@ public class EffectDamage : EffectEntity
 
     public override void Execute()
     {
-        target.GetComponent<ICanHurt>()?.BeHurt(effect.effectNode.Param[1]);
+        SkillKit.BeHurt(new TargetData { Target = target.gameObject }, effect.effectNode.Param[1]);
     }
 
     public override void Init(Effect _effect, BuffEntity _buffEntity, Transform _target)

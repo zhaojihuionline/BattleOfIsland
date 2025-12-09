@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public class EffectHeal_Singlerhero_Percent : EffectEntity
 {
-    public override cfg.AttributeType attributeType => cfg.AttributeType.Heal_Singlerhero_Percent;
+    public override cfg.AttributeType attributeType => cfg.AttributeType.Heal_Singlerhero_Percent;//Heal_Singlerhero
 
     public override void Execute()
     {

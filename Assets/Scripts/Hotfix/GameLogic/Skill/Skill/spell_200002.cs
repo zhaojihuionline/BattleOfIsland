@@ -23,7 +23,7 @@ public partial class spell_200002 : SkillController
         effect.transform.SetParent(hero.transform);
         effect.name = "spell_200002";
         effect.transform.localPosition = Vector3.zero;
-        effect.transform.localScale = Vector3.one * 1.75f;
+        //effect.transform.localScale = Vector3.one * 1.75f;
         effect.SetActive(true);
 
         // 延迟一段时间删除特效，暂时写在这里，后续优化

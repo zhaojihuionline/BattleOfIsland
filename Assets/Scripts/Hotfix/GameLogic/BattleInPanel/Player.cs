@@ -59,7 +59,7 @@ public class PlayerData
     /// <summary>
     /// 总佣兵点数(暂时)
     /// </summary>
-    public int TotalCostMercenaryPoints;
+    public int TotalCostMercenaryPoints { get; set; }
     /// <summary>
     /// 资源数据
     /// </summary>

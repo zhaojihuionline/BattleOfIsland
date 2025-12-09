@@ -83,6 +83,10 @@ namespace cfg
         /// 玩家自己的数据（战斗临时调用）
         /// </summary>
         PlayerSelf = 17,
+        /// <summary>
+        /// 当前攻击目标
+        /// </summary>
+        Target = 18,
     }
 
 } 

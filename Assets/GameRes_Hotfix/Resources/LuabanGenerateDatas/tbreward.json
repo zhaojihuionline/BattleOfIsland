@@ -83,5 +83,51 @@
         "_weight": 100
       }
     ]
+  },
+  {
+    "RewardId": 100006,
+    "RewardName": "多资源宝箱",
+    "RewardType": 1,
+    "RewardParam": 1,
+    "RewardDetail": [
+      {
+        "_id": 4100002,
+        "_num": 1,
+        "_weight": 100
+      },
+      {
+        "_id": 4100008,
+        "_num": 1,
+        "_weight": 100
+      },
+      {
+        "_id": 4100014,
+        "_num": 1,
+        "_weight": 100
+      }
+    ]
+  },
+  {
+    "RewardId": 100007,
+    "RewardName": "资源多选宝箱",
+    "RewardType": 3,
+    "RewardParam": 2,
+    "RewardDetail": [
+      {
+        "_id": 4100002,
+        "_num": 1,
+        "_weight": 100
+      },
+      {
+        "_id": 4100008,
+        "_num": 1,
+        "_weight": 100
+      },
+      {
+        "_id": 4100014,
+        "_num": 1,
+        "_weight": 100
+      }
+    ]
   }
 ]

@@ -6,6 +6,7 @@ using QFramework.UI;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Rendering.VirtualTexturing;
 using UnityEngine.UIElements;
 
@@ -24,7 +25,7 @@ namespace QFramework.UI
         Vector3 m_pos;
 
         float incessantTime = 0f;
-        public float incessantInterval = 0.2f;
+        public float incessantInterval = 0.5f;
 
         public List<BattleDestructionRateConfig> battleProcessData = new List<BattleDestructionRateConfig>();
         private void Awake()
@@ -43,26 +44,20 @@ namespace QFramework.UI
 
             battleInPanel = GameObject.Find("UIRoot/Common").transform.Find("BattleInPanel").GetComponent<BattleInPanel>();
         }
+        bool isPointerDownOverUI = false;
         private void Update()
         {
 
             if (battleInPanel && battleInPanel.State == PanelState.Opening)
             {
 #if UNITY_EDITOR
-                if (Input.GetMouseButtonDown(0) && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
-#else
-            Touch touch = Input.GetTouch(0);
-            if (touch.phase == TouchPhase.Began && touch.tapCount > 0 && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject(touch.fingerId))
-#endif
+                if (Input.GetMouseButtonDown(0))
                 {
-                    PlaceHandler();
+                    isPointerDownOverUI = EventSystem.current.IsPointerOverGameObject(-1);
+                    if (!isPointerDownOverUI)
+                        PlaceHandler();
                 }
-
-#if UNITY_EDITOR
-                else if (Input.GetMouseButton(0) && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
-#else
-            else if (touch.phase == TouchPhase.Moved && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject(touch.fingerId))
-#endif
+                else if (Input.GetMouseButton(0) && !isPointerDownOverUI)
                 {
                     incessantTime += Time.deltaTime;
                     if (incessantTime >= incessantInterval)
@@ -71,6 +66,28 @@ namespace QFramework.UI
                         incessantTime = 0f;
                     }
                 }
+#else
+    if (Input.touchCount > 0)
+    {
+        Touch touch = Input.GetTouch(0);
+
+        if (touch.phase == TouchPhase.Began)
+        {
+            isPointerDownOverUI = EventSystem.current.IsPointerOverGameObject(touch.fingerId);
+            if (!isPointerDownOverUI)
+                PlaceHandler();
+        }
+        else if (touch.phase == TouchPhase.Moved && !isPointerDownOverUI)
+        {
+            incessantTime += Time.deltaTime;
+            if (incessantTime >= incessantInterval)
+            {
+                PlaceHandler();
+                incessantTime = 0f;
+            }
+        }
+    }
+#endif
             }
 
         }

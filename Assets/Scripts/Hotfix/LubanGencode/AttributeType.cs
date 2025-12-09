@@ -161,6 +161,10 @@ namespace cfg
         /// (x,y)x暂无意义，y表示改变属性（cost值变化）
         /// </summary>
         Cost = 36,
+        /// <summary>
+        /// int
+        /// </summary>
+        CurHealth = 37,
     }
 
 } 

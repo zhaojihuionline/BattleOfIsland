@@ -123,6 +123,7 @@ enum ErrorCode {
   ERR_INVENTORY_FULL = 6000 [(error_message) = "背包已满", (error_message_en) = "Inventory full"];
   ERR_INVENTORY_ITEM_NOT_FOUND = 6001 [(error_message) = "物品不存在", (error_message_en) = "Item not found"];
   ERR_INVENTORY_INSUFFICIENT_QUANTITY = 6002 [(error_message) = "物品数量不足", (error_message_en) = "Insufficient quantity"];
+  ERR_INVENTORY_USE_LIMIT = 6003 [(error_message) = "物品使用次数已达上限", (error_message_en) = "Item use limit reached"];
   
   // 匹配错误 (7000-7999)
   ERR_MATCH_ALREADY_IN_QUEUE = 7000 [(error_message) = "已在匹配队列中", (error_message_en) = "Already in queue"];

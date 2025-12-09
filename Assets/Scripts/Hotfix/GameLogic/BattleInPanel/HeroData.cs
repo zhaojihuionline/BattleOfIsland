@@ -101,7 +101,6 @@ public class HeroData : UnitData
     /// �չ������˺�
     /// </summary>
     public float attackDamage;
-    public float defence;
     /// <summary>
     /// �չ������ٶ�
     /// </summary>
@@ -111,31 +110,27 @@ public class HeroData : UnitData
     /// </summary>
     public float attackRange;
     public float damageRange;
-    /// <summary>
-    /// ��������
-    /// </summary>
+    
     public WeaponData weaponData;
-    /// <summary>
-    /// ����ID�б�(��������Ϊbuff����������ֱ��д����buff��id����buffϵͳ������)
-    /// </summary>
+    
     public List<int> skillID;
 
     public cfg.Hero CFG_HeroData;
-
+        
     PitayaGame.GameSvr.HeroData heroInfoPayload;
     public HeroData(PitayaGame.GameSvr.HeroData _heroInfoPayload)
     {
         this.heroInfoPayload = _heroInfoPayload;
-        // �õ������ļ��е�Ӣ������
+        
         var _cfg_HeroData = CfgMgr.Instance.Tables.TbHero.Get(_heroInfoPayload.HeroConfigId);
         this.CFG_HeroData = _cfg_HeroData;
-        // ���ݴӷ������ϻ�ȡ����Ӣ�۵ȼ����õ���Ӧ��Ӣ�۵ĵȼ�������
+
         var heroInfo_level = CfgMgr.Instance.Tables.TbHeroLevel.Get(_heroInfoPayload.HeroConfigId * 100 + _heroInfoPayload.Level);
 
-        // ��ȡӢ�۵ȼ�������
+        
         //var heroInfo_level_linq = CfgMgr.Instance.Tables.TbHeroLevel.DataList
         //    .Where(h => h.Level == heroInfoPayload.Level).FirstOrDefault();
-        // ͨ���õ��ĵȼ������ݣ�����ʼ��Ӣ������
+        
         HeroID = _cfg_HeroData.Id;
         HeroName = _cfg_HeroData.Name;
         HeroModelID = _cfg_HeroData.Mod;
@@ -153,7 +148,7 @@ public class HeroData : UnitData
     public HeroData Clone()
     {
         var heroInfo_level = CfgMgr.Instance.Tables.TbHeroLevel.Get(heroInfoPayload.HeroConfigId * 100 + heroInfoPayload.Level);
-        // ���HeroData
+        
         return new HeroData(heroInfoPayload)
         {
             HeroID = this.CFG_HeroData.Id,
@@ -176,19 +171,22 @@ public class HeroData : UnitData
         switch (attributeChangeData.attributeType)
         {
             case cfg.AttributeType.AttackType:
-                damageRange = ProcessCalculate(attributeChangeData.baseCalculateType, damageRange, attributeChangeData.value, attributeChangeData.attributeType);
+                damageRange = ProcessCalculate(attributeChangeData.baseCalculateType, damageRange, attributeChangeData.value);
                 break;
             case cfg.AttributeType.Attack:
-                attackDamage = ProcessCalculate(attributeChangeData.baseCalculateType, attackDamage, attributeChangeData.value, attributeChangeData.attributeType);
+                attackDamage = ProcessCalculate(attributeChangeData.baseCalculateType, attackDamage, attributeChangeData.value);
                 break;
-            case cfg.AttributeType.Defense:
-                defence = ProcessCalculate(attributeChangeData.baseCalculateType, defence, attributeChangeData.value, attributeChangeData.attributeType);
+            case cfg.AttributeType.Speed:// 降低百分比
+                moveSpeed = ProcessCalculate(attributeChangeData.baseCalculateType, moveSpeed, attributeChangeData.value);
                 break;
-                //todo:扩展写在这里
+            case cfg.AttributeType.Heal_Singlerhero:// 增加x点血量
+                //float finalValue = ProcessCalculate(attributeChangeData.baseCalculateType, blood, attributeChangeData.value);
+                entityController.AddBlood(attributeChangeData.value);
+                break;
         }
     }
 
-    float ProcessCalculate(cfg.EBaseCalculateType baseCalculateType, float attribute,int value,cfg.AttributeType attributeType)
+    float ProcessCalculate(cfg.EBaseCalculateType baseCalculateType, float attribute,int value)
     {
         float preAttribute = attribute;
         float fValue = value / 100f;
@@ -196,19 +194,19 @@ public class HeroData : UnitData
         {
             case EBaseCalculateType.Add:
                 attribute += fValue;
-                Debug.Log($"属性加成 {attributeType} {baseCalculateType}属性增加{fValue} 加成前：{preAttribute} 加成后：{attribute} HeroName:{HeroName} GoName:{entityController.name}");
+                Debug.Log($"属性加成 {baseCalculateType}属性增加{fValue} 加成前：{preAttribute} 加成后：{attribute} HeroName:{HeroName} GoName:{entityController.name}");
                 break;
             case EBaseCalculateType.Subtract:
                 attribute -= fValue;
-                Debug.Log($"属性加成 {attributeType} {baseCalculateType}属性减少{fValue} 加成前：{preAttribute} 加成后：{attribute} HeroName:{HeroName} GoName:{entityController.name}");
+                Debug.Log($"属性加成 {baseCalculateType}属性减少{fValue} 加成前：{preAttribute} 加成后：{attribute} HeroName:{HeroName} GoName:{entityController.name}");
                 break;
             case EBaseCalculateType.Multiply:
                 attribute *= (1 + (float)fValue);
-                Debug.Log($"属性加成 {attributeType} {baseCalculateType}属性加成{fValue} 加成前：{preAttribute} 加成后：{attribute} HeroName:{HeroName} GoName:{entityController.name}");
+                Debug.Log($"属性加成 {baseCalculateType}属性加成{fValue} 加成前：{preAttribute} 加成后：{attribute} HeroName:{HeroName} GoName:{entityController.name}");
                 break;
             case EBaseCalculateType.Divide:
                 attribute *= (1 - (float)fValue);
-                Debug.Log($"属性加成 {attributeType} {baseCalculateType}属性减成{fValue} 加成前：{preAttribute} 加成后：{attribute} HeroName:{HeroName} GoName:{entityController.name}");
+                Debug.Log($"属性加成 {baseCalculateType}属性减成{fValue} 加成前：{preAttribute} 加成后：{attribute} HeroName:{HeroName} GoName:{entityController.name}");
                 break;
         }
         return attribute;
@@ -227,6 +225,21 @@ public class HeroData : UnitData
         //    }
         //}
         return damageRange;
+    }
+
+    public override int GetBlood()
+    {
+        return Mathf.FloorToInt(blood);
+    }
+
+    public override void SetBlood(int b)
+    {
+        blood = b;
+    }
+
+    public override int GetMoveType()
+    {
+        return (int)moveType;
     }
 
     public override Enum_HeroType GetHeroType()
@@ -310,7 +323,20 @@ public class MercenaryData : UnitData
     {
         return (MercenaryData)this.MemberwiseClone();
     }
+    public override int GetBlood()
+    {
+        return Mathf.FloorToInt(blood);
+    }
 
+    public override void SetBlood(int b)
+    {
+        blood = b;
+    }
+
+    public override int GetMoveType()
+    {
+        return (int)moveType;
+    }
     public override EMercenaryType GetMercenaryType()
     {
         return mercenary.MercenaryType;
@@ -377,6 +403,19 @@ public class UnitData : IUnitData
         return 0;
     }
 
+    public virtual int GetBlood()
+    {
+        return 0;
+    }
+    public virtual void SetBlood(int b)
+    {
+    }
+
+    public virtual int GetMoveType()
+    {
+        return 0;
+    }
+
     public virtual Enum_HeroType GetHeroType()
     {
         return Enum_HeroType.None;
@@ -399,6 +438,9 @@ public interface IUnitData
     void ChangeAttribute(AttributeChangeData attributeChangeData);
 
     float GetDamageRange();
+    int GetBlood();
+    void SetBlood(int b);
+    int GetMoveType();
     Enum_HeroType GetHeroType();
     EMercenaryType GetMercenaryType();
 }

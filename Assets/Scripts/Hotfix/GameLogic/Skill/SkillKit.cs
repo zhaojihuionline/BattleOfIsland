@@ -22,6 +22,18 @@ public class SkillKit
         }
     }
 
+    public static void BeHurt(TargetData targetData, int damage)
+    {
+        targetData.Target.GetComponent<ICanHurt>().BeHurt(damage);
+        if (targetData.Targets != null)
+        {
+            foreach (var target in targetData.Targets)
+            {
+                target.GetComponent<ICanHurt>().BeHurt(damage);
+            }
+        }
+    }
+
     public static void CheckAuraSkill(GameObject caster, int buffId)
     {
         //筛选出技能施法目标

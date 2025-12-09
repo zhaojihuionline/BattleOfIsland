@@ -10,8 +10,21 @@ using System.Linq;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
+public class ChangeAstarGraphCommand : AbstractCommand
+{
+    public int index;
+    public ChangeAstarGraphCommand(int _index)
+    {
+        this.index = _index;
+    }
+    protected override void OnExecute()
+    {
+        AStarBaker.Instance.ChangeAstarGraph(this.index);
+    }
+}
+
 /// <summary>
-/// �ֲ��決AStar��������Command
+/// 烘焙A*寻路指令
 /// </summary>
 public class BakeAStarPathCommand : AbstractCommand
 {
@@ -127,9 +140,7 @@ public class AddSingleBuffToTargetCommand : AbstractCommand
         }
     }
 }
-/// <summary>
-/// ִ��Ŀ�����ϵ�����buffЧ��
-/// </summary>
+
 public class ExecuteAllBuffsCommand : AbstractCommand
 {
     public Transform target;

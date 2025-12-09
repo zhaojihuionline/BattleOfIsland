@@ -22116,14 +22116,14 @@
     "id": 20495,
     "Name": "每秒恢复x点血量",
     "Icon": "20031",
-    "Des": "每秒恢复3点血量",
+    "Des": "每秒恢复50点血量",
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
-          3
+          50
         ]
       }
     ],
@@ -22136,10 +22136,10 @@
     "TickCd": 0,
     "BuffTick_Effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
-          3
+          50
         ]
       }
     ],
@@ -22155,7 +22155,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           4
@@ -22171,7 +22171,7 @@
     "TickCd": 0,
     "BuffTick_Effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           4
@@ -22190,7 +22190,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           5
@@ -22206,7 +22206,7 @@
     "TickCd": 0,
     "BuffTick_Effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           5
@@ -22225,7 +22225,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           6
@@ -22241,7 +22241,7 @@
     "TickCd": 0,
     "BuffTick_Effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           6
@@ -22260,7 +22260,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           7
@@ -22276,7 +22276,7 @@
     "TickCd": 0,
     "BuffTick_Effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           7
@@ -22295,7 +22295,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           8
@@ -22311,7 +22311,7 @@
     "TickCd": 0,
     "BuffTick_Effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           8
@@ -22330,7 +22330,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           9
@@ -22346,7 +22346,7 @@
     "TickCd": 0,
     "BuffTick_Effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           9
@@ -22365,7 +22365,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           10
@@ -22381,7 +22381,7 @@
     "TickCd": 0,
     "BuffTick_Effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           10
@@ -22400,7 +22400,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           11
@@ -22416,7 +22416,7 @@
     "TickCd": 0,
     "BuffTick_Effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           11
@@ -22435,7 +22435,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           12
@@ -22451,7 +22451,7 @@
     "TickCd": 0,
     "BuffTick_Effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           12
@@ -22470,7 +22470,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           13
@@ -22486,7 +22486,7 @@
     "TickCd": 0,
     "BuffTick_Effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           13
@@ -22505,7 +22505,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           14
@@ -22521,7 +22521,7 @@
     "TickCd": 0,
     "BuffTick_Effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           14
@@ -22540,7 +22540,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           15
@@ -22556,7 +22556,7 @@
     "TickCd": 0,
     "BuffTick_Effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           15
@@ -22575,7 +22575,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           16
@@ -22591,7 +22591,7 @@
     "TickCd": 0,
     "BuffTick_Effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           16
@@ -22610,7 +22610,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           17
@@ -22626,7 +22626,7 @@
     "TickCd": 0,
     "BuffTick_Effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           17
@@ -22645,7 +22645,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           18
@@ -22661,7 +22661,7 @@
     "TickCd": 0,
     "BuffTick_Effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           18
@@ -22680,7 +22680,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           19
@@ -22696,7 +22696,7 @@
     "TickCd": 0,
     "BuffTick_Effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           19
@@ -22715,7 +22715,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           20
@@ -22731,7 +22731,7 @@
     "TickCd": 0,
     "BuffTick_Effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           20
@@ -22750,7 +22750,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           21
@@ -22766,7 +22766,7 @@
     "TickCd": 0,
     "BuffTick_Effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           21
@@ -22785,7 +22785,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           22
@@ -22801,7 +22801,7 @@
     "TickCd": 0,
     "BuffTick_Effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           22
@@ -22820,7 +22820,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           100
@@ -22862,7 +22862,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           200
@@ -22904,7 +22904,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           300
@@ -22946,7 +22946,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           400
@@ -22988,7 +22988,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           500
@@ -23030,7 +23030,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           600
@@ -23072,7 +23072,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           700
@@ -23114,7 +23114,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           800
@@ -23156,7 +23156,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           900
@@ -23198,7 +23198,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           1000
@@ -23240,7 +23240,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           1100
@@ -23282,7 +23282,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           1200
@@ -23324,7 +23324,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           1300
@@ -23366,7 +23366,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           1400
@@ -23408,7 +23408,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           1500
@@ -23450,7 +23450,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           1600
@@ -23492,7 +23492,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           1700
@@ -23534,7 +23534,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           1800
@@ -23576,7 +23576,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           1900
@@ -23618,7 +23618,7 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 9,
+        "_type": 37,
         "_param": [
           100,
           2000
@@ -23631,6 +23631,888 @@
     "Time": 0,
     "Overlay": false,
     "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20535,
+    "Name": "攻击额外造成x点伤害",
+    "Icon": "20033",
+    "Des": "攻击额外造成10点伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 8,
+        "_param": [
+          100,
+          10
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20536,
+    "Name": "攻击额外造成x点伤害",
+    "Icon": "20033",
+    "Des": "攻击额外造成12点伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 8,
+        "_param": [
+          100,
+          12
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20537,
+    "Name": "攻击额外造成x点伤害",
+    "Icon": "20033",
+    "Des": "攻击额外造成14点伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 8,
+        "_param": [
+          100,
+          14
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20538,
+    "Name": "攻击额外造成x点伤害",
+    "Icon": "20033",
+    "Des": "攻击额外造成16点伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 8,
+        "_param": [
+          100,
+          16
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20539,
+    "Name": "攻击额外造成x点伤害",
+    "Icon": "20033",
+    "Des": "攻击额外造成18点伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 8,
+        "_param": [
+          100,
+          18
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20540,
+    "Name": "攻击额外造成x点伤害",
+    "Icon": "20033",
+    "Des": "攻击额外造成20点伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 8,
+        "_param": [
+          100,
+          20
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20541,
+    "Name": "攻击额外造成x点伤害",
+    "Icon": "20033",
+    "Des": "攻击额外造成22点伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 8,
+        "_param": [
+          100,
+          22
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20542,
+    "Name": "攻击额外造成x点伤害",
+    "Icon": "20033",
+    "Des": "攻击额外造成24点伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 8,
+        "_param": [
+          100,
+          24
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20543,
+    "Name": "攻击额外造成x点伤害",
+    "Icon": "20033",
+    "Des": "攻击额外造成26点伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 8,
+        "_param": [
+          100,
+          26
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20544,
+    "Name": "攻击额外造成x点伤害",
+    "Icon": "20033",
+    "Des": "攻击额外造成28点伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 8,
+        "_param": [
+          100,
+          28
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20545,
+    "Name": "攻击额外造成x点伤害",
+    "Icon": "20033",
+    "Des": "攻击额外造成30点伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 8,
+        "_param": [
+          100,
+          30
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20546,
+    "Name": "攻击额外造成x点伤害",
+    "Icon": "20033",
+    "Des": "攻击额外造成32点伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 8,
+        "_param": [
+          100,
+          32
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20547,
+    "Name": "攻击额外造成x点伤害",
+    "Icon": "20033",
+    "Des": "攻击额外造成34点伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 8,
+        "_param": [
+          100,
+          34
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20548,
+    "Name": "攻击额外造成x点伤害",
+    "Icon": "20033",
+    "Des": "攻击额外造成36点伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 8,
+        "_param": [
+          100,
+          36
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20549,
+    "Name": "攻击额外造成x点伤害",
+    "Icon": "20033",
+    "Des": "攻击额外造成38点伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 8,
+        "_param": [
+          100,
+          38
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20550,
+    "Name": "攻击额外造成x点伤害",
+    "Icon": "20033",
+    "Des": "攻击额外造成40点伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 8,
+        "_param": [
+          100,
+          40
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20551,
+    "Name": "攻击额外造成x点伤害",
+    "Icon": "20033",
+    "Des": "攻击额外造成42点伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 8,
+        "_param": [
+          100,
+          42
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20552,
+    "Name": "攻击额外造成x点伤害",
+    "Icon": "20033",
+    "Des": "攻击额外造成44点伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 8,
+        "_param": [
+          100,
+          44
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20553,
+    "Name": "攻击额外造成x点伤害",
+    "Icon": "20033",
+    "Des": "攻击额外造成46点伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 8,
+        "_param": [
+          100,
+          46
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20554,
+    "Name": "攻击额外造成x点伤害",
+    "Icon": "20033",
+    "Des": "攻击额外造成48点伤害",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 8,
+        "_param": [
+          100,
+          48
+        ]
+      }
+    ],
+    "BaseCalType": 1,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": false,
+    "TickCd": 0,
+    "BuffTick_Effect": [
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      },
+      {
+        "_type": 1,
+        "_param": [
+          100,
+          100
+        ]
+      }
+    ],
+    "Priority": 0,
+    "Isdebuff": false,
+    "Buff_FX": ""
+  },
+  {
+    "id": 20555,
+    "Name": "攻击造成减速x%持续x秒",
+    "Icon": "20034",
+    "Des": "攻击造成减速10%持续3秒",
+    "Show": true,
+    "Buff_effect": [
+      {
+        "_type": 3,
+        "_param": [
+          100,
+          10
+        ]
+      }
+    ],
+    "BaseCalType": 4,
+    "FirstGoal": 3,
+    "NextGoal": 18,
+    "Time": -1,
+    "Overlay": false,
+    "ReFlash": true,
     "TickCd": 0,
     "BuffTick_Effect": [
       {

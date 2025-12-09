@@ -19,6 +19,7 @@ public class EffectAttack : EffectEntity
 
         //target.GetComponent<ICanResponseBuff>().OnUpgradeAttack(effect.effectNode.Param[0]);
         IsFinished = true;
+        Debug.Log("确实执行了修改攻击力效果器");
         //buffEntity.RemoveEffect(this);
     }
 

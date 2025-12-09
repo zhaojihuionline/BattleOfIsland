@@ -1,9 +1,12 @@
 using cfg;
 using DG.Tweening;
+using Pathfinding;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace QFramework.Game
 {
@@ -24,7 +27,7 @@ namespace QFramework.Game
 		public List<GameObject> targetList = new List<GameObject>();
 		Animator animator;
 		#region   血量受伤相关
-		public int currentHP { get; set; }
+		public int currentHP {get;set;}
 		public int HPMAX { get; set; }
 		public bool IsAlive { get; set; }
 		public Transform myTransform => transform;
@@ -175,6 +178,7 @@ namespace QFramework.Game
 				{
 					//被动技能直接触发  ToDo  目标还是要根据选择规则和偏好去选择 目前之哟一个对自己生效的被动  先写死
                     //this.SendCommand(new ReleaseSkillCommand(table, gameObject, TargetData.New(), gameObject.transform.position));
+					
 					this.GetSystem<SkillSystem>().ReleaseSkill(table,gameObject, TargetData.New(), gameObject.transform.position);
 				}
                 else if (table.SkillType == SkillType.AURA_SKILL)
@@ -209,12 +213,14 @@ namespace QFramework.Game
 		 
 		public void InitHaveHp(int hpMax)
 		{
-			//根据等级获取对应表数据
-			currentHP = HPMAX = hpMax;
+			HPMAX = hpMax;
+			this.unitData.SetBlood(hpMax);
+            //根据等级获取对应表数据
+            currentHP = hpMax;
 			IsAlive = currentHP >= HPMAX;
 			//Debug.Log(entityAttribute);
             //entityAttribute.SetAttribute("Health", currentHP);// 设置生命值属性
-
+			
             if (bloodController != null)
 			{
 				Debug.Log($"更新了血条显示currentHP:{currentHP}HPMAX:{HPMAX}hpMax{hpMax}");
@@ -240,7 +246,6 @@ namespace QFramework.Game
 			// }
 			unitData.Init(this);
             this.unitData = unitData;
-
             //根据是不是敌人 确定当前使用的目标列表
             BattleInModel model = this.GetModel<BattleInModel>();
             targetList = isEnemy ? model.player_allEntitys : model.opponent_allEntitys;
@@ -285,7 +290,7 @@ namespace QFramework.Game
 		public void AddBlood(int v)
 		{
 			currentHP += v;
-			if (currentHP > HPMAX)
+            if (currentHP > HPMAX)
 			{
 				currentHP = HPMAX;
                 if (bloodController != null)
@@ -313,9 +318,8 @@ namespace QFramework.Game
 
 			bloodController.gameObject.SetActive(true);
             currentHP -= damage;
-
-			// 更新受伤特效
-			Transform mat = transform.Find("Model/Tower_B/Tower_B_model");
+            // 更新受伤特效
+            Transform mat = transform.Find("Model/Tower_B/Tower_B_model");
 			if (mat != null)
 			{
 				Material oldm = mat.GetComponent<MeshRenderer>().material;
@@ -407,7 +411,12 @@ namespace QFramework.Game
 				Defense_PercentReduction_all = false;
 			}
 		}
-		public bool ReleaseSkill()
+
+        /// <summary>
+        /// 释放技能
+        /// </summary>
+        /// <returns></returns>
+        public bool ReleaseSkill()
 		{
 			if (isRelease)
 			{
@@ -444,7 +453,7 @@ namespace QFramework.Game
                 targetData = this.SendCommand(new FindTargetCommand(targetListNow, table, this));
 				
                 //如果有目标  那么就可以释放技能了
-                if (targetData.Target == null)
+                 if (targetData.Target == null)
 				{
 					//Debug.LogError("没有目标 不能释放技能");
 					continue;
@@ -580,6 +589,7 @@ namespace QFramework.Game
 			protected override void OnEnter()
 			{
 				mTarget.OnIdleEnter();
+				
 				Debug.Log("周期性检测前:" + mTarget.isRelease);
                 // 启动周期性检测（每5帧）
                 _idleController = ActionKit.Repeat()
@@ -590,24 +600,22 @@ namespace QFramework.Game
 						mTarget.SendCommand<CleanInvalidTargetsCommand>(new CleanInvalidTargetsCommand(mTarget.targetList));
 						if (mTarget.targetList.Count > 0)
 						{
-							{
-								if (mTarget.nomalAttackPacket != null)// 临时加的防止空引用，如果普攻包为空，说明初始化没做好
-								{
-                                    var target = mTarget.SendCommand(new FindTargetCommand(mTarget.targetList, mTarget.nomalAttackPacket._data, mTarget, 99999));
-                                    //var target = mTarget.SendCommand(new FindTargetCommand(mTarget.targetList, mTarget.nomalAttackPacket._data.TagMask, 99999, mTarget.nomalAttackPacket._data.Preference, mTarget.gameObject));
-                                    if (target.Target == null)
-									{
-										Debug.Log($"{mTarget.name}IdleState中找不到目标");
+                            if (mTarget.nomalAttackPacket != null)// 临时加的防止空引用，如果普攻包为空，说明初始化没做好
+                            {
+                                var target = mTarget.SendCommand(new FindTargetCommand(mTarget.targetList, mTarget.nomalAttackPacket._data, mTarget, 99999));
+                                //var target = mTarget.SendCommand(new FindTargetCommand(mTarget.targetList, mTarget.nomalAttackPacket._data.TagMask, 99999, mTarget.nomalAttackPacket._data.Preference, mTarget.gameObject));
+                                if (target.Target == null)
+                                {
+                                    Debug.Log($"{mTarget.name}IdleState中找不到目标");
 
-										return;
-									}
+                                    return;
+                                }
 
-									Debug.Log($"{mTarget.name}: 准备移动到: " + target.Target.name);
-									mTarget.Move(target.Target.transform);
-									mFSM.ChangeState(EntityState.MoveToTarget);
-								}
-							}
-						}
+                                Debug.Log($"{mTarget.name}: 准备移动到: " + target.Target.name);
+                                mTarget.Move(target.Target.transform);
+                                mFSM.ChangeState(EntityState.MoveToTarget);
+                            }
+                        }
 					})
 					.Start(mTarget);
 			}

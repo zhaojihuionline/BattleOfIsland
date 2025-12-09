@@ -244,9 +244,9 @@ public class BuffRunner : IRunner
         return hasBuff;
     }
 
-    public void GetBuff()
+    public Buff GetBuff(int buffid)
     {
-
+        return buffDatas.Where(b => b.id == buffid).FirstOrDefault();
     }
 
     /// <summary>
