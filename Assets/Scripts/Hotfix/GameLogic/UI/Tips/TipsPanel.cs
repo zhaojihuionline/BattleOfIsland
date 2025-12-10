@@ -29,8 +29,6 @@ namespace QFramework.UI
         
         [Header("Queue Settings")]
         [SerializeField] private int maxQueueSize = 10;            // 最大队列长度
-        [SerializeField] private bool autoQueue = true;             // 自动排队显示
-        
         private Queue<TipsData> tipsQueue = new Queue<TipsData>();
         private List<TipsItem> activeTipsItems = new List<TipsItem>();
         private bool isProcessing = false;
@@ -48,35 +46,6 @@ namespace QFramework.UI
             if (tipsPrefab == null)
             {
                 Debug.LogError("TipsPanel: tipsPrefab 未设置!");
-            }
-
-            // 确保容器设置正确
-            if (tipsContainer != null)
-            {
-                SetupContainer();
-            }
-        }
-
-        /// <summary>
-        /// 检查并验证容器的配置
-        /// 注意：容器的锚点、轴心点、VerticalLayoutGroup 的启用状态应在预制体中配置
-        /// </summary>
-        private void SetupContainer()
-        {
-            // 检查容器锚点配置（应在预制体中设置为顶部居中）
-            if (tipsContainer.anchorMin.x != 0.5f || tipsContainer.anchorMin.y != 1f ||
-                tipsContainer.anchorMax.x != 0.5f || tipsContainer.anchorMax.y != 1f)
-            {
-                Debug.LogWarning("TipsPanel: TipsContainer 的锚点应在预制体中设置为顶部居中 (0.5, 1)");
-            }
-
-            // 检查 VerticalLayoutGroup 是否已禁用（应在预制体中禁用，因为我们要手动管理位置）
-            var layoutGroup = tipsContainer.GetComponent<VerticalLayoutGroup>();
-            if (layoutGroup != null && layoutGroup.enabled)
-            {
-                Debug.LogWarning("TipsPanel: TipsContainer 的 VerticalLayoutGroup 应在预制体中禁用，因为我们要手动管理子对象位置");
-                // 如果预制体中没有禁用，运行时禁用（但建议在预制体中配置）
-                layoutGroup.enabled = false;
             }
         }
 
@@ -108,7 +77,7 @@ namespace QFramework.UI
             tipsQueue.Enqueue(data);
 
             // 如果当前没有在处理队列，开始处理
-            if (!isProcessing && autoQueue)
+            if (!isProcessing)
             {
                 ProcessQueue().Forget();
             }
@@ -149,7 +118,7 @@ namespace QFramework.UI
             TipsItem tipsItem = itemObj.GetComponent<TipsItem>();
 
             // 初始化 TipsItem（检查预制体配置，设置必要的运行时属性）
-            tipsItem.Initialize(this);
+            // tipsItem.Initialize(this);
 
             // 添加到活动列表
             activeTipsItems.Add(tipsItem);
@@ -158,13 +127,13 @@ namespace QFramework.UI
             tipsItem.SetData(data);
 
             // 强制布局重建，确保文本更新后的尺寸正确
-            LayoutRebuilder.ForceRebuildLayoutImmediate(tipsContainer);
+            // LayoutRebuilder.ForceRebuildLayoutImmediate(tipsContainer);
 
             // 计算初始位置（从容器顶部开始）
-            float startY = START_OFFSET_Y;
+            float startY = START_OFFSET_Y * 4;
             tipsItem.SetPosition(startY);
 
-            // 更新所有提示项的位置（新提示出现时，旧的向下移动）
+            // 更新所有提示项的位置（新提示出现时，旧的向上移动）
             UpdateAllItemsPosition();
 
             // 使用自定义时长或默认时长
@@ -192,15 +161,15 @@ namespace QFramework.UI
         }
 
         /// <summary>
-        /// 更新所有活动提示项的位置（顶部对齐，新的在上，旧的在下）
+        /// 更新所有活动提示项的位置（顶部对齐，新的在下，旧的在上）
         /// </summary>
         private void UpdateAllItemsPosition()
         {
             // 从顶部开始，向下排列
             float currentY = START_OFFSET_Y;
 
-            // 按添加顺序排列（新的在上，旧的在下）：倒序遍历列表
-            for (int i = activeTipsItems.Count - 1; i >= 0; i--)
+            // 按添加顺序排列（新的在下，旧的在上）：正序遍历列表
+            for (int i = 0; i < activeTipsItems.Count; i++)
             {
                 var item = activeTipsItems[i];
                 if (item != null && !item.IsDestroyed)

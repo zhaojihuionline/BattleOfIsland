@@ -16,10 +16,9 @@ namespace QFramework.UI
         private TextMeshProUGUI messageText;
         private Image backgroundImage;
         private RectTransform rectTransform;
-        private TipsPanel parentPanel;
         private Tweener positionTweener;
         private bool isDestroyed = false;
-        
+
         // 保存初始 alpha 值（用于动画）
         private float imageInitialAlpha = 0.9f;  // Image 的初始 alpha（在 SetData 中设置）
         private float textInitialAlpha = 1f;     // TextMeshProUGUI 的初始 alpha
@@ -32,7 +31,7 @@ namespace QFramework.UI
             rectTransform = GetComponent<RectTransform>();
             messageText = GetComponentInChildren<TextMeshProUGUI>();
             backgroundImage = GetComponent<Image>();
-            
+
             // 保存文本的初始 alpha
             if (messageText != null)
             {
@@ -51,46 +50,9 @@ namespace QFramework.UI
 
         /// <summary>
         /// 初始化 TipsItem
-        /// 注意：锚点和轴心点应在预制体中配置为顶部居中 (0.5, 1)
         /// </summary>
         public void Initialize(TipsPanel panel)
         {
-            parentPanel = panel;
-            ValidateAndSetupRectTransform();
-        }
-
-        /// <summary>
-        /// 验证并设置 RectTransform
-        /// 优先使用预制体配置，只在必要时用代码设置（顶部居中）
-        /// </summary>
-        private void ValidateAndSetupRectTransform()
-        {
-            if (rectTransform == null)
-            {
-                rectTransform = GetComponent<RectTransform>();
-            }
-
-            if (rectTransform != null)
-            {
-                // 检查锚点配置（应在预制体中设置为顶部居中）
-                if (rectTransform.anchorMin.x != 0.5f || rectTransform.anchorMin.y != 1f ||
-                    rectTransform.anchorMax.x != 0.5f || rectTransform.anchorMax.y != 1f)
-                {
-                    Debug.LogWarning("TipsItem: 锚点应在预制体中设置为顶部居中 (0.5, 1)，当前代码会自动修正");
-                    rectTransform.anchorMin = new Vector2(0.5f, 1f);
-                    rectTransform.anchorMax = new Vector2(0.5f, 1f);
-                }
-
-                // 检查轴心点配置（应在预制体中设置为顶部居中）
-                if (rectTransform.pivot.x != 0.5f || rectTransform.pivot.y != 1f)
-                {
-                    Debug.LogWarning("TipsItem: 轴心点应在预制体中设置为顶部居中 (0.5, 1)，当前代码会自动修正");
-                    rectTransform.pivot = new Vector2(0.5f, 1f);
-                }
-
-                // 设置宽度填充容器（这是运行时属性，必须在代码中设置）
-                rectTransform.sizeDelta = new Vector2(0f, rectTransform.sizeDelta.y);
-            }
         }
 
         /// <summary>
@@ -104,7 +66,7 @@ namespace QFramework.UI
                 messageText.text = data.Message;
                 messageText.richText = true;
                 messageText.alignment = TMPro.TextAlignmentOptions.Center;
-                
+
                 // 保存文本的初始 alpha（如果之前没有保存）
                 if (textInitialAlpha <= 0)
                 {
@@ -130,7 +92,7 @@ namespace QFramework.UI
             // 初始化状态（完全透明）- 使用 DoTween 直接控制
             SetAlpha(0f);
         }
-        
+
         /// <summary>
         /// 设置透明度（同时设置 Image 和 TextMeshProUGUI）
         /// </summary>
@@ -142,7 +104,7 @@ namespace QFramework.UI
                 color.a = alpha * imageInitialAlpha;  // 乘以初始 alpha，保持相对透明度
                 backgroundImage.color = color;
             }
-            
+
             if (messageText != null)
             {
                 Color color = messageText.color;
@@ -201,10 +163,6 @@ namespace QFramework.UI
                 return;
             }
 
-            Vector2 startPos = rectTransform.anchoredPosition;
-            Vector2 midPos = new Vector2(0f, startPos.y + slideUpDistance * 0.3f);  // 淡入时稍微上移
-            Vector2 endPos = new Vector2(0f, startPos.y + slideUpDistance);          // 最终位置
-
             // 创建动画序列
             Sequence sequence = DOTween.Sequence();
 
@@ -218,22 +176,15 @@ namespace QFramework.UI
             {
                 sequence.Join(messageText.DOFade(textInitialAlpha, fadeInDuration).SetEase(Ease.OutQuad));
             }
-            sequence.Join(rectTransform.DOAnchorPos(midPos, fadeInDuration).SetEase(Ease.OutQuad));
+            // 位置由堆叠逻辑统一控制，这里不做位移动画，只做透明度动画
+            sequence.AppendInterval(fadeInDuration); // 对齐时间轴
+            sequence.AppendInterval(displayDuration);
 
-            // 第二阶段：继续上移到最终位置（停留期间）
-            sequence.Append(rectTransform.DOAnchorPos(endPos, displayDuration * 0.3f).SetEase(Ease.OutCubic));
-            
-            // 第三阶段：停留
-            sequence.AppendInterval(displayDuration * 0.7f);
-
-            // 第四阶段：继续上移 + 淡出（消失动画）
-            Vector2 finalPos = new Vector2(0f, endPos.y + slideUpDistance * 0.2f);
-            sequence.Append(rectTransform.DOAnchorPosY(finalPos.y, fadeOutDuration).SetEase(Ease.InQuad));
-            
+            // 第四阶段：淡出（消失动画）
             // 同时淡出 Image 和 TextMeshProUGUI
             if (backgroundImage != null)
             {
-                sequence.Join(backgroundImage.DOFade(0f, fadeOutDuration).SetEase(Ease.InQuad));
+                sequence.Append(backgroundImage.DOFade(0f, fadeOutDuration).SetEase(Ease.InQuad));
             }
             if (messageText != null)
             {
