@@ -4,7 +4,6 @@ using TMPro;
 using cfg;
 using System.Collections.Generic;
 using QFramework;
-using UnityEngine.WSA;
 
 namespace QFramework.UI
 {
