@@ -119,7 +119,14 @@ namespace QFramework.UI
         {
             if (rectTransform != null)
             {
+                // 强制设置 X 为 0，确保居中显示
                 rectTransform.anchoredPosition = new Vector2(0f, y);
+                
+                // 如果位置被其他组件修改了，再次强制设置
+                if (Mathf.Abs(rectTransform.anchoredPosition.x) > 0.01f)
+                {
+                    rectTransform.anchoredPosition = new Vector2(0f, y);
+                }
             }
         }
 

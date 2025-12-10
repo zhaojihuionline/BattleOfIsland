@@ -67,6 +67,14 @@ namespace QFramework.UI
             tipsContainer.anchorMax = new Vector2(0.5f, 1f);
             tipsContainer.pivot = new Vector2(0.5f, 1f);
             tipsContainer.anchoredPosition = Vector2.zero;
+            
+            // 禁用 VerticalLayoutGroup，因为我们要手动管理子对象位置
+            // 这样可以避免布局组件与手动位置管理冲突，确保 X 坐标始终为 0
+            var layoutGroup = tipsContainer.GetComponent<VerticalLayoutGroup>();
+            if (layoutGroup != null)
+            {
+                layoutGroup.enabled = false;
+            }
         }
 
         protected override void OnOpen(IUIData uiData = null)
@@ -137,17 +145,26 @@ namespace QFramework.UI
             GameObject itemObj = Instantiate(tipsPrefab, tipsContainer);
             TipsItem tipsItem = itemObj.GetComponent<TipsItem>();
 
-            // 初始化 TipsItem
+            // 立即初始化 TipsItem（设置锚点和轴心点），在布局组件生效之前
             tipsItem.Initialize(this);
+
+            // 计算初始位置（从容器顶部开始）
+            float startY = START_OFFSET_Y;
+            tipsItem.SetPosition(startY);
+
+            // 强制布局重建，确保位置正确
+            LayoutRebuilder.ForceRebuildLayoutImmediate(tipsContainer);
 
             // 添加到活动列表
             activeTipsItems.Add(tipsItem);
 
-            // 设置数据
+            // 设置数据（这会触发文本更新，可能影响布局）
             tipsItem.SetData(data);
 
-            // 计算初始位置（从容器顶部开始）
-            float startY = START_OFFSET_Y;
+            // 再次强制布局重建，确保文本更新后的位置正确
+            LayoutRebuilder.ForceRebuildLayoutImmediate(tipsContainer);
+            
+            // 确保 X 坐标为 0（居中）
             tipsItem.SetPosition(startY);
 
             // 更新所有提示项的位置（新提示出现时，旧的向下移动）
