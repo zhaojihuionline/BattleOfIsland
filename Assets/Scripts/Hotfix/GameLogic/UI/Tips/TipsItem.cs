@@ -15,11 +15,14 @@ namespace QFramework.UI
     {
         private TextMeshProUGUI messageText;
         private Image backgroundImage;
-        private CanvasGroup canvasGroup;
         private RectTransform rectTransform;
         private TipsPanel parentPanel;
         private Tweener positionTweener;
         private bool isDestroyed = false;
+        
+        // 保存初始 alpha 值（用于动画）
+        private float imageInitialAlpha = 0.9f;  // Image 的初始 alpha（在 SetData 中设置）
+        private float textInitialAlpha = 1f;     // TextMeshProUGUI 的初始 alpha
 
         public RectTransform RectTransform => rectTransform;
         public bool IsDestroyed => isDestroyed;
@@ -27,15 +30,14 @@ namespace QFramework.UI
         private void Awake()
         {
             rectTransform = GetComponent<RectTransform>();
-            canvasGroup = GetComponent<CanvasGroup>();
-            
-            if (canvasGroup == null)
-            {
-                canvasGroup = gameObject.AddComponent<CanvasGroup>();
-            }
-
             messageText = GetComponentInChildren<TextMeshProUGUI>();
             backgroundImage = GetComponent<Image>();
+            
+            // 保存文本的初始 alpha
+            if (messageText != null)
+            {
+                textInitialAlpha = messageText.color.a;
+            }
         }
 
         private void OnDestroy()
@@ -49,17 +51,19 @@ namespace QFramework.UI
 
         /// <summary>
         /// 初始化 TipsItem
+        /// 注意：锚点和轴心点应在预制体中配置为顶部居中 (0.5, 1)
         /// </summary>
         public void Initialize(TipsPanel panel)
         {
             parentPanel = panel;
-            SetupRectTransform();
+            ValidateAndSetupRectTransform();
         }
 
         /// <summary>
-        /// 设置 RectTransform，确保正确显示
+        /// 验证并设置 RectTransform
+        /// 优先使用预制体配置，只在必要时用代码设置
         /// </summary>
-        private void SetupRectTransform()
+        private void ValidateAndSetupRectTransform()
         {
             if (rectTransform == null)
             {
@@ -68,12 +72,23 @@ namespace QFramework.UI
 
             if (rectTransform != null)
             {
-                // 设置锚点为顶部居中
-                rectTransform.anchorMin = new Vector2(0.5f, 1f);
-                rectTransform.anchorMax = new Vector2(0.5f, 1f);
-                rectTransform.pivot = new Vector2(0.5f, 1f);
-                
-                // 确保宽度填充容器
+                // 检查锚点配置（应在预制体中设置为顶部居中）
+                if (rectTransform.anchorMin.x != 0.5f || rectTransform.anchorMin.y != 1f ||
+                    rectTransform.anchorMax.x != 0.5f || rectTransform.anchorMax.y != 1f)
+                {
+                    Debug.LogWarning("TipsItem: 锚点应在预制体中设置为顶部居中 (0.5, 1)，当前代码会自动修正");
+                    rectTransform.anchorMin = new Vector2(0.5f, 1f);
+                    rectTransform.anchorMax = new Vector2(0.5f, 1f);
+                }
+
+                // 检查轴心点配置（应在预制体中设置为顶部居中）
+                if (rectTransform.pivot.x != 0.5f || rectTransform.pivot.y != 1f)
+                {
+                    Debug.LogWarning("TipsItem: 轴心点应在预制体中设置为顶部居中 (0.5, 1)，当前代码会自动修正");
+                    rectTransform.pivot = new Vector2(0.5f, 1f);
+                }
+
+                // 设置宽度填充容器（这是运行时属性，必须在代码中设置）
                 rectTransform.sizeDelta = new Vector2(0f, rectTransform.sizeDelta.y);
             }
         }
@@ -89,6 +104,12 @@ namespace QFramework.UI
                 messageText.text = data.Message;
                 messageText.richText = true;
                 messageText.alignment = TMPro.TextAlignmentOptions.Center;
+                
+                // 保存文本的初始 alpha（如果之前没有保存）
+                if (textInitialAlpha <= 0)
+                {
+                    textInitialAlpha = messageText.color.a > 0 ? messageText.color.a : 1f;
+                }
             }
 
             // 设置背景颜色
@@ -103,30 +124,43 @@ namespace QFramework.UI
                 };
 
                 backgroundImage.color = bgColor;
+                imageInitialAlpha = bgColor.a;  // 保存 Image 的初始 alpha
             }
 
-            // 初始化状态（完全透明）
-            if (canvasGroup != null)
+            // 初始化状态（完全透明）- 使用 DoTween 直接控制
+            SetAlpha(0f);
+        }
+        
+        /// <summary>
+        /// 设置透明度（同时设置 Image 和 TextMeshProUGUI）
+        /// </summary>
+        private void SetAlpha(float alpha)
+        {
+            if (backgroundImage != null)
             {
-                canvasGroup.alpha = 0f;
+                Color color = backgroundImage.color;
+                color.a = alpha * imageInitialAlpha;  // 乘以初始 alpha，保持相对透明度
+                backgroundImage.color = color;
+            }
+            
+            if (messageText != null)
+            {
+                Color color = messageText.color;
+                color.a = alpha * textInitialAlpha;  // 乘以初始 alpha，保持相对透明度
+                messageText.color = color;
             }
         }
 
         /// <summary>
         /// 设置位置（立即，无动画）
+        /// 注意：如果锚点正确配置为顶部居中 (0.5, 1)，X 坐标会自动为 0
         /// </summary>
         public void SetPosition(float y)
         {
             if (rectTransform != null)
             {
-                // 强制设置 X 为 0，确保居中显示
+                // 设置 Y 位置（X 坐标由锚点自动处理，应该为 0）
                 rectTransform.anchoredPosition = new Vector2(0f, y);
-                
-                // 如果位置被其他组件修改了，再次强制设置
-                if (Mathf.Abs(rectTransform.anchoredPosition.x) > 0.01f)
-                {
-                    rectTransform.anchoredPosition = new Vector2(0f, y);
-                }
             }
         }
 
@@ -157,7 +191,12 @@ namespace QFramework.UI
             float fadeOutDuration,
             float slideUpDistance)
         {
-            if (rectTransform == null || canvasGroup == null || isDestroyed)
+            if (rectTransform == null || isDestroyed)
+            {
+                return;
+            }
+
+            if (backgroundImage == null && messageText == null)
             {
                 return;
             }
@@ -170,7 +209,15 @@ namespace QFramework.UI
             Sequence sequence = DOTween.Sequence();
 
             // 第一阶段：淡入 + 轻微上移（出现动画）
-            sequence.Append(canvasGroup.DOFade(1f, fadeInDuration).SetEase(Ease.OutQuad));
+            // 同时动画 Image 和 TextMeshProUGUI 的透明度
+            if (backgroundImage != null)
+            {
+                sequence.Join(backgroundImage.DOFade(imageInitialAlpha, fadeInDuration).SetEase(Ease.OutQuad));
+            }
+            if (messageText != null)
+            {
+                sequence.Join(messageText.DOFade(textInitialAlpha, fadeInDuration).SetEase(Ease.OutQuad));
+            }
             sequence.Join(rectTransform.DOAnchorPos(midPos, fadeInDuration).SetEase(Ease.OutQuad));
 
             // 第二阶段：继续上移到最终位置（停留期间）
@@ -182,7 +229,16 @@ namespace QFramework.UI
             // 第四阶段：继续上移 + 淡出（消失动画）
             Vector2 finalPos = new Vector2(0f, endPos.y + slideUpDistance * 0.2f);
             sequence.Append(rectTransform.DOAnchorPosY(finalPos.y, fadeOutDuration).SetEase(Ease.InQuad));
-            sequence.Join(canvasGroup.DOFade(0f, fadeOutDuration).SetEase(Ease.InQuad));
+            
+            // 同时淡出 Image 和 TextMeshProUGUI
+            if (backgroundImage != null)
+            {
+                sequence.Join(backgroundImage.DOFade(0f, fadeOutDuration).SetEase(Ease.InQuad));
+            }
+            if (messageText != null)
+            {
+                sequence.Join(messageText.DOFade(0f, fadeOutDuration).SetEase(Ease.InQuad));
+            }
 
             // 等待动画完成
             await sequence.AsyncWaitForCompletion();

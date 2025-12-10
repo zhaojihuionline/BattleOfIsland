@@ -58,21 +58,24 @@ namespace QFramework.UI
         }
 
         /// <summary>
-        /// 设置容器的布局
+        /// 检查并验证容器的配置
+        /// 注意：容器的锚点、轴心点、VerticalLayoutGroup 的启用状态应在预制体中配置
         /// </summary>
         private void SetupContainer()
         {
-            // 确保容器锚点在顶部居中
-            tipsContainer.anchorMin = new Vector2(0.5f, 1f);
-            tipsContainer.anchorMax = new Vector2(0.5f, 1f);
-            tipsContainer.pivot = new Vector2(0.5f, 1f);
-            tipsContainer.anchoredPosition = Vector2.zero;
-            
-            // 禁用 VerticalLayoutGroup，因为我们要手动管理子对象位置
-            // 这样可以避免布局组件与手动位置管理冲突，确保 X 坐标始终为 0
-            var layoutGroup = tipsContainer.GetComponent<VerticalLayoutGroup>();
-            if (layoutGroup != null)
+            // 检查容器锚点配置（应在预制体中设置为顶部居中）
+            if (tipsContainer.anchorMin.x != 0.5f || tipsContainer.anchorMin.y != 1f ||
+                tipsContainer.anchorMax.x != 0.5f || tipsContainer.anchorMax.y != 1f)
             {
+                Debug.LogWarning("TipsPanel: TipsContainer 的锚点应在预制体中设置为顶部居中 (0.5, 1)");
+            }
+
+            // 检查 VerticalLayoutGroup 是否已禁用（应在预制体中禁用，因为我们要手动管理位置）
+            var layoutGroup = tipsContainer.GetComponent<VerticalLayoutGroup>();
+            if (layoutGroup != null && layoutGroup.enabled)
+            {
+                Debug.LogWarning("TipsPanel: TipsContainer 的 VerticalLayoutGroup 应在预制体中禁用，因为我们要手动管理子对象位置");
+                // 如果预制体中没有禁用，运行时禁用（但建议在预制体中配置）
                 layoutGroup.enabled = false;
             }
         }
@@ -145,15 +148,8 @@ namespace QFramework.UI
             GameObject itemObj = Instantiate(tipsPrefab, tipsContainer);
             TipsItem tipsItem = itemObj.GetComponent<TipsItem>();
 
-            // 立即初始化 TipsItem（设置锚点和轴心点），在布局组件生效之前
+            // 初始化 TipsItem（检查预制体配置，设置必要的运行时属性）
             tipsItem.Initialize(this);
-
-            // 计算初始位置（从容器顶部开始）
-            float startY = START_OFFSET_Y;
-            tipsItem.SetPosition(startY);
-
-            // 强制布局重建，确保位置正确
-            LayoutRebuilder.ForceRebuildLayoutImmediate(tipsContainer);
 
             // 添加到活动列表
             activeTipsItems.Add(tipsItem);
@@ -161,10 +157,11 @@ namespace QFramework.UI
             // 设置数据（这会触发文本更新，可能影响布局）
             tipsItem.SetData(data);
 
-            // 再次强制布局重建，确保文本更新后的位置正确
+            // 强制布局重建，确保文本更新后的尺寸正确
             LayoutRebuilder.ForceRebuildLayoutImmediate(tipsContainer);
-            
-            // 确保 X 坐标为 0（居中）
+
+            // 计算初始位置（从容器顶部开始）
+            float startY = START_OFFSET_Y;
             tipsItem.SetPosition(startY);
 
             // 更新所有提示项的位置（新提示出现时，旧的向下移动）
