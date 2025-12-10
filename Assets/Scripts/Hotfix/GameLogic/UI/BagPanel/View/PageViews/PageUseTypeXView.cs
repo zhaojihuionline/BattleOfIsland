@@ -20,7 +20,7 @@ namespace QFramework.UI
         [SerializeField] private Image qualityFrameImage;  // 品质框
         [SerializeField] private TextMeshProUGUI countText;  // 数量文本
         [SerializeField] private Button closeButton;
-        
+
         private BagItemData currentItemData;
         private int requiredLevel;
 
@@ -43,7 +43,7 @@ namespace QFramework.UI
         public override void RefreshData(BagItemData itemData)
         {
             currentItemData = itemData;
-            
+
             if (itemData == null)
             {
                 ResetView();
@@ -89,7 +89,7 @@ namespace QFramework.UI
                 // 通过 IController 接口获取 BagPanel，使用统一的 GetPlayerHallLevel 方法
                 var bagPanel = GetComponentInParent<BagPanel>();
                 int playerHallLevel = bagPanel != null ? bagPanel.GetPlayerHallLevel() : 1;
-                levelRequirementText.text = $"需要建筑大厅等级: {requiredLevel}\n当前等级: {playerHallLevel}";
+                levelRequirementText.text = $"需要大本营等级{playerHallLevel}/{requiredLevel}";
             }
 
             // 等级不够时隐藏关闭按钮
