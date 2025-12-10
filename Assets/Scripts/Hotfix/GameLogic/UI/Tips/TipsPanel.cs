@@ -25,7 +25,7 @@ namespace QFramework.UI
         [SerializeField] private float fadeInDuration = 0.3f;      // 淡入时长
         [SerializeField] private float fadeOutDuration = 0.3f;     // 淡出时长
         [SerializeField] private float slideUpDistance = 80f;      // 上移总距离
-        [SerializeField] private float itemSpacing = 15f;          // 提示项间距
+        [SerializeField] private float itemSpacing = 15f;          // 提示项间距（顶部向下排布）
         
         [Header("Queue Settings")]
         [SerializeField] private int maxQueueSize = 10;            // 最大队列长度
@@ -34,7 +34,7 @@ namespace QFramework.UI
         private Queue<TipsData> tipsQueue = new Queue<TipsData>();
         private List<TipsItem> activeTipsItems = new List<TipsItem>();
         private bool isProcessing = false;
-        private const float START_OFFSET_Y = -50f;  // 初始位置偏移（从容器顶部向下）
+        private const float START_OFFSET_Y = -50f;  // 初始位置偏移（从容器顶部向下叠放）
 
         public IArchitecture GetArchitecture() => GameApp.Interface;
 
@@ -192,14 +192,14 @@ namespace QFramework.UI
         }
 
         /// <summary>
-        /// 更新所有活动提示项的位置
+        /// 更新所有活动提示项的位置（顶部对齐，新的在上，旧的在下）
         /// </summary>
         private void UpdateAllItemsPosition()
         {
             // 从顶部开始，向下排列
             float currentY = START_OFFSET_Y;
-            
-            // 按添加顺序排列（最新的在最上面）
+
+            // 按添加顺序排列（新的在上，旧的在下）：倒序遍历列表
             for (int i = activeTipsItems.Count - 1; i >= 0; i--)
             {
                 var item = activeTipsItems[i];

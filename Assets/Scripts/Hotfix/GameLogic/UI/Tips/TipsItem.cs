@@ -61,7 +61,7 @@ namespace QFramework.UI
 
         /// <summary>
         /// 验证并设置 RectTransform
-        /// 优先使用预制体配置，只在必要时用代码设置
+        /// 优先使用预制体配置，只在必要时用代码设置（顶部居中）
         /// </summary>
         private void ValidateAndSetupRectTransform()
         {

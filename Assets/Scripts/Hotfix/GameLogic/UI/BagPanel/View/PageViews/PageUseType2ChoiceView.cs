@@ -24,7 +24,7 @@ namespace QFramework.UI
         [SerializeField] private Button confirmButton;
         [SerializeField] private Transform rewardContainer;  // 奖励选择容器
         [SerializeField] private GameObject oneLineItemPrefab;  // OneLineItem 预制体
-        
+
         private BagItemData currentItemData;
         private List<OneLineItemView> rewardItemViews = new List<OneLineItemView>();  // 奖励项视图列表
         private List<int> selectedRewardIds = new List<int>();  // 选中的奖励ID列表
@@ -62,7 +62,7 @@ namespace QFramework.UI
         public override void RefreshData(BagItemData itemData)
         {
             currentItemData = itemData;
-            
+
             if (itemData == null)
             {
                 ResetView();
@@ -180,7 +180,7 @@ namespace QFramework.UI
                     // 根据 maxSelect 判断是否启用选择功能
                     int maxSelect = rewardConfig.RewardParam;
                     bool enableSelection = maxSelect > 0;  // ✅ maxSelect <= 0 时禁用选择
-                    
+
                     itemView.SetData(rewardDetail, showWeight: false, enableSelection: enableSelection);
                     itemView.OnSelectionChanged += OnRewardItemSelectionChanged;
                     rewardItemViews.Add(itemView);
@@ -316,7 +316,7 @@ namespace QFramework.UI
         private void OnConfirmButtonClicked()
         {
             if (currentItemData == null) return;
-            
+
             if (useCount <= 0 || useCount > currentItemData.Count)
             {
                 Debug.LogWarning($"PageUseType2Choice: 使用数量无效 {useCount}, 物品数量: {currentItemData.Count}");
@@ -326,7 +326,8 @@ namespace QFramework.UI
             if (selectedRewardIds.Count == 0)
             {
                 Debug.LogWarning("PageUseType2Choice: 请至少选择一个奖励");
-                Tips.ShowWarning("请至少选择一个奖励");
+
+                Tips.ShowWarning("请至少选择一个奖励" + (counter++));
                 return;
             }
 
@@ -334,6 +335,7 @@ namespace QFramework.UI
             // 发送使用物品的命令，需要传递选中的奖励ID列表
             this.SendCommand(new UseBagItemCommand(currentItemData.BagId, useCount, selectedRewardIds: new List<int>(selectedRewardIds)));
         }
+        static int counter = 0;
     }
 }
 
