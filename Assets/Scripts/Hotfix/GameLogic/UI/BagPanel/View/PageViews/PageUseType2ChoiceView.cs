@@ -4,6 +4,7 @@ using TMPro;
 using cfg;
 using System.Collections.Generic;
 using QFramework;
+using UnityEngine.WSA;
 
 namespace QFramework.UI
 {
@@ -326,6 +327,7 @@ namespace QFramework.UI
             if (selectedRewardIds.Count == 0)
             {
                 Debug.LogWarning("PageUseType2Choice: 请至少选择一个奖励");
+                Tips.ShowWarning("请至少选择一个奖励");
                 return;
             }
 
