@@ -129,8 +129,8 @@ namespace QFramework.UI
             // 强制布局重建，确保文本更新后的尺寸正确
             // LayoutRebuilder.ForceRebuildLayoutImmediate(tipsContainer);
 
-            // 计算初始位置（从容器顶部开始）
-            float startY = START_OFFSET_Y * 8;
+            // 计算初始位置（从tipsContainer容器顶部开始，tipsContainer容器高度为400，所以初始位置为400）
+            float startY = -tipsContainer.rect.height;
             tipsItem.SetPosition(startY);
 
             // 更新所有提示项的位置（新提示出现时，旧的向上移动）
@@ -175,7 +175,7 @@ namespace QFramework.UI
                 if (item != null && !item.IsDestroyed)
                 {
                     item.SetTargetPosition(currentY);
-                    currentY -= (item.GetHeight() + itemSpacing);
+                    currentY -= item.GetHeight() + itemSpacing;
                 }
             }
         }
