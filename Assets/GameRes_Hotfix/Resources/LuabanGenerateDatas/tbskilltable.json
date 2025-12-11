@@ -1868,7 +1868,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000301",
     "_prefab": "skill_10003",
-    "_cast_ranage": 1100,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -1915,7 +1915,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000302",
     "_prefab": "skill_10003",
-    "_cast_ranage": 0,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -1962,7 +1962,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000303",
     "_prefab": "skill_10003",
-    "_cast_ranage": 0,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -2009,7 +2009,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000304",
     "_prefab": "skill_10003",
-    "_cast_ranage": 0,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -2056,7 +2056,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000305",
     "_prefab": "skill_10003",
-    "_cast_ranage": 0,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -2103,7 +2103,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000306",
     "_prefab": "skill_10003",
-    "_cast_ranage": 0,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -2150,7 +2150,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000307",
     "_prefab": "skill_10003",
-    "_cast_ranage": 0,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -2197,7 +2197,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000308",
     "_prefab": "skill_10003",
-    "_cast_ranage": 0,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -2244,7 +2244,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000309",
     "_prefab": "skill_10003",
-    "_cast_ranage": 0,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -2291,7 +2291,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000310",
     "_prefab": "skill_10003",
-    "_cast_ranage": 0,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -2338,7 +2338,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000311",
     "_prefab": "skill_10003",
-    "_cast_ranage": 0,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -2385,7 +2385,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000312",
     "_prefab": "skill_10003",
-    "_cast_ranage": 0,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -2432,7 +2432,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000313",
     "_prefab": "skill_10003",
-    "_cast_ranage": 0,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -2479,7 +2479,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000314",
     "_prefab": "skill_10003",
-    "_cast_ranage": 0,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -2526,7 +2526,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000315",
     "_prefab": "skill_10003",
-    "_cast_ranage": 0,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -2573,7 +2573,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000316",
     "_prefab": "skill_10003",
-    "_cast_ranage": 0,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -2620,7 +2620,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000317",
     "_prefab": "skill_10003",
-    "_cast_ranage": 0,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -2667,7 +2667,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000318",
     "_prefab": "skill_10003",
-    "_cast_ranage": 0,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -2714,7 +2714,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000319",
     "_prefab": "skill_10003",
-    "_cast_ranage": 0,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -2761,7 +2761,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_1000320",
     "_prefab": "skill_10003",
-    "_cast_ranage": 0,
+    "_cast_ranage": 2000,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -16828,7 +16828,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_9000101",
     "_prefab": "skill_90001",
-    "_cast_ranage": 580,
+    "_cast_ranage": 600,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -16842,7 +16842,7 @@
         0
       ]
     ],
-    "_coll_time": 200,
+    "_coll_time": 133,
     "_release_time": [
       {
         "_animator": "attack",
@@ -16850,7 +16850,7 @@
       },
       {
         "_animator": "attack",
-        "_time": 25
+        "_time": 2
       },
       {
         "_animator": "attack",
@@ -16887,7 +16887,7 @@
         0
       ]
     ],
-    "_coll_time": 250,
+    "_coll_time": 67,
     "_release_time": [
       {
         "_animator": "attack",
@@ -16895,7 +16895,7 @@
       },
       {
         "_animator": "attack",
-        "_time": 10
+        "_time": 1
       },
       {
         "_animator": "attack",
@@ -16932,7 +16932,7 @@
         0
       ]
     ],
-    "_coll_time": 150,
+    "_coll_time": 100,
     "_release_time": [
       {
         "_animator": "attack",
@@ -16940,7 +16940,7 @@
       },
       {
         "_animator": "attack",
-        "_time": 20
+        "_time": 2
       },
       {
         "_animator": "attack",
@@ -16963,7 +16963,7 @@
     "_hurt_type": 1,
     "_icon": "skill_icon_9000401",
     "_prefab": "skill_90004",
-    "_cast_ranage": 600,
+    "_cast_ranage": 500,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -16977,7 +16977,7 @@
         0
       ]
     ],
-    "_coll_time": 250,
+    "_coll_time": 100,
     "_release_time": [
       {
         "_animator": "attack",
@@ -16985,7 +16985,7 @@
       },
       {
         "_animator": "attack",
-        "_time": 20
+        "_time": 2
       },
       {
         "_animator": "attack",
@@ -16997,7 +16997,7 @@
       }
     ],
     "_effect": [],
-    "_description": "demo中佣兵（弓兵）的普通攻击"
+    "_description": "demo中佣兵（弓兵）的普通攻击+S370"
   },
   {
     "_id": 9000501,
@@ -17008,7 +17008,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_9000501",
     "_prefab": "skill_90005",
-    "_cast_ranage": 300,
+    "_cast_ranage": 250,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -17022,7 +17022,7 @@
         0
       ]
     ],
-    "_coll_time": 200,
+    "_coll_time": 83,
     "_release_time": [
       {
         "_animator": "attack",
@@ -17030,7 +17030,7 @@
       },
       {
         "_animator": "attack",
-        "_time": 25
+        "_time": 2
       },
       {
         "_animator": "attack",
@@ -17067,7 +17067,7 @@
         0
       ]
     ],
-    "_coll_time": 220,
+    "_coll_time": 100,
     "_release_time": [
       {
         "_animator": "attack",
@@ -17075,7 +17075,7 @@
       },
       {
         "_animator": "attack",
-        "_time": 25
+        "_time": 2
       },
       {
         "_animator": "attack",
@@ -17098,7 +17098,7 @@
     "_hurt_type": 1,
     "_icon": "skill_icon_9000701",
     "_prefab": "skill_90007",
-    "_cast_ranage": 500,
+    "_cast_ranage": 400,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -17112,7 +17112,7 @@
         0
       ]
     ],
-    "_coll_time": 300,
+    "_coll_time": 133,
     "_release_time": [
       {
         "_animator": "attack",
@@ -17120,7 +17120,7 @@
       },
       {
         "_animator": "attack",
-        "_time": 20
+        "_time": 2
       },
       {
         "_animator": "attack",
@@ -17143,7 +17143,7 @@
     "_hurt_type": 0,
     "_icon": "skill_icon_9000801",
     "_prefab": "skill_90008",
-    "_cast_ranage": 200,
+    "_cast_ranage": 250,
     "_tag_mask": [
       "Tower",
       "Hero"
@@ -17157,7 +17157,7 @@
         0
       ]
     ],
-    "_coll_time": 200,
+    "_coll_time": 83,
     "_release_time": [
       {
         "_animator": "attack",
@@ -17165,7 +17165,7 @@
       },
       {
         "_animator": "attack",
-        "_time": 20
+        "_time": 2
       },
       {
         "_animator": "attack",
@@ -17202,7 +17202,7 @@
         0
       ]
     ],
-    "_coll_time": 150,
+    "_coll_time": 133,
     "_release_time": [
       {
         "_animator": "attack",
@@ -17210,7 +17210,7 @@
       },
       {
         "_animator": "attack",
-        "_time": 20
+        "_time": 2
       },
       {
         "_animator": "attack",
@@ -17223,6 +17223,51 @@
     ],
     "_effect": [],
     "_description": "demo英雄（弓兵宝丽）的普通攻击"
+  },
+  {
+    "_id": 9001001,
+    "_lv": 1,
+    "_skill": 90010,
+    "_name": "0",
+    "_skill_type": 1,
+    "_hurt_type": 0,
+    "_icon": "skill_icon_9001001",
+    "_prefab": "skill_90010",
+    "_cast_ranage": 250,
+    "_tag_mask": [
+      "Tower",
+      "Hero"
+    ],
+    "_damage_range": 0,
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
+    "_coll_time": 83,
+    "_release_time": [
+      {
+        "_animator": "attack",
+        "_time": 0
+      },
+      {
+        "_animator": "attack",
+        "_time": 2
+      },
+      {
+        "_animator": "attack",
+        "_time": 0
+      },
+      {
+        "_animator": "attack",
+        "_time": 0
+      }
+    ],
+    "_effect": [],
+    "_description": "demo中佣兵（骑兵）的普通攻击"
   },
   {
     "_id": 20000101,
@@ -22114,15 +22159,41 @@
     "_icon": "spell_icon_20000701",
     "_prefab": "spell_200007",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Tower"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20577
+    ],
+    "_description": "持续5秒，所有箭塔每秒掉50血"
   },
   {
     "_id": 20000702,
@@ -22134,15 +22205,41 @@
     "_icon": "spell_icon_20000702",
     "_prefab": "spell_200007",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Tower"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20578
+    ],
+    "_description": "持续5秒，所有箭塔每秒掉60血"
   },
   {
     "_id": 20000703,
@@ -22154,15 +22251,41 @@
     "_icon": "spell_icon_20000703",
     "_prefab": "spell_200007",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Tower"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20579
+    ],
+    "_description": "持续5秒，所有箭塔每秒掉70血"
   },
   {
     "_id": 20000704,
@@ -22174,15 +22297,41 @@
     "_icon": "spell_icon_20000704",
     "_prefab": "spell_200007",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Tower"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20580
+    ],
+    "_description": "持续5秒，所有箭塔每秒掉80血"
   },
   {
     "_id": 20000705,
@@ -22194,15 +22343,41 @@
     "_icon": "spell_icon_20000705",
     "_prefab": "spell_200007",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Tower"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20581
+    ],
+    "_description": "持续5秒，所有箭塔每秒掉90血"
   },
   {
     "_id": 20000706,
@@ -22214,15 +22389,41 @@
     "_icon": "spell_icon_20000706",
     "_prefab": "spell_200007",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Tower"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20582
+    ],
+    "_description": "持续5秒，所有箭塔每秒掉100血"
   },
   {
     "_id": 20000707,
@@ -22234,15 +22435,41 @@
     "_icon": "spell_icon_20000707",
     "_prefab": "spell_200007",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Tower"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20583
+    ],
+    "_description": "持续5秒，所有箭塔每秒掉110血"
   },
   {
     "_id": 20000708,
@@ -22254,15 +22481,41 @@
     "_icon": "spell_icon_20000708",
     "_prefab": "spell_200007",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Tower"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20584
+    ],
+    "_description": "持续5秒，所有箭塔每秒掉120血"
   },
   {
     "_id": 20000709,
@@ -22274,15 +22527,41 @@
     "_icon": "spell_icon_20000709",
     "_prefab": "spell_200007",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Tower"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20585
+    ],
+    "_description": "持续5秒，所有箭塔每秒掉130血"
   },
   {
     "_id": 20000710,
@@ -22294,15 +22573,41 @@
     "_icon": "spell_icon_20000710",
     "_prefab": "spell_200007",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Tower"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20586
+    ],
+    "_description": "持续5秒，所有箭塔每秒掉140血"
   },
   {
     "_id": 20000711,
@@ -22314,15 +22619,41 @@
     "_icon": "spell_icon_20000711",
     "_prefab": "spell_200007",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Tower"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20587
+    ],
+    "_description": "持续5秒，所有箭塔每秒掉150血"
   },
   {
     "_id": 20000712,
@@ -22334,15 +22665,41 @@
     "_icon": "spell_icon_20000712",
     "_prefab": "spell_200007",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Tower"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20588
+    ],
+    "_description": "持续5秒，所有箭塔每秒掉160血"
   },
   {
     "_id": 20000713,
@@ -22354,15 +22711,41 @@
     "_icon": "spell_icon_20000713",
     "_prefab": "spell_200007",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Tower"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20589
+    ],
+    "_description": "持续5秒，所有箭塔每秒掉170血"
   },
   {
     "_id": 20000714,
@@ -22374,15 +22757,41 @@
     "_icon": "spell_icon_20000714",
     "_prefab": "spell_200007",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Tower"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20590
+    ],
+    "_description": "持续5秒，所有箭塔每秒掉180血"
   },
   {
     "_id": 20000715,
@@ -22394,15 +22803,41 @@
     "_icon": "spell_icon_20000715",
     "_prefab": "spell_200007",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Tower"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20591
+    ],
+    "_description": "持续5秒，所有箭塔每秒掉190血"
   },
   {
     "_id": 20000716,
@@ -22414,15 +22849,41 @@
     "_icon": "spell_icon_20000716",
     "_prefab": "spell_200007",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Tower"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20592
+    ],
+    "_description": "持续5秒，所有箭塔每秒掉200血"
   },
   {
     "_id": 20000717,
@@ -22434,15 +22895,41 @@
     "_icon": "spell_icon_20000717",
     "_prefab": "spell_200007",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Tower"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20593
+    ],
+    "_description": "持续5秒，所有箭塔每秒掉210血"
   },
   {
     "_id": 20000718,
@@ -22454,15 +22941,41 @@
     "_icon": "spell_icon_20000718",
     "_prefab": "spell_200007",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Tower"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20594
+    ],
+    "_description": "持续5秒，所有箭塔每秒掉220血"
   },
   {
     "_id": 20000719,
@@ -22474,15 +22987,41 @@
     "_icon": "spell_icon_20000719",
     "_prefab": "spell_200007",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Tower"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20595
+    ],
+    "_description": "持续5秒，所有箭塔每秒掉230血"
   },
   {
     "_id": 20000720,
@@ -22494,15 +23033,41 @@
     "_icon": "spell_icon_20000720",
     "_prefab": "spell_200007",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Tower"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20596
+    ],
+    "_description": "持续5秒，所有箭塔每秒掉240血"
   },
   {
     "_id": 20000801,
@@ -22514,15 +23079,42 @@
     "_icon": "spell_icon_20000801",
     "_prefab": "spell_200008",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20556,
+      20557
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄防御力降低10%，战斗力增加20%"
   },
   {
     "_id": 20000802,
@@ -22534,15 +23126,42 @@
     "_icon": "spell_icon_20000802",
     "_prefab": "spell_200008",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20556,
+      20558
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄防御力降低10%，战斗力增加22%"
   },
   {
     "_id": 20000803,
@@ -22554,15 +23173,42 @@
     "_icon": "spell_icon_20000803",
     "_prefab": "spell_200008",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20556,
+      20559
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄防御力降低10%，战斗力增加24%"
   },
   {
     "_id": 20000804,
@@ -22574,15 +23220,42 @@
     "_icon": "spell_icon_20000804",
     "_prefab": "spell_200008",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20556,
+      20560
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄防御力降低10%，战斗力增加26%"
   },
   {
     "_id": 20000805,
@@ -22594,15 +23267,42 @@
     "_icon": "spell_icon_20000805",
     "_prefab": "spell_200008",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20556,
+      20561
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄防御力降低10%，战斗力增加28%"
   },
   {
     "_id": 20000806,
@@ -22614,15 +23314,42 @@
     "_icon": "spell_icon_20000806",
     "_prefab": "spell_200008",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20556,
+      20562
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄防御力降低10%，战斗力增加30%"
   },
   {
     "_id": 20000807,
@@ -22634,15 +23361,42 @@
     "_icon": "spell_icon_20000807",
     "_prefab": "spell_200008",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20556,
+      20563
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄防御力降低10%，战斗力增加32%"
   },
   {
     "_id": 20000808,
@@ -22654,15 +23408,42 @@
     "_icon": "spell_icon_20000808",
     "_prefab": "spell_200008",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20556,
+      20564
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄防御力降低10%，战斗力增加34%"
   },
   {
     "_id": 20000809,
@@ -22674,15 +23455,42 @@
     "_icon": "spell_icon_20000809",
     "_prefab": "spell_200008",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20556,
+      20565
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄防御力降低10%，战斗力增加36%"
   },
   {
     "_id": 20000810,
@@ -22694,15 +23502,42 @@
     "_icon": "spell_icon_20000810",
     "_prefab": "spell_200008",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20556,
+      20566
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄防御力降低10%，战斗力增加38%"
   },
   {
     "_id": 20000811,
@@ -22714,15 +23549,42 @@
     "_icon": "spell_icon_20000811",
     "_prefab": "spell_200008",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20556,
+      20567
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄防御力降低10%，战斗力增加40%"
   },
   {
     "_id": 20000812,
@@ -22734,15 +23596,42 @@
     "_icon": "spell_icon_20000812",
     "_prefab": "spell_200008",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20556,
+      20568
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄防御力降低10%，战斗力增加42%"
   },
   {
     "_id": 20000813,
@@ -22754,15 +23643,42 @@
     "_icon": "spell_icon_20000813",
     "_prefab": "spell_200008",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20556,
+      20569
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄防御力降低10%，战斗力增加44%"
   },
   {
     "_id": 20000814,
@@ -22774,15 +23690,42 @@
     "_icon": "spell_icon_20000814",
     "_prefab": "spell_200008",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20556,
+      20570
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄防御力降低10%，战斗力增加46%"
   },
   {
     "_id": 20000815,
@@ -22794,15 +23737,42 @@
     "_icon": "spell_icon_20000815",
     "_prefab": "spell_200008",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20556,
+      20571
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄防御力降低10%，战斗力增加48%"
   },
   {
     "_id": 20000816,
@@ -22814,15 +23784,42 @@
     "_icon": "spell_icon_20000816",
     "_prefab": "spell_200008",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20556,
+      20572
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄防御力降低10%，战斗力增加50%"
   },
   {
     "_id": 20000817,
@@ -22834,15 +23831,42 @@
     "_icon": "spell_icon_20000817",
     "_prefab": "spell_200008",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20556,
+      20573
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄防御力降低10%，战斗力增加52%"
   },
   {
     "_id": 20000818,
@@ -22854,15 +23878,42 @@
     "_icon": "spell_icon_20000818",
     "_prefab": "spell_200008",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20556,
+      20574
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄防御力降低10%，战斗力增加54%"
   },
   {
     "_id": 20000819,
@@ -22874,15 +23925,42 @@
     "_icon": "spell_icon_20000819",
     "_prefab": "spell_200008",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20556,
+      20575
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄防御力降低10%，战斗力增加56%"
   },
   {
     "_id": 20000820,
@@ -22894,15 +23972,42 @@
     "_icon": "spell_icon_20000820",
     "_prefab": "spell_200008",
     "_cast_ranage": 0,
-    "_tag_mask": [],
+    "_tag_mask": [
+      "Hero"
+    ],
     "_damage_range": 0,
-    "_preference": "",
-    "_lock_method": 0,
-    "_pass_type": [],
+    "_preference": "TestTargetingPreference",
+    "_lock_method": 1,
+    "_pass_type": [
+      [
+        2,
+        0
+      ]
+    ],
     "_coll_time": 0,
-    "_release_time": [],
-    "_effect": [],
-    "_description": ""
+    "_release_time": [
+      {
+        "_animator": "None",
+        "_time": 0
+      },
+      {
+        "_animator": "None",
+        "_time": 20
+      },
+      {
+        "_animator": "None",
+        "_time": 150
+      },
+      {
+        "_animator": "None",
+        "_time": 0
+      }
+    ],
+    "_effect": [
+      20556,
+      20576
+    ],
+    "_description": "持续3秒，友方战斗力最高的英雄防御力降低10%，战斗力增加58%"
   },
   {
     "_id": 20000901,
@@ -25755,7 +26860,7 @@
     "_prefab": "spell_200016",
     "_cast_ranage": 0,
     "_tag_mask": [
-      "Build"
+      "Tower"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
@@ -25801,7 +26906,7 @@
     "_prefab": "spell_200016",
     "_cast_ranage": 0,
     "_tag_mask": [
-      "Build"
+      "Tower"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
@@ -25847,7 +26952,7 @@
     "_prefab": "spell_200016",
     "_cast_ranage": 0,
     "_tag_mask": [
-      "Build"
+      "Tower"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
@@ -25893,7 +26998,7 @@
     "_prefab": "spell_200016",
     "_cast_ranage": 0,
     "_tag_mask": [
-      "Build"
+      "Tower"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
@@ -25939,7 +27044,7 @@
     "_prefab": "spell_200016",
     "_cast_ranage": 0,
     "_tag_mask": [
-      "Build"
+      "Tower"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
@@ -25985,7 +27090,7 @@
     "_prefab": "spell_200016",
     "_cast_ranage": 0,
     "_tag_mask": [
-      "Build"
+      "Tower"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
@@ -26031,7 +27136,7 @@
     "_prefab": "spell_200016",
     "_cast_ranage": 0,
     "_tag_mask": [
-      "Build"
+      "Tower"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
@@ -26077,7 +27182,7 @@
     "_prefab": "spell_200016",
     "_cast_ranage": 0,
     "_tag_mask": [
-      "Build"
+      "Tower"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
@@ -26123,7 +27228,7 @@
     "_prefab": "spell_200016",
     "_cast_ranage": 0,
     "_tag_mask": [
-      "Build"
+      "Tower"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
@@ -26169,7 +27274,7 @@
     "_prefab": "spell_200016",
     "_cast_ranage": 0,
     "_tag_mask": [
-      "Build"
+      "Tower"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
@@ -26215,7 +27320,7 @@
     "_prefab": "spell_200016",
     "_cast_ranage": 0,
     "_tag_mask": [
-      "Build"
+      "Tower"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
@@ -26261,7 +27366,7 @@
     "_prefab": "spell_200016",
     "_cast_ranage": 0,
     "_tag_mask": [
-      "Build"
+      "Tower"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
@@ -26307,7 +27412,7 @@
     "_prefab": "spell_200016",
     "_cast_ranage": 0,
     "_tag_mask": [
-      "Build"
+      "Tower"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
@@ -26353,7 +27458,7 @@
     "_prefab": "spell_200016",
     "_cast_ranage": 0,
     "_tag_mask": [
-      "Build"
+      "Tower"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
@@ -26399,7 +27504,7 @@
     "_prefab": "spell_200016",
     "_cast_ranage": 0,
     "_tag_mask": [
-      "Build"
+      "Tower"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
@@ -26445,7 +27550,7 @@
     "_prefab": "spell_200016",
     "_cast_ranage": 0,
     "_tag_mask": [
-      "Build"
+      "Tower"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
@@ -26491,7 +27596,7 @@
     "_prefab": "spell_200016",
     "_cast_ranage": 0,
     "_tag_mask": [
-      "Build"
+      "Tower"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
@@ -26537,7 +27642,7 @@
     "_prefab": "spell_200016",
     "_cast_ranage": 0,
     "_tag_mask": [
-      "Build"
+      "Tower"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
@@ -26583,7 +27688,7 @@
     "_prefab": "spell_200016",
     "_cast_ranage": 0,
     "_tag_mask": [
-      "Build"
+      "Tower"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
@@ -26629,7 +27734,7 @@
     "_prefab": "spell_200016",
     "_cast_ranage": 0,
     "_tag_mask": [
-      "Build"
+      "Tower"
     ],
     "_damage_range": 0,
     "_preference": "TestTargetingPreference",
@@ -27106,9 +28211,7 @@
       }
     ],
     "_effect": [
-      120,
-      5,
-      30
+      20234
     ],
     "_description": "持续5次，雷霆之力随机对敌方建筑造成120伤害"
   },
@@ -27154,9 +28257,7 @@
       }
     ],
     "_effect": [
-      140,
-      5,
-      30
+      20235
     ],
     "_description": "持续5次，雷霆之力随机对敌方建筑造成140伤害"
   },
@@ -27202,9 +28303,7 @@
       }
     ],
     "_effect": [
-      160,
-      5,
-      30
+      20236
     ],
     "_description": "持续5次，雷霆之力随机对敌方建筑造成160伤害"
   },
@@ -27250,9 +28349,7 @@
       }
     ],
     "_effect": [
-      180,
-      5,
-      30
+      20237
     ],
     "_description": "持续5次，雷霆之力随机对敌方建筑造成180伤害"
   },
@@ -27298,9 +28395,7 @@
       }
     ],
     "_effect": [
-      200,
-      5,
-      30
+      20238
     ],
     "_description": "持续5次，雷霆之力随机对敌方建筑造成200伤害"
   },
@@ -27346,9 +28441,7 @@
       }
     ],
     "_effect": [
-      220,
-      5,
-      30
+      20239
     ],
     "_description": "持续5次，雷霆之力随机对敌方建筑造成220伤害"
   },
@@ -27394,9 +28487,7 @@
       }
     ],
     "_effect": [
-      240,
-      5,
-      30
+      20240
     ],
     "_description": "持续5次，雷霆之力随机对敌方建筑造成240伤害"
   },
@@ -27442,9 +28533,7 @@
       }
     ],
     "_effect": [
-      260,
-      5,
-      30
+      20241
     ],
     "_description": "持续5次，雷霆之力随机对敌方建筑造成260伤害"
   },
@@ -27490,9 +28579,7 @@
       }
     ],
     "_effect": [
-      280,
-      5,
-      30
+      20242
     ],
     "_description": "持续5次，雷霆之力随机对敌方建筑造成280伤害"
   },
@@ -27538,9 +28625,7 @@
       }
     ],
     "_effect": [
-      300,
-      5,
-      30
+      20243
     ],
     "_description": "持续5次，雷霆之力随机对敌方建筑造成300伤害"
   },
@@ -27586,9 +28671,7 @@
       }
     ],
     "_effect": [
-      320,
-      5,
-      30
+      20244
     ],
     "_description": "持续5次，雷霆之力随机对敌方建筑造成320伤害"
   },
@@ -27634,9 +28717,7 @@
       }
     ],
     "_effect": [
-      340,
-      5,
-      30
+      20245
     ],
     "_description": "持续5次，雷霆之力随机对敌方建筑造成340伤害"
   },
@@ -27682,9 +28763,7 @@
       }
     ],
     "_effect": [
-      360,
-      5,
-      30
+      20246
     ],
     "_description": "持续5次，雷霆之力随机对敌方建筑造成360伤害"
   },
@@ -27730,9 +28809,7 @@
       }
     ],
     "_effect": [
-      380,
-      5,
-      30
+      20247
     ],
     "_description": "持续5次，雷霆之力随机对敌方建筑造成380伤害"
   },
@@ -27778,9 +28855,7 @@
       }
     ],
     "_effect": [
-      400,
-      5,
-      30
+      20248
     ],
     "_description": "持续5次，雷霆之力随机对敌方建筑造成400伤害"
   },
@@ -27826,9 +28901,7 @@
       }
     ],
     "_effect": [
-      420,
-      5,
-      30
+      20249
     ],
     "_description": "持续5次，雷霆之力随机对敌方建筑造成420伤害"
   },
@@ -27874,9 +28947,7 @@
       }
     ],
     "_effect": [
-      440,
-      5,
-      30
+      20250
     ],
     "_description": "持续5次，雷霆之力随机对敌方建筑造成440伤害"
   },
@@ -27922,9 +28993,7 @@
       }
     ],
     "_effect": [
-      460,
-      5,
-      30
+      20251
     ],
     "_description": "持续5次，雷霆之力随机对敌方建筑造成460伤害"
   },
@@ -27970,9 +29039,7 @@
       }
     ],
     "_effect": [
-      480,
-      5,
-      30
+      20252
     ],
     "_description": "持续5次，雷霆之力随机对敌方建筑造成480伤害"
   },
@@ -28018,9 +29085,7 @@
       }
     ],
     "_effect": [
-      500,
-      5,
-      30
+      20253
     ],
     "_description": "持续5次，雷霆之力随机对敌方建筑造成500伤害"
   }

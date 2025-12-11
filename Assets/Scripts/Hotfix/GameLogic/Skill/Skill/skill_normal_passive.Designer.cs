@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace QFramework.Game
 {
-	public partial class skill_10014 : QFramework.IController
+	public partial class skill_normal_passive : QFramework.IController
 	{
 		QFramework.IArchitecture QFramework.IBelongToArchitecture.GetArchitecture()=>GameApp.Interface;
 	}

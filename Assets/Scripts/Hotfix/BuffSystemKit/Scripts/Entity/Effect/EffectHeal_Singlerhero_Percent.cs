@@ -11,8 +11,15 @@ public class EffectHeal_Singlerhero_Percent : EffectEntity
 
     public override void Execute()
     {
-        int v = Mathf.FloorToInt(target.GetComponent<EntityController>().HPMAX * effect.effectNode.Param[1] / 100.0f);
-        target.GetComponent<EntityController>().AddBlood(v);
+        AttributeChangeData attributeChangeData = new AttributeChangeData()
+        {
+            attributeType = attributeType,
+            value = effect.effectNode.Param[1],
+            baseCalculateType = effect.buffTable.BaseCalType,
+        };
+        target.GetComponent<ICanResponseBuff>().OnAttributeChange(attributeChangeData);
+        //int v = Mathf.FloorToInt(target.GetComponent<EntityController>().HPMAX * effect.effectNode.Param[1] / 100.0f);
+        target.GetComponent<EntityController>().AddBlood();
         IsFinished = true;
         buffEntity.RemoveEffect(this);
     }

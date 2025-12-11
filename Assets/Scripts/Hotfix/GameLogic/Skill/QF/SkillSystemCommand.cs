@@ -298,7 +298,6 @@ public class QuerySkillTargets : AbstractCommand<TargetData>
             if (buffTable.NextGoal.HasFlag(value))
             {
                 targetData.Targets.Add(entity);
-                break;
             }
         }
     }

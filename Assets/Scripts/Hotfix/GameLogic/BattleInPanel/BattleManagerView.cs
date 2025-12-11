@@ -110,14 +110,14 @@ namespace QFramework.UI
                     battleInPanel.battleProcessManager.CurSelectedHeroCardItem.UpgradeAmount(-1);
                     int selectedHeroID = battleInPanel.battleProcessManager.CurSelectedHeroCardItem.ID;//根据卡牌ID，实现对应英雄id方面的生成
                     HeroData heroData = battleInPanel.playerSelf.playerData.armyDatas[battleInPanel.playerSelf.CurrentSelectedArmyID].heroDatas[selectedHeroID];//<- selectedHeroID 这里由于我们只有1个英雄，所以默认使用第一个
-                    switch (heroData.moveType)
+                    switch (heroData.heroAttr.moveType)
                     {
                         case Enum_MoveType.Air:
                             position.y += 4.2f;//拉高4，为了防止穿透，多加了0.2f
                             break;
                     }
                     var _system = this.GetSystem<EntitySystem>();
-                    GameObject newHero = _system.CreatEntityHreo(heroData.HeroID, heroData.Level, position);
+                    GameObject newHero = _system.CreatEntityHreo(heroData.heroAttr.HeroID, heroData.heroAttr.Level, position);
                     //this.GetModel<BattleInModel>().player_allEntitys.Add(newHero);
                     battleInPanel.battleProcessManager.CurSelectedHeroCardItem.bloodObj.SetActive(true);
                 }
@@ -165,6 +165,7 @@ namespace QFramework.UI
             bmodel.TotalEntityCount.Value++;
             GameObject newBuildings = _system.CreatEntityBuilding(buildingData, isEnemy);
             newBuildings.transform.eulerAngles = new Vector3(buildingData.rotation_x, buildingData.rotation_y, buildingData.rotation_z);
+            buildingData.Init(newBuildings.GetComponent<EntityController>());
             return newBuildings;
         }
 

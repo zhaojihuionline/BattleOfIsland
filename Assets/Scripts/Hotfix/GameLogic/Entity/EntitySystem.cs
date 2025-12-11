@@ -1,4 +1,5 @@
 using cfg;
+using PitayaGame.GameSvr;
 using QFramework;
 using QFramework.Game;
 using QFramework.UI;
@@ -55,14 +56,14 @@ public class EntitySystem : AbstractSystem, IEntitySystem
         HeroData heroData = null;
         foreach (var data in battleInPanel.playerSelf.playerData.armyDatas[battleInPanel.playerSelf.CurrentSelectedArmyID].heroDatas)
         {
-            if(data.HeroID == id)
+            if(data.heroAttr.HeroID == id)
             {
                 heroData = data;
             }
         }
 
         res.Init(heroData, isEnemy);
-        res.InitHaveHp(hlvtable.Health);
+        res.InitHaveHp(heroData.heroAttr.Health);
         //res.currentHP = 100;
         List<int> paramList = new List<int>();
         //获取技能列表  等级需要从服务器拉取  现在默认1级别  服务器数据为英雄等级表+技能等级 
@@ -122,7 +123,7 @@ public class EntitySystem : AbstractSystem, IEntitySystem
 
         MercenaryData mercenaryData = new MercenaryData(mercenary);
         res.Init(mercenaryData,isEnemy);
-        res.InitHaveHp(mercenary.Health);
+        res.InitHaveHp(mercenaryData.CurHealth);
         if (isEnemy)
         {
             BattleInModel BM = this.GetModel<BattleInModel>();

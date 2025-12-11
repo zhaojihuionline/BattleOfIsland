@@ -1,3 +1,4 @@
+using cfg;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -62,6 +63,12 @@ public class BuffEntity : MonoBehaviour
             }
         }
     }
+
+    public void ResetBuff()
+    {
+        this.bDuration = buff.bDuration;
+    }
+
     /// <summary>
     /// Éý¼¶buff
     /// </summary>

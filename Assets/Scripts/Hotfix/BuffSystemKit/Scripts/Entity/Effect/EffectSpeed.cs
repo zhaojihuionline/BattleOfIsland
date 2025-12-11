@@ -47,6 +47,21 @@ public class EffectSpeed : EffectEntity
         target.GetComponent<ICanResponseBuff>().OnAttributeChange(attributeChangeData);
         IsFinished = true;
         Debug.Log("确实执行了改变移速的效果器");
+
+        //持续时间（0是瞬发，-1是永久）
+        if (effect.buffTable.Time == 0)
+        {
+            RemoveBuff(attributeChangeData);
+        }
+        else if(effect.buffTable.Time > 0)
+        {
+            ActionKit.Delay(effect.buffTable.Time, () =>
+            {
+                RemoveBuff(attributeChangeData);
+            }).Start(buffEntity);
+        }
+        
+        //buffEntity.RemoveEffect(this);
     }
     public override void Update()
     {
@@ -55,5 +70,12 @@ public class EffectSpeed : EffectEntity
     public override void OnExit()
     {
         //target.GetComponent<ICanResponseBuff>()?.SetDefaultSpeed();
+    }
+
+    void RemoveBuff(AttributeChangeData attributeChangeData)
+    {
+        attributeChangeData.isReverse = true;
+        target.GetComponent<ICanResponseBuff>().OnAttributeChange(attributeChangeData);
+        buffEntity.RemoveEffect(this);
     }
 }

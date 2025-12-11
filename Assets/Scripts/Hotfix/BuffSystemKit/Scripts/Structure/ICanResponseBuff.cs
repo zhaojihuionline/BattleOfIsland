@@ -40,6 +40,11 @@ public interface ICanResponseBuff
     /// </summary>
     /// <param name="changeValue"></param>
     void OnUpgradeExp(float changeValue) { }
+
+    void OnUpdateBloodPerSecond(float v)
+    {
+
+    }
     /// <summary>
     /// »Ö¸´ËÙ¶È
     /// </summary>

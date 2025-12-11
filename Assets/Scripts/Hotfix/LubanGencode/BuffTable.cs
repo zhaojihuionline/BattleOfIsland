@@ -26,14 +26,13 @@ public sealed partial class BuffTable : Luban.BeanBase
         Des = (string)_obj.GetValue("Des");
         Show = (bool)_obj.GetValue("Show");
         { var __json0 = _obj.GetValue("Buff_effect"); BuffEffect = new System.Collections.Generic.List<EffectNode>((__json0 as JArray).Count); foreach(JToken __e0 in __json0) { EffectNode __v0;  __v0 = global::cfg.EffectNode.DeserializeEffectNode(__e0);  BuffEffect.Add(__v0); }   }
+        ReFlash = (bool)_obj.GetValue("ReFlash");
+        TickCd = (int)_obj.GetValue("TickCd");
         BaseCalType = (EBaseCalculateType)(int)_obj.GetValue("BaseCalType");
         FirstGoal = (ECampType)(int)_obj.GetValue("FirstGoal");
         NextGoal = (ETargetType)(int)_obj.GetValue("NextGoal");
         Time = (int)_obj.GetValue("Time");
         Overlay = (bool)_obj.GetValue("Overlay");
-        ReFlash = (bool)_obj.GetValue("ReFlash");
-        TickCd = (int)_obj.GetValue("TickCd");
-        { var __json0 = _obj.GetValue("BuffTick_Effect"); BuffTickEffect = new System.Collections.Generic.List<EffectNode>((__json0 as JArray).Count); foreach(JToken __e0 in __json0) { EffectNode __v0;  __v0 = global::cfg.EffectNode.DeserializeEffectNode(__e0);  BuffTickEffect.Add(__v0); }   }
         Priority = (int)_obj.GetValue("Priority");
         Isdebuff = (bool)_obj.GetValue("Isdebuff");
         BuffFX = (string)_obj.GetValue("Buff_FX");
@@ -69,6 +68,14 @@ public sealed partial class BuffTable : Luban.BeanBase
     /// </summary>
     public readonly System.Collections.Generic.List<EffectNode> BuffEffect;
     /// <summary>
+    /// 是否刷新
+    /// </summary>
+    public readonly bool ReFlash;
+    /// <summary>
+    /// Tick间隔
+    /// </summary>
+    public readonly int TickCd;
+    /// <summary>
     /// 基本运算类型
     /// </summary>
     public readonly EBaseCalculateType BaseCalType;
@@ -89,18 +96,6 @@ public sealed partial class BuffTable : Luban.BeanBase
     /// </summary>
     public readonly bool Overlay;
     /// <summary>
-    /// 是否刷新
-    /// </summary>
-    public readonly bool ReFlash;
-    /// <summary>
-    /// Tick间隔
-    /// </summary>
-    public readonly int TickCd;
-    /// <summary>
-    /// Tick效果
-    /// </summary>
-    public readonly System.Collections.Generic.List<EffectNode> BuffTickEffect;
-    /// <summary>
     /// 优先级
     /// </summary>
     public readonly int Priority;
@@ -120,7 +115,6 @@ public sealed partial class BuffTable : Luban.BeanBase
     public  void ResolveRef(Tables tables)
     {
         foreach (var _e in BuffEffect) { _e?.ResolveRef(tables); }
-        foreach (var _e in BuffTickEffect) { _e?.ResolveRef(tables); }
     }
 
     public override string ToString()
@@ -132,14 +126,13 @@ public sealed partial class BuffTable : Luban.BeanBase
         + "Des:" + Des + ","
         + "Show:" + Show + ","
         + "BuffEffect:" + Luban.StringUtil.CollectionToString(BuffEffect) + ","
+        + "ReFlash:" + ReFlash + ","
+        + "TickCd:" + TickCd + ","
         + "BaseCalType:" + BaseCalType + ","
         + "FirstGoal:" + FirstGoal + ","
         + "NextGoal:" + NextGoal + ","
         + "Time:" + Time + ","
         + "Overlay:" + Overlay + ","
-        + "ReFlash:" + ReFlash + ","
-        + "TickCd:" + TickCd + ","
-        + "BuffTickEffect:" + Luban.StringUtil.CollectionToString(BuffTickEffect) + ","
         + "Priority:" + Priority + ","
         + "Isdebuff:" + Isdebuff + ","
         + "BuffFX:" + BuffFX + ","

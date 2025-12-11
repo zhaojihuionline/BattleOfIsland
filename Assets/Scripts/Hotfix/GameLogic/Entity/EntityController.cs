@@ -26,10 +26,10 @@ namespace QFramework.Game
 		public float rotateSpeed = 60f;
 		public List<GameObject> targetList = new List<GameObject>();
 		Animator animator;
-		#region   血量受伤相关
-		public int currentHP {get;set;}
-		public int HPMAX { get; set; }
-		public bool IsAlive { get; set; }
+        #region   血量受伤相关
+        public int currentHP { get { return unitData.CurHealth; } set { unitData.CurHealth = value; } }
+        public int HPMAX { get { return unitData.Health; } set { unitData.Health = value; } }
+        public bool IsAlive { get; set; }
 		public Transform myTransform => transform;
 		public float HealthPercent => currentHP / HPMAX * 100f;
 
@@ -81,12 +81,13 @@ namespace QFramework.Game
 		{
 			this.SendCommand(new RemoveEntityFromBattleModelCommand(this.gameObject, this.IsEnemy));
 			this.SendCommand(new EntityDeathCommand(null, this.gameObject));
-			
 
+            Debug.Log("已经被摧毁了1");
             if (this.transform.CompareTag("Build") || this.transform.CompareTag("Tower"))
 			{
-				// 生成摧毁特效，暂时写在这里
-				ResLoader loader = ResLoader.Allocate();
+                Debug.Log("已经被摧毁了2");
+                // 生成摧毁特效，暂时写在这里
+                ResLoader loader = ResLoader.Allocate();
 				GameObject destroyFXPrefab = loader.LoadSync<GameObject>("FX_build_cuihui");
 				var newFX = Instantiate(destroyFXPrefab, this.transform.position + new Vector3(0, 1, 0), Quaternion.identity);
 				Destroy(newFX, 1f);
@@ -117,8 +118,11 @@ namespace QFramework.Game
 
 			FSM.StartState(EntityState.Idle);
 		}
+		public void OnUpdateBloodPerSecond(float v) {
+			
+		}
 
-		public void InitCanSkill(List<int> skillsParam,List<int> skillEnable = null)
+        public void InitCanSkill(List<int> skillsParam,List<int> skillEnable = null)
 		{
             skills = skillsParam;
 			isRelease = false;
@@ -214,9 +218,9 @@ namespace QFramework.Game
 		public void InitHaveHp(int hpMax)
 		{
 			HPMAX = hpMax;
-			this.unitData.SetBlood(hpMax);
+			//this.unitData.SetBlood(hpMax);
             //根据等级获取对应表数据
-            currentHP = hpMax;
+            //currentHP = hpMax;
 			IsAlive = currentHP >= HPMAX;
 			//Debug.Log(entityAttribute);
             //entityAttribute.SetAttribute("Health", currentHP);// 设置生命值属性
@@ -250,10 +254,10 @@ namespace QFramework.Game
             BattleInModel model = this.GetModel<BattleInModel>();
             targetList = isEnemy ? model.player_allEntitys : model.opponent_allEntitys;
 
-			//entityAttribute = this.GetModel<EntityAttributeModel>();
+            //entityAttribute = this.GetModel<EntityAttributeModel>();
+            InitHaveHp(unitData.Health);
 
-
-			buffRunner = new BuffRunner();
+            buffRunner = new BuffRunner();
 			buffRunner.Init(this.GetModel<BattleInModel>());
         }
 
@@ -287,37 +291,39 @@ namespace QFramework.Game
 			};
 		}
 
-		public void AddBlood(int v)
+		public void AddBlood()
 		{
-			currentHP += v;
-            if (currentHP > HPMAX)
-			{
-				currentHP = HPMAX;
-                if (bloodController != null)
-                {
-                    float percent = (float)currentHP / HPMAX;
-                    bloodController.UpdateBlood(percent);
-                }
-            }
+            //currentHP += v;
+            //if (currentHP > HPMAX)
+            //{
+            //	currentHP = HPMAX;
+            //             bloodController?.UpdateBlood((float)currentHP / HPMAX);
+            //}
+            bloodController?.UpdateBlood((float)currentHP / HPMAX);
         }
 		public void BeHurt(int damage)
 		{
-			if (currentHP <= 0 && IsAlive)
-			{
-				IsAlive = false;
-				FSM.ChangeState(EntityState.Die);
-				// Destroy(gameObject);
-				return;
-			}
-
+            
+            bloodController.gameObject.SetActive(true);
 			// 处理伤害减免,根据Defense_PercentReductionValue值计算伤害减免后，并计算出最终damage值
 			if (transform.CompareTag("Hero") && Defense_PercentReduction_all)
 			{
 				damage = Mathf.RoundToInt(damage * (1 - Defense_PercentReductionValue / 100f));
 			}
 
-			bloodController.gameObject.SetActive(true);
-            currentHP -= damage;
+			currentHP -= damage;
+
+
+            if (currentHP <= 0 && IsAlive)
+			{
+				Debug.Log("血量小于0了");
+				IsAlive = false;
+				FSM.ChangeState(EntityState.Die);
+				// Destroy(gameObject);
+				return;
+			}
+
+			
             // 更新受伤特效
             Transform mat = transform.Find("Model/Tower_B/Tower_B_model");
 			if (mat != null)
@@ -341,13 +347,8 @@ namespace QFramework.Game
 				//}
 			}
 
-			if (bloodController != null)
-			{
-				float percent = (float)currentHP / HPMAX;
-				//Debug.Log($"currentHP:{currentHP} HPMAX:{HPMAX}percent:{percent}");
-				bloodController.UpdateBlood(percent);
-			}
-			//Debug.Log(gameObject.name + "   收到伤害  " + damage + "   当前血量   " + currentHP);
+            bloodController?.UpdateBlood((float)currentHP / HPMAX);
+            Debug.Log(gameObject.name + "   收到伤害  " + damage + "   当前血量   " + currentHP);
 		}
 
 		#region 处理buff相关逻辑

@@ -69,7 +69,7 @@ public interface IHaveHP : IEntity
     bool IsAlive { get; set; }
     float HealthPercent { get; }
     //默认初始化方法
-    void InitHaveHp(int hpMax);
+    //void InitHaveHp(int hpMax);
 }
 public interface ICanHurt : IEntity
 {

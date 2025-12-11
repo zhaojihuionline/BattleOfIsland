@@ -2,6 +2,7 @@ using cfg;
 using PitayaClient.Protocol;
 using QFramework;
 using QFramework.Game;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -52,14 +53,28 @@ public class SkillSystem : AbstractSystem, ISkillSystem,ICanSendCommand
         {
             case SkillType.PASSIVE_SKILL:
                 {
+                    bool hasDefault = false;
                     foreach (var buffId in Packet._data.Effect)
                     {
-                        //筛选出技能施法目标
-                        Packet.TargetData = this.SendCommand(new QuerySkillTargets(Packet.caster, buffId));
-                        this.SendCommand<AddSingleBuffToTargetCommand>(new AddSingleBuffToTargetCommand(Packet.TargetData, buffId, null));
+                        BuffTable buffTable = CfgMgr.Instance.Tables.TbBuff.Get(buffId);
+                        switch(buffTable.NextGoal)
+                        {
+                            case ETargetType.Target:
+                                Packet.caster.GetComponent<EntityController>().UnitData.AttackBonus.Add(buffId);
+                                break;
+                            default:
+                                //筛选出技能施法目标
+                                Packet.TargetData = this.SendCommand(new QuerySkillTargets(Packet.caster, buffId));
+                                this.SendCommand<AddSingleBuffToTargetCommand>(new AddSingleBuffToTargetCommand(Packet.TargetData, buffId, null));
+                                hasDefault = true;
+                                break;
+                        }
                     }
-                    SkillController skillController = DisplaySkill(Packet);
-                    skillController.SetSkillPacket(Packet);
+                    if (hasDefault)
+                    {
+                        SkillController skillController = DisplaySkill(Packet);
+                        skillController.SetSkillPacket(Packet);
+                    }
                 }
                 break;
             case SkillType.AURA_SKILL:
@@ -75,6 +90,24 @@ public class SkillSystem : AbstractSystem, ISkillSystem,ICanSendCommand
                 }
                 break;
             case SkillType.NORMAL_ATTACK:
+                {
+                    //给目标附加debuff
+                    var caster = Packet.caster.GetComponent<EntityController>();
+                    if (caster.UnitData.AttackBonus?.Count > 0)
+                    {
+                        foreach (var buffId in caster.UnitData.AttackBonus)
+                        {
+                            ////筛选出技能施法目标
+                            //Packet.TargetData = this.SendCommand(new QuerySkillTargets(Packet.caster, buffId));
+                            this.SendCommand<AddSingleBuffToTargetCommand>(new AddSingleBuffToTargetCommand(Packet.TargetData, buffId, null));
+                        }
+                    }
+
+                    SkillController skillController = DisplaySkill(Packet);
+                    skillController.SetSkillPacket(Packet);
+                    Packet.CanRelease = false;//进入冷却了
+                }
+                break;
             case SkillType.ACTIVE_SKILL:
                 {
                     SkillController skillController = DisplaySkill(Packet);
@@ -112,7 +145,7 @@ public class SkillSystem : AbstractSystem, ISkillSystem,ICanSendCommand
                 point = Packet.caster.transform.Find("point").position;
             }
         }
-        GameObject res = Object.Instantiate(skill, point, Quaternion.identity);
+        GameObject res = UnityEngine.Object.Instantiate(skill, point, Quaternion.identity);
         SkillController skillController = res.GetComponent<QFramework.Game.SkillController>();
 
         switch(Packet._data.SkillType)
@@ -151,7 +184,7 @@ public class SkillSystem : AbstractSystem, ISkillSystem,ICanSendCommand
 
             resourcesMap.Add(Packet._data.Id, skill);
         }
-        GameObject res = Object.Instantiate(skill, Packet.targetPoint, Quaternion.identity);
+        GameObject res = UnityEngine.Object.Instantiate(skill, Packet.targetPoint, Quaternion.identity);
         res.GetComponent<QFramework.Game.SkillController>().SetSkillPacket(Packet);
     }
 

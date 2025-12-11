@@ -9,7 +9,16 @@ public class EffectDamage : EffectEntity
 
     public override void Execute()
     {
-        SkillKit.BeHurt(new TargetData { Target = target.gameObject }, effect.effectNode.Param[1]);
+        //SkillKit.BeHurt(new TargetData { Target = target.gameObject }, effect.effectNode.Param[1]);
+        AttributeChangeData attributeChangeData = new AttributeChangeData()
+        {
+            attributeType = attributeType,
+            value = effect.effectNode.Param[1],
+            baseCalculateType = effect.buffTable.BaseCalType,
+        };
+        target.GetComponent<ICanResponseBuff>().OnAttributeChange(attributeChangeData);
+        IsFinished = true;
+        buffEntity.RemoveEffect(this);
     }
 
     public override void Init(Effect _effect, BuffEntity _buffEntity, Transform _target)

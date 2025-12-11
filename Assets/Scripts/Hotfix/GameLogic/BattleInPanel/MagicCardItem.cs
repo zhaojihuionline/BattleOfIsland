@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 
 public class MagicCardItem : BaseCardItem
 {
+    public int MagicIndex = 20001601;// Ä¬ÈÏ·¨Êõ¿¨ÅÆID
     public override void OnInit(int id,int count)
     {
         ID = id;

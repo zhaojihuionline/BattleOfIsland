@@ -165,6 +165,10 @@ namespace cfg
         /// int
         /// </summary>
         CurHealth = 37,
+        /// <summary>
+        /// 普通攻击特效造成额外伤害
+        /// </summary>
+        ExtraDamage = 38,
     }
 
 } 

@@ -160,6 +160,16 @@ public class BuffRunner : IRunner
         return newBuffEntity;
     }
 
+    public BuffEntity GetBuffEntity(int buffId)
+    {
+        foreach(var buffEntity in buffEntities)
+        {
+            if (buffEntity.buff.id == buffId)
+                return buffEntity;
+        }
+        return null;
+    }
+
     /// <summary>
     /// 更新buff
     /// </summary>
@@ -242,6 +252,11 @@ public class BuffRunner : IRunner
             }
         }
         return hasBuff;
+    }
+
+    public void Reset(BuffEntity buffEntity)
+    {
+        buffEntity.ResetBuff();
     }
 
     public Buff GetBuff(int buffid)

@@ -2,6 +2,7 @@ using UnityEngine;
 using QFramework;
 using System.Collections.Generic;
 using System;
+using System.Linq;
 
 namespace QFramework.Game
 {
@@ -17,18 +18,29 @@ namespace QFramework.Game
 			BattleInModel model = this.GetModel<BattleInModel>();
 			SkillSystem system = this.GetSystem<SkillSystem>();
 
-			var res = this.SendCommand(new FindTargetCommand(model.opponent_allEntitys, packetData._data, null));
-			if (res.Target != null)
+			// 从model.opponent_allEntitys中，随机取一个目标
+			var targetObj = model.opponent_allEntitys[UnityEngine.Random.Range(0, model.opponent_allEntitys.Count)];
+			if (targetObj != null)
 			{
-				GameObject effect = Instantiate(Effect, res.Target.transform.position, Quaternion.identity);
-				effect.SetActive(true);
-                //实际触发伤害可能会稍微延迟一点
-                ActionKit.Delay(0.1f, () =>
+                var target = targetObj.GetComponent<EntityController>();
+
+                if (target != null)
                 {
-                    int buffId = packetData._data.Effect[0];
-					this.SendCommand(new AddSingleBuffToTargetCommand(new TargetData { Target = res.Target}, buffId, effect));// 添加雷霆伤害技能对应的buff
-                                                                                               //res.GetComponent<ICanHurt>().BeHurt(packetData.damageDate.GetAllDamage());
-                }).Start(this);
+                    var res = this.SendCommand(new FindTargetCommand(model.opponent_allEntitys, packetData._data, target));
+
+                    if (res.Target != null)
+                    {
+                        GameObject effect = Instantiate(Effect, res.Target.transform.position, Quaternion.identity);
+                        effect.SetActive(true);
+                        //实际触发伤害可能会稍微延迟一点
+                        ActionKit.Delay(0.1f, () =>
+                        {
+                            int buffId = packetData._data.Effect[0];
+                            this.SendCommand(new AddSingleBuffToTargetCommand(new TargetData { Target = res.Target }, buffId, effect));// 添加雷霆伤害技能对应的buff
+                                                                                                                                       //res.GetComponent<ICanHurt>().BeHurt(packetData.damageDate.GetAllDamage());
+                        }).Start(this);
+                    }
+                }
             }
 		}
 

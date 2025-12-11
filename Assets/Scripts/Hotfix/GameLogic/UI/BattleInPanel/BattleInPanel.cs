@@ -116,17 +116,23 @@ namespace QFramework.UI
 
                 if (newAccount || armydetail.DeployedHeroes.Count <= 0)// 如果是新账户或者当前的军队中没有招募任何英雄
                 {
-                    var newElfvdId = await GameRemoteAPI.RecruitHero(1101, "巴顿");// 招募巴顿英雄
-                    await GameRemoteAPI.DeployHero(armydetail.ArmyId, newElfvdId);// 将招募到的英雄部署到军队中
+                    //var newElfvdId = await GameRemoteAPI.RecruitHero(1101, "巴顿");// 招募巴顿英雄
+                    //await GameRemoteAPI.DeployHero(armydetail.ArmyId, newElfvdId);// 将招募到的英雄部署到军队中
 
-                    var newId = await GameRemoteAPI.RecruitHero(1202, "艾菲尔");// 招募艾菲尔英雄
-                    await GameRemoteAPI.DeployHero(armydetail.ArmyId, newId);// 将招募到的英雄部署到军队中
+                    //var newId = await GameRemoteAPI.RecruitHero(1202, "艾菲尔");// 招募艾菲尔英雄
+                    //await GameRemoteAPI.DeployHero(armydetail.ArmyId, newId);// 将招募到的英雄部署到军队中
 
-                    var newShieldId = await GameRemoteAPI.RecruitHero(1301, "罗兰");// 招募骑兵英雄
-                    await GameRemoteAPI.DeployHero(armydetail.ArmyId, newShieldId);// 将招募到的英雄部署到军队中
+                    //var newShieldId = await GameRemoteAPI.RecruitHero(1301, "罗兰");// 招募骑兵英雄
+                    //await GameRemoteAPI.DeployHero(armydetail.ArmyId, newShieldId);// 将招募到的英雄部署到军队中S
 
-   					//var newElfvId = await GameRemoteAPI.RecruitHero(1201, "艾利佛");// 招募艾利佛英雄
-                    //await GameRemoteAPI.DeployHero(armydetail.ArmyId, newElfvId);// 将招募到的英雄部署到军队中
+                    var newElfvId = await GameRemoteAPI.RecruitHero(1201, "艾利佛");// 招募艾利佛英雄
+                    await GameRemoteAPI.DeployHero(armydetail.ArmyId, newElfvId);// 将招募到的英雄部署到军队中
+
+                    newElfvId = await GameRemoteAPI.RecruitHero(1203, "宝丽");// 招募雷恩英雄
+                    await GameRemoteAPI.DeployHero(armydetail.ArmyId, newElfvId);// 将招募到的英雄部署到军队中
+
+                    newElfvId = await GameRemoteAPI.RecruitHero(1102, "雷恩");// 招募雷恩英雄
+                    await GameRemoteAPI.DeployHero(armydetail.ArmyId, newElfvId);// 将招募到的英雄部署到军队中
                     MapManager.instance.RebuildBuildingsUseLocalData(true,14001,14001,14001,14001);// 生成默认建筑布局
                 }
                 // 再次重新获取下当前军队详情，不要用之前缓存的数据

@@ -19,6 +19,10 @@ public class EffectHeal_Singlerhero : EffectEntity
         };
         target.GetComponent<ICanResponseBuff>().OnAttributeChange(attributeChangeData);
         IsFinished = true;
+        if(effect.buffTable.Time != -1)
+        {
+            buffEntity.RemoveEffect(this);
+        }
     }
 
     public override void Init(Effect _effect, BuffEntity _buffEntity, Transform _target)
@@ -35,9 +39,23 @@ public class EffectHeal_Singlerhero : EffectEntity
     {
 
     }
-
+    float timer = 0;
     public override void Update()
     {
-
+        if(effect.buffTable.Time == -1)
+        {
+            timer += Time.deltaTime;
+            if (timer >= 1.0f)
+            {
+                timer = 0;
+                AttributeChangeData attributeChangeData = new AttributeChangeData()
+                {
+                    attributeType = attributeType,
+                    value = effect.effectNode.Param[1],
+                    baseCalculateType = effect.buffTable.BaseCalType,
+                };
+                target.GetComponent<ICanResponseBuff>().OnAttributeChange(attributeChangeData);
+            }
+        }
     }
 }

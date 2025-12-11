@@ -148,7 +148,7 @@ public class MercenaryEntity : UnitViewController, ICanHurt, ICanResponseBuff
     public void OnUpgradeBlood(float chanedValue)
     {
         Debug.Log("改变了血量");
-        runTimemercenaryData.blood += chanedValue;
+        runTimemercenaryData.Health += (int)chanedValue;
         ChangeModelColorFX();
     }
 
@@ -190,10 +190,10 @@ public class MercenaryEntity : UnitViewController, ICanHurt, ICanResponseBuff
 
     public void BeHurt(int v)
     {
-        runTimemercenaryData.blood -= v;
-        if (runTimemercenaryData.blood <= 0)
+        runTimemercenaryData.Health -= v;
+        if (runTimemercenaryData.Health <= 0)
         {
-            runTimemercenaryData.blood = 0;
+            runTimemercenaryData.Health = 0;
             Debug.Log("佣兵死亡");
         }
         ChangeModelColorFX();

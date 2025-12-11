@@ -30,7 +30,9 @@ namespace QFramework.Game
         void OnMoveComplete()
         {
             Debug.Log("移动完成!");
-            SkillKit.BeHurt(packetData, 10);
+            int damage = (int)packetData.caster.GetComponent<EntityController>().UnitData.GetDamage();
+            Debug.Log("当前caster的伤害:" + damage);
+            SkillKit.BeHurt(packetData, damage);//10
             packetData.caster.GetComponent<EntityController>().isRelease = false;// 暂时放这
             Cleanup();
         }

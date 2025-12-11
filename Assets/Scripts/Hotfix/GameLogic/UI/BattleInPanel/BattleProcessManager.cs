@@ -68,6 +68,51 @@ namespace QFramework.UI
                 int minutes = remainSeconds / 60;
                 int seconds = remainSeconds % 60;
                 BattleManagerView.Instance.battleInPanel.timerLabel.text = $"{minutes:00}:{seconds:00}s";
+
+                #region 测试用快捷键释放法术
+                if (Input.GetKeyDown(KeyCode.Alpha1))
+                {
+                    CastMagicProcess(20001801);//雷霆之力法术技能20001801
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha2))
+                {
+                    CastMagicProcess(20000101);// 腐朽之森法术技能20000101
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha3))
+                {
+                    CastMagicProcess(20000201);// 先祖教诲法术技能20000201
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha4))
+                {
+                    CastMagicProcess(20000301);// 迷你蘑菇法术技能20000301
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha5))
+                {
+                    CastMagicProcess(20000401);// 醺酒法术技能20000401
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha6))
+                {
+                    CastMagicProcess(20000501);// 复苏术法术技能20000501
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha7))
+                {
+                    ResLoader loader = ResLoader.Allocate();
+                    this.Delay(0.5f, () =>
+                    {
+                        GameObject newFengxue = Instantiate(loader.LoadSync<GameObject>("FX_build_Fengxue"));
+                        Vector3 pc = Camera.main.transform.localPosition;
+                        Vector3 targetPosition = Camera.main.transform.localPosition + Camera.main.transform.forward * 6f;
+                        newFengxue.transform.localPosition = targetPosition - new Vector3(0, 3, 0);
+                        Destroy(newFengxue, 5f);
+                    });
+                    CastMagicProcess(20001601);// 暴风雪法术技能20001601
+                    loader.Recycle2Cache();
+                }
+                if (Input.GetKeyDown(KeyCode.Alpha8))
+                {
+                    CastMagicProcess(20000701);// 流沙阵法术技能20000701
+                }
+                #endregion
             }
         }
 
@@ -93,7 +138,7 @@ namespace QFramework.UI
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
             TypeEventSystem.Global.Register<MagicCardItem>(e =>
             {
-                CastMagicProcess();// 释放法术
+                CastMagicProcess(e.MagicIndex);// 释放法术
                 lastSelectedItem = e;
                 ResetAllCardItemAnim();
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
@@ -168,7 +213,7 @@ namespace QFramework.UI
         /// <summary>
         /// 释放法术流程
         /// </summary>
-        public void CastMagicProcess()
+        public void CastMagicProcess(int magicIndex)
         {
             // 播放前摇特效
             ResLoader loader = ResLoader.Allocate();
@@ -180,44 +225,67 @@ namespace QFramework.UI
             //this.Delay(1.5f, () =>
             //{
             //    Destroy(newQianyao);
-            //    var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(20000101);// 20001801   20000101   20000101
-            //    BattleInModel battleInModel = this.GetModel<BattleInModel>();
-            //    GameObject _target = this.SendCommand(new FindTargetCommand(battleInModel.opponent_allEntitys, tbskill.TagMask, tbskill.CastRanage, tbskill.Preference, Vector3.zero));
-            //    this.SendCommand<ReleaseSpellCommand>(new ReleaseSpellCommand(tbskill, null, _target, Vector3.zero));
-            //});
-            //this.Delay(1.5f, () =>
-            //{
-            //    Destroy(newQianyao);
-            //    var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(20000101);// 腐朽之森法术技能
+            //    var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(magicIndex);// 雷霆之力法术技能20001801
             //    this.SendCommand<ReleaseSpellCommand>(new ReleaseSpellCommand(tbskill, null, default, Vector3.zero));
             //});
             //this.Delay(1.5f, () =>
             //{
             //    Destroy(newQianyao);
-            //    var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(20000201);// 先祖教诲法术技能
+            //    var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(magicIndex);// 腐朽之森法术技能20000101
             //    this.SendCommand<ReleaseSpellCommand>(new ReleaseSpellCommand(tbskill, null, default, Vector3.zero));
             //});
             //this.Delay(1.5f, () =>
             //{
             //    Destroy(newQianyao);
-            //var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(20000301);// 迷你蘑菇法术技能
+            //    var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(magicIndex);// 先祖教诲法术技能20000201
+            //    this.SendCommand<ReleaseSpellCommand>(new ReleaseSpellCommand(tbskill, null, default, Vector3.zero));
+            //});
+            //this.Delay(1.5f, () =>
+            //{
+            //    Destroy(newQianyao);
+            //var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(magicIndex);// 迷你蘑菇法术技能20000301
             //   this.SendCommand<ReleaseSpellCommand>(new ReleaseSpellCommand(tbskill, null, default, Vector3.zero));            
             //});
 
             //this.Delay(1.5f, () =>
             //{
             //    Destroy(newQianyao);
-            //    var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(20000401);// 醺酒法术技能
+            //    var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(magicIndex);// 醺酒法术技能20000401
+            //    this.SendCommand<ReleaseSpellCommand>(new ReleaseSpellCommand(tbskill, null, default, Vector3.zero));
+            //});
+
+            //this.Delay(1.5f, () =>
+            //{
+            //    Destroy(newQianyao);
+            //    var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(magicIndex);// 复苏术法术技能20000501
+            //    this.SendCommand<ReleaseSpellCommand>(new ReleaseSpellCommand(tbskill, null, default, Vector3.zero));
+            //});
+
+            // 暴风雪法术技能
+            //if (magicIndex == 20001601)
+            //{
+            //    this.Delay(0.5f, () =>
+            //    {
+            //        GameObject newFengxue = Instantiate(loader.LoadSync<GameObject>("FX_build_Fengxue"));
+            //        Vector3 pc = Camera.main.transform.localPosition;
+            //        Vector3 targetPosition = Camera.main.transform.localPosition + Camera.main.transform.forward * 6f;
+            //        newFengxue.transform.localPosition = targetPosition - new Vector3(0, 3, 0);
+            //        Destroy(newFengxue, 5f);
+            //    });
+            //}
+            //this.Delay(1.5f, () =>
+            //{
+            //    Destroy(newQianyao);
+            //    var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(magicIndex);// 暴风雪法术技能20001601
             //    this.SendCommand<ReleaseSpellCommand>(new ReleaseSpellCommand(tbskill, null, default, Vector3.zero));
             //});
 
             this.Delay(1.5f, () =>
             {
                 Destroy(newQianyao);
-                var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(20000501);// 复苏术法术技能
+                var tbskill = CfgMgr.Instance.Tables.TbSkillTable.Get(magicIndex);// 流沙阵法术技能20000701
                 this.SendCommand<ReleaseSpellCommand>(new ReleaseSpellCommand(tbskill, null, default, Vector3.zero));
             });
-
         }
         /// <summary>
         /// 进入战斗流程

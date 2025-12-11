@@ -109,21 +109,26 @@ public class AddSingleBuffToTargetCommand : AbstractCommand
     public TargetData targetData;
     public int buffid;
     public GameObject effectObj;
-    public AddSingleBuffToTargetCommand(TargetData targetData, int _buffid, GameObject effectObj)
+    public bool loopBuff = false;
+    public AddSingleBuffToTargetCommand(TargetData targetData, int _buffid, GameObject effectObj, bool loopBuff = false)
     {
         this.targetData = targetData;
         this.buffid = _buffid;
         this.effectObj = effectObj;
+        this.loopBuff = loopBuff;
     }
 
     protected override void OnExecute()
     {
         AddBuff(targetData.Target);
-        foreach (var target in targetData.Targets)
+        if(targetData.Targets != null && targetData.Targets.Count > 0)
         {
-            if (targetData.Target == target)
-                continue;
-            AddBuff(target);
+            foreach (var target in targetData.Targets)
+            {
+                if (targetData.Target == target)
+                    continue;
+                AddBuff(target);
+            }
         }
     }
 
@@ -131,7 +136,12 @@ public class AddSingleBuffToTargetCommand : AbstractCommand
     {
         if(!target)return;
         var buffRunner = target.GetComponent<EntityController>().buffRunner;
-        if (buffRunner.HasBuff(buffid)) return;
+        if (buffRunner.HasBuff(buffid))
+        {
+            var buffEntity = buffRunner.GetBuffEntity(buffid);
+            buffEntity.ResetBuff();
+            return;
+        }
         Debug.Log($"AddBuff target{target} {buffid}");
         if (buffRunner != null)
         {
