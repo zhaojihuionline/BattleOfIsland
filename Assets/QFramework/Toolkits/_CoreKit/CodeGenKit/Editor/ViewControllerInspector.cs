@@ -109,9 +109,19 @@ namespace QFramework
         {
             var architectureType = typeof(IArchitecture);
 
-            return AppDomain.CurrentDomain.GetAssemblies().Where(a => !a.FullName.Contains("UnityEngine") && !a.FullName.Contains("Kit") && !a.FullName.Contains("QFramework"))
+            Type[] assemblies = null;
+            try
+            {
+                assemblies = AppDomain.CurrentDomain.GetAssemblies().Where(a => !a.FullName.Contains("UnityEngine") && !a.FullName.Contains("Kit") && !a.FullName.Contains("QFramework"))
                 .SelectMany(a => a.GetTypes())
                 .Where(type => !type.IsAbstract && architectureType.IsAssignableFrom(type)).ToArray();
+            }
+            catch(Exception e)
+            {
+                Debug.LogError($"Error!!!{e.Message}\n {e.StackTrace}");
+            }
+
+            return assemblies;
         }
         
         public static Type[] SearchAllViewControllerTypes()

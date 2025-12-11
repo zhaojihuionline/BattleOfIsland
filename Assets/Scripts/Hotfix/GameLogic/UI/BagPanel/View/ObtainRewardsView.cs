@@ -17,6 +17,11 @@ namespace QFramework.UI
         [SerializeField] private Button closeButton;
         [SerializeField] private Button confirmButton;
         [SerializeField] private Button maskButton;  // 遮罩层按钮(点击关闭)
+        [Header("Item Toast")]
+        [SerializeField] private GameObject itemToastPrefab; // 指向 Assets/GameRes_Hotfix/Prefabs/BagPrefab/ItemToast.prefab
+        [SerializeField] private RectTransform toastParent;  // 可选指定父节点，默认使用 root
+
+        private GameObject currentToast;
 
         private readonly List<GameObject> rewardItems = new List<GameObject>();
 
@@ -90,6 +95,7 @@ namespace QFramework.UI
 			}
 
             ClearRewards();
+            DestroyCurrentToast();
         }
 
         private void OnMaskButtonClicked()
@@ -125,6 +131,8 @@ namespace QFramework.UI
                 {
                     itemView.SetData(itemData);
                     itemView.SetInteractable(false);
+                    itemView.OnClicked -= OnRewardItemClicked;
+                    itemView.OnClicked += OnRewardItemClicked;
                 }
             }
         }
@@ -156,6 +164,60 @@ namespace QFramework.UI
             if (maskButton != null)
             {
                 maskButton.onClick.RemoveListener(OnMaskButtonClicked);
+            }
+        }
+
+        private void OnRewardItemClicked(BagItemView itemView)
+        {
+            if (itemView == null) return;
+
+            ShowItemToast(itemView);
+        }
+
+        private void ShowItemToast(BagItemView itemView)
+        {
+            if (itemToastPrefab == null)
+            {
+                Debug.LogWarning("ObtainRewardsView: itemToastPrefab 未配置");
+                return;
+            }
+
+            DestroyCurrentToast();
+
+            var parent = toastParent as RectTransform;
+            if (parent == null)
+            {
+                parent = toastParent != null ? toastParent : root != null ? root.transform as RectTransform : transform as RectTransform;
+            }
+
+            var toastObj = Instantiate(itemToastPrefab, parent);
+            currentToast = toastObj;
+
+            var toastView = toastObj.GetComponent<ItemToastView>();
+            if (toastView == null)
+            {
+                toastView = toastObj.AddComponent<ItemToastView>();
+            }
+
+            var toastRect = toastObj.transform as RectTransform;
+            if (toastRect != null)
+            {
+                toastRect.anchorMin = new Vector2(0.5f, 0.5f);
+                toastRect.anchorMax = new Vector2(0.5f, 0.5f);
+                toastRect.anchoredPosition = Vector2.zero;
+                toastRect.localScale = Vector3.one;
+                toastRect.localRotation = Quaternion.identity;
+            }
+
+            toastView.Show(itemView.Data, parent);
+        }
+
+        private void DestroyCurrentToast()
+        {
+            if (currentToast != null)
+            {
+                Destroy(currentToast);
+                currentToast = null;
             }
         }
     }

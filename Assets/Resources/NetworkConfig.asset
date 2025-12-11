@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 996a589454a575d479007a97dd4784eb, type: 3}
   m_Name: NetworkConfig
   m_EditorClassIdentifier: 
-  serverEndpoint: localhost:3250
+  serverEndpoint: 192.168.9.109:3250
   serverPath: /ws
-  httpBaseUrl: http://localhost:8888/api/v1
+  httpBaseUrl: http://192.168.9.109:8888/api/v1

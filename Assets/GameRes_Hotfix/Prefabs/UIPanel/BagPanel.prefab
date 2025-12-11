@@ -6757,6 +6757,8 @@ MonoBehaviour:
   closeButton: {fileID: 7563680377204305693}
   confirmButton: {fileID: 8905087465962687421}
   maskButton: {fileID: 8980366340938907219}
+  itemToastPrefab: {fileID: 5384762254749567510, guid: 2be8454410405a749a26b843fd43a016, type: 3}
+  toastParent: {fileID: 0}
 --- !u!1 &3972035821055585912
 GameObject:
   m_ObjectHideFlags: 0
@@ -10577,7 +10579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7533274418473964525
 RectTransform:
   m_ObjectHideFlags: 0

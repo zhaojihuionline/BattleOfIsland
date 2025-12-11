@@ -47,12 +47,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Namespace: QFramework.Game
   ScriptName: skill_90003
-  ScriptsFolder: Assets/Scripts/Hotfix/GameLogic/Skill/Skill
+  ScriptsFolder: Assets\Scripts\Hotfix\GameLogic\Skill\Skill
   GeneratePrefab: 0
   PrefabFolder: Assets/GameRes_Hotfix/Prefabs/ViewController
   ArchitectureFullTypeName: GameApp
   ViewControllerFullTypeName: 
   enableDebug: 0
+  FSM:
+    mCurrentStateId: 0
+    FrameCountOfCurrentState: 1
+    SecondsOfCurrentState: 0
 --- !u!1 &1624642758540852689
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,7 +138,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8668500592761079368}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

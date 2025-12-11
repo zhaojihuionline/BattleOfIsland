@@ -132,16 +132,16 @@
     "Show": true,
     "Buff_effect": [
       {
-        "_type": 13,
+        "_type": 3,
         "_param": [
           100,
-          3
+          100
         ]
       }
     ],
     "ReFlash": false,
     "TickCd": 0,
-    "BaseCalType": 2,
+    "BaseCalType": 4,
     "FirstGoal": 3,
     "NextGoal": 13,
     "Time": 3000,

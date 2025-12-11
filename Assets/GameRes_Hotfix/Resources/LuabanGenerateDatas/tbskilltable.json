@@ -1873,7 +1873,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 1000,
+    "_damage_range": 5000,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1920,7 +1920,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 1000,
+    "_damage_range": 5000,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -1967,7 +1967,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 1000,
+    "_damage_range": 5000,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -2014,7 +2014,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 1000,
+    "_damage_range": 5000,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -2061,7 +2061,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 1000,
+    "_damage_range": 5000,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -2108,7 +2108,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 1000,
+    "_damage_range": 5000,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -2155,7 +2155,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 1000,
+    "_damage_range": 5000,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -2202,7 +2202,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 1000,
+    "_damage_range": 5000,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -2249,7 +2249,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 1000,
+    "_damage_range": 5000,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -2296,7 +2296,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 1000,
+    "_damage_range": 5000,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -2343,7 +2343,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 1000,
+    "_damage_range": 5000,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -2390,7 +2390,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 1000,
+    "_damage_range": 5000,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -2437,7 +2437,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 1000,
+    "_damage_range": 5000,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -2484,7 +2484,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 1000,
+    "_damage_range": 5000,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -2531,7 +2531,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 1000,
+    "_damage_range": 5000,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -2578,7 +2578,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 1000,
+    "_damage_range": 5000,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -2625,7 +2625,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 1000,
+    "_damage_range": 5000,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -2672,7 +2672,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 1000,
+    "_damage_range": 5000,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -2719,7 +2719,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 1000,
+    "_damage_range": 5000,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -2766,7 +2766,7 @@
       "Tower",
       "Hero"
     ],
-    "_damage_range": 1000,
+    "_damage_range": 5000,
     "_preference": "TestTargetingPreference",
     "_lock_method": 0,
     "_pass_type": [
@@ -26891,7 +26891,7 @@
       }
     ],
     "_effect": [
-      20209
+      20210
     ],
     "_description": "冰冻所有建筑橙持续2s"
   },
@@ -26937,7 +26937,7 @@
       }
     ],
     "_effect": [
-      20209
+      20211
     ],
     "_description": "冰冻所有建筑橙持续2s"
   },
