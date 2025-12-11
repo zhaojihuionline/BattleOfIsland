@@ -130,7 +130,7 @@ namespace QFramework.UI
             // LayoutRebuilder.ForceRebuildLayoutImmediate(tipsContainer);
 
             // 计算初始位置（从容器顶部开始）
-            float startY = START_OFFSET_Y * 4;
+            float startY = START_OFFSET_Y * 8;
             tipsItem.SetPosition(startY);
 
             // 更新所有提示项的位置（新提示出现时，旧的向上移动）
