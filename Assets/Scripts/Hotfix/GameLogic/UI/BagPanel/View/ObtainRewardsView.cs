@@ -22,6 +22,7 @@ namespace QFramework.UI
         [SerializeField] private RectTransform toastParent;  // 可选指定父节点，默认使用 root
 
         private GameObject currentToast;
+        private GameObject currentToastMask;
 
         private readonly List<GameObject> rewardItems = new List<GameObject>();
 
@@ -187,6 +188,8 @@ namespace QFramework.UI
             var targetRect = itemView.transform as RectTransform;
             var parent = toastParent != null ? toastParent : root != null ? root.transform as RectTransform : transform as RectTransform;
 
+            CreateToastMask(parent);
+
             var toastObj = Instantiate(itemToastPrefab, parent);
             currentToast = toastObj;
 
@@ -208,6 +211,14 @@ namespace QFramework.UI
 
             var canvas = parent != null ? parent.GetComponentInParent<Canvas>() : null;
             toastView.Show(itemView.Data, targetRect, canvas);
+
+            // 确保 toast 在遮罩之上
+            if (currentToastMask != null)
+            {
+                // 先把遮罩放到父级顶部，再将 toast 放到最上方，保证遮罩拦截外部点击且不挡住 toast 本身
+                currentToastMask.transform.SetAsLastSibling();
+                toastObj.transform.SetAsLastSibling();
+            }
         }
 
         private void DestroyCurrentToast()
@@ -217,6 +228,49 @@ namespace QFramework.UI
                 Destroy(currentToast);
                 currentToast = null;
             }
+
+            if (currentToastMask != null)
+            {
+                Destroy(currentToastMask);
+                currentToastMask = null;
+            }
+        }
+
+        private void CreateToastMask(RectTransform parent)
+        {
+            if (parent == null) return;
+
+            // 如果已有且父级一致则复用
+            if (currentToastMask != null)
+            {
+                if (currentToastMask.transform.parent == parent)
+                {
+                    currentToastMask.SetActive(true);
+                    return;
+                }
+                Destroy(currentToastMask);
+                currentToastMask = null;
+            }
+
+            var go = new GameObject("ToastMask", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image), typeof(Button));
+            var rect = go.GetComponent<RectTransform>();
+            rect.SetParent(parent, false);
+            rect.anchorMin = Vector2.zero;
+            rect.anchorMax = Vector2.one;
+            rect.offsetMin = Vector2.zero;
+            rect.offsetMax = Vector2.zero;
+            rect.localScale = Vector3.one;
+
+            var img = go.GetComponent<Image>();
+            img.color = new Color(0, 0, 0, 0f); // 全透明，仅用于拦截点击
+            img.raycastTarget = true;
+
+            var btn = go.GetComponent<Button>();
+            btn.onClick.AddListener(DestroyCurrentToast);
+
+            currentToastMask = go;
+            // 默认放在最顶层，外部点击能被拦截
+            currentToastMask.transform.SetAsLastSibling();
         }
     }
 }
