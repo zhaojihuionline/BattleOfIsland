@@ -21,7 +21,7 @@ namespace QFramework.UI
         /// <summary>
         /// 填充数据并相对目标物品布局。
         /// </summary>
-        public void Show(BagItemData data, RectTransform targetRect)
+        public void Show(BagItemData data, RectTransform targetRect, Canvas overrideCanvas = null)
         {
             if (toastRect == null)
             {
@@ -35,7 +35,7 @@ namespace QFramework.UI
             // 确保布局最新，避免尺寸为旧值
             LayoutRebuilder.ForceRebuildLayoutImmediate(toastRect);
 
-            Position(targetRect);
+            Position(targetRect, overrideCanvas);
         }
 
         private void ApplyContent(BagItemData data)
@@ -61,10 +61,10 @@ namespace QFramework.UI
             }
         }
 
-        private void Position(RectTransform targetRect)
+        private void Position(RectTransform targetRect, Canvas overrideCanvas)
         {
-            // 直接使用物品本地坐标系，锚定到物品中心
-            var canvas = targetRect.GetComponentInParent<Canvas>();
+            // 使用目标 Canvas（优先外部传入，其次 Toast 父级 Canvas）
+            var canvas = overrideCanvas != null ? overrideCanvas : toastRect.GetComponentInParent<Canvas>();
             var camera = canvas != null && canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : canvas != null ? canvas.worldCamera : null;
 
             var itemSize = targetRect.rect.size;
@@ -73,7 +73,7 @@ namespace QFramework.UI
             Vector2 offset = Vector2.zero;
             Vector2 pivot = new Vector2(0.5f, 0.5f);
 
-            // 方向优先级：右->左->上->下。基于屏幕剩余空间决定方向，偏移基于物品/Toast 尺寸。
+            // 方向优先级：右->左->上->下。基于屏幕剩余空间决定方向，偏移基于物品尺寸。
             if (canvas != null)
             {
                 var itemCenterWorld = targetRect.TransformPoint(targetRect.rect.center);
@@ -116,7 +116,17 @@ namespace QFramework.UI
             }
 
             toastRect.pivot = pivot;
-            toastRect.anchoredPosition = offset;
+            // 将物品中心转换到目标 Canvas 的局部坐标，再加偏移
+            Vector2 itemCenterLocal = Vector2.zero;
+            if (canvas != null)
+            {
+                RectTransformUtility.ScreenPointToLocalPointInRectangle(
+                    canvas.transform as RectTransform,
+                    RectTransformUtility.WorldToScreenPoint(camera, targetRect.TransformPoint(targetRect.rect.center)),
+                    camera,
+                    out itemCenterLocal);
+            }
+            toastRect.anchoredPosition = itemCenterLocal + offset;
         }
     }
 }

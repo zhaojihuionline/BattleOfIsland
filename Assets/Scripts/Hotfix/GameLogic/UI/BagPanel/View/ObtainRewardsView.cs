@@ -184,11 +184,8 @@ namespace QFramework.UI
 
             DestroyCurrentToast();
 
-            var parent = toastParent as RectTransform;
-            if (parent == null)
-            {
-                parent = toastParent != null ? toastParent : root != null ? root.transform as RectTransform : transform as RectTransform;
-            }
+            var targetRect = itemView.transform as RectTransform;
+            var parent = toastParent != null ? toastParent : root != null ? root.transform as RectTransform : transform as RectTransform;
 
             var toastObj = Instantiate(itemToastPrefab, parent);
             currentToast = toastObj;
@@ -209,7 +206,8 @@ namespace QFramework.UI
                 toastRect.localRotation = Quaternion.identity;
             }
 
-            toastView.Show(itemView.Data, parent);
+            var canvas = parent != null ? parent.GetComponentInParent<Canvas>() : null;
+            toastView.Show(itemView.Data, targetRect, canvas);
         }
 
         private void DestroyCurrentToast()
