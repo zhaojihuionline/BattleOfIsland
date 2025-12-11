@@ -75,7 +75,7 @@ namespace QFramework.UI
             // 更新数量显示
             if (countText != null)
             {
-                countText.text = $"<color=#FBC39A>已拥有:</color><color=#1FFF6C>{itemData.Count}</color>";
+                countText.text = $"<color=#FBC39A>已拥有: </color><color=#1FFF6C>{itemData.Count}</color>";
             }
         }
 
