@@ -261,6 +261,7 @@ namespace QFramework.UI
                         // 已达到最大选择数量，取消选择
                         itemView.SetSelected(false);
                         Debug.LogWarning($"PageUseType2Choice: 最多只能选择 {maxSelect} 项奖励");
+                        Tips.ShowWarning($"只能选择 {maxSelect} 项奖励");
                         return;
                     }
 
@@ -323,9 +324,11 @@ namespace QFramework.UI
                 return;
             }
 
-            if (selectedRewardIds.Count == 0)
+            int maxSelect = currentRewardConfig?.RewardParam ?? 0;
+            if (selectedRewardIds.Count != maxSelect)
             {
-                Debug.LogWarning("PageUseType2Choice: 请至少选择一个奖励");
+                Debug.LogWarning("PageUseType2Choice: 请先选择奖励");
+                Tips.ShowWarning("请先选择奖励");
                 return;
             }
 

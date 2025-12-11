@@ -5,6 +5,7 @@ using PitayaClient.Network.Manager;
 using PitayaGame.GameSvr;
 using QFramework;
 using UnityEngine;
+using PitayaGame.Errors;
 
 namespace QFramework.UI
 {
@@ -62,7 +63,15 @@ namespace QFramework.UI
             if (response.Resp == null || response.Resp.Code != 0)
             {
                 string errorMsg = response.Resp?.Message ?? "未知错误";
-                Debug.LogError($"UseBagItemCommand: 使用失败 Code={response.Resp?.Code} Message={errorMsg}");
+                if(response.Resp?.Code == (int)ErrorCode.ErrInventoryUseLimit)
+                {
+                    Tips.ShowWarning($"{errorMsg}");
+                }
+                else
+                {
+                    Debug.LogError($"UseBagItemCommand: 使用失败 Code={response.Resp?.Code} Message={errorMsg}");
+                }
+                
                 return null;
             }
 
