@@ -22,7 +22,7 @@ namespace QFramework.UI
         [SerializeField] private AdjusterView adjusterView;  // 数量调节器
         [SerializeField] private Button useButton;
         [SerializeField] private Button sellButton;
-        
+
         private BagItemData currentItemData;
         private int useCount = 1;  // 当前选择的使用数量
 
@@ -33,7 +33,7 @@ namespace QFramework.UI
             {
                 useButton.onClick.AddListener(OnUseButtonClicked);
             }
-            
+
             if (sellButton != null)
             {
                 sellButton.onClick.AddListener(OnSellButtonClicked);
@@ -53,7 +53,7 @@ namespace QFramework.UI
             {
                 useButton.onClick.RemoveListener(OnUseButtonClicked);
             }
-            
+
             if (sellButton != null)
             {
                 sellButton.onClick.RemoveListener(OnSellButtonClicked);
@@ -68,7 +68,7 @@ namespace QFramework.UI
         public override void RefreshData(BagItemData itemData)
         {
             currentItemData = itemData;
-            
+
             if (itemData == null)
             {
                 // 数据为空时，隐藏或重置所有显示
@@ -106,7 +106,7 @@ namespace QFramework.UI
             // 更新数量显示
             if (countText != null)
             {
-                countText.text = $"数量: {itemData.Count}";
+                countText.text = $"<color=#FBC39A>已拥有:</color><color=#1FFF6C>{itemData.Count}</color>";
             }
 
             // 更新数量调节器
@@ -140,12 +140,12 @@ namespace QFramework.UI
         {
             // 根据物品状态决定按钮是否可用
             bool canUse = itemData != null && itemData.IsInteractable && itemData.Count > 0;
-            
+
             if (useButton != null)
             {
                 useButton.interactable = canUse;
             }
-            
+
             if (sellButton != null)
             {
                 sellButton.interactable = canUse;
@@ -160,7 +160,7 @@ namespace QFramework.UI
         private void OnUseButtonClicked()
         {
             if (currentItemData == null) return;
-            
+
             if (useCount <= 0 || useCount > currentItemData.Count)
             {
                 Debug.LogWarning($"PageUseType1: 使用数量无效 {useCount}, 物品数量: {currentItemData.Count}");
@@ -175,7 +175,7 @@ namespace QFramework.UI
         private void OnSellButtonClicked()
         {
             if (currentItemData == null) return;
-            
+
             if (useCount <= 0 || useCount > currentItemData.Count)
             {
                 Debug.LogWarning($"PageUseType1: 出售数量无效 {useCount}, 物品数量: {currentItemData.Count}");
